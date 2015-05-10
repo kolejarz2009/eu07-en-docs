@@ -3,3 +3,4 @@ English translation of the documents for the MaSzyna Simulator ( http://eu07.pl/
 
 Initial work by @kolejarz2009
 Current version : PC 08.13
+ test: łą
