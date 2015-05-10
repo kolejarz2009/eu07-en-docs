@@ -5,8 +5,8 @@ Angielskie tłumaczenie dokumentacji MaSzyny
 @kolejarz2009
 
 <br> en-change-trains.html PC2015.04 = 0%
-<br> en-control.html PC08.13 = <1%   <<!!08.13
-<br> en-debug.html PC2015.04 = 100%   <<!! Dej pozór
+<br> en-control.html PC08.13 = <1%   << 08.13
+<br> en-debug.html PC2015.04 = 100%   << Dej pozór
 <br> en-entries.html PC2015.04 = 0%
 <br> en-exe-pc2010.html PC2015.04 = 0%
 <br> en-exe-pc2011.html PC2015.04 = 0%
