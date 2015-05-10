@@ -1,0 +1,1126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Language" content="pl">  
+  <title>Klawiszologia – MaSzyna 08.13 – Symulator Pojazdów Szynowych MaSzyna</title>
+  <link rel="Stylesheet" type="text/css" href="Klawiszologia%20%E2%80%93%20MaSzyna%2008.13%20%E2%80%93%20Symulator%20Pojazdo%CC%81w%20Szynowych%20MaSzyna_files/style.css">
+<!--  <script type="text/javascript" src="target.js"></script> -->
+</head>
+<body>
+
+<div id="STRONA">
+<p>
+Dla porządku zebraliśmy listę wszystkich używanych klawiszy. Nie ma możliwości samodzielnego zdefiniowania klawiszy!
+Klawisze oznaczone jako <kbd>Num...</kbd> to klawisze na klawiaturze numerycznej. Dlatego pamiętaj by włączyć NumLock. Użycie zwykłego klawisza <kbd>3</kbd> nie zastąpi klawisza <kbd>Num 3</kbd>! Analogicznie dla pozostałych klawiszy <kbd>Num...</kbd> Jeśli posiadasz laptopa bez klawiatury numerycznej skorzystaj z kombinacji <kbd>Fn</kbd> + pożądany klawisz.
+</p>
+						<!-- <center> -->
+						<table>
+							
+							
+							<tbody><tr>
+										<td><b><span style="color: #0000ff;">Klawisz</span></b></td>
+										<td><b><span style="color: #0000ff;">Wywoływana funkcja</span></b></td>
+										<td><b><span style="color: #0000ff;">Komentarz</span></b></td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>j</kbd></td>
+										<td>Załączenie baterii</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>j</kbd></td>
+										<td>Wyłączenie baterii</td>
+										<td>-</td>
+							</tr>
+
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>o</kbd></td>
+										<td>Podniesienie tylnego pantografu</td>
+										<td>Tylko w przypadku pojazdów elektrycznych</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>o</kbd></td>
+										<td>Opuszczenie tylnego pantografu</td>
+										<td>Tylko w przypadku pojazdów elektrycznych</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>p</kbd></td>
+										<td>Podniesienie przedniego pantografu</td>
+										<td>Tylko w przypadku pojazdów elektrycznych</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>p</kbd></td>
+										<td>Opuszczenie przedniego pantografu</td>
+										<td>Tylko w przypadku pojazdów elektrycznych</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>m</kbd></td>
+										<td>Załączenie wyłącznika szybkiego</td>
+										<td>Aby załączyć wyłącznik szybki, należy <u>przytrzymać przez chwilę</u> oba klawisze</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>m</kbd></td>
+										<td>Wyłączenie wyłącznika szybkiego</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>x</kbd></td>
+										<td>Załączenie przetwornicy</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>x</kbd></td>
+										<td>Wyłączenie przetwornicy</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>c</kbd></td>
+										<td>Załączenie sprężarki powietrza</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>c</kbd></td>
+										<td>Wyłączenie sprężarki powietrza</td>
+										<td>-</td>
+							</tr>
+
+
+							<tr>
+										<td><kbd>d</kbd></td>
+										<td>Przestawienie nastawnika kierunkowego o jedną pozycję do przodu</td>
+										<td>Początkowo nastawnik kierunku znajduje się w położeniu neutralnym</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>r</kbd></td>
+										<td>Przestawienie nastawnika kierunkowego o jedną pozycję do tyłu</td>
+										<td>Początkowo nastawnik kierunku znajduje się w położeniu neutralnym</td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><b><span style="color: #0000ff;">Klawisz</span></b></td>
+										<td><b><span style="color: #0000ff;">Wywoływana funkcja</span></b></td>
+										<td><b><span style="color: #0000ff;">Komentarz</span></b></td>
+							</tr>
+							
+							<tr>
+										<td colspan="3"><b><span style="color: #0000ff;">Obsługa zaworu maszynisty FV4a</span></b></td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Num .</kbd></td>
+										<td>Ustawienie zaworu maszynisty na pozycję napełniania uderzeniowego</td>
+										<td>Popularna "fala" :)</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Num 4</kbd></td>
+										<td>Ustawienie zaworu maszynisty na pozycję jazda</td>
+										<td>Pozycja neutralna stosowana podczas jazdy</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Num 3</kbd></td>
+										<td>Ustawienie zaworu maszynisty na pozycję o większym stopniu hamowania</td>
+										<td>Zwiększenie siły hamowania, wielkość skoku zależy od czasu naciskania klawisza</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Num 9</kbd></td>
+										<td>Ustawienie zaworu maszynisty na pozycję o mniejszym stopniu hamowania</td>
+										<td>Zmniejszenie siły hamowania, wielkość skoku zależy od czasu naciskania klawisza</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Num 2</kbd></td>
+										<td>Ustawienie zaworu maszynisty na pozycję pierwszego stopnia hamowania</td>
+										<td>Odpowiada półsekundowemu użyciu [Num 3] z pozycji jazda (pierwszy stopień hamowania)</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Num 5</kbd></td>
+										<td>Ustawienie zaworu maszynisty na pozycję hamowania pełnego</td>
+										<td>Odpowiada dwusekundowemu użyciu [Num 3] z pozycji jazda</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Num 8</kbd></td>
+										<td>Ustawienie zaworu maszynisty na pozycję hamowania uzupełniającego</td>
+										<td>Odpowiada dwuipółsekundowemu użyciu [Num 3] z pozycji jazda (hamowanie uzupełniające)</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Num 0</kbd></td>
+										<td>Ustawienie zaworu maszynisty na pozycję hamowania nagłego</td>
+										<td>Użyj, aby zahamować pociąg w krytycznych sytuacjach (hamowanie awaryjne)</td>
+							</tr>
+							
+							<tr>
+										<td>3 × <kbd>Num 9</kbd> z pozycji napełniania lub <kbd>Ctrl</kbd> + <kbd>Num 5</kbd></td>
+										<td>Ustawienie zaworu maszynisty na pozycję odcięcia</td>
+										<td>Zawór maszynisty ustawiamy na odcięcie przy zmianie kabiny, zanim wybierzemy [Home] (lub [End]) oraz gdy jedziemy w lokomotywie popychającej (patrz scenariusz moczniki_popych)</td>
+							</tr>							
+
+
+							<tr>
+										<td><kbd>Num 6</kbd></td>
+										<td>Odluźniacz hamulca lokomotywy</td>
+										<td>Odhamowanie samej lokomotywy lub przywrócenie zasilania zaworu maszynisty</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Num 1</kbd></td>
+										<td>Ustawienie kranu hamulca pomocniczego na następną pozycję</td>
+										<td>Zwiększenie siły hamowania. W EZT służy do obsługi hamulca ręcznego</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Num 7</kbd></td>
+										<td>Ustawienie kranu hamulca pomocniczego na poprzednią pozycję</td>
+										<td>Zmniejszenie siły hamowania. W EZT służy do obsługi hamulca ręcznego</td>
+							</tr>
+
+							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>Num 3</kbd>/<kbd>Num 9</kbd></td>
+										<td>Nastawianie regulatora ciśnienia</td>
+										<td>Można odpowiednio regulować ciśnienie na pozycji jazdy</td>
+							</tr>
+							
+
+							
+							
+							<tr>
+										<td><b><span style="color: #0000ff;">Klawisz</span></b></td>
+										<td><b><span style="color: #0000ff;">Wywoływana funkcja</span></b></td>
+										<td><b><span style="color: #0000ff;">Komentarz</span></b></td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>b</kbd></td>
+										<td>Ustawienie trybu pracy hamulca na osobowy (P)<!-- Załączenie opóźnienia hamulców --></td>
+										<td><!-- Dotyczy tylko lokomotyw.-->Nie dotyczy EZT. Tryb osobowy (P) jest ustawieniem domyślnym. Stosujemy go w przypadku ciągnięcia składów pasażerskich</td>
+							</tr>
+
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>b</kbd></td>
+										<td>Ustawienie trybu pracy hamulca na pospieszny (R)</td>
+										<td><!-- Dotyczy tylko lokomotyw.-->Nie dotyczy EZT. Stosujemy go w przypadku ciągnięcia składów pospiesznych.</td>
+							</tr>							
+
+							
+							<tr>
+										<td><kbd>b</kbd></td>
+										<td>Ustawienie trybu pracy hamulca na towarowy (G)</td>
+										<td><!-- Dotyczy tylko lokomotyw.-->Nie dotyczy EZT. Stosujemy go w przypadku ciągnięcia składów towarowych</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>f</kbd></td>
+										<td>Załączenie rozruchu wysokiego</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>f</kbd></td>
+										<td>Załączenie rozruchu niskiego</td>
+										<td>-</td>
+							</tr>
+	
+							<tr>
+										<td><kbd>l</kbd></td>
+										<td>Wyłącznik styczników liniowych</td>
+										<td>Pozwala na szybkie odcięcie dopływu prądu do silników trakcyjnych</td>
+							</tr>
+							
+							<!--
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>L</kbd></td>
+										<td>Załączenie styczników liniowych</td>
+										<td>-</td>
+							</tr>
+							-->
+							
+							<tr>
+										<td><kbd>Num +</kbd></td>
+										<td>Ustawienie nastawnika jazdy na pozycję następną</td>
+										<td>W stosunku do pozycji poprzedniej</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Num -</kbd></td>
+										<td>Ustawienie nastawnika jazdy na pozycję poprzednią</td>
+										<td>W stosunku do pozycji poprzedniej</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Num /</kbd></td>
+										<td>Ustawienie nastawnika bocznikowania na pozycję następną</td>
+										<td>W stosunku do pozycji poprzedniej</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Num *</kbd></td>
+										<td>Ustawienie nastawnika bocznikowania na pozycję poprzednią</td>
+										<td>W stosunku do pozycji poprzedniej</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>n</kbd></td>
+										<td>Odblokowanie przekaźnika nadmiarowego silników</td>
+										<td>Tylko na zerowej pozycji nastawnika jazdy i bocznikowania</td>
+							</tr>
+
+						
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>n</kbd></td>
+										<td>Odblokowanie przekaźnika nadmiarowego przetwornicy i ogrzewania</td>
+										<td>Działa tylko, gdy hebelek przetwornicy jest w pozycji "wyłączony"</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>z</kbd></td>
+										<td>Pokazywanie prądów w drugim członie</td>
+										<td>Dotyczy tylko ET41</td>
+							</tr>							
+							
+							
+							<tr>
+										<td><b><span style="color: #0000ff;">Klawisz</span></b></td>
+										<td><b><span style="color: #0000ff;">Wywoływana funkcja</span></b></td>
+										<td><b><span style="color: #0000ff;">Komentarz</span></b></td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>i</kbd></td>
+										<td>Włączenie reflektora prawego (światło białe)</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>i</kbd></td>
+										<td>Wyłączenie reflektora prawego (światło białe)</td>
+										<td>W przypadku wcześniej włączonego reflektora</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>y</kbd></td>
+										<td>Włączenie reflektora lewego (światło białe)</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>y</kbd></td>
+										<td>Wyłączenie reflektora lewego (światło białe)</td>
+										<td>W przypadku wcześniej włączonego reflektora</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>u</kbd></td>
+										<td>Włączenie reflektora górnego (światło białe)</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>u</kbd></td>
+										<td>Wyłączenie reflektora górnego (światło białe)</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>i</kbd></td>
+										<td>Włączenie reflektora prawego (światło czerwone)</td>
+										<td>W przypadku wyłączonego światła białego</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>i</kbd></td>
+										<td>Wyłączenie reflektora prawego (światło czerwone)</td>
+										<td>W przypadku włączonego reflektora (światło czerwone)</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>y</kbd></td>
+										<td>Włączenie reflektora lewego (światło czerwone)</td>
+										<td>W przypadku wyłączonego światła białego</td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>y</kbd></td>
+										<td>Wyłączenie reflektora lewego (światło czerwone)</td>
+										<td>W przypadku włączonego reflektora (światło czerwone)</td>
+							</tr>
+							
+							
+							<tr>
+										<td colspan="3"><b><span style="color: #0000ff;">Obsługa tylnych reflektorów</span></b> – dotyczy: SM03, SM31, SM40, SM42, SP42, TEM2, TEM2U</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd></td>
+										<td>Włączenie tylnego reflektora prawego (światło białe)</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>i</kbd></td>
+										<td>Wyłączenie tylnego reflektora prawego (światło białe)</td>
+										<td>W przypadku wcześniej włączonego reflektora</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>y</kbd></td>
+										<td>Włączenie tylnego reflektora lewego (światło białe)</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>y</kbd></td>
+										<td>Wyłączenie tylnego reflektora lewego (światło białe)</td>
+										<td>W przypadku wcześniej włączonego reflektora</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>u</kbd></td>
+										<td>Włączenie tylnego reflektora górnego (światło białe)</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>u</kbd></td>
+										<td>Wyłączenie tylnego reflektora górnego (światło białe)</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>i</kbd></td>
+										<td>Włączenie tylnego reflektora prawego (światło czerwone)</td>
+										<td>W przypadku wyłączonego światła białego</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd></td>
+										<td>Wyłączenie tylnego reflektora prawego (światło czerwone)</td>
+										<td>W przypadku włączonego reflektora (światło czerwone)</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>y</kbd></td>
+										<td>Włączenie tylnego reflektora lewego (światło czerwone)</td>
+										<td>W przypadku wyłączonego światła białego</td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>y</kbd></td>
+										<td>Wyłączenie tylnego reflektora lewego (światło czerwone)</td>
+										<td>W przypadku włączonego reflektora (światło czerwone)</td>
+							</tr>
+						
+						
+							<tr>
+										<td><b><span style="color: #0000ff;">Klawisz</span></b></td>
+										<td><b><span style="color: #0000ff;">Wywoływana funkcja</span></b></td>
+										<td><b><span style="color: #0000ff;">Komentarz</span></b></td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>spacja</kbd></td>
+										<td>Zbijanie CA i SHP</td>
+										<td>Przytrzymanie tego klawisza powoduje uruchomienie testu czuwaka</td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><kbd>Enter</kbd></td>
+										<td>Załączenie hamulca przeciwpoślizgowego i piasecznicy</td>
+										<td>W przypadku poślizgu</td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><kbd>s</kbd></td>
+										<td>Załączenie piasecznicy</td>
+										<td>W przypadku poślizgu. Klawisz należy <u>przytrzymać przez chwilę</u>. Dźwięk piasecznicy nie odtwarza się</td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><kbd>a</kbd></td>
+										<td>Załączenie syreny (ton niski)</td>
+										<td>Stosujemy ku uciesze łowców Rp1</td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>a</kbd></td>
+										<td>Załączenie syreny (ton wysoki)</td>
+										<td>Stosujemy ku uciesze łowców Rp1</td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>h</kbd></td>
+										<td>Włączenie ogrzewania pociągu</td>
+										<td>-</td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><kbd>h</kbd></td>
+										<td>Wyłączenie ogrzewania pociągu</td>
+										<td>-</td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>,</kbd><!-- (&lt;) --></td>
+										<td>Otwieranie drzwi lewych</td>
+										<td>Tylko w przypadku EZT</td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><kbd>,</kbd></td>
+										<td>Zamykanie drzwi lewych</td>
+										<td>Tylko w przypadku EZT</td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>.</kbd><!-- (>) --></td>
+										<td>Otwieranie drzwi prawych</td>
+										<td>Tylko w przypadku EZT</td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><kbd>.</kbd></td>
+										<td>Zamykanie drzwi prawych</td>
+										<td>Tylko w przypadku EZT</td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><kbd>/</kbd></td>
+										<td>Sygnał zamykania drzwi</td>
+										<td>Tylko w przypadku EZT</td>
+							</tr>
+							
+							
+							<tr>
+										<td><b><span style="color: #0000ff;">Klawisz</span></b></td>
+										<td><b><span style="color: #0000ff;">Wywoływana funkcja</span></b></td>
+										<td><b><span style="color: #0000ff;">Komentarz</span></b></td>
+							</tr>
+							
+							<tr><td colspan="3">Klawisze do sterowania różnymi "ciekawostkami" (np. podświetlenie mierników, otwieranie okien w kabinie), tak zwane <b>universale</b>. Działają tylko w kabinach niektórych pojazdów. Proszę zapoznać się z listą taboru, który posiada działające universale. <a href="http://eu07.pl/theme/Maszyna/dokumentacja/inne/readme_pliki/universale.html">Link</a>.</td></tr>
+
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>[</kbd><!-- ({) --></td>
+										<td>Włączenie universala 1</td>
+										<td>Nie działa w <a href="http://eu07.pl/theme/Maszyna/dokumentacja/inne/readme_pliki/debugmode.html">debugmode</a>!</td>
+							</tr>
+
+
+
+							<tr>
+										<td><kbd>[</kbd></td>
+										<td>Wyłączenie universala 1</td>
+										<td>Nie działa w <a href="http://eu07.pl/theme/Maszyna/dokumentacja/inne/readme_pliki/debugmode.html">debugmode</a>!</td>
+							</tr>
+
+
+
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>]</kbd><!-- (}) --></td>
+										<td>Włączenie universala 2</td>
+										<td>Nie działa w <a href="http://eu07.pl/theme/Maszyna/dokumentacja/inne/readme_pliki/debugmode.html">debugmode</a>!</td>
+							</tr>
+
+
+
+							<tr>
+										<td><kbd>]</kbd></td>
+										<td>Wyłączenie universala 2</td>
+										<td>Nie działa w <a href="http://eu07.pl/theme/Maszyna/dokumentacja/inne/readme_pliki/debugmode.html">debugmode</a>!</td>
+							</tr>
+
+
+
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>;</kbd><!-- (:) --></td>
+										<td>Włączenie universala 3</td>
+										<td>-</td>
+							</tr>
+
+
+
+							<tr>
+										<td><kbd>;</kbd></td>
+										<td>Wyłączenie universala 3</td>
+										<td>-</td>
+							</tr>
+
+
+
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>'</kbd><!-- (") --></td>
+										<td>Włączenie universala 4</td>
+										<td>-</td>
+							</tr>
+
+
+							<tr>
+										<td><kbd>'</kbd></td>
+										<td>Wyłączenie universala 4</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>←</kbd><!-- (") --></td>
+										<td>Przeniesienie kamery do widoku z lewego lusterka</td>
+										<td>-</td>
+							</tr>
+
+
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>→</kbd><!-- (") --></td>
+										<td>Przeniesienie kamery do widoku z prawego lusterka</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>;</kbd><!-- (") --></td>
+										<td>Włączenie światła w kabinie</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>;</kbd><!-- (") --></td>
+										<td>Wyłączenie światła w kabinie</td>
+										<td>-</td>
+							</tr>						
+
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>'</kbd><!-- (") --></td>
+										<td>Włączenie przyciemnienia światła w kabinie</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>'</kbd><!-- (") --></td>
+										<td>Wyłączenie przyciemnienia światła w kabinie</td>
+										<td>-</td>
+							</tr>											
+						<!--	
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>; (:)</kbd></td>
+										<td>Włączenie podświetlenia przyrządów na pulpicie</td>
+										<td>W większości pojazdów</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>;</kbd></td>
+										<td>Wyłączenie podświetlenia przyrządów na pulpicie</td>
+										<td>W większości pojazdów</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>] (})</kbd></td>
+										<td>Otwieranie drzwi kabiny maszynisty</td>
+										<td>Tylko w lokomotywach serii EU06 i EU07</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>]</kbd></td>
+										<td>Zamykanie drzwi kabiny maszynisty</td>
+										<td>Tylko w lokomotywach serii EU06 i EU07</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>[ ({)</kbd></td>
+										<td>Otwieranie okna kabiny maszynisty</td>
+										<td>Tylko w niektórych lokomotywach</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>[</kbd></td>
+										<td>Zamykanie okna kabiny maszynisty</td>
+										<td>Tylko w niektórych lokomotywach</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>' (")</kbd></td>
+										<td>Włączenie wiatraczka chłodzącego</td>
+										<td>W przypadku jego posiadania</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>'</kbd></td>
+										<td>Wyłączenie wiatraczka chłodzącego</td>
+										<td>W przypadku jego posiadania</td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>] (})</kbd></td>
+										<td>Otwieranie okna kabiny maszynisty</td>
+										<td>W przypadku lokomotyw SU46 i niektórych z serii EU07</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>]</kbd></td>
+										<td>Zamykanie okna kabiny maszynisty</td>
+										<td>W przypadku lokomotyw SU46 i niektórych z serii EU07</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>[ ({)</kbd></td>
+										<td>Opuszczenie osłonki przeciwsłonecznej</td>
+										<td>W przypadku lokomotyw SU46 i niektórych z serii EU07</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>[</kbd></td>
+										<td>Podniesienie osłonki przeciwsłonecznej</td>
+										<td>W przypadku lokomotyw SU46 i niektórych z serii EU07</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>[</kbd></td>
+										<td>Otwieranie okna kabiny maszynisty</td>
+										<td>Tylko w przypadku niektórych lokomotyw serii EU07</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>[ ({)</kbd></td>
+										<td>Zamykanie okna kabiny maszynisty</td>
+										<td>Tylko w przypadku niektórych lokomotyw serii EU07</td>
+							</tr>
+							
+						-->	
+							<tr>
+										<td><b><span style="color: #0000ff;">Klawisz</span></b></td>
+										<td><b><span style="color: #0000ff;">Wywoływana funkcja</span></b></td>
+										<td><b><span style="color: #0000ff;">Komentarz</span></b></td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><kbd>F1</kbd></td>
+										<td>Wyświetlenie aktualnej godziny</td>
+										<td>-</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>F2</kbd></td>
+										<td>Wyświetlenie informacji o najbliższym pojeździe</td>
+										<td>Przy odległości do 2 metrów od danego pojazdu (działa tylko przy widoku z zewnątrz)</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>F3</kbd></td>
+										<td>Wyświetlenie rozkładu jazdy</td>
+										<td>-</td>
+							</tr>
+							
+							<tr>
+										<td><kbd>F4</kbd></td>
+										<td>Wyjście z kabiny maszynisty</td>
+										<td>W przypadku przebywania w kabinie</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>F4</kbd></td>
+										<td>Wejście do kabiny maszynisty</td>
+										<td>W przypadku przebywania poza kabiną</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>F5</kbd></td>
+										<td>Wejście do innego pojazdu</td>
+										<td>W przypadku przebywania poza kabiną (klawisz <kbd>F4</kbd>) można wejść do znajdującego się w pobliżu innego pojazdu sterowanego przez AI, pod warunkiem, że on stoi albo porusza się z niewielką prędkością. Wejście i przejęcie pojazdu następuje poprzez naciśnięcie klawisza <kbd>F5</kbd>. Może być konieczne przyciśnięcie <kbd>F4</kbd> w celu odświeżenia widoku kabiny.</td>
+							</tr>
+						
+						
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>F6</kbd></td>
+										<td>Dwukrotne przyspieszenie symulacji</td>
+										<td>Działa tylko w trybie <a href="http://eu07.pl/theme/Maszyna/dokumentacja/inne/readme_pliki/debugmode.html">debugmode</a>.</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>F6</kbd></td>
+										<td>Pięciokrotne przyspieszenie symulacji</td>
+										<td>Działa tylko w trybie <a href="http://eu07.pl/theme/Maszyna/dokumentacja/inne/readme_pliki/debugmode.html">debugmode</a>.</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd></td>
+										<td>Dziesięciokrotne przyspieszenie symulacji</td>
+										<td>Działa tylko w trybie <a href="http://eu07.pl/theme/Maszyna/dokumentacja/inne/readme_pliki/debugmode.html">debugmode</a>.</td>
+							</tr>							
+							
+							
+							<tr>
+										<td><kbd>F7</kbd></td>
+										<td>Włączenie trybu wireframe</td>
+										<td>Dotyczy tylko trybu <a href="http://eu07.pl/theme/Maszyna/dokumentacja/inne/readme_pliki/debugmode.html">debugmode</a>.</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>F8</kbd></td>
+										<td>Wyświetlenie ilości FPS oraz ilości wyświetlonych sektorów</td>
+										<td>-</td>
+							</tr>
+							<!--
+							<tr>
+										<td><kbd>F9</kbd></td>
+										<td>Informacje pomocnicze</td>
+										<td>Niestety, ta opcja nie działa prawidłowo, proszę jej nie używać i nie sugerować się podawanymi przez nią informacjami</td>
+							</tr>							
+							-->
+							<tr>
+										<td><kbd>F9</kbd></td>
+										<td>Wyświetlanie wersji pliku wykonywalnego symulatora</td>
+										<td>-</td>
+							</tr>							
+							
+							<tr>
+										<td><kbd>F10</kbd></td>
+										<td>Nieodwracalne wyjście z symulatora</td>
+										<td>Po przyciśnięciu <kbd>F10</kbd> pojawi się prośba o potwierdzenie zakończenia programu klawiszem <kbd>y</kbd>. Naciśnięcie innego klawisza niż <kbd>y</kbd> w trybie <kbd>F10</kbd> wyłącza ten tryb.</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Pause/Break</kbd></td>
+										<td>Włączenie pauzy</td>
+										<td>Podczas symulacji</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Pause/Break</kbd></td>
+										<td>Wyłączenie pauzy</td>
+										<td>Po uprzednim jej załączeniu</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Esc</kbd></td>
+										<td>Włączenie przyspieszenia</td>
+										<td>Naciśnięcie tego klawisza powoduje pięciokrotne przyspieszenie czasu symulacji (przy liczeniu samej fizyki). Jest to szczególnie przydatnie podczas testowania fizyki i charakterystyk. Funkcja ta nie przyspiesza czasu. Działa tylko w trybie <a href="http://eu07.pl/theme/Maszyna/dokumentacja/inne/readme_pliki/debugmode.html">debugmode</a>.</td>
+							</tr>
+							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>Pause/Break</kbd></td>
+										<td>Wyzwolenie radiostopu</td>
+										<td>Użycie tej kombinacji powoduje wysłanie do wszystkich pojazdów w promieniu 2 km komendy Emerency_brake. Warunkiem jest jednak umieszczenie w CHK wpisu RadioStop=Yes.</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>-</kbd></td>
+										<td>Zmiana kanału radiotelefonu</td>
+										<td>Zmniejszenie</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>=</kbd></td>
+										<td>Zmiana kanału radiotelefonu</td>
+										<td>Zwiększenie</td>
+							</tr>
+							
+							
+							<tr>
+										<td><b><span style="color: #0000ff;">Klawisz</span></b></td>
+										<td><b><span style="color: #0000ff;">Wywoływana funkcja</span></b></td>
+										<td><b><span style="color: #0000ff;">Komentarz</span></b></td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>↑</kbd></td>
+										<td>Przesunięcie kamery w przód</td>
+										<td>Wewnątrz i na zewnątrz kabiny</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>↓</kbd></td>
+										<td>Przesunięcie kamery w tył</td>
+										<td>Wewnątrz i na zewnątrz kabiny</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>←</kbd></td>
+										<td>Przesunięcie kamery w lewo</td>
+										<td>Wewnątrz i na zewnątrz kabiny</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>→</kbd></td>
+										<td>Przesunięcie kamery w prawo</td>
+										<td>Wewnątrz i na zewnątrz kabiny</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>PageUp</kbd></td>
+										<td>Przesunięcie kamery w górę</td>
+										<td>Wewnątrz i na zewnątrz kabiny</td>
+							</tr>
+							
+							
+							
+							<tr>
+										<td><kbd>PageDown</kbd></td>
+										<td>Przesunięcie kamery w dół</td>
+										<td>Wewnątrz i na zewnątrz kabiny</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Insert</kbd></td>
+										<td>Łączenie sprzęgów</td>
+										<td>Na zewnątrz kabiny,<br>niedalej niż 2 metry od sprzęgów,<br>
+										tylko pojazdy do 500 m od prowadzonej lokomotywy i stojące na tym samym torze. W następnym dziale znajduje się opis podczepiania i odczepiania lokomotywy do/od składu.
+										<!-- niedalej niż 500 metrów od lokomotywy stojącej na tym samym torze --></td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Delete</kbd></td>
+										<td>Rozłączanie sprzęgów</td>
+										<td>Na zewnątrz kabiny,<br>niedalej niż 2 metry od sprzęgów,<br>
+										tylko pojazdy do 500 m od prowadzonej lokomotywy i stojące na tym samym torze. W następnym dziale znajduje się opis podczepiania i odczepiania lokomotywy do/od składu.
+										<!-- niedalej niż 500 metrów od lokomotywy stojącej na tym samym torze --></td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Num 1</kbd></td>
+										<td>Odhamowanie dowolnego pojazdu hamulcem pomocniczym</td>
+										<td>Na zewnątrz kabiny,<br>niedalej niż 2 metry od pojazdu,<br>
+										tylko pojazdy do 500 m od prowadzonej lokomotywy i stojące na tym samym torze
+										<!-- niedalej niż 500 metrów od lokomotywy stojącej na tym samym torze --></td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Num 7</kbd></td>
+										<td>Zahamowanie dowolnego pojazdu hamulcem pomocniczym</td>
+										<td>Na zewnątrz kabiny,<br>niedalej niż 2 metry od pojazdu,<br>
+										tylko pojazdy do 500 m od prowadzonej lokomotywy i stojące na tym samym torze
+										<!-- niedalej niż 500 metrów od lokomotywy stojącej na tym samym torze --></td>
+							</tr>
+
+							<tr>
+										<td><kbd>Ctrl</kbd>+<kbd>Num 6</kbd></td>
+										<td>Włączenie/wyłączenie hamulca pojazdu</td>
+										<td>Na zewnątrz kabiny,<br>niedalej niż 5 metrów od pojazdu,<br>
+										tylko pojazdy do 500 m od prowadzonej lokomotywy i stojące na tym samym torze
+										<!-- niedalej niż 500 metrów od lokomotywy stojącej na tym samym torze --></td>
+							</tr>
+
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>t</kbd></td>
+										<td>Zakładanie Sygnałów Końca Pociągu</td>
+										<td>Na zewnątrz kabiny,<br>
+										tylko pojazdy do 500 m od prowadzonej lokomotywy i stojące na tym samym torze. Uwaga: nie wszystkie pojazdy posiadają SKP.</td>
+							</tr>
+
+							<tr>
+										<td><kbd>t</kbd></td>
+										<td>Ściąganie Sygnałów Końca Pociągu</td>
+										<td>Na zewnątrz kabiny,<br>
+										tylko pojazdy do 500 m od prowadzonej lokomotywy i stojące na tym samym torze. Uwaga: nie wszystkie pojazdy posiadają SKP.</td>
+							</tr>
+
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>h</kbd></td>
+										<td>Zmiana nastawy hamulca próżny/ładowny</td>
+										<td>Na zewnątrz kabiny</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>h</kbd></td>
+										<td>Zmiana nastawy hamulca próżny/ładowny</td>
+										<td>Na zewnątrz kabiny</td>
+							</tr>
+							
+							
+							<tr>
+										<td><b><span style="color: #0000ff;">Klawisz</span></b></td>
+										<td><b><span style="color: #0000ff;">Wywoływana funkcja</span></b></td>
+										<td><b><span style="color: #0000ff;">Komentarz</span></b></td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>e</kbd></td>
+										<td>Odłączenie uszkodzonych silników</td>
+										<td>Działa tylko gdy znajdujemy się w przedziale maszynowym</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>v</kbd></td>
+										<td>Sprężarka pomocnicza</td>
+										<td>Działa tylko gdy znajdujemy się w przedziale maszynowym.<br>Podnosi ciśnienie w zbiorniku pantografów, co umożliwia ich podniesienie w sytuacji, gdy ciśnienie w ZG jest za małe</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Shift</kbd> + <kbd>q</kbd></td>
+										<td>Uruchomienie autpilota</td>
+										<td>Przekazujemy sterowanie komputerowi. <!--Uwaga: Autopilota można wyłączyć tylko w trybie <a href="debugmode.html">debugmode</a>. W trybie zwykłym użycie Shift + q powoduje bezpowrotne oddanie sterowania w ręce komputera - <b>następuje blokada klawiszy (nie można na przykład wyjść z kabiny).</b>--></td>
+							</tr>
+							
+							<tr>
+										<td><kbd>q</kbd></td>
+										<td>Wyłączenie autpilota</td>
+										<td>Po uprzednim jego włączeniu.<!--Autopilota można wyłączyć tylko w trybie <a href="debugmode.html">debugmode</a>.--></td>
+							</tr>
+							
+							<tr>
+										<td><kbd>End</kbd></td>
+										<td>Przejście w kierunku kabiny B</td>
+										<td>Kabina A, to najczęściej ta, w której rozpoczęto symulację</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>Home</kbd></td>
+										<td>Przejście w kierunku kabiny A</td>
+										<td>W przypadku przebywania w kabinie B</td>
+							</tr>
+							
+							
+							<tr>
+										<td><kbd>0</kbd><kbd>1</kbd><kbd>2</kbd>…<kbd>9</kbd></td>
+										<td>Obsługa różnych pozycji kamery</td>
+										<td>W trybie swobodnego latania (klawisz <kbd>F4</kbd>) przyciśnięcie klawisza z cyfrą (z górnej linii klawiatury [<b>nienumerycznej</b>]) zapamiętuje pozycję kamery, o ile nie była ona wcześniej ustawiona. Kolejne naciśnięcia będą przenosić do tego miejsca (zmiana nie będzie już możliwa). Pozycja kamery jest również zapisywana w logu, aby można było ją skopiować do scenerii.</td>
+							</tr>							
+						</tbody></table>
+						<!-- </center> -->
+<p>
+Oprócz tego kombinacje klawiszy: <kbd>Shift</kbd> + <kbd>0</kbd>, <kbd>Shift</kbd> + <kbd>1</kbd>, ..., <kbd>Shift</kbd> + <kbd>9</kbd> służą do uruchamiania zdarzeń, zdefiniowanych uprzednio w scenerii. Być może brzmi to groźnie i niezrozumiale. Spokojnie :) Chodzi o to, że nie na każdej trasie np. Shift + 2 zadziała. Nie należy się o to martwić, gdyż we wszystkich sceneriach, które do poprawnego działania wymagają użycia tych klawiszy stosowna informacja jest podana w starterze. Poza tym w MaSzynie 08.13 poprawiono większość scenerii i nie ma już konieczności używania tych kombinacji klawiszy.
+</p>
+Autorem klawiszologii jest Benek.<br>Uzupełnienie oraz poprawki merytoryczne: libertyn89, adsim.
+
+</div>
+
+
+</body></html>
