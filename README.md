@@ -1,5 +1,5 @@
 # eu07-en-docs
-English translation of the documents for the MaSzyna Simulator ( http://eu07.pl/dokumentacja?setlang=pl )
+English translation of the documents for the MaSzyna Simulator ( http://eu07.pl/dokumentacja?setlang=pl ) <br>
 Angielskie tłumaczenie dokumentacji MaSzyny 
 
 @kolejarz2009
