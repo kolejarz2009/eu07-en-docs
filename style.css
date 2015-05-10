@@ -1,0 +1,218 @@
+html, body {
+	background-color: #FFF;
+	color: #000;
+	margin: 20px;
+	padding: 0;
+	/*font-family: "Arial", "Tahoma";*/  /* ns */
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size : 14px;
+	text-align: left;	
+}
+
+#STRONA {
+	width: 778px;
+	border: 1px solid #000;
+	margin: auto;
+	overflow: hidden;
+	padding: 20px;
+}
+
+a:link, a:visited {
+	color: #0000FF;
+	text-decoration : none;
+}
+
+a:hover	{
+	color: #000;
+	text-decoration : underline; 
+}
+
+img {
+	border: 0;
+	margin-right: 20px;
+}
+
+
+p
+{
+	text-align: justify;
+}	
+
+h1
+{
+	font-size: 30pt;
+	text-transform: uppercase;
+	background: url('images/under_head.gif') repeat-x bottom;
+	padding: 0 0 7px 0;
+	font-family: "Lucida Sans Unicode", "Franklin Gothic Medium", "Verdana", "Helvetica", "Arial", "Tahoma";
+	text-align: left;
+	color: #474747;
+	text-shadow: 0px 1px 0px #e2e2e2;
+	font-weight: normal;
+}
+
+
+h2
+{
+	font-size: 13pt;
+	text-transform: uppercase;
+	padding: 0 0 7px 0;
+	font-family: "Lucida Sans Unicode", "Franklin Gothic Medium", "Verdana", "Helvetica", "Arial", "Tahoma";
+	text-align: left;
+	color: #005300;
+	text-shadow: 0px 1px 0px #e2e2e2;
+	font-weight: normal;
+}
+
+h3
+{
+	font-size: 9pt;
+	text-transform: uppercase;
+	color: #006f6f;
+	text-shadow: 0px 1px 0px #e2e2e2;
+	font-family: "Arial", "Tahoma";
+	margin: 15px 0 0 0;
+	padding: 0;
+}
+
+h4
+{
+	font-size: 11pt;
+	padding: 0 0 3px 0;
+	margin: 0;
+	font-family: "Verdana", "Helvetica", "Arial", "Tahoma";
+	text-align: left;
+	color: #474747;
+	text-shadow: 0px 1px 0px #e2e2e2;
+}
+
+
+.code
+{
+	color: #000000;
+	background-color: #dddddd;
+	font-family: "courier new", "times new roman", monospace;
+	font-size: x-small;
+	line-height: 1.3em;
+	/* Put a nice border around it. */
+	border: 1px solid #000000;
+	margin: 1px auto 1px auto;
+	padding: 1px;
+	width: 99%;
+	/* Don't wrap its contents, and show scrollbars. */
+	white-space: normal;
+	overflow: auto;
+	/* Stop after about 24 lines, and just show a scrollbar. */
+	max-height: 24em;
+}
+
+
+.quote
+{
+	color: #000000;
+	background-color: #FAFAFA;
+	border: 1px solid #000000;
+	margin: 1px;
+	padding: 1px;
+	font-size: small;
+	line-height: 1.4em;
+}
+
+.uwaga
+{
+	background-color: #ffddcc;	
+	margin: 20px;
+	padding: 30px;
+	border: 2px dashed #000000;
+}
+
+table
+{
+	background-color: #eee;
+	border: 2px solid #888;
+	border-collapse: collapse;
+}
+
+td
+{
+	padding: 5px;
+	border: 1px solid #888;
+}
+
+th
+{
+	padding: 5px;
+	border: 1px solid #888;
+	/*text-decoration: bold;*/	
+}
+
+
+
+.odpowiedz
+{
+	background-color: #ffeddc;	
+	margin: 10px;
+	margin-left: 50px;
+	padding: 8px;
+	border: 1px dashed #000000;
+}
+
+
+
+
+div.powrot
+{	
+	text-align: right;
+	margin: 10px;
+	padding: 10px;
+
+}
+
+div.powrot span
+{
+	padding: 5px;
+	background-color: #cccccc;
+	border: 1px solid #000000;
+}
+
+div.powrot a
+{
+	color: #000;
+}
+
+
+
+h2 a:hover 
+{
+	text-decoration: none;
+}
+
+h3 a:hover 
+{
+	text-decoration: none;
+}
+
+h4 a:hover 
+{
+	text-decoration: none;
+}
+
+kbd
+{
+	background-color: #fff;
+	border-left: 1px solid #cfcfcf;
+	border-top: 1px solid #cfcfcf;	
+	border-right: 2px solid #666;
+	border-bottom: 2px solid #666;	
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	color: #000;
+	FONT-FAMILY: sans-serif;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	line-height: 1.6;
+}
