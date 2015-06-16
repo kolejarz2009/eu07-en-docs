@@ -26,7 +26,7 @@ Angielskie tłumaczenie dokumentacji MaSzyny
 <li> en-license.html PC2015.04 = 0%
 <br> PL: licencja.html 
 <br>
-<li> en-readme.html PC2015 = ~ 11%
+<li> en-readme.html PC2015 = ~ 16%
 <br> PL: readme.html 
 <br>
 <li> en-universal.html PC2015.04 = 0%
