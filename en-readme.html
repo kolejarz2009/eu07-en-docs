@@ -10,7 +10,7 @@
 
 <div id="STRONA">
 
-<!-- Last translated line: 0460  : REMOVE UPON COMPLETE TRANSLATION-->
+<!-- Last translated line: 0578  : REMOVE UPON COMPLETE TRANSLATION-->
 <img src="inne/readme_pliki/img/logo.png" alt="Symulator Pojazdów Szynowych MaSzyna">
 <img src="inne/readme_pliki/img/424.png" alt="EP07-424">
 <h1 style="text-align: right;">MaSzyna 15.04</h1>
@@ -52,12 +52,12 @@
 		</li>
 		<li><a href="#7">Package information</a></li>
 			<ol>
-				<li><a href="#7,1">Improved and new EXE functions</a></li>
-				<li><a href="#7,2">New stuff / Nowości</a></li>
+				<li><a href="#7,1">Improvements and new EXE functions</a></li>
+				<li><a href="#7,2">New stuff</a></li>
 			</ol>	
 		<li><a href="#11">Remarks</a>
 			<ol>
-				<li><a href="#11,1">Why the pack doesn't have ...? </a></li>
+				<li><a href="#11,1">Why is ... not included in this pack?</a></li>
 				<li><a href="#11,2">Simulator executable &ndash; EXE</a></li>
 			</ol>
 		</li>	
@@ -457,15 +457,15 @@ With the help of <i>Rainsted.exe</i> launcher, which allows us to change the sky
 	<span><a href="#0">Contents</a></span>
 </div>
 
-<h2><a name="7">Informacje o wydaniu</a></h2>
+<h2><a name="7">Package information</a></h2>
 <p>
-MaSzyna 15.04 bazuje na wcześniejszych wydaniach (08.13, 01.13, PC2011, 2010, 2009). W tym wydaniu skupiono się przede wszystkim nad poprawianiem ustawienia sieci trakcyjnej na sceneriach, aby móc w pełni wykorzystać możliwości symulacji współpracy odbieraków prądu z siecią trakcyjną oraz uruchomienie prawidłowego sposobu zasilania sieci trakcyjnej.<br />
-Przygotowaniem zajmował się zespół w składzie:
+MaSzyna 15.04 is based on previous versions (08.13, 01.13, PC2011, 2010, 2009). This version has largely focused on fixing the layout of the catenary on the sceneries, in order to fully utilise the new feature of simulating the contact between the pantograph and the catenary, and improving the catenary power-supply chain.<br />
+Teams that prepared these packs:
 </p>
 
 <ul>
 PC2009, PC2010
-<li>Dolmio89 - koordynator zespołu</li>
+<li>Dolmio89 - team co-ordinator</li>
 <li>adsim</li>
 <li>Krzysiek626</li>
 <li>libertyn89</li>
@@ -476,7 +476,7 @@ PC2009, PC2010
 </ul>
 <ul>
 PC2011
-<li>adsim - koordynator zespołu</li>
+<li>adsim - team co-ordinator</li>
 <li>dejotzbych</li>
 <li>hunter</li>
 <li>jageer</li>
@@ -489,7 +489,7 @@ PC2011
 </ul>
 <ul>
 MaSzyna 01.13
-<li>Sawi - koordynator zespołu</li>
+<li>Sawi - team co-ordinator</li>
 <li>adsim</li>
 <li>jageer</li>
 <li>MasterYoda</li>
@@ -500,7 +500,7 @@ MaSzyna 01.13
 </ul>
 <ul>
 MaSzyna 08.13
-<li>Sawi - koordynator zespołu</li>
+<li>Sawi - team co-ordinator</li>
 <li>adsim</li>
 <li>popatrz</li>
 <li>szogun</li>
@@ -510,7 +510,7 @@ MaSzyna 08.13
 </ul>
 <ul>
 MaSzyna 15.04
-<li>Sawi - koordynator zespołu</li>
+<li>Sawi - team co-ordinator</li>
 <li>adsim</li>
 <li>Maciej</li>
 <li>Krzysiek626</li>
@@ -523,83 +523,61 @@ MaSzyna 15.04
 <li>Ra</li>
 </ul>
 <p>
-W pracach swój udział mieli również inni. Nie sposób tutaj wszystkich wymienić. Wszystkim, którzy przyczynili się do powstania paczki dziękujemy. 
+Many other people also contributed with their help, but we have no way of listing every single one ot them. We thank everybody that helped. 
 </p>
-<h3><a name="7,1">Usprawnienia i nowe funkcje EXE</a></h3>
+<h3><a name="7,1">Improvements and new EXE functions</a></h3>
 <ul>
-	<li>Rozbudowana obsługa zasilania sieci trakcyjnej — obecnie poszczególne sekcje sieci trakcyjnej mogą być zasilane dwustronnie, uwzględniane są spadki napięć na podstacjach na skutek ich obciążenia, możliwe jest przeciążenie podstacji.</li>
-    <li>Współpraca pantografu z siecią trakcyjną.</li>
-	<li>Reakcja AI na wskaźniki dotyczące sieci trakcyjnej.</li>
-	<li>Zmiana sterowania pozycjami jezdnymi — dodane zostało prawidłowe działanie wału kułakowego jednokierunkowego w EN57 oraz wału grupowego w ET22.</li>
-	<li>Losowe opóźnienie zdarzenia — możliwe jest uzyskanie losowego opóźnienia wykonywania zdarzenia.</li>
-	<li>Przeliczanie odległości LoD — jeśli rozdzielczość pionowa jest inna niż 768 pikseli, następuje dostosowanie odległości zmiany faz LoD (MinDist i MaxDist) do niej.</li>
-	<li>Poprawione podnoszenie się pantografów — obecnie następuje pomiar części składowych modelu pantografu i na tej podstawie wyliczane są parametry animacji.</li>
-	<li>Rozszerzona procedura uruchomienia — możliwe jest uruchomienie lokomotywy bez powietrza, co wymaga przestawienia kurka trójdrogowego oraz użycia małej sprężarki.</li>
-	<li>Wyświetlanie napisów dla dźwięków: po wpisaniu <b>lang en</b> w <i>eu07.ini</i> będą widoczne napisy do dźwięków po angielsku, po wpisaniu <b>lang cz</b> — po czesku, a <b>lang hu</b> — po węgiersku.</li>
-	<li>Zmiany w interpretacji parametru Opacity — obecnie dla wartości 100 submodel jest renderowany w fazie nieprzeźroczystych, gdzie nie są renderowane półprzeźroczystości.</li>
-    <li>Poprawiony ruch samochodów na skrzyżowaniach.</li>
-    <li>Dodana obsługa baterii.</li>
-    <li>Nowe lampki w niektórych kabinach. Dodano także licznik kilometrów, a obsługa animacji mierników została przebudowana tak, że można teraz w kabinie umieszczać dowolną liczbę prędkościomierzy, amperomierzy, woltomierzy, manometrów i obrotomierzy, które będą pokazywać tę samą wartość.</li>
-    <li>Wyciszanie zbędnych dźwięków.</li>
-    <li>Sygnały odjazdu od kierownika.</li>
-    <li>Niezależna animacja iglic w zwrotnicy pozwala symulować zwrotnice z zamknięciem nastawniczym.</li>
-	<li>Lokomotywa SM03 otrzymała możliwość pracy na dwóch zakresach biegów. Również AI zostało dostosowane do korzystania z tej opcji, a także do jazdy SN61.</li>
-	<li>Tekstura stacji docelowej oraz do czterech tekstur na modelach taboru. Tekstura stacji docelowej dobierana jest na podstawie rozkładu i może uwzględniać typ pojazdu (np. inna dla członu silnikowego niż rozrządczego EZT).</li>
-	<li>Ponadto zostało wprowadzone ogromnie dużo poprawek w fizyce pojazdów, a w szczególności w działaniu hamulców. Autorem niemal wszystkich jest kolega youBy.</li>
+	<li>Extended catenary power supply-chain usage and simulation — currently, each individual catenary sections can be powered from two sides,, voltage drops due to the loads being applied are taken into account, it's possible to overload the substations.</li>
+    <li>The pantograph and catenary interactions.</li>
+	<li>AI reacts to signs about the catenary.</li>
+	<li>Power conroller positions ware altered — added the correct operation of the single-way camshaft on the EN57 and the "group" cam shaft in ET22.</li>
+	<li>Random event delay — it is possible to get a delayed event execution.</li>
+	<li>LoD distance calculation— if the vertical resolution is other than 768 pixels, the LoD (MinDist and MaxDist) phase change distance will be calculated accordingly.</li>
+	<li>Improved pantograph animations — Currently the pantograph components are measured from the model, and based on these, the animation's parameters are calculated.</li>
+	<li>Extended start-up procedure — it is possible to start the loco up without the air, which requires the three-way valve to be switched and the use of auxilary compressor.</li>
+	<li>Display the sound subtitles: after adding <b>lang en</b> into <i>eu07.ini</i> file, the English subtitles will be visible, and if you add <b>lang cz</b> — czech, and <b>lang hu</b> — hungarian subtitles will be displayed instead.</li>
+	<li>Opacity parameter interpretation change — currently for values of 100 the submodel is rendered in the opaque phase, and semi-transparents / translucents are NOT rendered.</li>
+    <li>Improved car traffic behaviour on road intersections / junctions.</li>
+    <li>Battery usage was added.</li>
+    <li>New lamps ware added in some cabs. Kilometer(Mileage) displays ware added, and animation handling was rebuild, allowing to have loads of gauges (Speedometers, ammeters, voltmeters, manometers and rotometers), as long as they show the same value.</li>
+    <li>Muting of unnecessary sounds.</li>
+    <li>"All clear for departure" signals from the guard.</li>
+    <li>Independant point blade animation.</li>
+	<li>The SM03 loco can now work in two gear ranges. AI can also use this function, and also drive SN61.</li>
+	<li>Destionation display board texture and upto four textures on vehicle models. Destionation display board texture is choosen based on the timetable, and can differenciate between types of vehicles (ie different textures between Motor Coaches and Trailing Coaches).</li>
+	<li>Also, many vehicle physics fixes, especially in the brakes ware added. Nearly all ware done by comrade youBy.</li>
 </ul>
 
-<h3><a name="7,2">Nowości</a></h3>	
+<h3><a name="7,2">New Stuff</a></h3>	
 <ul>
-	<li>Poprawione ułożenie sieci trakcyjnej na większości scenerii;</li>
-	<li>Nowy opis scenerii Manewrowo 3;</li>
-	<li>Nowe tekstury lokomotyw i wagonów;</li>
-	<li>Poprawiona charakterystyka EP09;</li>
-	<li>Pokazywanie rozkładu jazdy pod <kbd>F3</kbd>;</li>
-	<li>Model lokomotywy BR285 z kabiną;</li>
-	<li>Model lokomotywy ST43 z kabiną;</li>
-        <li>Nowe scenariusze;</li>
-        <li>Liczne poprawki dla scenerii.</li>
+	<li>Catenary positions was fixed on majority of sceneries;</li>
+	<li>New Polish description of Manewrowo 3 scenery;</li>
+	<li>New loco and wagon textures;</li>
+	<li>Improved EP09 characteristics;</li>
+	<li>Timetable is shown after pressing <kbd>F3</kbd>;</li>
+	<li>The BR285 loco model, with the cab;</li>
+	<li>The ST43 loco model with the cab;</li>
+        <li>New scenarios;</li>
+        <li>Numerous fixes for the sceneries.</li>
 </ul>
 	
 <div class="uwaga">
 
-<b>Ważna uwaga</b><br>
-Po załadowaniu kabiny rozpoczynamy symulację w pozycji stojącej, tak jakbyśmy dopiero co weszli drzwiami do kabiny. Aby usiąść przed pulpitem sterowniczym, należy przycisnąć prawy przycisk myszy. 
+<b>Important notice</b><br>
+When the cab has laoded, we begin the simulation in the standing position, as if we just entered the cab through the doors. To sit down in front of the controls, press right mouse button. 
 </div>	
 
 <div class="powrot"> 
-	<span><a href="#0">Spis treści</a></span>
+	<span><a href="#0">Contents</a></span>
 </div>
-<h2><a name="11">Uwagi końcowe</a></h2>
-<h3><a name="11,1">Dlaczego w paczce nie ma...?</a></h3>
+<h2><a name="11">Remarks</a></h2>
+<h3><a name="11,1">Why is ... not included in this pack?</a></h3>
 <p>
-Aby zrozumieć dlaczego paczka nie zawiera wszystkich dodatków wydanych od początku istnienia symulatora należy zdać sobie sprawę, że przez kilka lat w 
+In order to understand why the packs don't contain all the add-ons published from the start of the existance of the Simulator, one needs to know that for a couple of years, when it comes to add-on creation, there was simply only chaos. Add-ons often ware not tested before being published (there ware no standards, norms etc), which ment that they had errors, ware incomplete and often, ware incompatible with each other (often adding one scenery, broke all the remaining sceneries). Additionally, addons ware often hosted on external servers, which removed them after some time, which caused the forum to was full of dead links, instead of addons.
 
-kwestii wydawania dodatków do MaSzyny panował totalny chaos. Dodatki nie przechodziły często żadnych testów przed publikacją (nie istniały żadne normy i 
+Dopiero pod koniec 2008 roku dzięki Ra udało się w znacznym stopniu uporządkować sytuację poprzez zgromadzenie wszystkiego w "Katalogu dodatków" na serwerze eu07.pl. Jednak samo zebranie plików w jednym miejscu to zbyt mało. Nastąpiła też reorganizacja sposobu wydawania dodatków (od końca 2008 roku każdy dodatek musi przed publikacją przejść obowiązkowe testy). Jednak problem niekompatybilności pozostał, bowiem brakowało oficjalnej i aktualnej paczki, która mogłaby stanowić jakiś punkt odniesienia dla testujących i tworzących dodatki (ostatnia nieoficjalna i aktualna paczka powstała w połowie 2006 roku, natomiast oficjalna w 2004). Dlatego też na początku 2009 roku zebrała się grupa ludzi, którzy przez kilka miesięcy wybierali z wydanych wcześniej dodatków te wartościowe i niezawierające zbyt dużej ilości błędów dodatki, a następnie pracowali nad ich wzajemną kompatybilnością poprzez usunięcie istotnych błędów, uzupełnienie brakujących plików, itp. Tym sposobem powstała Paczka Całościowa 2009, 2010, 2011 wraz z ulepszeniami Service Pack, MaSzyna 01.13 i MaSzyna 08.13.
 
-standardy), co sprawiało, że posiadały błędy, były niekompletne i często ze sobą niekompatybilne (często wgranie jednej scenerii powodowało nieprawidłowe 
-
-działanie innych tras). Dodatkowym problemem był fakt, iż dodatki były umieszczane na rozmaitych serwerach zewnętrznych, z których często pliki były usuwane 
-
-po jakimś czasie, co sprawiło, że na forum zamiast dodatków pozostawały tylko martwe linki do nich. Dopiero pod koniec 2008 roku dzięki Ra udało się w 
-
-znacznym stopniu uporządkować sytuację poprzez zgromadzenie wszystkiego w "Katalogu dodatków" na serwerze eu07.pl. Jednak samo zebranie plików w jednym 
-
-miejscu to zbyt mało. Nastąpiła też reorganizacja sposobu wydawania dodatków (od końca 2008 roku każdy dodatek musi przed publikacją przejść obowiązkowe 
-
-testy). Jednak problem niekompatybilności pozostał, bowiem brakowało oficjalnej i aktualnej 
-
-paczki, która mogłaby stanowić jakiś punkt odniesienia dla testujących i tworzących dodatki (ostatnia nieoficjalna i aktualna paczka powstała w połowie 2006 
-
-roku, natomiast oficjalna w 2004). Dlatego też na początku 2009 roku zebrała się grupa ludzi, 
-
-którzy przez kilka miesięcy wybierali z wydanych wcześniej dodatków te wartościowe i niezawierające zbyt dużej ilości błędów dodatki, a następnie pracowali 
-
-nad ich wzajemną kompatybilnością poprzez usunięcie istotnych błędów, uzupełnienie brakujących plików, itp. Tym sposobem powstała Paczka Całościowa 2009, 2010, 2011 wraz z ulepszeniami Service Pack, MaSzyna 01.13 i MaSzyna 08.13.
-
-Najnowsza paczka (o nazwie MaSzyna 15.04) stanowi kontynuację tychże prac i podobnie jak jej poprzedniczka 
-
-nie zawiera dodatków niskiej jakości czy też wersji beta. 
+Najnowsza paczka (o nazwie MaSzyna 15.04) stanowi kontynuację tychże prac i podobnie jak jej poprzedniczka nie zawiera dodatków niskiej jakości czy też wersji beta. 
 <div class="powrot"> 
 	<span><a href="#0">Spis treści</a></span>
 </div>
