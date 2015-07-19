@@ -20,13 +20,13 @@ Angielskie tłumaczenie dokumentacji MaSzyny
 <li> en-exe-pc2011.html PC2015.04 = 0%
 <br> PL: exe-pc2011.html 
 <br>
-<li> en-keys.html PC2015.04 = ~90%
+<li> en-keys.html PC2015.04 = 99%
 <br> PL: klawiszologia.html 
 <br>
-<li> en-license.html PC2015.04 = 0%
+<li> en-license.html PC2015.04 = 63%
 <br> PL: licencja.html 
 <br>
-<li> en-readme.html PC2015 = ~ 59%
+<li> en-readme.html PC2015 = ~ 70%
 <br> PL: readme.html 
 <br>
 <li> en-universal.html PC2015.04 = 0%
