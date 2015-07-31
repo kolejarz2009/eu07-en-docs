@@ -25,13 +25,13 @@ Angielskie tłumaczenie dokumentacji MaSzyny
 <br> PL: klawiszologia.html     REVISION: -
 <br>
 <li><FONT COLOR="00FF00"> en-license.html PC2015.04 = 100% </FONT>
-<br> PL: licencja.html          REVISION: 001
+<br> PL: licencja.html          REVISION: 003
 <br>
-<li><FONT COLOR="FFFF00"> en-readme.html PC2015.04 = ~ 70% </FONT>
+<li><FONT COLOR="FFFF00"> en-readme.html PC2015.04 = 79% </FONT>
 <br> PL: readme.html            REVISION: -
 <br>
 <li><FONT COLOR="000000"> en-universal.html PC2015.04 = 0% </FONT>
 <br> PL: universale.html        REVISION: -
 <br><br>
-It hopefully will be translated before the end of summer. No promises though!
+It hopefully will be translated before the end of summer. No promises though! <br>
 Mam nadzieję że do końca lata zostanie przetłumaczone. Nie daje żadnej gwarancji!
