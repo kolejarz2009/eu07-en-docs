@@ -10,7 +10,7 @@
 
 <div id="STRONA">
 
-<!-- Last translated line: 0805  : REMOVE UPON COMPLETE TRANSLATION-->
+<!-- Last translated line: 0820  : REMOVE UPON COMPLETE TRANSLATION-->
 <img src="inne/readme_pliki/img/logo.png" alt="Symulator Pojazdów Szynowych MaSzyna / MaSzyna - Railway Vehicle Simulator">
 <img src="inne/readme_pliki/img/424.png" alt="EP07-424">
 <h1 style="text-align: right;">MaSzyna 15.04</h1>
@@ -636,7 +636,7 @@ In order to get to the answer, please press on the question.
 <li><a href="#14,20">I followed the above advice, yet my FPS is really low (< 10FPS). How do I fix it?</a></li>
 <li><a href="#14,21">How does one read the Hasler (speedometer) tape, from their drive in the MaSzyna?</a></li>
 <li><a href="#14,22">How to install new addons?</a></li>
-<li><a href="#14,23">I added a new vehicle, but I can't see it in the Rainsted, on any of the routes.</a></li>
+<li><a href="#14,23">I added a new vehicle, but I can't see it in the Rainsted, or on any of the routes.</a></li>
 <li><a href="#14,24">I can't see the Traxx loco in the launcher, even though I placed it in the scenerio, as per the "How to change the consist in the scenario?" chapter of the Control section.</a></li>
 <li><a href="#14,25">Will the Traxx or the Eurosprinter ever get a (drivable) cab?</a></li>
 <li><a href="#14,26">My laptop doesn't have a numeric keypad, so how do I drive a loco/unit?</a></li>
@@ -654,7 +654,7 @@ In order to get to the answer, please press on the question.
 <li><a href="#14,39">I press the <kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>m</kbd>, but the Fast Switch doesn't enable.</a></li>
 <li><a href="#14,40">I press the <kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>c</kbd>, but the Compressor doesn't turn on.</a></li>
 <li><a href="#14,41">I want to exit the Simulator, but using <kbd>F10</kbd> and then <kbd>y</kbd> doens't work.</a></li>
-<li><a href="#14,42">Wstawiłem do scenerii EN57 (lub inny EZT), ale nie mogę nim ruszyć z miejsca.</a></li>
+<li><a href="#14,42">I placed the EN57 (or any other EMU) into the scenario, but I can't get it to move.</a></li>
 <li><a href="#14,43">I have a problem with EN57 (or any other EMUs). I placed it into the scenario, but when it turns on, I am placed in the passenger vestibule, and not the cab.</a></li>
 <li><a href="#14,44">When driving, the cab shakes. How do I fix it?</a></li>
 <li><a href="#14,45">Can you save the simulation, before exiting the Sim?</a></li>
@@ -801,22 +801,22 @@ In case of files with RAR, ZIP and 7-ZIP file extensions, they are simply to be 
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
-<div class="pytanie"><a name="14,23">I added a new vehicle, but I can't see it in the Rainsted, on any of the routes.</a></div> 
-<div class="odpowiedz">Pojazdy same z siebie nie pojawiają się w istniejących sceneriach. Jeśli wgrałeś nową teksturę albo model musisz ją umieścić w jakiejś scenerii. Jak to zrobić? See: <a href="#5,4">MaSzyna 15.04 Readme file, "Control" section, "How to change the consist in the scenario?".</a></div>
+<div class="pytanie"><a name="14,23">I added a new vehicle, but I can't see it in the Rainsted, or on any of the routes.</a></div> 
+<div class="odpowiedz">The vehicles won't just show up automatically in the existing scenarios. If you installed a new texture or a new model, you need to place manually in the scenario. How to do it? See: <a href="#5,4">MaSzyna 15.04 Readme file, "Control" section, "How to change the consist in the scenario?".</a></div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
-<div class="pytanie"><a name="14,24">Nie widzę w starterze lokomotywy Traxx, mimo iż wstawiłem ją do scenerii zgodnie z poradnikiem "Jak zmienić skład w scenerii?" z rozdziału Informacje użytkowe.</a></div> 
-<div class="odpowiedz">Ta lokomotywa służy tylko i wyłącznie do prowadzenia przez komputer gdyż nie posiada kabiny. W starterze Rainsted składy, na czele których znajduje się lokomotywa, której nie można poprowadzić są celowo niewidoczne, by użytkownicy nie próbowali wybierać lokomotywy którą nie da się pojechać. Możesz przełączyć się w wyższy tryb pracy (zakładka Ustawienia). Wtedy zobaczysz Traxxa w starterze, ale próba załadowania go do prowadzenia skończy się komunikatem Cab not initialised, bowiem po prostu nie można prowadzić lokomotywy, która w symulatorze nie posiada kabiny.</div>
+<div class="pytanie"><a name="14,24">I can't see the Traxx loco in the launcher, even though I placed it in the scenerio, as per the "How to change the consist in the scenario?" chapter of the Control section.</a></div> 
+<div class="odpowiedz">That locomotive is intended to be driven by the AI, since it does not have a cab. In the Rainsted, consists that are headed by an cab-less loco, are intentionally invisible, so that the users would not try to select a loco that can't be driven. You can change into more advanced work mode (Settings tab). Then you will see Traxx in the launcher, but trying to select it will lead to a "Cab not initialised" message, since you simply can not drive any locos that do not have a cab in the Simulator.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
-<div class="pytanie"><a name="14,25">Czy powstanie kabina do Traxxa albo Husarza?</a></div> 
-<div class="odpowiedz">Nie powstanie żadna kabina do każdego nowego pojazdu, który ma rozruch inny niż oporowy. W chwili obecnej symulator ich po prostu nie obsługuje. Do zaimplementowania rozruchu impulsowego brakuje wielu istotnych informacji jak na przykład charakterystyki trakcyjne, różnorakie wykresy, itp.</div>
+<div class="pytanie"><a name="14,25">Will the Traxx or the Eurosprinter ever get a (drivable) cab?</a></div> 
+<div class="odpowiedz">No cabs will ever be creatd for any vehicles that use other than Rheostatic starting system. In this moment, the Simulator simply does not support those systems. In order to implement the Impulse starting system, we are missing vital information like traction characterisitics, different diagrams, etc.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
-<div class="pytanie"><a name="14,26">Posiadam laptopa bez klawiatury numerycznej, jak zatem sterować lokomotywą/EZT?</a></div> 
+<div class="pytanie"><a name="14,26">My laptop doesn't have a numeric keypad, so how do I drive a loco/unit?</a></div> 
 <div class="odpowiedz">Zapewne posiadasz przycisk <kbd>Fn</kbd>. Skorzystaj więc z kombinacji: <kbd>Fn</kbd>&nbsp;+&nbsp;pożądany&nbsp;klawisz. Nie można samodzielnie zdefiniować klawiszy, dlatego - jeśli używanie <kbd>Fn</kbd> jest dla ciebie zbyt uciążliwe - dla większej wygody możesz zakupić do laptopa dodatkową klawiaturę na USB.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
