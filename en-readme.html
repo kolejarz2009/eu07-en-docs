@@ -656,14 +656,14 @@ In order to get to the answer, please press on the question.
 <li><a href="#14,41">I want to exit the Simulator, but using <kbd>F10</kbd> and then <kbd>y</kbd> doens't work.</a></li>
 <li><a href="#14,42">I placed the EN57 (or any other EMU) into the scenario, but I can't get it to move.</a></li>
 <li><a href="#14,43">I have a problem with EN57 (or any other EMUs). I placed it into the scenario, but when it turns on, I am placed in the passenger vestibule, and not the cab.</a></li>
-<li><a href="#14,44">When driving, the cab shakes. How do I fix it?</a></li>
+<!--<li><a href="#14,44">When driving, the cab shakes. How do I fix it?</a></li>-->
 <li><a href="#14,45">Can you save the simulation, before exiting the Sim?</a></li>
 <li><a href="#14,46">How do I stop the Simulation? I pressed <kbd>Esc</kbd>, but it does nothing.</a></li>
 <li><a href="#14,47">When will a new version, new addons come out?</a></li>
 <li><a href="#14,48">When I turn on the compressor, everything turns off, and nothing happens. How do I fix that?</a></li>
 <li><a href="#14,49">I can't "fill" the Main Pipe after braking / CA/SHP turning on.</a></li>
 <li><a href="#14,50">A while after releasing the brakes, some pressure goes into the loco brake cylinders.</a></li>
-<li><a href="#14,51">While in motion, the loco suddenly turned off / "extinguished".</a></li>
+<li><a href="#14,51">When in motion, the loco suddenly turned off / "extinguishes".</a></li>
 <li><a href="#14,52">When starting off, the voltage suddenly drops to 0V.</a></li>
 <li><a href="#14,99">Translator's Note</a></li>
 </ul>
@@ -717,8 +717,7 @@ In order to get to the answer, please press on the question.
 
 <li>
 <div class="pytanie"><a name="14,9">How to turn on the batteries?</a></div> 
-<div class="odpowiedz">Exe from MaSzyna 15.04  (<i>eu07.exe</i> of 1263 kiB in size&ndash; authored by Ra and youBy) only simulates the batteries in a simplified manner. Batteies can be turned on by pressing <kbd>Shift</kbd> + <kbd>j</kbd>, which causes the SHP (AWS) to activate. To turn it off, you need to select a direction of the reverser.
-</div>
+<div class="odpowiedz">Exe from MaSzyna 15.04  (<i>eu07.exe</i> of 1263 kiB in size&ndash; authored by Ra and youBy) only simulates the batteries in a simplified manner. Batteies can be turned on by pressing <kbd>Shift</kbd> + <kbd>j</kbd>, which causes the SHP (AWS) to activate. To turn it off, you need to select a direction of the reverser.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
@@ -763,19 +762,18 @@ In order to get to the answer, please press on the question.
 
 <li>
 <div class="pytanie"><a name="14,18">Some time after turning on the Sim, the <kbd>y</kbd> and <kbd>/</kbd> keys stop working. Help?</a></div> 
-<div class="odpowiedz">Press <kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>Shift</kbd>.<br>
-In order to prevent such problems in the future, you can disable the keyboard shortcuts that change the keyboard layouts in your Operating System</div>
+<div class="odpowiedz">Press <kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>Shift</kbd>.<br>In order to prevent such problems in the future, you can disable the keyboard shortcuts that change the keyboard layouts in your Operating System</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
 <div class="pytanie"><a name="14,19">The Sim freezes and I have low FPS. What do I do?</a></div> 
 <div class="odpowiedz">In the <i>Rainsted.exe</i> launcher, go to Settings tab and <b>Uncheck</b> the following options:
 <ul>
-<li>zapisywanie przebiegu symulacji w log.txt,</li>
-<li>zapisywanie parametrów fizycznych pojazdów,</li>
-<li>poszukiwanie sieci trakcyjnej (włączona opcja może powodować spory spadek FPS na stacjach z rozbudowaną siecią trakcyjną).</li>
+<li>zapisywanie przebiegu symulacji w log.txt, [Save the simulation log in log.txt]</li>
+<li>zapisywanie parametrów fizycznych pojazdów, [Save physical parameters of the vehicles]</li>
+<li>poszukiwanie sieci trakcyjnej (włączona opcja może powodować spory spadek FPS na stacjach z rozbudowaną siecią trakcyjną).[Search for overhead catenary (Turned on might cause FPS to drop on stations with extensive catenary network)]</li>
 </ul>
-Poza tym, w opcjach karty graficznej wyłącz synchronizację pionową, filtrowanie anizotropowe oraz antyaliasing (wygładzanie krawędzi). Możesz także zmienić ustawienia sterownika na wydajność. Spróbuj także poeksperymentować ze sterownikami do karty graficznej. W przypadku stosunkowo nowych kart graficznych najlepiej zainstalować najnowsze sterowniki. Jeśli natomiast posiadasz starszą kartę, to starsze sterowniki mogą być lepszym rozwiązaniem. Jeśli masz stary komputer przed uruchomieniem MaSzyny wyłącz programy działające w tle (np. Gadu-Gadu, przeglądarka internetowa, program antywirusowy, odtwarzacz muzyki, itp.), gdyż będą one niepotrzebnie obniżać wydajność. Nie spodziewaj się jednak zbyt wiele po tych zabiegach, jeśli posiadasz zintegrowaną kartę graficzną.</div>
+Also, in the graphics driver, turn off the vertical synchronisation, anisotropic filtering and all the AA. Yoy could also set the graphics mode to performance. You might also want to experiment with different grpahics drivers. In the case of fairly new cards, it is recommended to use the newest drivers. However if you have an older card, then older drivers might be a better option. If you have an old comupter, then try to turn off all the software running in the background, like any IM, browsers, anti-virus software, music players, etc), since they will only unnecessarly lower the performance of the PC. Sadly, those changes will not cause a miracle rise in FPS, especially if you have an integrated GPU.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
@@ -785,17 +783,12 @@ Poza tym, w opcjach karty graficznej wyłącz synchronizację pionową, filtrowa
 
 <li>
 <div class="pytanie"><a name="14,21">How does one read the Hasler (speedometer) tape, from their drive in the MaSzyna?</a></div> 
-<div class="odpowiedz">In the <i>Rainsted.exe</i> launcher, go into the Settings tab, and <b>Check</b> the <i>Zapisywanie parametrów fizycznych pojazdów</i> option. For every vehicle in teh scenario, a [vehicle name].dat files will be generated, in the MaSzyna's main folder. in order to open such file, use the <i>htv.exe</i>, which is located in the <b>programy_na_potrzeby_symulatora</b> folder, and in the <b>odczyt_tasm_z_predkosciomierza</b> subfolder.
-</div>
+<div class="odpowiedz">In the <i>Rainsted.exe</i> launcher, go into the Settings tab, and <b>Check</b> the <i>Zapisywanie parametrów fizycznych pojazdów</i> option. For every vehicle in teh scenario, a [vehicle name].dat files will be generated, in the MaSzyna's main folder. in order to open such file, use the <i>htv.exe</i>, which is located in the <b>programy_na_potrzeby_symulatora</b> folder, and in the <b>odczyt_tasm_z_predkosciomierza</b> subfolder.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
 <div class="pytanie"><a name="14,22">How to install new addons?</a></div> 
-<div class="odpowiedz">
-<div class="uwaga">
-<b>Important notice</b><br>
-The description below, is only vaild for addons realeased after the 3rd of June 2013 only!!  Addons released earlier (such as sceneries(routes),skies, which are not included in the MaSzyna 15.04 release, are NOT compatible with it (15.04 version and above). It is because, for a long time, there ware no standards regulating the publication of addons (For more information, see: <a href="#11,1">MaSzyna 15.04 Readme file, "Remarks" section, "Why is ... not included in this pack?"</a>). If you do choose to install an older addon, remember that you are doing it on your own, and without any guarantees that it will work correctly with MaSzyna 15.04 (and above). remeber also, that we don't provide technical support for older addons. You do have many diagnosic applications, which may show you any missing files (for example Rainsted) and <a href="http://eu07.rainsted.com/archives/filefind.php">File finder</a> and <a href="http://eu07.rainsted.com/archives/">Add-on catalogue / Archive</a>, in which you MAY find those files (if they exist, that is).<br>Remeber also, that in MaSzyna 15.04 has a couple of new vehicle models. That's why, certain textures found in the Add-on Catalogue / Archive are not compatible with the new models (the difference in mapping)</div>
-In case of files with RAR, ZIP and 7-ZIP file extensions, they are simply to be downloaded and extracted (so that the corresponding folders would match up, ie <i>scenery</i> from the Addon, would end up in the <i>scenery</i> folder on the hard drive, <i>dynamic</i> to <i>dynamic</i> ('scenery' and 'dynamic' are only examples! - not every single add-on pack has these folders), etc.; In practice, it's best to extract the addon onto the main folder with MaSzyna). On top of this, you need to follow the instructions given by the author in the information file (in every single addon pack, there should be a <i>info.txt</i>, <i>readme.txt</i> or <i>czytajto.txt</i> file), thus making everything work, since all addons published (after the MaSzyna 15.04 release) on the eu07.pl forum, in either the 'Publikacje' and 'Download' sections, will fully work with MaSzyna 15.04.<br> In case of a .R_I extension, use the Rainsted launcher, which will automates the addon installation. The file (.R_I) should be dragged and dropped on top of Rainsted launcher icon. ('drag and drop' method). Then, begin the installation, by pressing the <b>Instaluj paczke / Install the pack</b> button on the right hand side of the window. Aftert eh install, a window will appear with the relevant infornation. Then, you need to use the <b>Check current vehicles</b> function, for  the "(Rainsted launcher, Current Vehicles tab).</div>
+<div class="odpowiedz"><div class="uwaga"><b>Important notice</b><br>The description below, is only vaild for addons realeased after the 3rd of June 2013 only!!  Addons released earlier (such as sceneries(routes),skies, which are not included in the MaSzyna 15.04 release, are NOT compatible with it (15.04 version and above). It is because, for a long time, there ware no standards regulating the publication of addons (For more information, see: <a href="#11,1">MaSzyna 15.04 Readme file, "Remarks" section, "Why is ... not included in this pack?"</a>). If you do choose to install an older addon, remember that you are doing it on your own, and without any guarantees that it will work correctly with MaSzyna 15.04 (and above). remeber also, that we don't provide technical support for older addons. You do have many diagnosic applications, which may show you any missing files (for example Rainsted) and <a href="http://eu07.rainsted.com/archives/filefind.php">File finder</a> and <a href="http://eu07.rainsted.com/archives/">Add-on catalogue / Archive</a>, in which you MAY find those files (if they exist, that is).<br>Remeber also, that in MaSzyna 15.04 has a couple of new vehicle models. That's why, certain textures found in the Add-on Catalogue / Archive are not compatible with the new models (the difference in mapping)</div>In case of files with RAR, ZIP and 7-ZIP file extensions, they are simply to be downloaded and extracted (so that the corresponding folders would match up, ie <i>scenery</i> from the Addon, would end up in the <i>scenery</i> folder on the hard drive, <i>dynamic</i> to <i>dynamic</i> ('scenery' and 'dynamic' are only examples! - not every single add-on pack has these folders), etc.; In practice, it's best to extract the addon onto the main folder with MaSzyna). On top of this, you need to follow the instructions given by the author in the information file (in every single addon pack, there should be a <i>info.txt</i>, <i>readme.txt</i> or <i>czytajto.txt</i> file), thus making everything work, since all addons published (after the MaSzyna 15.04 release) on the eu07.pl forum, in either the 'Publikacje' and 'Download' sections, will fully work with MaSzyna 15.04.<br> In case of a .R_I extension, use the Rainsted launcher, which will automates the addon installation. The file (.R_I) should be dragged and dropped on top of Rainsted launcher icon. ('drag and drop' method). Then, begin the installation, by pressing the <b>Instaluj paczke / Install the pack</b> button on the right hand side of the window. Aftert eh install, a window will appear with the relevant infornation. Then, you need to use the <b>Check current vehicles</b> function, for  the "(Rainsted launcher, Current Vehicles tab).</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
@@ -898,78 +891,62 @@ In case of files with RAR, ZIP and 7-ZIP file extensions, they are simply to be 
 
 <li><!-- http://eu07.pl/forum/index.php/topic,20066.0.html -->
 <div class="pytanie"><a name="14,42">I placed the EN57 (or any other EMU) into the scenario, but I can't get it to move.</a></div>
-<div class="odpowiedz">Najprawdopodobniej niezbyt uważnie zapoznałeś się z opisem wstawiania składów za pomocą startera Rainsted. Look here: <a href="#5,4"> MaSzyna 15.04 Readme file, "Control" section, "How to change the consist in the scenario?"</a> i zwróć uwagę na konieczność <b>ręcznej</b> zmiany obsady i&nbsp;sprzęgów w członach EZT.</div>
+<div class="odpowiedz">Most probably, you didn't closely follow the guide to placing the trains on the scenerios using the Rainsted launcher. Look here: <a href="#5,4"> MaSzyna 15.04 Readme file, "Control" section, "How to change the consist in the scenario?"</a> and notice the required <b>manual</b> change of the couplings and drivers in each of the EMU cars.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li> <!-- http://eu07.pl/forum/index.php/topic,19803.msg233291.html#msg233291 -->
-<div class="pytanie"><a name="14,43">Mam problem z EN57 (dotyczy także innych EZT). Wstawiłem go do scenerii, jednak po uruchomieniu symulatora włącza się nie kabina, ale środek składu (przedsionek).</a></div>
-<div class="odpowiedz">Najprawdopodobniej niezbyt uważnie zapoznałeś się z opisem wstawiania składów za pomocą startera Rainsted. Zajrzyj tutaj: <a href="#5,4">MaSzyna 15.04 Readme file, "Control" section, "How to change the consist in the scenario?"</a> i zwróć uwagę na konieczność <b>ręcznej</b> zmiany obsady i&nbsp;sprzęgów w członach EZT.</div>
+<div class="pytanie"><a name="14,43">I have a problem with EN57 (or any other EMUs). I placed it into the scenario, but when it turns on, I am placed in the passenger vestibule, and not the cab.</a></div>
+<div class="odpowiedz">Most probably, you didn't closely follow the guide to placing the trains on the scenerios using the Rainsted launcher. Look here: <a href="#5,4"> MaSzyna 15.04 Readme file, "Control" section, "How to change the consist in the scenario?"</a> and notice the required <b>manual</b> change of the couplings and drivers in each of the EMU cars.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
+<!--
+<div class="pytanie"><a name="14,44">When driving, the cab shakes. How do I fix it?</a></div>
+<div class="odpowiedz">??</div>
+<div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li> -->
 
 <li> <!-- http://eu07.pl/forum/index.php/topic,20459.msg253139.html#msg253139  http://eu07.pl/forum/index.php/topic,20429.0.html --> 
-<div class="pytanie"><a name="14,45">Czy można przed wyłączeniem symulatora zapisać stan symulacji?</a></div>
-<div class="odpowiedz">Nie, nie ma takiej możliwości.</div>
+<div class="pytanie"><a name="14,45">>Can you save the simulation, before exiting the Simulator?</a></div>
+<div class="odpowiedz">No, you can't.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
-<div class="pytanie"><a name="14,46">Jak zatrzymać symulację? Nacisnąłem <kbd>Esc</kbd>, ale to nie działa.</a></div>
-<div class="odpowiedz">Nastąpiły zmiany w klawiszologii. Familiarise youself with: <a href="#4">MaSzyna 15.04 Readme file, "Keyboard control" section.</a></div>
+<div class="pytanie"><a name="14,46">How do I stop the Simulation? I pressed <kbd>Esc</kbd>, but it does nothing.</a></div>
+<div class="odpowiedz">There has been some recent changes in the keyboard layout and key functions. Familiarise youself with: <a href="#4">MaSzyna 15.04 Readme file, "Keyboard control" section.</a></div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
-<div class="pytanie"><a name="14,47">Kiedy pojawi się nowa wersja, nowe dodatki?</a></div>
-<div class="odpowiedz"><p>Jesteśmy hobbystami, którzy swój czas dzielą między obowiązki rodzinne, zawodowe, naukę, a w wolnych chwilach tworzą coś dla symulatora. Dlatego na pytanie "Kiedy będzie nowa lokomotywa/trasa/paczka?" nie można udzielić w 100% wiążącej odpowiedzi. Nie jesteśmy grupą zamkniętą na nowych ludzi i ich pomysły. Jeśli chcesz pomóc w rozwoju MaSzyny zapraszamy :) Możesz na przykład wspomóc twórców modeli różnymi zdjęciami infrastruktury, budynków, itp. Wszystko po to, by trasy w MaSzynie były bardziej realistyczne. Więcej szczegółów tutaj: <ahref="http://eu07.pl/forum/index.php/topic,17369.0.html">http://eu07.pl/forum/index.php/topic,17369.0.html</a>.<br>Oprócz tego prowadzone są prace nad usprawnieniami fizyki symulatora. Jeśli masz przydatne informacje, schematy, wykresy, którymi chcesz wspomóc rozwój, możesz napisać o tym na forum w stosownym dziale.</p><p>Jeśli znasz się na programowaniu i nie są Ci obce pojęcia, takie jak: Python, C++, SCons, OpenAL, OpenSceneGraph zapraszamy do współpracy przy tworzeniu Symulatora Pojazdów Trakcyjnych (SPT). Będzie to nowa wersja MaSzyny oparta na silniku OSG. Oferuje on wiele możliwości (zwłaszcza w zakresie zwiększenia wydajności w stosunku do obecnego enginu MaSzyny).</p></div>
+<div class="pytanie"><a name="14,47">When will a new version, new addons come out?</a></div>
+<div class="odpowiedz"><p>We're just hobbist, who have to share their time between family, work, learning, and in their limited free time create something for the Simulator. That's why we can't give you a 100% correct and/or binding answer to the "When will a new loco/route/pack be released" question. We are not a closed group, we will welcome any new people and their ideas. We will welcome you if you want to help us in developing MaSzyna :) You can, for example, help the model creators by photographing infrastructure, buildings, etc. All to help the routes in MaSzyna to become more realistic. More details here (In Polish; use Google's Translate): <ahref="http://eu07.pl/forum/index.php/topic,17369.0.html">http://eu07.pl/forum/index.php/topic,17369.0.html</a>.<br>Besides that, we're carrying out work in order to improve the physics in the Simulator. If you have any useful information, diagrams, which could help the improvement, you could write it in the forum, in the correct department.</p><p>If you know how to program, and you know how to use languages like: Python, C++, SCons, OpenAL, OpenSceneGraph then we would welcome you to help us with creation of the Symulator Pojazdów Trakcyjnych (SPT)(Railway Vehicle Simulator). It will be a new version of MaSzyna, based on the OSG engine. It offers more capabilities (especially when it comes to improving the efficiency of the engine, compared to the current MaSzyna engine).</p></div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
-<div class="pytanie"><a name="14,48">Po włączeniu sprężarki wszystko w lokomotywie się wyłącza i nic się nie dzieje. Jak temu zaradzić?</a></div>
-<div class="odpowiedz"><p>Oznacza to, że zbyt szybko uruchomiłeś sprężarkę po włączeniu przetwornicy i zadziałał przekaźnik nadmiarowy przetwornicy. Aby go odblokować, wyłącz przetwornicę i naciśnij <kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>n</kbd>.</p></div>
+<div class="pytanie"><a name="14,48">When I turn on the compressor, everything turns off, and nothing happens. How do I fix that?</a></div>
+<div class="odpowiedz"><p>It means that you turned the compressor on too quickly after turning on the transformer, and the Transformer MCB switched off. To turn it back on ('unlock it'), turn the transformer off, and press <kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>n</kbd>.</p></div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
-<li>
 
-<div class="pytanie"><a name="14,49">
-Nie mogę napełnić przewodu głównego po hamowaniu/zadziałaniu czuwaka/SHP.</a></div>
-<div class="odpowiedz">
-<p>
-W wielu lokomotywach przy hamowaniu nagłym dochodzi do odcięcia zasilania zaworu maszynisty sprężonym powietrzem. Aby odhamować pociąg, ustaw zawór maszynisty na właściwą pozycję i przytrzymaj przycisk odluźniacza (klawisz <kbd>Num 6</kbd>) do czasu, aż ciśnienie w przewodzie głównym wzrośnie do 4 barów.
-</p>
-</div>
-<div class="powrot"><span><a href="#14,0">Return to the question list</a></span></div></li>
 <li>
-<div class="pytanie"><a name="14,50">
-Po jakimś czasie od wyluzowania w cylindrach lokomotywy pojawia się niewielkie ciśnienie.</a></div>
-<div class="odpowiedz">
-<p>
-Ze względu na budowę hamulca lokomotywy, w niektórych sytuacjach po wyluzowaniu może występować w cylindrach nieduże ciśnienie. W takim wypadku należy użyć odluźniacza (klawisz <kbd>Num 6</kbd>).
-</p>
-</div>
+<div class="pytanie"><a name="14,49"></a>I can't pressurise the Main Pipe after braking / CA/SHP turning on.</a></div>
+<div class="odpowiedz"><p>In many locos, durning Emergency Brake application, the driver's valve(/handle) becomes cut-off using compressed air. In order to release the brakes, set the driver's valve into the correct position and press and hold the Brake Release Button(<kbd>Num 6</kbd> key) until, the pressure in the Main Pipe rises to 4 bar.</p></div>
 <div class="powrot"><span><a href="#14,0">Return to the question list</a></span></div></li>
+
 <li>
-<div class="pytanie"><a name="14,51">
-Podczas jazdy nagle lokomotywa zgasła.</a></div>
-<div class="odpowiedz">
-<p>
-Ulepszony algorytm współpracy pantografów z siecią trakcyjną sprawił, że obecnie wszystkie błędy w umiejscowieniu sieci trakcyjnej mogą powodować wyłączanie wyłącznika szybkiego na skutek utraty kontaktu między odbierakiem i siecią trakcyjną. W przypadku skrajnie złego prowadzenia sieci trakcyjnej nad torem może dochodzić do połamania pantografu. Jeśli woltomierz WN wskazuje obecność napięcia, wystarczy uruchomić ponownie lokomotywę.
-</p>
-</div>
+<div class="pytanie"><a name="14,50">A while after releasing the brakes, some pressure goes into the loco brake cylinders.</a></div>
+<div class="odpowiedz"><p>Ze względu na budowę hamulca lokomotywy, w niektórych sytuacjach po wyluzowaniu może występować w cylindrach nieduże ciśnienie. W takim wypadku należy użyć odluźniacza (klawisz <kbd>Num 6</kbd>).</p></div>
 <div class="powrot"><span><a href="#14,0">Return to the question list</a></span></div></li>
+
 <li>
-<div class="pytanie"><a name="14,52">
-Podczas rozruchu nagle zabrakło napięcia.</a></div>
-<div class="odpowiedz">
-<p>
-Na niektórych sceneriach (np. Quark, Krzyżowa) zostało wykonane sekcjonowanie sieci na szlakach oraz uruchomione jej zasilanie. W przypadku intensywnego rozruchu kilku pojazdów możliwe jest przeciążenie sekcji lub całej podstacji. Następuje wtedy chwilowe odłączenie napięcia i samoczynne powtórne załączenie. Po trzecim przeciążeniu zasilanie zostaje odłączone na ok. 1 minutę.
-</p>
-</div>
+<div class="pytanie"><a name="14,51">When in motion, the loco suddenly turned off / "extinguishes".</a></div>
+<div class="odpowiedz"><p>Ulepszony algorytm współpracy pantografów z siecią trakcyjną sprawił, że obecnie wszystkie błędy w umiejscowieniu sieci trakcyjnej mogą powodować wyłączanie wyłącznika szybkiego na skutek utraty kontaktu między odbierakiem i siecią trakcyjną. W przypadku skrajnie złego prowadzenia sieci trakcyjnej nad torem może dochodzić do połamania pantografu. Jeśli woltomierz WN wskazuje obecność napięcia, wystarczy uruchomić ponownie lokomotywę.</p></div>
 <div class="powrot"><span><a href="#14,0">Return to the question list</a></span></div></li>
+
 <li>
-<div class="pytanie"><a name="14,99">
-The translator's note</a></div>
-<div class="odpowiedz">
-<p>
-This will be my note, once all this is done.
-</p>
-</div>
+<div class="pytanie"><a name="14,52">When starting off, the voltage suddenly drops to 0V.</a></div>
+<div class="odpowiedz"><p>Na niektórych sceneriach (np. Quark, Krzyżowa) zostało wykonane sekcjonowanie sieci na szlakach oraz uruchomione jej zasilanie. W przypadku intensywnego rozruchu kilku pojazdów możliwe jest przeciążenie sekcji lub całej podstacji. Następuje wtedy chwilowe odłączenie napięcia i samoczynne powtórne załączenie. Po trzecim przeciążeniu zasilanie zostaje odłączone na ok. 1 minutę.</p></div>
+<div class="powrot"><span><a href="#14,0">Return to the question list</a></span></div></li>
+
+<li>
+<div class="pytanie"><a name="14,99">The translator's note</a></div>
+<div class="odpowiedz"><p>This will be my note, once all this is done.</p></div>
+
 <div class="powrot"><span><a href="#14,0">Return to the question list</a></span></div></li>
 </ul>
 
