@@ -27,8 +27,8 @@ Angielskie tłumaczenie dokumentacji MaSzyny
 <li><FONT COLOR="00FF00"> en-license.html = 100% </FONT>
 <br> PL: licencja.html          REVISION: 007
 <br>
-<li><FONT COLOR="FFFF00"> en-readme.html = 95% </FONT>
-<br> PL: readme.html            REVISION: -
+<li><FONT COLOR="00FF00"> en-readme.html = 100% </FONT>
+<br> PL: readme.html            REVISION: 001
 <br>
 <li><FONT COLOR="000000"> en-universal.html = 0% </FONT>
 <br> PL: universale.html        REVISION: -
