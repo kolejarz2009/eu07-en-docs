@@ -28,10 +28,7 @@ Angielskie tłumaczenie dokumentacji MaSzyny
 <br> PL: licencja.html          REVISION: 007
 <br>
 <li><FONT COLOR="00FF00"> en-readme.html = 100% </FONT>
-<br> PL: readme.html            REVISION: 001
+<br> PL: readme.html            REVISION: 004
 <br>
 <li><FONT COLOR="000000"> en-universal.html = 0% </FONT>
 <br> PL: universale.html        REVISION: -
-<br><br>
-It hopefully will be translated before the end of summer. No promises though! <br>
-Mam nadzieję że do końca lata zostanie przetłumaczone. Nie daje żadnej gwarancji!
