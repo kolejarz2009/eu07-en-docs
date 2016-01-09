@@ -6,7 +6,7 @@ Angielskie tłumaczenie dokumentacji MaSzyny
 <li><FONT COLOR="000000"> en-change-trains.html  = 0% </FONT>
 <br> PL: zmiana-skladow.html    REVISION: -
 <br>
-<li><FONT COLOR="000000"> en-control.html = 0% </FONT>
+<li><FONT COLOR="000000"> en-control.html = <b style="color=red">78%<b> </FONT>
 <br> PL: sterowanie.html        REVISION: -
 <br>
 <li><FONT COLOR="00FF00"> en-debug.html = 100% </FONT>
