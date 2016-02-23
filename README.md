@@ -6,8 +6,8 @@ Angielskie tłumaczenie dokumentacji MaSzyny
 <li> en-change-trains.html  = 0%
 <br> PL: zmiana-skladow.html    REVISION: -
 <br>
-<li> en-control.html = <b>78%</b>
-<br> PL: sterowanie.html        REVISION: <b>-</b>
+<li> en-control.html = <b>100%</b>
+<br> PL: sterowanie.html        REVISION: 002 <b>-</b>
 <br>
 <li> en-debug.html = <b>100%</b> 
 <br> PL: debugmode.html         REVISON: <b>001</b>
@@ -30,5 +30,5 @@ Angielskie tłumaczenie dokumentacji MaSzyny
 <li> en-readme.html = <b>100%</b>
 <br> PL: readme.html            REVISION: <b>005</b>
 <br>
-<li> en-universal.html = 0% 
+<li> en-universal.html = 5% 
 <br> PL: universale.html        REVISION: -
