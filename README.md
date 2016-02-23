@@ -7,7 +7,7 @@ Angielskie tłumaczenie dokumentacji MaSzyny
 <br> PL: zmiana-skladow.html    REVISION: -
 <br>
 <li> en-control.html = <b>100%</b>
-<br> PL: sterowanie.html        REVISION: 002 <b>-</b>
+<br> PL: sterowanie.html        REVISION: <b>002</b>
 <br>
 <li> en-debug.html = <b>100%</b> 
 <br> PL: debugmode.html         REVISON: <b>001</b>
