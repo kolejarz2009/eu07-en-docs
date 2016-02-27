@@ -3,8 +3,8 @@ English translation of the documents for the MaSzyna Simulator ( http://eu07.pl/
 <br>
 Angielskie tłumaczenie dokumentacji MaSzyny 
 
-<li><i> en-change-trains.html  = 50%
-<br> PL: zmiana-skladow.html    REVISION: <b>-</b> </i>
+<li> en-change-trains.html  = <b>100%</b>
+<br> PL: zmiana-skladow.html    REVISION: <b>001</b>
 <br>
 <li> en-control.html = <b>100%</b>
 <br> PL: sterowanie.html        REVISION: <b>003</b>
@@ -15,11 +15,15 @@ Angielskie tłumaczenie dokumentacji MaSzyny
 <li><i> en-entries.html = 0% 
 <br> PL: wpisy.html             REVISION: <b>-</b>
 <br>
-<li> en-exe-pc2010.html = 0% 
-<br> PL: exe-pc2010.html        REVISION: -
+<b>
+THE TWO exe-pc... FILES WILL PROBABLY NOT BE TRANSLATED AT ALL
+DWE STRONY exe-pc... PRAWDOPODOBNIE NIE ZOSTANĄ PRZETŁUMACZONE
+</b>
+<li><i> en-exe-pc2010.html = N/A
+<br> PL: exe-pc2010.html
 <br>
-<li> en-exe-pc2011.html = 0% 
-<br> PL: exe-pc2011.html        REVISION: - </i>
+<li> en-exe-pc2011.html = N/A 
+<br> PL: exe-pc2011.html</i>
 <br>
 <li> en-keys.html = <b>100%</b>
 <br> PL: klawiszologia.html     REVISION: <b>002</b>
