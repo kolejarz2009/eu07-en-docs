@@ -19,11 +19,9 @@ Angielskie tłumaczenie dokumentacji MaSzyny
 THE TWO exe-pc... FILES WILL PROBABLY NOT BE TRANSLATED AT ALL<br>
 DWE STRONY exe-pc... PRAWDOPODOBNIE NIE ZOSTANĄ PRZETŁUMACZONE
 </b>
-<li><i> en-exe-pc2010.html = N/A
-<br> PL: exe-pc2010.html
+<li><i> exe-pc2010.html = N/A
 <br>
-<li> en-exe-pc2011.html = N/A 
-<br> PL: exe-pc2011.html</i>
+<li> exe-pc2011.html = N/A</i>
 <br>
 <li> en-keys.html = <b>100%</b>
 <br> PL: klawiszologia.html     REVISION: <b>002</b>
