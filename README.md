@@ -16,7 +16,7 @@ Angielskie tłumaczenie dokumentacji MaSzyny
 <br> PL: wpisy.html             REVISION: <b>-</b>
 <br>
 <b>
-THE TWO exe-pc... FILES WILL PROBABLY NOT BE TRANSLATED AT ALL
+THE TWO exe-pc... FILES WILL PROBABLY NOT BE TRANSLATED AT ALL<br>
 DWE STRONY exe-pc... PRAWDOPODOBNIE NIE ZOSTANĄ PRZETŁUMACZONE
 </b>
 <li><i> en-exe-pc2010.html = N/A
