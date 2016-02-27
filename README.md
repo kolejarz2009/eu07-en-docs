@@ -30,5 +30,5 @@ Angielskie tłumaczenie dokumentacji MaSzyny
 <li> en-readme.html = <b>100%</b>
 <br> PL: readme.html            REVISION: <b>008</b>
 <br>
-<li> en-universal.html = <b>100%<b> 
+<li> en-universal.html = <b>100%</b> 
 <br> PL: universale.html        REVISION: <b>001</b>
