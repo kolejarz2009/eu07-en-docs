@@ -12,7 +12,7 @@ Angielskie tłumaczenie dokumentacji MaSzyny
 <li> en-debug.html = <b>100%</b> 
 <br> PL: debugmode.html         REVISON: <b>002</b>
 <br>
-<li><i> en-entries.html = 0% 
+<li><i> en-entries.html = 30% 
 <br> PL: wpisy.html             REVISION: <b>-</b>
 <br>
 <b>
