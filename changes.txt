@@ -5,7 +5,7 @@ S en-debugmode
 S en-entries
 S en-keys
 S en-licence
-CM en-readme
+C en-readme
 S en-universal
 _________________________________________
 VERSION 15.04.26 :
