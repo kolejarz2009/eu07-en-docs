@@ -4,16 +4,16 @@ English translation of the documents for the MaSzyna Simulator ( http://eu07.pl/
 Angielskie tłumaczenie dokumentacji MaSzyny 
 
 <li> en-change-trains.html  = <b>100%</b>
-<br> PL: zmiana-skladow.html    REVISION: <b>001</b>
+<br> PL: zmiana-skladow.html    VERSION--REVISION: <b>15.04.26--001</b>
 <br>
 <li> en-control.html = <b>100%</b>
-<br> PL: sterowanie.html        REVISION: <b>004</b>
+<br> PL: sterowanie.html        VERSION--REVISION: <b>15.04.26--004</b>
 <br>
 <li> en-debug.html = <b>100%</b> 
-<br> PL: debugmode.html         REVISON: <b>002</b>
+<br> PL: debugmode.html         VERSION--REVISON: <b>15.04.26--002</b>
 <br>
 <li><i> en-entries.html = <b>100%</b> 
-<br> PL: wpisy.html             REVISION: <b>001</b>
+<br> PL: wpisy.html             VERSION--REVISION: <b>15.04.26--001</b>
 <br>
 <b>
 THE TWO exe-pc... FILES WILL PROBABLY NOT BE TRANSLATED AT ALL<br>
@@ -24,13 +24,17 @@ DWE STRONY exe-pc... PRAWDOPODOBNIE NIE ZOSTANĄ PRZETŁUMACZONE
 <li> exe-pc2011.html = N/A</i>
 <br>
 <li> en-keys.html = <b>100%</b>
-<br> PL: klawiszologia.html     REVISION: <b>003</b>
+<br> PL: klawiszologia.html     VERSION--REVISION: <b>15.04.26--003</b>
 <br>
 <li> en-license.html = <b>100%</b> 
-<br> PL: licencja.html          REVISION: <b>007</b>
+<br> PL: licencja.html          VERSION--REVISION: <b>15.04.26--007</b>
 <br>
 <li> en-readme.html = <b>100%</b>
-<br> PL: readme.html            REVISION: <b>010</b>
+<br> PL: readme.html            VERSION--REVISION: <b>16.01--001</b>
 <br>
 <li> en-universal.html = <b>100%</b> 
-<br> PL: universale.html        REVISION: <b>002</b>
+<br> PL: universale.html        VERSION--REVISION: <b>15.04.26--002</b>
+
+<br>
+<li>Version 16.01 = Working On It </li>
+<li>Version 15.04.26 = Done 100 % </li>
