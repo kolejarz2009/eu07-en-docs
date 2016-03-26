@@ -1,0 +1,27 @@
+VERSION 16.01 :
+S en-change-trains
+M en-control
+S en-debugmode
+S en-entries
+S en-keys
+S en-licence
+CM en-readme
+S en-universal
+_________________________________________
+VERSION 15.04.26 :
+en-change-trains
+en-control
+en-debugmode
+en-entries
+en-keys
+en-licence
+en-readme
+en-universal
+_________________________________________
+VERSION 15.04 :
+Unknown, translation started with the 15.04.26 files.
+_________________________________________
+LEGEND:
+M Moddified [Working on It]
+C Complete
+S Same as before
