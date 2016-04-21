@@ -1,6 +1,16 @@
-VERSION 16.01 :
+VERSION daily-20160420 :
 S en-change-trains
 M en-control
+S en-debugmode
+S en-entries
+M en-keys
+S en-licence
+M en-readme
+S en-universal
+_________________________________________
+VERSION 16.01 :
+S en-change-trains
+C en-control
 S en-debugmode
 S en-entries
 S en-keys
@@ -8,7 +18,7 @@ S en-licence
 C en-readme
 S en-universal
 _________________________________________
-VERSION 15.04.26 :
+VERSION 15.04.26 : start
 en-change-trains
 en-control
 en-debugmode
@@ -18,10 +28,7 @@ en-licence
 en-readme
 en-universal
 _________________________________________
-VERSION 15.04 :
-Unknown, translation started with the 15.04.26 files.
-_________________________________________
-LEGEND:
-M Moddified [Working on It]
-C Complete
-S Same as before
+LEGEND: [en]                        | LEGENDA: [pl]
+M Moddified [Work In Progress]      | Zmodyfikowany, nie gotowy
+C Complete                          | Zmodyfikowany, przetłumaczony
+S Same as before previous version   | Brak zmian od poprzedniej wersji
