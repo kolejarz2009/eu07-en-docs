@@ -7,7 +7,7 @@ Angielskie tłumaczenie dokumentacji MaSzyny
 <br> PL: zmiana-skladow.html    VERSION--REVISION: <b>15.04.26--001</b>
 <br>
 <li> en-control.html = <b>100%</b>
-<br> PL: sterowanie.html        VERSION--REVISION: <b>15.04.26--004</b>
+<br> PL: sterowanie.html        VERSION--REVISION: <b>16.01--001</b>
 <br>
 <li> en-debug.html = <b>100%</b> 
 <br> PL: debugmode.html         VERSION--REVISON: <b>15.04.26--002</b>
@@ -36,5 +36,5 @@ DWE STRONY exe-pc... PRAWDOPODOBNIE NIE ZOSTANĄ PRZETŁUMACZONE
 <br> PL: universale.html        VERSION--REVISION: <b>15.04.26--002</b>
 
 <br>
-<li>Version 16.01 = Working On It </li>
+<li>Version 16.01 = Done 100 % </li>
 <li>Version 15.04.26 = Done 100 % </li>
