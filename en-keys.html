@@ -142,7 +142,7 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 							<tr>
 										<td>3 × <kbd>Num 9</kbd> from the "Quick Release" position or <kbd>Ctrl</kbd> + <kbd>Num 5</kbd></td>
 										<td>Valve Cut-Out position</td>
-										<td>Set the brake valve to the cut-out when changing cabs, before we press [Home] (or [End]) and when we drive the banking loco (scenario "moczniki_popych")</td>
+										<td>Set the brake valve to the cut-out when changing cabs, before we press [Home] (or [End]) and when we drive the banking loco (scenario "moczniki_popych"). Certain valves have the "Cut-off" in a different position (Knorr, Oerlikon EP)</td>
 							</tr>
 							<tr>
 										<td><kbd>Num 6</kbd></td>
@@ -152,12 +152,14 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 							<tr>
 										<td><kbd>Num 1</kbd></td>
 										<td>Move the Independant brake lever down.</td>
-										<td>Increases the braking force, in the loco brake. In the EMUs, it operates the hand brake.</td>
+										<td>Increases the braking force, in the loco brake. In the EMUs, it operates the hand brake.
+										<br>Increases the elecrodynamic braking power in the vehicles with a power inverter</td>
 							</tr>
 							<tr>
 										<td><kbd>Num 7</kbd></td>
 										<td>Move the Independant brake lever up.</td>
-										<td>Decrease the braking force in the loco brake. In the EMUs, it operates the hand brake.</td>
+										<td>Decrease the braking force in the loco brake. In the EMUs, it operates the hand brake.
+										<br>Decreases the elecrodynamic braking power in the vehicles with a power inverter</td>
 							</tr>
 							<tr>
 										<td><kbd>Ctrl</kbd> + <kbd>Num 3</kbd>/<kbd>Num 9</kbd></td>
@@ -207,12 +209,12 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 							</tr>
 							<tr>
 										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>L</kbd></td>
-										<td>EMU: Turn on the signalling [??]</td>
+										<td>EMU: Turn on the cab controls</td>
 										<td>Initially off</td>
 							</tr>
 							<tr>
 										<td><kbd>l</kbd></td>
-										<td>EMU: Turn off the signalling [??]</td>
+										<td>EMU: Turn off the cab controls</td>
 										<td></td>
 							</tr>
 							<tr>
@@ -229,23 +231,29 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 							-->
 							<tr>
 										<td><kbd>Num +</kbd></td>
-										<td>Move power controller "up" / more power</td>
-										<td>In relation to previous position</td>
+										<td>Move power controller "up"
+										<br>Increase the set force</td>
+										<td>In relation to previous position
+										<br>In the range of the tractive effort of the vehicle</td>
 							</tr>
 							<tr>
 										<td><kbd>Num -</kbd></td>
-										<td>Move power controller "down" / less power</td>
-										<td>In relation to previous position</td>
+										<td>Move power controller "down"
+										<br>Decrease the set force</td>
+										<td>In relation to previous position
+										<br>In the range of the tractive effort of the vehicle</td>
 							</tr>
 							<tr>
 										<td><kbd>Num /</kbd></td>
 										<td>Move the bypass controller "up"</td>
-										<td>In relation to previous position</td>
+										<td>In relation to previous position.
+										<br>In certain new EMUs with a power inverter, sets the cruise control speed to the current running speed.</td>
 							</tr>
 							<tr>
 										<td><kbd>Num *</kbd></td>
 										<td>Move the bypass controller "down"</td>
-										<td>In relation to previous position</td>
+										<td>In relation to previous position.
+										<br>In certain new EMUs with a power inverter, turns the cruise control off.</td>
 							</tr>
 							<tr>
 										<td><kbd>n</kbd></td>
@@ -299,13 +307,15 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 							</tr>
 							<tr>
 										<td><kbd>Shift</kbd> + <kbd>u</kbd></td>
-										<td>Turn on upper white lamp</td>
-										<td>-</td>
+										<td>Turn on upper white lamp
+										<br>Turn the lamp programmer to the right.</td>
+										<td>In vehicle with a lamp programmer (rotary switch with preset lamp configurations).</td>
 							</tr>
 							<tr>
 										<td><kbd>u</kbd></td>
-										<td>Turn off upper white lamp</td>
-										<td>In case of it is on</td>
+										<td>Turn off upper white lamp
+										<br>Turn the lamp programmer to the left.</td>
+										<td>In vehicle with a lamp programmer (rotary switch with preset lamp configurations).</td>
 							</tr>
 							<tr>
 										<td><kbd>i</kbd></td>
@@ -410,7 +420,7 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 							<tr>
 										<td><kbd>s</kbd></td>
 										<td>Turn on the sander</td>
-										<td>In case of wheel-slip. <u>Hold the key for a moment</u>. The sound doesn't (re)play</td>
+										<td>In case of wheel-slip. <u>Hold the key for a moment</u>. Doesn't work in many vehicles due to a lack of the defined switch.</td>
 							</tr>
 							<tr>
 										<td><kbd>a</kbd></td>
