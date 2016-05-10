@@ -29,7 +29,7 @@ DWE STRONY exe-pc... PRAWDOPODOBNIE NIE ZOSTANĄ PRZETŁUMACZONE
 <li> en-license.html = <b>100%</b> 
 <br> PL: licencja.html          VERSION--REVISION: <b>15.04.26--007</b>
 <br>
-<li> en-readme.html = </b>100%</b>
+<li> en-readme.html = <b>100%</b>
 <br> PL: readme.html            VERSION--REVISION: <b>daily-20160324--001</b>
 <br>
 <li> en-universal.html = <b>100%</b> 
