@@ -24,18 +24,19 @@ DWE STRONY exe-pc... PRAWDOPODOBNIE NIE ZOSTANĄ PRZETŁUMACZONE
 <li> exe-pc2011.html = N/A</i>
 <br>
 <li> en-keys.html = <b>100%</b>
-<br> PL: klawiszologia.html     VERSION--REVISION: <b>daily-20160324--002</b>
+<br> PL: klawiszologia.html     VERSION--REVISION: <b>daily-20160510--WIP</b>
 <br>
 <li> en-license.html = <b>100%</b> 
 <br> PL: licencja.html          VERSION--REVISION: <b>15.04.26--007</b>
 <br>
 <li> en-readme.html = <b>100%</b>
-<br> PL: readme.html            VERSION--REVISION: <b>daily-20160324--001</b>
+<br> PL: readme.html            VERSION--REVISION: <b>daily-20160515--001</b>
 <br>
 <li> en-universal.html = <b>100%</b> 
 <br> PL: universale.html        VERSION--REVISION: <b>15.04.26--002</b>
 
 <br>
+<li>Version daily-20160515 = Done
 <li>Version daily-20160324 = Done 100 % </li>
 <li>Version 16.01 = Done 100 % </li>
 <li>Version 15.04.26 = Done 100 % </li>
