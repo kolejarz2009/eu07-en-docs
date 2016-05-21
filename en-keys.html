@@ -7,7 +7,7 @@
   <link rel="Stylesheet" type="text/css" href="style.css"><!--  <script type="text/javascript" src="target.js"></script> -->
 </head>
 <body>
-<!-- VERSION daily-20160510 ,REVISION: 001 -->>
+<!-- VERSION daily-20160519 ,REVISION: 002 -->
 
 <div id="STRONA">
 <p>
@@ -209,12 +209,12 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 							</tr>
 							<tr>
 										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>L</kbd></td>
-										<td>EMU: Turn on the cab controls</td>
-										<td>Initially off</td>
+										<td>EMU: Turn on the second unit's active brake indicator</td>
+										<td>Initially off. Works in the ED74. In case of more than one unit coupled together.</td>
 							</tr>
 							<tr>
 										<td><kbd>l</kbd></td>
-										<td>EMU: Turn off the cab controls</td>
+										<td>EMU: Turn off the second unit's active brake indicator</td>
 										<td></td>
 							</tr>
 							<tr>
@@ -278,7 +278,7 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 							<tr>
 										<td><kbd>z</kbd></td>
 										<td>Show current from second unit</td>
-										<td>Applies to / Works with only ET41</td>
+										<td>Applies to only the ET41</td>
 							</tr>
 							<tr>
 										<td><b><span style="color: #0000ff;">Key (s)</span></b></td>
@@ -406,16 +406,14 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 										<td>In case of wheel-slip</td>
 							</tr>
 							<tr>
-								<mark> <!--Remove later -->	
 										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>s</kbd></td>
-										<td>EMU: Turn on the door opened indicators / buttons</td>
-										<td>Initially turned off</td>
+										<td>EMU: Turn on the manual door lock and it's indicator</td>
+										<td>Initially turned off. Locks when v(elocity)>5km/h. Works in the EN57-2000 and the ED72</td>
 							</tr>
 							<tr>
 										<td><kbd>s</kbd></td>
-										<td>EMU: Turn off the door opened indicators / buttons</td>
-										<td></td>
-								</mark> <!--Remove later -->
+										<td>EMU: Turn off the manual door lock and it's indicator</td>
+										<td>Locks when v>5km/h. Works in the EN57-2000 and the ED72</td>
 							</tr>							
 							<tr>
 										<td><kbd>s</kbd></td>
@@ -478,17 +476,20 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 										<td>Turn the radio off</td>
 										<td>Resets the Radiostop (RS). Required to pressurise the Brake Pipe after RS activates.</td>
 							</tr>
-							
+							<tr>
+										<td><kbd>Ctrl</kbd> + <kbd>Pause/Break</kbd></td>
+										<td>Radio-Stop</td>
+										<td>All vehicles within the 2km radius will receive the Emerency_brake command, only if the CHK file has a "RadioStop=Yes" inscription / in it.</td>
+							</tr>
 							<tr>
 										<td><kbd>-</kbd></td>
-										<td>Radio channel down</td>
-										<td>The range varies between 0 (off) and 8. The choosen channel is displayed in the second line, after pressing [F2], after the "RT:"</td>
+										<td>Change radio channel</td>
+										<td>Decrease</td>
 							</tr>
-							
 							<tr>
 										<td><kbd>=</kbd></td>
-										<td>Radio channel up</td>
-										<td>The range varies between 0 (off) and 8. The choosen channel is displayed in the second line, after pressing [F2], after the "RT:"</td>
+										<td>Change radio channel</td>
+										<td>Increase</td>
 							</tr>
 							<tr>
 										<td><b><span style="color: #0000ff;">Key (s)</span></b></td>
@@ -733,21 +734,6 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 										<td>Pressing this makes the simulation time increase by a factor of five (5x) (while calculating the physics only). It is particularly useful when testing the physics and characteristics. It doesn't speed time up. Works only in <a href="http://eu07.pl/theme/Maszyna/dokumentacja/inne/readme_pliki/en-debugmode.html">debugmode</a>.</td>
 							</tr>
 							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>Pause/Break</kbd></td>
-										<td>Radio-Stop</td>
-										<td>All vehicles within the 2km radius will receive the Emerency_brake command, only if the CHK file has a "RadioStop=Yes" inscription / in it.</td>
-							</tr>
-							<tr>
-										<td><kbd>-</kbd></td>
-										<td>Change radio channel</td>
-										<td>Decrease</td>
-							</tr>
-							<tr>
-										<td><kbd>=</kbd></td>
-										<td>Change radio channel</td>
-										<td>Increase</td>
-							</tr>
-							<tr>
 										<td><b><span style="color: #0000ff;">Key</span></b></td>
 										<td><b><span style="color: #0000ff;">Function</span></b></td>
 										<td><b><span style="color: #0000ff;">Note / Comment</span></b></td>
@@ -897,7 +883,7 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 Other than the above, the <kbd>Shift</kbd> + <kbd>0</kbd>, <kbd>Shift</kbd> + <kbd>1</kbd>, ..., <kbd>Shift</kbd> + <kbd>9</kbd> key combinations are used to start events, defined previously in the scenery. It may sound dangerous and hard to understand. Don't worry :) Shift + 2 might not work in every scenery. In every scenery that requires the use of these key combinations, a appropriate info is given in the Rainsted launcher. Also with MaSzyna 2015.04, most sceneries have been improved and the need for those key combinations have been minimised.
 </p>
 Original autor: Benek.<br>Fill-ins and improvements: libertyn89, adsim. 
-<br>2015.04 Update: Maciej
+<br>2015.04 Update: Maciej, Stele
 <br>English translation: kolejarz2009
 
 </div>
