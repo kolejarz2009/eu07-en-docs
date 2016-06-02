@@ -24,7 +24,7 @@ DWE STRONY exe-pc... PRAWDOPODOBNIE NIE ZOSTANĄ PRZETŁUMACZONE
 <li> exe-pc2011.html = N/A</i>
 <br>
 <li> en-keys.html = <b>100%</b>
-<br> PL: klawiszologia.html     VERSION--REVISION: <b>daily-20160519--002</b>
+<br> PL: klawiszologia.html     VERSION--REVISION: <b>daily-20160529--001</b>
 <br>
 <li> en-license.html = <b>100%</b> 
 <br> PL: licencja.html          VERSION--REVISION: <b>15.04.26--007</b>
@@ -36,8 +36,11 @@ DWE STRONY exe-pc... PRAWDOPODOBNIE NIE ZOSTANĄ PRZETŁUMACZONE
 <br> PL: universale.html        VERSION--REVISION: <b>15.04.26--002</b>
 
 <br>
-<li>Version daily-20160519 = Done 100 %</li>
-<li>Version daily-20160515 = Done 100 %</li>
-<li>Version daily-20160324 = Done 100 % </li>
-<li>Version 16.01 = Done 100 % </li>
-<li>Version 15.04.26 = Done 100 % </li>
+<li><b>Versions :</b></li>
+<li>daily-20160529 = Done 100 &</li>
+<li><b>16.05 = Done 100 %</b></li>
+<li>daily-20160519 = Done 100 %</li>
+<li>daily-20160515 = Done 100 %</li>
+<li>daily-20160324 = Done 100 %</li>
+<li>16.01 = Done 100 %</li>
+<li>15.04.26 = Done 100 %</li>
