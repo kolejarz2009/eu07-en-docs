@@ -36,9 +36,9 @@ DWE STRONY exe-pc... PRAWDOPODOBNIE NIE ZOSTANĄ PRZETŁUMACZONE
 <br> PL: universale.html        VERSION--REVISION: <b>15.04.26--002</b>
 
 <br>
-<li><b>Versions :</b></li>
+<li><b>Releases :</b></li>
 <li>daily-20160529 = Done 100 &</li>
-<li><b>16.05 = Done 100 %</b></li>
+<li>16.05 = Done 100 %</li>
 <li>daily-20160519 = Done 100 %</li>
 <li>daily-20160515 = Done 100 %</li>
 <li>daily-20160324 = Done 100 %</li>
