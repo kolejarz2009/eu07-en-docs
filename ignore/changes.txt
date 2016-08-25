@@ -1,3 +1,13 @@
+VERSION daily-20160822 : 
+S en-change-trains
+S en-control
+S en-debugmode
+S en-entries
+S en-keys
+S en-licence
+C en-readme
+S en-universal
+_________________________________________
 VERSION daily-20160731 : [16.08??]
 S en-change-trains
 S en-control
