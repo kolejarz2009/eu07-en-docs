@@ -37,7 +37,7 @@ DWE STRONY exe-pc... PRAWDOPODOBNIE NIE ZOSTANĄ PRZETŁUMACZONE
 
 <br>
 <li><b>Releases :</b></li>
-<li>daily-20160822 = Done 100 %</li><br> cosmetic code changes have began, allowing for quicker translations from Polish
+<li>daily-20160822 = Done 100 %</li><p>cosmetic code changes have began, allowing for quicker translations from Polish</p>
 <li>daily-20160731 = Done 100 %</li>
 <li>daily-20160724 = Done 100 %</li>
 <li>daily-20160529 = Done 100 %</li>
