@@ -3,7 +3,7 @@ English translation of the documents for the MaSzyna Simulator ( http://eu07.pl/
 <br>
 Angielskie tłumaczenie dokumentacji MaSzyny 
 
-<b>Master-branch at 20160830</b>
+<i>Master-branch at <b>daily-20160830</b></i>
 <br>
 <li> en-change-trains.html  = <b>100%</b>
 <br> PL: zmiana-skladow.html    VERSION--REVISION: <b>daily-20160728--001</b>
@@ -26,13 +26,13 @@ DWE STRONY exe-pc... PRAWDOPODOBNIE NIE ZOSTANĄ PRZETŁUMACZONE
 <li> exe-pc2011.html = N/A</i>
 <br>
 <li> en-keys.html = <b>100%</b>
-<br> PL: klawiszologia.html     VERSION--REVISION: <b>daily-20160728--001</b>
+<br> PL: klawiszologia.html     VERSION--REVISION: <b>daily-20160830--001</b>
 <br>
 <li> en-license.html = <b>100%</b> 
 <br> PL: licencja.html          VERSION--REVISION: <b>daily-20160728--001</b>
 <br>
 <li> en-readme.html = <b>100%</b>
-<br> PL: readme.html            VERSION--REVISION: <b>daily-20160822--001</b>
+<br> PL: readme.html            VERSION--REVISION: <b>daily-20160822--002</b>
 <br>
 <li> en-universal.html = <b>100%</b> 
 <br> PL: universale.html        VERSION--REVISION: <b>daily-20160728--001</b>
