@@ -1,10 +1,10 @@
 # eu07-en-docs
 English translation of the documents for the MaSzyna Simulator ( http://eu07.pl/dokumentacja?setlang=pl ) 
-<br>
-Angielskie tłumaczenie dokumentacji MaSzyny 
+<br>Angielskie tłumaczenie dokumentacji MaSzyny 
 
-<i>Master-branch at <b>daily-20160830</b></i>
+<i>Master-branch at </i><b>daily-20160830</b>
 <br>
+
 <li> en-change-trains.html  = <b>100%</b>
 <br> PL: zmiana-skladow.html    VERSION--REVISION: <b>daily-20160728--001</b>
 <br>
@@ -18,12 +18,12 @@ Angielskie tłumaczenie dokumentacji MaSzyny
 <br> PL: wpisy.html             VERSION--REVISION: <b>1daily-20160728--001</b>
 <br>
 <b>
-THE TWO exe-pc... FILES WILL PROBABLY NOT BE TRANSLATED AT ALL<br>
-DWE STRONY exe-pc... PRAWDOPODOBNIE NIE ZOSTANĄ PRZETŁUMACZONE
+<i>THE TWO exe-pc... FILES WILL PROBABLY NOT BE TRANSLATED AT ALL<br></i>
+<i>DWE STRONY exe-pc... PRAWDOPODOBNIE NIE ZOSTANĄ PRZETŁUMACZONE</i>
 </b>
-<li><i> exe-pc2010.html = N/A
+<li><i> exe-pc2010.html = N/A</i>
 <br>
-<li> exe-pc2011.html = N/A</i>
+<li><i> exe-pc2011.html = N/A</i>
 <br>
 <li> en-keys.html = <b>100%</b>
 <br> PL: klawiszologia.html     VERSION--REVISION: <b>daily-20160830--001</b>
@@ -36,16 +36,3 @@ DWE STRONY exe-pc... PRAWDOPODOBNIE NIE ZOSTANĄ PRZETŁUMACZONE
 <br>
 <li> en-universal.html = <b>100%</b> 
 <br> PL: universale.html        VERSION--REVISION: <b>daily-20160728--001</b>
-
-<br>
-<li><b>Releases :</b></li>
-<li>daily-20160822 = Done 100 %</li><p>cosmetic code changes have began, allowing for quicker translations from Polish</p>
-<li>daily-20160731 = Done 100 %</li>
-<li>daily-20160724 = Done 100 %</li>
-<li>daily-20160529 = Done 100 %</li>
-<li>16.05 = Done 100 %</li>
-<li>daily-20160519 = Done 100 %</li>
-<li>daily-20160515 = Done 100 %</li>
-<li>daily-20160324 = Done 100 %</li>
-<li>16.01 = Done 100 %</li>
-<li>15.04.26 = Done 100 %</li>
