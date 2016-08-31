@@ -3,6 +3,8 @@ English translation of the documents for the MaSzyna Simulator ( http://eu07.pl/
 <br>
 Angielskie tłumaczenie dokumentacji MaSzyny 
 
+<b>Master-branch at 20160830</b>
+<br>
 <li> en-change-trains.html  = <b>100%</b>
 <br> PL: zmiana-skladow.html    VERSION--REVISION: <b>daily-20160728--001</b>
 <br>
