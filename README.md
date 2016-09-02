@@ -32,7 +32,7 @@ English translation of the documents for the MaSzyna Simulator ( http://eu07.pl/
 <br> PL: licencja.html          VERSION--REVISION: <b>daily-20160728--001</b>
 <br>
 <li> en-readme.html = <b>100%</b>
-<br> PL: readme.html            VERSION--REVISION: <b>daily-20160822--004</b>
+<br> PL: readme.html            VERSION--REVISION: <b>daily-20160831-001</b>
 <br>
 <li> en-universal.html = <b>100%</b> 
 <br> PL: universale.html        VERSION--REVISION: <b>daily-20160728--001</b>
