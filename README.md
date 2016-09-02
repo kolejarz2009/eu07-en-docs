@@ -2,14 +2,14 @@
 English translation of the documents for the MaSzyna Simulator ( http://eu07.pl/dokumentacja?setlang=pl ) 
 <br>Angielskie tłumaczenie dokumentacji MaSzyny 
 
-<i>Master-branch at </i><b>daily-20160830</b>
+<i>Master-branch at </i><b>daily-20160831</b>
 <br>
 
 <li> en-change-trains.html  = <b>100%</b>
 <br> PL: zmiana-skladow.html    VERSION--REVISION: <b>daily-20160728--001</b>
 <br>
 <li> en-control.html = <b>100%</b>
-<br> PL: sterowanie.html        VERSION--REVISION: <b>daily-20160728--001</b>
+<br> PL: sterowanie.html        VERSION--REVISION: <b>daily-20160831--001</b>
 <br>
 <li> en-debug.html = <b>100%</b> 
 <br> PL: debugmode.html         VERSION--REVISON: <b>daily-20160728--001</b>
@@ -26,7 +26,7 @@ English translation of the documents for the MaSzyna Simulator ( http://eu07.pl/
 <li><i> exe-pc2011.html = N/A</i>
 <br>
 <li> en-keys.html = <b>100%</b>
-<br> PL: klawiszologia.html     VERSION--REVISION: <b>daily-20160830--001</b>
+<br> PL: klawiszologia.html     VERSION--REVISION: <b>daily-20160831--001</b>
 <br>
 <li> en-license.html = <b>100%</b> 
 <br> PL: licencja.html          VERSION--REVISION: <b>daily-20160728--001</b>
