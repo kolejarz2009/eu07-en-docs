@@ -1,6 +1,3 @@
-<i>Master-branch at </i><b>daily-20170525</b>
-<br>
-
 <li> en-change-trains.html  = <b>100%</b>
 <br> PL: zmiana-skladow.html    VERSION--REVISION: <b>daily-20160728--001</b>
 <br>
