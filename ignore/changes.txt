@@ -1,132 +1,61 @@
+VERSION daily-20170525 : 
+en-readme
+_________________________________________
+VERSION daily-20170524 : 
+en-readme
+_________________________________________
 VERSION daily-20170523 : 
-S en-change-trains
-S en-control
-S en-debugmode
-S en-entries
-S en-keys
-S en-licence
-C en-readme
-S en-universal
+en-readme
 _________________________________________
 VERSION daily-20170413 : 
-S en-change-trains
-S en-control
-S en-debugmode
-S en-entries
-S en-keys
-S en-licence
-C en-readme
-S en-universal
+en-readme
 _________________________________________
 VERSION daily-20160831 : 
-S en-change-trains
-C en-control
-S en-debugmode
-S en-entries
-C en-keys
-S en-licence
-C en-readme
-S en-universal
+en-control
+en-keys
+en-readme
 _________________________________________
 VERSION daily-20160830 : 
-S en-change-trains
-S en-control
-S en-debugmode
-S en-entries
-C en-keys
-S en-licence
-S en-readme
-S en-universal
+en-keys
 _________________________________________
 VERSION daily-20160822 : 
-S en-change-trains
-S en-control
-S en-debugmode
-S en-entries
-S en-keys
-S en-licence
-C en-readme
-S en-universal
+en-readme
 _________________________________________
 VERSION daily-20160731 : [16.08??]
-S en-change-trains
-S en-control
-S en-debugmode
-S en-entries
-S en-keys
-S en-licence
-C en-readme
-S en-universal
+en-readme
 _________________________________________
 VERSION daily-20160728 :
-C en-change-trains
-C en-control
-C en-debugmode
-C en-entries
-C en-keys
-C en-licence
-S en-readme
-C en-universal
+en-change-trains
+en-control
+en-debugmode
+en-entries
+en-keys
+en-licence
+en-universal
 _________________________________________
 VERSION daily-20160724 :
-S en-change-trains
-S en-control
-S en-debugmode
-S en-entries
-C en-keys
-S en-licence
-S en-readme
-S en-universal
+en-keys
 _________________________________________
 VERSION daily-20160529 :
-S en-change-trains
-S en-control
-S en-debugmode
-S en-entries
-C en-keys
-S en-licence
-S en-readme
-S en-universal
+en-keys
 _________________________________________
 VERSION daily-20160519 : [== 16.05]
-S en-change-trains
-S en-control
-C en-debugmode
-S en-entries
-C en-keys
-S en-licence
-C en-readme
-S en-universal
+en-debugmode
+en-keys
+en-readme
 _________________________________________
 VERSION daily-20160515 :
-S en-change-trains
-S en-control
-S en-debugmode
-S en-entries
-C en-keys
-S en-licence
-C en-readme
-S en-universal
+en-keys
+en-readme
 _________________________________________
 VERSION daily-20160324 :
-S en-change-trains
-C en-control
-S en-debugmode
-S en-entries
-C en-keys
-S en-licence
-C en-readme
-S en-universal
+en-control
+en-keys
+en-readme
 _________________________________________
 VERSION 16.01 :
-S en-change-trains
-C en-control
-S en-debugmode
-S en-entries
-S en-keys
-S en-licence
-C en-readme
-S en-universal
+en-control
+en-readme
 _________________________________________
 VERSION 15.04.26 : start
 en-change-trains
@@ -138,7 +67,3 @@ en-licence
 en-readme
 en-universal
 _________________________________________
-LEGEND: [en]                        | LEGENDA: [pl]
-M Moddified [Work In Progress]      | Zmodyfikowany, nie gotowy
-C Complete                          | Zmodyfikowany, przetłumaczony
-S Same as before previous version   | Brak zmian od poprzedniej wersji
