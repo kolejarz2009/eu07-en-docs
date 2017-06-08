@@ -8,11 +8,12 @@
   <!--  <script type="text/javascript" src="target.js"></script> -->
 </head>
 <body>
-<!-- VERSION daily-20160831 ,REVISION: 001 -->
+<!-- VERSION daily-20170605 ,REVISION: 001 -->
 
 <div id="STRONA">
 <p>
-This page lists all the keys and their functions. You CAN'T define the key's function. Keys markes as <kbd>Num...</kbd> are keys on the numeric keypad (on the side). Remember to turn on the NumLock. Using the <kbd>3</kbd> key will not replace the <kbd>Num 3</kbd> key! Same goes for the rest of the <kbd>Num...</kbd> keys. If you have a laptop without a numberpad / numeric keyboard, try to use <kbd>Fn</kbd> key + the desired key.
+This page lists all the keys and their functions. Keys can be re-assigned by editing the corresponding entry in the <i>eu07_input-keyboard.ini</i> file. <br>
+	Keys marked as <kbd>Num...</kbd> are keys on the numeric keypad (on the side). Remember to turn on the NumLock. Using the <kbd>3</kbd> key will not replace the <kbd>Num 3</kbd> key! Same goes for the rest of the <kbd>Num...</kbd> keys. If you have a laptop without a numberpad / numeric keyboard, try to use <kbd>Fn</kbd> key + the desired key.
 </p>
 						<!-- <center> -->
 						<table>
@@ -22,63 +23,41 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 										<td><b><span style="color: #0000ff;">Note / Comment</span></b></td>
 							</tr>
 							<tr>
-										<td><kbd>Shift</kbd> + <kbd>j</kbd></td>
-										<td>Connect the Batteries</td>
-										<td>-</td>
+										<td colspan="3"><b><span style="color: #0000ff;">Getting the vehicle ready for driving</span></b></td>
 							</tr>
 							<tr>
 										<td><kbd>j</kbd></td>
-										<td>Disconnect the Batteries</td>
+										<td>Toggle switch for the batteries</td>
 										<td>-</td>
 							</tr>
 							<tr>
-										<td><kbd>Shift</kbd> + <kbd>o</kbd></td>
-										<td>Raise the rear Pantograph</td>
-										<td>Only on electric vehicles</td>
-							</tr>
-							<tr>
 										<td><kbd>o</kbd></td>
-										<td>Lower the rear Pantograph</td>
-										<td>Only on electric vehicles</td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd> + <kbd>p</kbd></td>
-										<td>Raise the front Pantograph</td>
+										<td>Toggle switch of the front pantograph</td>
 										<td>Only on electric vehicles</td>
 							</tr>
 							<tr>
 										<td><kbd>p</kbd></td>
-										<td>Lower the front Pantograph</td>
+										<td>Toggle switch for the rear Pantograph</td>
 										<td>Only on electric vehicles</td>
 							</tr>
 							<tr>
-										<td><kbd>Shift</kbd> + <kbd>m</kbd></td>
-										<td>Connect the Main Circuit Breaker</td>
-										<td>You need to <u>hold both keys for a couple of seconds</u> </td>
+										<td><kbd>ctrl</kbd>&nbsp;+&nbsp;<kbd>p</kbd></td>
++										<td>Lower all pantographs</td>
++										<td>Only when the group switch is defined in the cab</td>
 							</tr>
 							<tr>
 										<td><kbd>m</kbd></td>
-										<td>Disconnect the Main Circuit Breaker</td>
-										<td>-</td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd> + <kbd>x</kbd></td>
-										<td>Turn on the Transformer</td>
+										<td>Toggle switch for the Main Circuit Breaker</td>
 										<td>-</td>
 							</tr>
 							<tr>
 										<td><kbd>x</kbd></td>
-										<td>Turn off the Transformer</td>
-										<td>-</td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd> + <kbd>c</kbd></td>
-										<td>Turn on the Main Air Compressor</td>
+										<td>Toggle switch for the Transformer</td>
 										<td>-</td>
 							</tr>
 							<tr>
 										<td><kbd>c</kbd></td>
-										<td>Turn off the Main Air Compressor</td>
+										<td>Toggle switch for the main air compressor</td>
 										<td>-</td>
 							</tr>
 							<tr>
@@ -106,7 +85,7 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 										<td>The popular "wave" :)</td>
 							</tr>
 							<tr>
-										<td><kbd>Num 4</kbd></td>
+										<td><kbd>Num 6</kbd></td>
 										<td>Running postition</td>
 										<td>Neutral position, used while driving</td>
 							</tr>
@@ -121,7 +100,7 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 										<td>Decreses the braking force, the longer the key is pressed, the smaller the braking force.</td>
 							</tr>
 							<tr>
-										<td><kbd>Num 2</kbd></td>
+										<td><kbd>Num 8</kbd></td>
 										<td>First Level braking</td>
 										<td>Equivalent to a half second press of [Num 3] from the running position</td>
 							</tr>
@@ -131,7 +110,7 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 										<td>Equivalent to two second press of [Num 3] from the running position</td>
 							</tr>
 							<tr>
-										<td><kbd>Num 8</kbd></td>
+										<td><kbd>Num 2</kbd></td>
 										<td>Full Service braking </td>
 										<td>Equivalent to two-and-a-half second hold of [Num 3] from the running position (hamowanie uzupełniające)</td>
 							</tr>
@@ -146,7 +125,7 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 										<td>Set the brake valve to the cut-out when changing cabs, before we press [Home] (or [End]) and when we drive the banking loco (scenario "moczniki_popych"). Certain valves have the "Cut-off" in a different position (Knorr, Oerlikon EP)</td>
 							</tr>
 							<tr>
-										<td><kbd>Num 6</kbd></td>
+										<td><kbd>Num 4</kbd></td>
 										<td>Loco (only) brake release</td>
 										<td>Releases the independant brake, or returns the power to the Train Brake valve.</td>
 							</tr>
@@ -184,52 +163,14 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 										<td><b><span style="color: #0000ff;">Note / Comment</span></b></td>
 							</tr>
 							<tr>
-										<td><kbd>Shift</kbd> + <kbd>b</kbd></td>
-										<td>Set the brake to Passanger Mode (P)<!-- Załączenie opóźnienia hamulców / Activating the brakes delay--></td>
-										<td>Applies ONLY to locomotives. Doesn't apply to MU. Passanger Mode (P) is the default setting. Used when hauling passanger trains</td>
+										<td colspan="3"><b><span style="color: #0000ff;">Driving</span></b></td>
 							</tr>
-							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>b</kbd></td>
-										<td>Set the brake to Rapid Mode (R)</td>
-										<td>Applies ONLY to locomotives. Doesn't apply to MU. Used when hauling trains at high speed</td>
-							</tr>
-							<tr>
-										<td><kbd>b</kbd></td>
-										<td>Set the brake to Freight Mode (G)</td>
-										<td>Applies ONLY to locomotives. Doesn't apply to MU. Used when hauling freight trains</td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd> + <kbd>f</kbd></td>
-										<td>High Current Range limit for starting off on the electric locos</td>
-										<td>Allows for increased current limit when starting-up. Roughly 700-800A</td>
-							</tr>
-							<tr>
-										<td><kbd>f</kbd></td>
-										<td>Normal Current Range limit for starting off on the electric locos</td>
-										<td>Roughly 600A</td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>l</kbd></td>
-										<td>EMU: Turn on the second unit's active brake indicator</td>
-										<td>Initially off. Works in the ED72. In case of more than one unit coupled together.</td>
-							</tr>
+							
 							<tr>
 										<td><kbd>l</kbd></td>
 										<td>EMU: Turn off the second unit's active brake indicator</td>
 										<td></td>
 							</tr>
-							<tr>
-										<td><kbd>l</kbd></td>
-										<td>Instantaneous traction motor current cut-off</td>
-										<td>Allows for instantaneous cut-off of current to traction motors. Move power controller to 0, then operate as normal.</td>
-							</tr>
-							<!--
-							<tr>
-										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>L</kbd></td>
-										<td>Załączenie styczników liniowych / ?? </td>
-										<td>-</td>
-							</tr>
-							-->
 							<tr>
 										<td><kbd>Num +</kbd></td>
 										<td>Move power controller "up"
@@ -257,29 +198,29 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 										<br>In certain new EMUs with a power inverter, turns the cruise control off.</td>
 							</tr>
 							<tr>
-										<td><kbd>n</kbd></td>
-										<td>Unlock / Unblock the traction motors overload relay</td>
-										<td>Only when both the power and the bypass controllers are set to 0</td>
+										<td><kbd>Spacebar</kbd></td>
+										<td>Reset the CA and SHP driver vigilance systems</td>
+										<td>Holding initiates a CA system self-test</td>
 							</tr>
 							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>n</kbd></td>
-										<td>Unlock / Unblock the transformer and heating overload relay</td>
-										<td>Works only when the transformer is off</td>
+										<td><kbd>Num Enter</kbd></td>
+										<td>Turn on the wheelslip protection brake and sander</td>
+										<td>In case of wheelslip</td>
 							</tr>
 							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>z</kbd></td>
-										<td>EMU: Turn on the EP (Electro-Pneumatic) brake fuse</td>
-										<td>Initially turned on</td>
+										<td><kbd>s</kbd></td>
+										<td>Turn on the sander</td>
+										<td>In case of wheelslip. <u>Hold the key for a moment</u></td>
 							</tr>
 							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>z</kbd></td>
-										<td>EMU: Turn off the EP brake fuse</td>
-										<td></td>
+										<td><kbd>a</kbd></td>
+										<td>Turn on the air horn (low tone)</td>
+										<td>Used to please the rail enthusiasts :p</td>
 							</tr>
 							<tr>
-										<td><kbd>z</kbd></td>
-										<td>Show current from second unit</td>
-										<td>Applies to only the ET41</td>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>a</kbd></td>
+										<td>Turn on the air horn (high tone)</td>
+										<td>Used to please the rail enthusiasts :p</td>
 							</tr>
 							<tr>
 										<td><b><span style="color: #0000ff;">Key (s)</span></b></td>
@@ -287,109 +228,141 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 										<td><b><span style="color: #0000ff;">Note / Comment</span></b></td>
 							</tr>
 							<tr>
-										<td><kbd>Shift</kbd> + <kbd>i</kbd></td>
-										<td>Turn on right white lamp</td>
-										<td>-</td>
+										<td colspan="3"><b><span style="color: #0000ff;">Settings</span></b></td>
+							</tr>
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>b</kbd></td>
+										<td>Set the brake response type to fast</td>
+										<td>R setting - Used on fast passenger trains</td>
+							</tr>
+							<tr>
+										<td><kbd>b</kbd></td>
++										<td>Set the brake response type to slow</td>
++										<td>B setting - used on the freight trains</td>
+							</tr>
+							<tr>
+										<td><kbd>f</kbd></td>
+										<td>Toggle switch for contactor limit to low/high</td>
++										<td>ET42: connecting the units in series or parallel<br>2Ls150 (SM03): toggling between shunting or normal running</td>
+							</tr>
+							<tr>
+										<td><kbd>g</kbd></td>
++										<td>Switch for the automatic start mode</td>
++										<td>-</td>
+							</tr>
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>l</kbd></td>
++										<td>EMU: turn on the second unit's braking indicator</td>
++										<td>Initially off. Works in the ED72.</td>
+							</tr>
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>z</kbd></td>
++										<td>Show the current in the second unit</td>
++										<td>Only for the ET41</td>
+							</tr>
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>s</kbd></td>
++										<td>EMU: Turn on the manual door locking and it's indicator</td>
++										<td>Initially off. Locks when v>5km/h. Works in the EN57-2000 and ED72 types.</td>
+							</tr>
+							<tr>
+										<td><b><span style="color: #0000ff;">Key (s)</span></b></td>
+										<td><b><span style="color: #0000ff;">Function</span></b></td>
+										<td><b><span style="color: #0000ff;">Note / Comment</span></b></td>
+							</tr>
+							<tr>
+										<td colspan="3"><b><span style="color: #0000ff;">Safety devices</span></b></td>
+							</tr>
+							<tr>
+										<td><kbd>l</kbd></td>
++										<td>Disengage the motor current contactor</td>
++										<td>Allows for rapid stop of electricity going into the motors</td>
+							</tr>
+							<tr>
+										<td><kbd>n</kbd></td>
++										<td>Reset the traction motors overload relay</td>
++										<td>Only when both the main power and the bypass controllers are on the 0 position</td>
+							</tr>
+							<tr>
+										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>n</kbd></td>
++										<td>Reset the transformer and train heating overload relay</td>
++										<td>Works only when the transformer is off</td>
+							</tr>
+							<tr>
+										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>z</kbd></td>
++										<td>EMU: Toggle the EP brake fuse</td>
++										<td>Initially on</td>
+							</tr>
+							<tr>
+										<td><b><span style="color: #0000ff;">Key (s)</span></b></td>
+										<td><b><span style="color: #0000ff;">Function</span></b></td>
+										<td><b><span style="color: #0000ff;">Note / Comment</span></b></td>
+							</tr>
+							<tr>
+										<td colspan="3"><b><span style="color: #0000ff;">Lamps</span></b></td>
 							</tr>
 							<tr>
 										<td><kbd>i</kbd></td>
-										<td>Turn off right white lamp</td>
-										<td>In case of it is on</td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd> + <kbd>y</kbd></td>
-										<td>Turn on left white lamp</td>
+										<td>Toggle the front right lamp</td>
 										<td>-</td>
-							</tr>
-							<tr>
-										<td><kbd>y</kbd></td>
-										<td>Turn off the left white lamp</td>
-										<td>In case of it is on</td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd> + <kbd>u</kbd></td>
-										<td>Turn on upper white lamp
-										<br>Turn the lamp programmer to the right.</td>
-										<td>In vehicle with a lamp programmer (rotary switch with preset lamp configurations).</td>
 							</tr>
 							<tr>
 										<td><kbd>u</kbd></td>
-										<td>Turn off upper white lamp
-										<br>Turn the lamp programmer to the left.</td>
-										<td>In vehicle with a lamp programmer (rotary switch with preset lamp configurations).</td>
-							</tr>
-							<tr>
-										<td><kbd>i</kbd></td>
-										<td>Turn on right red lamp</td>
-										<td>In case the white light is off</td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd> + <kbd>i</kbd></td>
-										<td>Turn off right red lamp</td>
-										<td>In case of it is on</td>
+										<td>Toggle the front top lamp. Lamps selector switch to the left.</td>
+										<td>In vehicles that have a lamp selector</td>
 							</tr>
 							<tr>
 										<td><kbd>y</kbd></td>
-										<td>Turn on left red lamp</td>
-										<td>In case the white light is off</td>
+										<td>Toggle the front left lamp</td>
+										<td>-</td>
 							</tr>
 							<tr>
-										<td><kbd>Shift</kbd> + <kbd>y</kbd></td>
-										<td>Turn off left red light</td>
-										<td>In case of it is on</td>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>u</kbd></td>
++										<td>Lamps selector switch to the right.</td>
++										<td>In vehicles that have a lamp selector</td>
+							</tr>
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>i</kbd></td>
++										<td>Toggle the state of the right red light</td>
++										<td>-</td>
+							</tr>
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>y</kbd></td>
++										<td>Toggle the state of the left red light</td>
++										<td>-</td>
 							</tr>
 							<tr>
 										<td colspan="3"><b><span style="color: #0000ff;">Opertating the rear lamps</span></b> – Applies to: SM03, SM31, SM40, SM42, SP42, TEM2, TEM2U</td>
 							</tr>
 							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd></td>
-										<td>Turn on the rear right white lamp</td>
-										<td>-</td>
+										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>i</kbd></td>
++										<td>Toggle the rear right lamp (white light)</td>
++										<td>-</td>
+							</tr>							
+							<tr>
+										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>y</kbd></td>
++										<td>Toggle the rear left lamp (whote light)</td>
++										<td>-</td>
 							</tr>
 							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>i</kbd></td>
-										<td>Turn off the rear right white lamp</td>
-										<td>In case of it is on</td>
+										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>u</kbd></td>
++										<td>Toggle the rear top lamp (white light)</td>
++										<td>-</td>
 							</tr>
 							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>y</kbd></td>
-										<td>Turn on the rear left white lamp</td>
-										<td>-</td>
+										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>i</kbd></td>
++										<td>Toggle the rear right lamp (white lamp)</td>
++										<td>-</td>
 							</tr>
 							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>y</kbd></td>
-										<td>Turn off the rear left white lamp</td>
-										<td>In case of it is on</td>
+										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>y</kbd></td>
++										<td>Toggle the rear left lamp (white lamp)</td>
+ 										<td>-</td>
 							</tr>
 							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>u</kbd></td>
-										<td>Turn on the rear upper lamp</td>
-										<td>-</td>
-							</tr>
-							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>u</kbd></td>
-										<td>Turn off the rear upper  lamp</td>
-										<td>-</td>
-							</tr>
-							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>i</kbd></td>
-										<td>Turn on the rear right red lamp</td>
-										<td>In case the white light is off</td>
-							</tr>
-							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>i</kbd></td>
-										<td>Turn off rear right red lamp</td>
-										<td>In case it is on</td>
-							</tr>
-							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>y</kbd></td>
-										<td>Turn on rear left red lamp</td>
-										<td>In case the white light is off</td>
-							</tr>
-							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>y</kbd></td>
-										<td>Turn off the rear left red lamp</td>
-										<td>In case it is on</td>
+										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>l</kbd></td>
++										<td>Toggle the head lamp dimmer</td>
+ 										<td>-</td>
 							</tr>
 							<tr>
 										<td><b><span style="color: #0000ff;">Key (s)</span></b></td>
@@ -397,84 +370,28 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 										<td><b><span style="color: #0000ff;">Note / Comment</span></b></td>
 							</tr>
 							<tr>
-										<td><kbd>Space</kbd></td>
-										<td>Cancel the CA and SHP</td>
-										<td>Hold for CA self-test</td>
-							</tr>
-							<tr>
-										<td><kbd>Enter</kbd></td>
-										<td>Turn on anti-wheel-slip brake and sander</td>
-										<td>In case of wheel-slip</td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>s</kbd></td>
-										<td>EMU: Turn on the manual door lock and it's indicator</td>
-										<td>Initially turned off. Locks when v(elocity)>5km/h. Works in the EN57-2000 and the ED72</td>
-							</tr>
-							<tr>
-										<td><kbd>s</kbd></td>
-										<td>EMU: Turn off the manual door lock and it's indicator</td>
-										<td>Locks when v>5km/h. Works in the EN57-2000 and the ED72</td>
-							</tr>							
-							<tr>
-										<td><kbd>s</kbd></td>
-										<td>Turn on the sander</td>
-										<td>In case of wheel-slip. <u>Hold the key for a moment</u>. Doesn't work in many vehicles due to a lack of the defined switch.</td>
-							</tr>
-							<tr>
-										<td><kbd>a</kbd></td>
-										<td>Horn (Low Tone)</td>
-										<td></td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd> + <kbd>a</kbd></td>
-										<td>Horn (High Tone)</td>
-										<td></td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd> + <kbd>h</kbd></td>
-										<td>Turn on train heating</td>
-										<td>-</td>
-							</tr>
-							<tr>
 										<td><kbd>h</kbd></td>
-										<td>Turn off train heating</td>
-										<td>-</td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd> + <kbd>,</kbd><!-- (&lt;) --></td>
-										<td>Open the doors on the left</td>
-										<td>Appiles to EMUs only</td>
++										<td>Toggle the train heating switch</td>
++										<td>-</td>
 							</tr>
 							<tr>
 										<td><kbd>,</kbd></td>
-										<td>Close the doors on the left</td>
-										<td>Applies to EMUs only</td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd> + <kbd>.</kbd><!-- (>) --></td>
-										<td>Open doors on the right</td>
++										<td>Toggle the left door switch</td>
 										<td>Applies to EMUs only</td>
 							</tr>
 							<tr>
 										<td><kbd>.</kbd></td>
-										<td>Close the doors on the right</td>
+										<td>Toggle the right door switch</td>
 										<td>Applies to EMUs only</td>
 							</tr>
 							<tr>
 										<td><kbd>/</kbd></td>
 										<td>Door closing warning / buzzer </td>
 										<td>Applies to EMUs only</td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>r</kbd></td>
-										<td>Turn the radio on</td>
-										<td>It's initially turned on</td>
-							</tr>
-							
+							</tr>							
 							<tr>
 										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>r</kbd></td>
-										<td>Turn the radio off</td>
+										<td>Toggle the radio power switch</td>
 										<td>Resets the Radiostop (RS). Required to pressurise the Brake Pipe after RS activates.</td>
 							</tr>
 							<tr>
@@ -482,7 +399,7 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 										<td>Radio-Stop</td>
 										<td>All vehicles within the 2km radius will receive the Emerency_brake command, only if the CHK file has a "RadioStop=Yes" inscription / in it.</td>
 							</tr>
-							<tr>
+							<!--<tr>
 										<td><kbd>-</kbd></td>
 										<td>Change radio channel</td>
 										<td>Decrease</td>
@@ -491,7 +408,7 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 										<td><kbd>=</kbd></td>
 										<td>Change radio channel</td>
 										<td>Increase</td>
-							</tr>
+							</tr>-->
 							<tr>
 										<td><b><span style="color: #0000ff;">Key (s)</span></b></td>
 										<td><b><span style="color: #0000ff;">Function</span></b></td>
@@ -520,108 +437,20 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 										<td>Doesn't work in <a href="en-debugmode.html">debugmode</a>!</td>
 							</tr>
 							<tr>
-										<td><kbd>Shift</kbd> + <kbd>;</kbd><!-- (:) --></td>
-										<td>Turn on the universal 3</td>
-										<td>-</td>
-							</tr>
-							<tr>
 										<td><kbd>;</kbd></td>
-										<td>Turn off the universal 3</td>
-										<td>-</td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd> + <kbd>'</kbd><!-- (") --></td>
-										<td>Turn on the universal 4</td>
-										<td>-</td>
+										<td>Toggle the gauge lights</td>
+										<td>Universal 3</td>
 							</tr>
 							<tr>
 										<td><kbd>'</kbd></td>
-										<td>Turn off the universal 4</td>
-										<td>-</td>
-							</tr>
-							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>;</kbd><!-- (") --></td>
-										<td>Turn on cab light (s)</td>
-										<td>-</td>
-							</tr>
-							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>;</kbd><!-- (") --></td>
-										<td>Turn off cab light (s)</td>
-										<td>-</td>
-							</tr>
-							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>'</kbd><!-- (") --></td>
-										<td>Dim the cab light (s)</td>
-										<td>-</td>
+										<td>Toggle the cab light/td>
+										<td>Universal 4</td>
 							</tr>
 							<tr>
 										<td><kbd>Ctrl</kbd> + <kbd>'</kbd><!-- (") --></td>
-										<td>Full power cab light (s)</td>
+										<td>Toggle the cab light dimmer</td>
 										<td>-</td>
-							</tr>											
-						<!--	
-							<tr>
-										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>; (:)</kbd></td>
-										<td>Turn on instrument lights</td>
-										<td>In majority of vehicles</td>
 							</tr>
-							<tr>
-										<td><kbd>;</kbd></td>
-										<td>Turn off instrument lights</td>
-										<td>In majority of vehicles</td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>] (})</kbd></td>
-										<td>Open the cab doors</td>
-										<td>Only in the EU06 and EU07 type locos</td>
-							</tr>
-							<tr>
-										<td><kbd>]</kbd></td>
-										<td>Close the cab doors</td>
-										<td>Only in the EU06 and EU07 type locos</td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>' (")</kbd></td>
-										<td>Turn on cab cooling fan</td>
-										<td>In case there is one</td>
-							</tr>
-							<tr>
-										<td><kbd>'</kbd></td>
-										<td>Turn off cab cooling fan</td>
-										<td>Incase there is one</td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>] (})</kbd></td>
-										<td>Open the second man's side window</td>
-										<td>Only in SU46 and some EU07</td>
-							</tr>
-							<tr>
-										<td><kbd>]</kbd></td>
-										<td>Close the second man's side window</td>
-										<td>Only in SU46 and some EU07</td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>[ ({)</kbd></td>
-										<td>Lower the sun screen</td>
-										<td>Only in SU46 and some EU07</td>
-							</tr>
-							<tr>
-										<td><kbd>[</kbd></td>
-										<td>Raise the sun screen</td>
-										<td>Only in SU46 and some EU07</td>
-							</tr>
-							<tr>
-										<td><kbd>[</kbd></td>
-										<td>Open the driver's side window</td>
-										<td>Only in some EU07</td>
-							</tr>
-							<tr>
-										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>[ ({)</kbd></td>
-										<td>Close the driver's side window</td>
-										<td>Only in some EU07</td>
-							</tr>
-							
-						-->	
 							<tr>
 										<td><b><span style="color: #0000ff;">Key</span></b></td>
 										<td><b><span style="color: #0000ff;">Function</span></b></td>
@@ -682,13 +511,6 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 										<td>Show FPS and visible sectors</td>
 										<td>-</td>
 							</tr>
-							<!--
-							<tr>
-										<td><kbd>F9</kbd></td>
-										<td>Secondary Info</td>
-										<td>Sadly, this doesn't work correctly. Please don't use this and any info gathered from this</td>
-							</tr>							
-							-->
 							<tr>
 										<td><kbd>F9</kbd></td>
 										<td>Show the Sim's EXE version</td>
@@ -720,19 +542,9 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 										<td>WARNING! To turn on this function first the <kbd>F12</kbd> key must be pressed, and then couple of <b>moments later</b> click <kbd>2</kbd></td>
 							</tr>
 							<tr>
-										<td><kbd>Pause/Break</kbd></td>
-										<td>Pause (the simulation)</td>
-										<td>When running</td>
-							</tr>
-							<tr>
-										<td><kbd>Pause/Break</kbd></td>
-										<td>Resume (the simulation)</td>
-										<td>When paused</td>
-							</tr>
-							<tr>
 										<td><kbd>Esc</kbd></td>
-										<td>Turn on "speeding up"</td>
-										<td>Pressing this makes the simulation time increase by a factor of five (5x) (while calculating the physics only). It is particularly useful when testing the physics and characteristics. It doesn't speed time up. Works only in <a href="en-debugmode.html">debugmode</a>.</td>
+										<td>Pause</td>
+										<td>-</td>
 							</tr>
 							<tr>
 										<td><b><span style="color: #0000ff;">Key</span></b></td>
@@ -856,11 +668,6 @@ This page lists all the keys and their functions. You CAN'T define the key's fun
 										<td>Disconnects the Pantograph Reservouir from the Main Reservouir. - Detailed description on the page about<a href="en-control.html">controlling</a></td>						
 							</tr>
 							<tr>
-										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>v</kbd></td>
-										<td>Three-way valve</td>
-										<td>Connect the Pantograph Reservouir with the Main Reservouir (if previously disconnected) - Detailed description on the page about<a href="en-control.html">controlling</a></td>							
-							</tr>
-							<tr>
 										<td><kbd>Shift</kbd> + <kbd>q</kbd></td>
 										<td>Turn auto-pilot on</td>
 										<td>Let the computer drive. <!--Warning: Auto-pilot can only be turned off in <a href="en-debugmode.html">debugmode</a>. Normally, pressing Shift + q causes the computer to take full control - <b>the keyboard gets locked (for example you can't leave the cab).</b>--></td>
@@ -893,6 +700,7 @@ Other than the above, the <kbd>Shift</kbd> + <kbd>0</kbd>, <kbd>Shift</kbd> +
 Original autor: Benek.<br>Fill-ins and improvements: libertyn89, adsim. 
 <br>Update: Maciej, Stele
 <br>English translation: kolejarz2009
+<br>English version: daily-20170605r1
 
 </div>
 </body>
