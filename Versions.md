@@ -25,7 +25,7 @@
 <br> PL: licencja.html          <b>daily-20160728 r1</b>
 <br>
 <li> en-readme.html = <b>100%</b>
-<br> PL: readme.html            <b>daily-20170525 r1</b>
+<br> PL: readme.html            <b>daily-20170525 r2</b>
 <br>
 <li> en-universal.html = <b>100%</b> 
 <br> PL: universale.html        <b>daily-20160728 r1</b>
