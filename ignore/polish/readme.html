@@ -72,7 +72,7 @@
 <h2><a name="2">Wstęp</a></h2>
 <h3>MaSzyna 17.??</h3>
 <p>
-Projekt <b>Symulator "MaSzyna"</b> w roku 2017 wchodzi w szesnasty rok swojego istnienia. W tym wydaniu skupiliśmy się nad... (do uzupełnienia)
+Projekt <b>Symulator "MaSzyna"</b> w roku 2017 wchodzi w szesnasty rok swojego istnienia. W tym wydaniu skupiliśmy się nad przepisaniem całego kodu na język <strong>C++</strong>, zamiast mieszanki c++ i Pascala. Przepisanie kodu nie oznacza jedynie lepszej organizacji dla twórców projektu, ale również otwiera szeroko wrota na nowe możliwości, które jeszcze kilka lat temu wydawały się niemożliwe do zrealizowania. Po szczegóły zapraszam do zapoznania się z <a href="#11,2">modyfikacjami pliku EXE</a>.
 <p>Gorąco achęcamy do zapoznania się z najnowszym wydaniem <b>Symulatora "MaSzyna"</b>.<br><i>Administracja eu07.pl</i>
 <div class="powrot"> 
 	<span><a href="#0">Spis treści</a></span>
@@ -94,6 +94,10 @@ href="http://7-zip.org.pl/sciagnij.html">http://7-zip.org.pl/sciagnij.html</a>),
 </div>
 <h3><a name="3,2">Pierwsze uruchomienie</a></h3>
 <p>
+Aby rozpocząć naszą przygodę z symulatorem, musimy upewnić się, jaki mamy system - 32-bitowy (x86) czy też 64-bitowy (x64). W głównym folderze symulatora ujrzymy dwa spakowane pliki - "exe-x86" oraz "exe-x64". W zależności od posiadanego systemu operacyjnego rozpakowujemy jeden z nich.
+<div class="uwaga"><strong>Ważna uwaga</strong><br> Do uruchomienia symulatora może okazać się niezbędny Microsoft C++ Runtime Library z 2015 roku. Najlepiej zainstalować obie wersje dla 32- i 64-bitowego systemu operacyjnego. <br></div>
+
+<p>
 Do uruchomienia MaSzyny służy program Rainsted autorstwa Ra. Pełni on funkcję startera i edytora składów (ale także m.in. edytora tras realistycznych; więcej 
 
 informacji dotyczących tego programu można znaleźć na stronie <a href="http://rainsted.com/">rainsted.com</a>). Wejdź do katalogu głównego z MaSzyną.
@@ -114,7 +118,7 @@ Znakiem, że starter został uruchomiony jest pojawienie się okienka (screen 3)
 </p>
 <a href="inne/readme_pliki/img/3.png" title="Kliknij, aby powiększyć obrazek."><img src="inne/readme_pliki/img/3_mini.png" alt="Screen 3: Program Rainsted, zakładka Wczytanie"></a>
 <p>
-Na pasku tytułowym znajduje się napis: "Wybierz scenerię :: MaSzyna EU07-424 :: Rainsted 15.1.108.10181". Owe "15.1.108.10181", to nie jest <!-- - jak błędnie myśli wiele osób - -->
+Na pasku tytułowym znajduje się napis: "Wybierz scenerię :: MaSzyna EU07-424 :: Rainsted 17.5.126.12740". Owe "17.5.126.12740", to nie jest <!-- - jak błędnie myśli wiele osób - -->
 
 numer wersji Symulatora, a numer wersji programu Rainsted i zmienia się on wraz z jego aktualizacją.
 <br>
@@ -646,6 +650,7 @@ Plik wykonywalny EXE, który znajduje się w obecnym wydaniu został poddany zaa
 	<li>Reorganizacja obsługi świateł i obsługi kranów hamulców</li>
 	<li>Wprowadzona obsługa Gamepada</li>
 	<li>Własne definiowanie funckji klawiszy</li>
+	<li>Możliwość interakcji z przełącznikami w kabinie za pomocą myszy</li>
 </ul>
 <p>
 Wyżej wymienione punkty to tylko mały ułamek wprowadzonych zmian, gdyż przedstawiamy zmiany istotne i widoczne dla użytkowników. Dokładny Changelog zmian znajduje się w wątku <a href="http://eu07.pl/forum/index.php/topic,28920.0.html">poświęconym zmianom w EXE</a> na Forum projektu, lista jest stale aktualizowana.
@@ -1082,7 +1087,7 @@ Po wejściu do kabiny jestem daleko od nastawnika jazdy. Jak temu zaradzić?</a>
 
 <li>
 <div class="pytanie"><a name="14,39">Naciskam <kbd>M</kbd>, a mimo to wyłącznik szybki się nie włącza.</a></div>
-<div class="odpowiedz">Zgodnie ze stanem realnym należy przycisk <kbd>M</kbd> przytrzymać kilka sekund, agy wyłącznik szybki się włączył.
+<div class="odpowiedz">Zgodnie ze stanem realnym należy przycisk <kbd>M</kbd> przytrzymać kilka sekund, aby wyłącznik szybki się włączył.
 </div>
 <div class="powrot"><span><a href="#14,0">Powrót do listy pytań</a></span></div></li>
 
