@@ -1,7 +1,7 @@
 <li> en-change-trains.html  = <b>100%</b>
 <br> PL: zmiana-skladow.html  <b>daily-20160728 r1</b>
 <br>
-<li> en-control.html = <b>100%</b>
+<li> en-control.html = 90%</b>
 <br> PL: sterowanie.html        <b>daily-20160831 r1</b>
 <br>
 <li> en-debug.html = <b>100%</b> 
@@ -18,14 +18,14 @@
 <br>
 <li><i> exe-pc2011.html = N/A</i>
 <br>
-<li> en-keys.html = <b>100%</b>
+<li> en-keys.html = 90%</b>
 <br> PL: klawiszologia.html     <b>daily-20160831 r1</b>
 <br>
 <li> en-license.html = <b>100%</b> 
 <br> PL: licencja.html          <b>daily-20160728 r1</b>
 <br>
 <li> en-readme.html = <b>100%</b>
-<br> PL: readme.html            <b>daily-20170525 r2</b>
+<br> PL: readme.html            <b>daily-20170711 r1</b>
 <br>
 <li> en-universal.html = <b>100%</b> 
 <br> PL: universale.html        <b>daily-20160728 r1</b>
