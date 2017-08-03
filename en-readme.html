@@ -3,19 +3,19 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="Content-Language" content="en">  
-  <title>The English Readme &ndash; Railway Vehicle Simulator &ndash; MaSzyna 16.08</title>
+  <title>The English Readme &ndash; Railway Vehicle Simulator &ndash; MaSzyna 17.07</title>
   <link rel="Stylesheet" type="text/css" href="inne/readme_pliki/style.css">
 </head>
 <body>
-<!-- VERSION daily-20170711 REVISION 01-->
+<!-- VERSION daily-20170719 REVISION 01-->
 <div id="STRONA">
 	
-	
+<center>	
 <img src="inne/readme_pliki/img/logo.png" alt="MaSzyna - Railway Vehicle Simulator">
-<img src="inne/readme_pliki/img/424.png" alt="EP07-424">
-<h1 style="text-align: right;">MaSzyna 17.??/h1>
+<img src="inne/readme_pliki/img/424.png" alt="EP07-424"></center>
+<h1 style="text-align: right;">MaSzyna 17.07</h1>
 <h2 style="text-align: right;"><font size="5">The Readme File</font></h2>
-<div style="text-align: right;"><b>AUTHOR:</b> libertyn89<br><br><b>UPDATE:</b> Maciej<br><br><b>CONSULTATIONS, HELP:</b> adsim, Benek, dejotzbych, hunter, matek123, Ra, Sawi, surgeon, szogun, youBy,<br>sebastian82, EP08_015, Stele and others<br><b>TRANSLATION:</b> kolejarz2009</br><!-- <b>ENGLISH PROOF-READING:</b> kolejarz2009,</div> -->
+<div style="text-align: right;"><b>AUTHOR:</b> libertyn89<br><br><b>UPDATE:</b> Kolejarz2009<br><br><b>CONSULTATIONS, HELP:</b> adsim, Benek, dejotzbych, hunter, matek123, Ra, Sawi, surgeon, szogun, youBy,<br>sebastian82, EP08_015, Stele, Maciej and others<br><b>TRANSLATION:</b> kolejarz2009</br><!-- <b>ENGLISH PROOF-READING:</b> kolejarz2009,</div> -->
 
 
 <h2><a name="0">Contents</a></h2>
@@ -27,6 +27,7 @@
 			<ol>
 				<li><a href="#3,1">Installation?</a></li>
 				<li><a href="#3,2">First run</a></li>
+				<li><a href="#3,3">Hardware requirements</a></li>
 			</ol>
 		</li>
 		<li><a href="#4">Keyboard control</a></li>
@@ -72,8 +73,8 @@
 	</div>
 
 <h2><a name="2">Introduction</a></h2>
-<h3>MaSzyna 17.??</h3>
-<p><b>The "MaSzyna" Simulator</b> project is entering into it's sixteenth year of existance in 2017. In this version, we focused on rewriting the whole code into <strong>C++</strong>, instead of a C++ and Pascal mix. Rewriting the code doesn not simply mean better organisation for the creators, but opens the gates wide open for new functions and possibilities, which seemes impossible to achieve only few years back. For a detailed look, we recommend you look in the <a href="#11,2">Simulator executable &ndash; EXE</a> section.
+<h3>MaSzyna 17.07</h3>
+<p><b>The "MaSzyna" Simulator</b> project is entering into it's sixteenth year of existance in 2017. In this version, we focused on rewriting the whole code into <strong>C++</strong>, instead of a mixture of C++ and Pascal. Rewriting the code doesn not simply mean better organisation for the creators, but opens the gates wide open for new functions and possibilities, which seemes impossible to achieve only few years back. For a detailed look, we recommend you look in the <a href="#11,2">Simulator executable &ndash; EXE</a> section.
 <p>We highly recommend you to try out the newest version of <b>The "MaSzyna" Simulator</b>.<br><i>eu07.pl Administration</i>
 <div class="powrot"> 
 	<span><a href="#0">Contents</a></span>
@@ -81,9 +82,26 @@
 <h2><a name="3">I've downloaded the simulator, now what?</a></h2>
 <h3><a name="3,1">Installation?</a></h3>
 <p>
-No. You do not install MaSzyna. After downloading MaSzyna, it needs to be <i>extracted</i> to a new folder. To extract MaSzyna, we recommend the free software "7-Zip" version 9.20 (to download from <a 
+No. You do not install MaSzyna. After downloading MaSzyna, it needs to be <i>extracted</i> to a new folder. To extract MaSzyna, we recommend the free software "7-Zip" version 9.20 (to download from <a href="http://7-zip.org">http://7-zip.org</a>), since using WinRAR might cause problems.
+</p>
+<div class="powrot"> 
+	<span><a href="#0">Contents</a></span>
+</div>
 
-href="http://7-zip.org">http://7-zip.org</a>), since using WinRAR might cause problems.
+
+<h3><a name="3,3">Hardware requirements</a></h3>
+<p>
+Thre software and hardware requirements hare been increased in comparison to the previous versions. Because of the EXE file being supplied in both 32bit (x86) and 64bit (x64), caution should be exercised when picking and running the EXE file and it's dependencies on your computer.<br>
+<ul>
+<li>Graphics card and driver supporting OpenGL 1.5 or higher.</li>
+<li>DirectX 8.0 or higher.</li>
+<li>Visual C++ Redistributable 2007 and 2015 packages.</li>
+Sometimes. it might be necessary to install the basic Python 2.7.14 package, especailly on 64 bit systems.<br>
+It is recommended to have at least 4GB of RAM and a multithreaded CPU. Low amount of RAM might not support bigger sceneries without decreasing the texture size (maxtexturesize in the eu07.ini file), and no free thread on the CPU might result in drastically decreased performance in the vehicles with an onboard computer.
+</ul>
+<br>
+<br>
+The next version of MaSzyna will introduce a new renderer, requiring a graphics card supporting at least OpenGL 3.3 and more RAM. The current renderer will be available to users with older hardware, but if you ware thinking of buying a new computer, this would be a good time, to enojy the full effects of the future graphical effects.
 </p>
 <div class="powrot"> 
 	<span><a href="#0">Contents</a></span>
@@ -92,12 +110,9 @@ href="http://7-zip.org">http://7-zip.org</a>), since using WinRAR might cause pr
 <p>
 In order to begin our adventure in the Simulator, we need to know whenever our system is 32-bit (x86) or 64-bit (x64). In the Simulator's main folder, you will see two archive files - "exe-x86" and "exe-x64". We need to extract the archive that has the same type as the Operating System.
 <div class="uwaga"><strong>Important Notice</strong><br> To run the simulator, you might need the Microsoft C++ Runtime Library 2015. Best to install both versions - for 32 bit and 64bit systems. <br></div>
-
 <p>	
 To launch MaSzyna, use Rainsted launcher, created by Ra. It functions as starter and a train consist editor (but also a realistic scenery editor, more on it further down and more 
-
 information is on <a style="color:red" href="http://rainsted.com/">rainsted.com [POLISH ONLY]</a> Enter the main MaSzyna folder. 
-
 Launch <i>Rainsted.exe</i> (icon like in screen 1 below).
 </p>
 <img src="inne/readme_pliki/img/1.png" alt="Screen 1: Rainsted launcher icon"><!-- it can also look like this: <img src="inne/readme_pliki/img/1old.png" alt="Screen 1: Rainsted launcher icon">-->
@@ -106,53 +121,32 @@ You should see the following window (screen 2):
 </p>
 <a href="inne/readme_pliki/img/2.png" title="Click, to enlarge."><img src="inne/readme_pliki/img/2_mini.png" alt="Screen 2: Rainsted (launcher)"></a>
 <p>
-Durning first run, Rainsted launcher processes and generates certain configuration files. It can take upto around a minute. It is a 
-
-one-time process - every other launch of Rainsted will launch much quicker.
+Durning first run, Rainsted launcher processes and generates certain configuration files. It can take upto around a minute. It is a one-time process - every other launch of Rainsted will launch much quicker.
 <br>
 Rainsted was succesfully started when the following window appears (screen 3):
 </p>
 <a href="inne/readme_pliki/img/3.png" title="Click, to enlarge."><img src="inne/readme_pliki/img/3_mini.png" alt="Screen 3: Rainsted, Choose Scenery tab"></a>
 <p>
-The titlebar says: "Wybierz scenerię :: MaSzyna EU07-424 :: Rainsted 17.5.126.12740". The "17.5.126.12740", is not <!-- - contrary to what may people think - --> Simulator version number, but the 
-
-version of the Rainsted Launcher and changes when Rainsted is updated.
+The titlebar says: "Wybierz scenerię :: MaSzyna EU07-424 :: Rainsted 17.5.126.12740". The "17.5.126.12740", is not <!-- - contrary to what may people think - --> Simulator version number, but the version of the Rainsted Launcher and changes when Rainsted is updated.
 <br>
-Go to <i>Settings</i> (or <i>Ustawienia</i> if the Launcher started in the Polish language) and in 
-
-the <i>Select language</i> (or <i>Wybór Języka</i>) and choose your preferred language.
+Go to <i>Settings</i> (or <i>Ustawienia</i> if the Launcher started in the Polish language) and in the <i>Select language</i> (or <i>Wybór Języka</i>) and choose your preferred language.
 <br> From here on, we assume that the language was set to English.<br>
 <i>Settings</i> tab (screen 4) allows for configuring such parameters, like screen resolution.
 </p>
 <a href="inne/readme_pliki/img/4.png" title="Click, to enlarge."><img src="inne/readme_pliki/img/4_mini.png" alt="Screen 4: Rainsted, Settings tab (in Polish)"></a>
 <p>
-The important setting in the <i>Settings</i> tab, is the <b>User mode</b>. It can be changed, depending on the knowledge of the user. 
-
-This setting affects <i>Rainsted</i> <b>ONLY</b> and has no effect on the simulation whatsoever. Let's look at options from the "Settings in EU07.INI" pane. 
-
-These DO affect the simulation. 
+The important setting in the <i>Settings</i> tab, is the <b>User mode</b>. It can be changed, depending on the knowledge of the user. This setting affects <i>Rainsted</i> <b>ONLY</b> and has no effect on the simulation whatsoever. Let's look at options from the "Settings in EU07.INI" pane. These DO affect the simulation. 
 </p>
 <ul>
 <li>Fullscreen mode - Before checking this, it is recommended to choose a resolution from the list on the left, which is compatible with the display.</li>
 <li>Fix for monitor refresh frequency - Check this, if the screen flickers.</li>
 <li>Multisampling - This allows for smoothing of jagged edges, so: better quality, worse FPS. Can be regulated, from 1(off) to 16.</li>
 <li>Debugmode - More about it <a href="inne/readme_pliki/en-debugmode.html">here</a>.</li>
-<li>Writing "log.txt" - Very important option. When checked, everytime the simulator runs, it generates a file in the main directory 
-
-called "log.txt". It contains information, is are extremely important when solving problems that occur durning scenario loading. If you 
-
-do not have problems with the Simulator, uncheck this option, the CPU will be less loaded, and you might gain few FPS.</li> 
-<li>Writing vehicle parameters - It generates a "[vehicle name].dat" file for every vehicle, in the "physicslog" folder. On 
-
-weaker computers, might cause the FPS to drop. We suggest you use this option only when planning on using the "HTV" software (more in the FAQ).</li>
-
+<li>Writing "log.txt" - Very important option. When checked, everytime the simulator runs, it generates a file in the main directory called "log.txt". It contains information, is are extremely important when solving problems that occur durning scenario loading. If you do not have problems with the Simulator, uncheck this option, the CPU will be less loaded, and you might gain few FPS.</li> 
+<li>Writing vehicle parameters - It generates a "[vehicle name].dat" file for every vehicle, in the "physicslog" folder. On weaker computers, might cause the FPS to drop. We suggest you use this option only when planning on using the "HTV" software (more in the FAQ).</li>
 </ul>
 <p>
  The remaining options should be left as they ware. <!-- Always checked (except for: <!--day-night cycle, which was not implemented and --><!--Traction seeking, which might cause lower FPS on weaker computers; more in the FAQ). They allow for certain functions, which ware not available in the older versions.-->
-
-
-
-
 </p>
 <p>
  In the <i>Choose scenery</i> tab, is a list of all the available scenarios. As you can see, we have tens of different scenarios. 
@@ -207,14 +201,7 @@ After a moment (no more than a minute) the startup window should appear (screen 
 
 src="inne/readme_pliki/img/9_mini.png" alt="Screen 9: MaSzyna Simulator - Startup screen, Windows Vista & 7"></a>
 <p>
-To find out about that, all you have to do is press <kbd>Alt</kbd>&nbsp;+&nbsp;<kbd>Tab</kbd>. Then we will 
-
-see the &quot;Terminal&quot; (on Windows Vista and 7, switching to the terminal durning loading only works if the <i>Fullscreen mode</i> is unchecked; and then, once the simulator has loaded, the 
-
-<kbd>Alt</kbd>&nbsp;+&nbsp;<kbd>Tab</kbd> combination works normally, even in fullscreen mode). We will be able to watch the simulator loading process. Sometimes, it can stop for a while on the stage 
-
-shown 
-	on the screen 10 (Sound Init&#8230; OK) , however, it won't stay there forever :)
+To find out about that, all you have to do is press <kbd>Alt</kbd>&nbsp;+&nbsp;<kbd>Tab</kbd>. Then we will see the &quot;Terminal&quot; (on Windows Vista and 7, switching to the terminal durning loading only works if the <i>Fullscreen mode</i> is unchecked; and then, once the simulator has loaded, the <kbd>Alt</kbd>&nbsp;+&nbsp;<kbd>Tab</kbd> combination works normally, even in fullscreen mode). We will be able to watch the simulator loading process. Sometimes, it can stop for a while on the stage shown on the screen 10 (Sound Init&#8230; OK) , however, it won't stay there forever :)
 </p>	 
 <a href="inne/readme_pliki/img/10.png" title="Click, to enlarge."><img src="inne/readme_pliki/img/10_mini.png" alt="Screen 10: MaSzyna Simulator - loading of the sim in the terminal"></a>
 <p>	 
@@ -232,15 +219,7 @@ After the cab has loaded, we begin the simulation in the standing position, as i
 </p>
 
 <p>	 
-If durning loading ( or after, durning the simulation) a notification is displayed, that the program has carried out a incorrect operation, that it has stopped responding / froze 
-
-or that there was a fault with the application, it means that, most probably you have very old drivers for your graphics card (In these cases, it is very common that 
-
-in the first few lines of <i>log.txt</i> the following test is displayed: "OpenGL Version: 1.1.0"). In that case, in order to run the Simulator, download (for example from the 
-
-graphic card's manufacturer's website) and install newer drivers (in some cases it may be necessary to uninstall previously installed (the older) drivers ; in some cases,
-
-"DriverCleaner" app may be of use ).
+If durning loading ( or after, durning the simulation) a notification is displayed, that the program has carried out a incorrect operation, that it has stopped responding / froze or that there was a fault with the application, it means that, most probably you have very old drivers for your graphics card (In these cases, it is very common that in the first few lines of <i>log.txt</i> the following test is displayed: "OpenGL Version: 1.1.0"). In that case, in order to run the Simulator, download (for example from the graphic card's manufacturer's website) and install newer drivers (in some cases it may be necessary to uninstall previously installed (the older) drivers ; in some cases,"DriverCleaner" app may be of use ).
 </p>
 
 
@@ -251,7 +230,7 @@ graphic card's manufacturer's website) and install newer drivers (in some cases 
 <h2><a name="4">Keyboard Control</a></h2>
 <div class="uwaga">
 <b>Important notice</b><br><br>
-The keys and their functions have been slightly altered (in regards to previous Simulator versions). We reqest that you familiarise yourself thoroughly with the description available below.
+The keys and their functions have been altered due to the modernisiations of the EXE. We reqest that you familiarise yourself thoroughly with the description available below.
 </div>
 <a href="inne/readme_pliki/en-keys.html">Go to the site containing Keyboard Contols</a>
 <div class="powrot"> 
@@ -259,10 +238,7 @@ The keys and their functions have been slightly altered (in regards to previous 
 </div>
 <h2><a name="5">Control</a></h2>
 <h3><a name="5,1">Controlling, or the popular "How to move the loco?" and others.</a></h3>
-<div class="uwaga">
-<b>Important notice</b><br><br>
-The start-up procedure had been altered (in relation to previous versions of the Simulator) and we reqest that you familiarise yourself thoroughly with the description available below.
-</div>
+</br>The start-up procedure is the same, but <b>only the keys have been altered.</b>
 <a href="inne/readme_pliki/en-control.html">Go to site containing Train Control description.</a>
 
 <div class="powrot"> 
@@ -277,7 +253,7 @@ In order to move to the other cab, press either:
 </ul>
 
 <p>
-Attention: In between the cabs, there is the "Engine Room" (in some locos, it looks like a green room). If you are in the Engine Room, then press either <kbd>Home</kbd> or <kbd>End</kbd> (depending on the direction in which you plan on going) for a second time. When changing cabs in Electric Multiple Units (EMUs) and locos that have more than one unit, you will need to press <kbd>End</kbd> or <kbd>Home</kbd> a couple of times (for example, in EN57 we press <kbd>End</kbd> twice, to move from <b>ra</b>(Driving Trailer) unit, to unit <b>s</b> (Motor Coach), and then <kbd>End</kbd> three times, in order to move to <b>rb</b> unit, and then finally press <kbd>End</kbd> twice, to enter the cab). Changing cabs means that the Sim need to load it's model, that's why after pressing <kbd>Home</kbd> or <kbd>End</kbd> it is necessary to wait (for it to load).<br><br><b>ATTENTION!</b><br>If we are driving a vehicle in Multiple Working, or it is a double-unit loco, or a EMU, it is important to check if both the <i>Independant and the Loco brake</i> is in the <i>Running position</i> ("brake off"). We also should set the <i>Train Brake</i> to <i>Cut-off position</i>(<kbd>Ctrl</kbd> + <kbd>Num 5</kbd>). <!-- After entering the second cab, we need to press <kbd>Shift</kbd> + <kbd>W</kbd>. If we do not do this, then after a minute of driving, the loco will stop, since in the first cab, the CA (Polish equivalent of the DSD[Driver Safety Device]) will engage (and stop the train). -->
+Attention: In between the cabs, is the Engine Room (in some locos, it looks like a green room). If you are in the Engine Room, then press either <kbd>Home</kbd> or <kbd>End</kbd> (depending on the direction in which you plan on going) for a second time. When changing cabs in Electric Multiple Units (EMUs) and locos that have more than one unit, you will need to press <kbd>End</kbd> or <kbd>Home</kbd> a couple of times (for example, in EN57 we press <kbd>End</kbd> twice, to move from <b>Ra</b>(Driving Trailer A) unit, to unit <b>S</b> (Motor Coach), and then <kbd>End</kbd> three times, in order to move to <b>Rb</b>(Driving Trailer B) unit, and then finally press <kbd>End</kbd> twice, to enter the cab). Changing cabs means that the Sim need to load it's model, that's why after pressing <kbd>Home</kbd> or <kbd>End</kbd> it is necessary to wait (for it to load).<br><br><b>ATTENTION!</b><br>If we are driving a vehicle in Multiple Working, or it is a double-unit loco, or a EMU, it is important to check if both the <i>Independant and the Loco brake</i> is in the <i>Running position</i> ("brake off"). We also should set the <i>Train Brake</i> to <i>Cut-off position</i>(<kbd>Ctrl</kbd> + <kbd>Num 5</kbd>). <!-- After entering the second cab, we need to press <kbd>Shift</kbd> + <kbd>W</kbd>. If we do not do this, then after a minute of driving, the loco will stop, since in the first cab, the CA (Polish equivalent of the DSD[Driver Safety Device]) will engage (and stop the train). -->
 </p>
 <div class="powrot"> 
 	<span><a href="#0">Contents</a></span>
@@ -312,9 +288,8 @@ Attention: In between the cabs, there is the "Engine Room" (in some locos, it lo
 <p>
 To couple up to a train on the same track, drive up to it gently. After you buffer up, brake using the <i>Independant brake</i>. In order to prevent a runaway train, it is vital that you perform a <i>Full Service brake application</i> or at least a <i>Service brake application</i> (<kbd>Num 8</kbd>).<br/>
 
-WARNING: If your train is to be coupled up to a train driven by AI, (ie. you drive a Banking Engine or the AI hauls our loco/train ), then it is absolutely necessary to set the <i>Train Brake</i> to the <i>Cut-Off position</i> (<kbd>Ctrl</kbd> + <kbd>Num 5</kbd>)!<br/>
-If the user drives the train, then the <i>Train Brake</i> valve must stay in the braking positions, and the <i>Reverser</i> must be in either the <i>forward</i> or <i>backward position</i>. This deactivates the AI !!.
-
+WARNING: If your train is to be coupled up to a train driven by AI, (ie. you drive a Banking Engine or the AI hauls your train ), then it is absolutely necessary to set the <i>Train Brake</i> to the <i>Cut-Off position</i> (<kbd>Ctrl</kbd> + <kbd>Num 5</kbd>)!<br/>
+If the user is to drive the train, then the <i>Train Brake</i> valve must stay in the braking positions, and the <i>Reverser</i> must be in either the <i>forward</i> or <i>backward position</i>. This deactivates the AI !!.
 After the above has been completed, one can now start to couple the couplers with <kbd>Insert</kbd>. The moment the coupler is connected (after the first <kbd>Insert</kbd> key press ) AI "being" in the set is either deactivated (<i>Train brake</i> in the braking positions) or it's activated (<i>Train brake</i> in the <i>Cut-Off position</i>). If you make a mistake (choose wrong action), then decouple, set the <i>Train brake</i> in the correct position, and try to couple up again.
 </p>
 
@@ -332,21 +307,12 @@ Please pay attention to how to place EMUs in the scenarios (including, amongst o
 </div>
 <h3><a name="5,5">How to change weather, sky?</a></h3>
 <p>
-With the help of <i>Rainsted.exe</i> Launcher, which allows us to change the sky, along with setting the specially tailored <i>atmo</i> and <i>light</i> parameters. In order to do this , after starting the 
+With the help of <i>Rainsted.exe</i> Launcher, which allows us to change the sky, along with setting the specially tailored <i>atmo</i> and <i>light</i> parameters. In order to do this , after starting the Launcher, we will need to:</p><ul><li>Set the <i>Usermode</i> to Normal or higher (<i>Settings</i> tab),</li><li>Go to  <i>Choose scenery</i> tab and make sure that <i>Save to temporary file</i> (in right lower corner) is <b>checked</b>, if not, then check/tick it,</li><li>Choose scenario</li><li>Go to <i>Settings</i> tab,</li><li>Choose the setting we like from the list on the left <i>Weather for temporary scenery file</i>,</li><li>Choose the <b>In temporary scenery:</b> option to <i>always change</i>.</li></ul>
 
-Launcher, we will need to:
-</p>
-<ul>
-<li>Set the <i>Usermode</i> to Normal or higher (
-
-<i>Settings</i> tab),</li><li>Go to  <i>Choose scenery</i> tab and make sure that <i>Save to temporary file</i> (in right lower corner) is 
-
-<b>checked</b>, if not, then check/tick it,</li><li>Choose scenario</li><li>Go to <i>Settings</i> tab,</li><li>Choose the setting we like 
-
-from the list on the left <i>Weather for temporary scenery file</i>,</li><li>Choose the <b>In temporary scenery:</b> option to <i>always 
-
-change</i>.</li>
+<ul>Since introducing the dynamic lighting, changing the weather from the starter ceased to work. It can still change the texture of the skybox, color and the range of the fog, however, it does not affect the light.<br>
+The following entry in the scenery, <i>movelight</i>, allows to set the day of the year, for which the calculation are done. The <i>overcast</i> entry (last digit of the <i>atmo</i> entry) describes how much sun is reaching the scene, meaning intensity and hue of the sun light.
 </ul>
+
 <div class="powrot"> 
 	<span><a href="#0">Contents</a></span>
 </div>
@@ -363,56 +329,79 @@ change</i>.</li>
 <h3><a name="6,1">Sceneries (Routes) and scenarios</a></h3>
 <table>
 <tr><th>Name</th><th>Authors, notes</th></tr>
-<tr><td>Bałtyk</td><td>Authors: adampkp, Slimson, Mateu. Route finish (scenarios, fixes): Krzysiek626, Mati_An.</td></tr>
-<tr><td>Bałtyk Cargo</td><td>Scenario for Bałtyk scenery. Author: kamil1306.</td></tr>
-<tr><td>Bałtyk CTL</td><td>Scenario for Bałtyk scenery. Author: kamil1306.</td></tr>
-<tr><td>Bałtyk Interregio</td><td>Scenario for Bałtyk scenery. Author: szogun.</td></tr>
-<tr><td>Bałtyk_zima</td><td>Bałtyk scenery (Winter) mod. Author: Sigman.</td></tr>
-<tr><td>Całkowo</td><td>Authors: adampkp, Slimson. Semaphore lighting: Benek. Decorations: Trus</td></tr>
-<tr><td>Całkowo_Orlen</td><td>Scenario for Całkowo scenery. Author: Benek.</td></tr>
-<tr><td>Całkowo_SN61</td><td>Scenario for Całkowo scenery. Author: SKP.</td></tr>
-<tr><td>Całkowo Odyseja</td><td>Decorations: Trankei, Stele. Scripting: Transkei</td></tr>
-<tr><td>Drawinowo 2</td><td>Author: Mati_An.</td></tr>
-<tr><td>Elektrociepłownia_dobre</td><td>Authors: sm42driver, szogun.</<td></tr>
-<tr><td>Elektrociepłownia_dobre-zima</td><td>Authors: sm42driver, szogun, macius5991.</<td></tr>
+<tr><td>Bałtyk</td>
+<td>Authors: adampkp, Slimson, Mateu. Finishing of the route (scenarios, fixes): Krzysiek626, Mati_An.
+<p>Scenario "Bałtyk Cargo" by kamil1306
+<br>Scenario "Bałtyk CTL" and it's winter version by kamil1306
+<br>Scenario "Bałtyk Interregio" and it's winter version by szogun
+<br>"Bałtyk Zima" scenery modification by Sigman</p>
+</td></tr>
+<tr><td>Całkowo</td>
+<td>Authors: adampkp, Slimson. Decorations: Stele, Transkei, Trus. Lighting of the semaphores: Benek.
+<p>Scenario "Całkowo Lotos" by Transkei
+<br>Scenario "Całkowo Noc" and it's winter version by Transkei
+<br>Scenario "Całkowo Osobowy" and it's winter version by Transkei
+<br>Scenario "Całkowo Misja pasażersko-manewrowo-towarowa" [Passenger-Shunting-Freight mission] and it's winter version by Transkei
+<br>Scenario "Całkowo Tartak" by Transkei
+<br>Scenario "Całkowo Tartak 2" by Transkei
+<br>Scenario "Całkowo Towarowy" by Transkei
+<br>Scenario "Całkowo Turkol" by Transkei
+<br>Scenario "Całkowo Turkol 2" by Transkei</p>
+</td></tr>
+<tr><td>Drawinowo</td><td>Author: Mati_An. Steering mods: Stele, Ra</td></tr>
+<tr><td>Drawinowo (Noc)</td><td>Author: Mati_An. Steering mods: Stele, Ra</td></tr>
+<tr><td>Elektrociepłownia_dobre</td><td>Authors: sm42driver, szogun.</td></tr>
+<tr><td>Elektrociepłownia_dobre-zima</td><td>Authors: sm42driver, szogun, macius5991.</td></tr>
 <tr><td>Krzyżowa 2</td><td>Author: Mati_An.</td></tr>
-<tr><td>Linia 053</td><td>Author (Route and scenarios 1-6): Driver24. Decorations: Trus
-<br>Scenario "Linia 053 - Express and Freight mission" (l053-sluzba-brutto-posp): Mati_An.
-<br>Scenario "Linia 053 - Night Shift - 4_v2" (l053-sluzba-4-night_v2) Author: Benek.
-<br>Scenario "l053-sluzba-osobowy" (Suburban) Author: Benek.
-<br>Scenario "l053_cargo" Author: pinokio.
-<br>Scenario "l053-night-towarowy-et22" (Freight) Author: Woku.
-<br>Scenario "l053-night-towarowy-et42" (Freight) Author: Woku.
-<br>Scenario "l053-night-towarowy-eu07" (Freight) Author: Woku.
+
+<tr><td>Linia 053 [Railway Line nr 53 - Fictional Route]</td>
+<td>Author of the scenery and scenarios 1-6: Driver24. Decorations: Trus
+<p>
+<br>Scenario "Linia 053 - misja towarowo-pośpieszna" (l053-sluzba-brutto-posp): Mati_An. 
+<br>Scenario "Linia 053 - służba - nocna - 4_v2" (l053-sluzba-4-night_v2) Author: Benek. 
+<br>Scenario "l053-sluzba-osobowy" Author: Benek. 
+<br>Scenario "l053_cargo" Author: pinokio. 
+<br>Scenario "l053-night-towarowy-et22" Author: Woku. 
+<br>Scenario "l053-night-towarowy-et42" Author: Woku. 
+<br>Scenario "l053-night-towarowy-eu07" Author: Woku.</p></td></tr>
+<tr><td>Linia 053 + Całkowo</td><td>Authors: Driver24 i Mati_An.
+<p>Scenario "Linia 053 + Całkowo TLK" Author: Mati_An. 
+<br>Scenario "Linia 053 + Całkowo TLK-1" Author: Mati_An.</p></td></tr>
+
+<tr><td>Linia 61 [Railway Line nr 61 - Realistic, peroid 2000-2009]</td><td>
+<p>Authors: BohunIC, ISDR. Fixes: adsim. Rebuilding: Ra</p>
+Author of the "linia61_osobowy3" scanario: dymus. 
+<br>Radio to the scenario "towarowy1": pinokio. 
+<br>Author of "linia61_tlk-1" scenario: Benek.</td></tr>
+<tr><td>Linia61&nbsp;+&nbsp;Linia144 [Railway Lines nr 61 + 144, realistic, peroid 2000-2009]</td>
+<td>Author of the route: ISDR. Section Ozimek - Fosowskie: BohunIC. Decorations: Trus
+<p>Scenario "L61 + L144_towarowy" Author: ISDR.
+<br>Scenarios "L61 + L144_osobowy" and "L61 + L144_pospieszny" Author: Benek.
+<br>Scenarios "L61 + L144 Lotos" and "L61 + L144_spalinowy" Author: Woku.
+<br>Scenario "L61 + L144 TLK" Autor: Benek.
+</td></tr><tr><td>Manewrowo 3</td><td>Author: pozdze.</p></td></tr>
+<tr><td>Moczniki</td>
+<td>Scenery author: wasyl.
+<p>
+<br>Scenarios "Moczniki Cargo" and "Moczniki Popych" by Benek
+</p>
+
+</td></tr>
+<tr><td>Quarkmce 2007</td><td>Authors: Quark-t (terrain and track layout), McZapkie (significant expansion), Mati_An (Scenarios), Krzysiek626 (electrification, track tilt), Ra (new control system, rebuilding the scenery).</td></tr>
+<tr><td>Tarniowo</td><td>Author: Mati_An.</td></tr>
+<tr><td>Tarniowo 2</td><td>Authors: Mati_An (oryginal), Ra (rebuilt).</td></tr>
+<tr><td>TD</td><td>Authors: Marcin E2rD, Danniel.</td></tr>
+<tr><td>Teszt-25kV</td><td>Modification of the TD scenery. Added hungarian signs, and the catenary voltage is 25kV. Author: Ra.<br>ATTENTION! You cannot drive any electric locos on this scenry, since all the locos simulated are only for the Polish system, which uses 3kV DC, and the Hungarians, as well as this scenery, use 25kV AC.</td></tr>
+<tr><td>Zwierzyniec</td>
+<td>Author: wasyl; Radio for 'pospieszny' and 'towarowy' scenarios: filip2h.
+<p>
+Scenarios "Zwierzyniec SM42" and "Zwierzyniec ED72" by Woku
+<br>Scenario "Zwierzyniec Towos"  Benek
+<br>Scenario "Zwierzyniec Transport" by Woku. Making of winter version: szogun.
+</p>
 </td></tr>
 
-<tr><td>Linia 053 + Całkowo</td><td>Authors: Driver24 & Mati_An.
-<br>Scenario "Linia 053 + Całkowo TLK" Author: Mati_An.
-<br>Scenario "Linia 053 + Całkowo TLK-1" Author: Mati_An.
-<tr><td>Linia 61</td><td>Authors: BohunIC, ISDR. Fixes: adsim. Rebuilding: Ra<br>Scenario author "linia61_osobowy3": dymus. <br>Radio for "towarowy1" scenario : pinokio.
 
-<br>Scenario author "linia61_tlk-1": Benek.</td></tr>
-<tr><td>Linia61&nbsp;+&nbsp;Linia144</td><td>Scenario author: ISDR. "Ozimek - Fosowskie" section: BohunIC. Decorations: Trus
-<br>Scenario "L61 + L144_towarowy" Author: ISDR.
-<br>Author of "L61 + L144_osobowy" and "L61 + L144_pospieszny" scenarios: Benek.
-<br>Scenarios "L61 + L144 Lotos" and "L61 + L144_spalinowy" Author: Woku.
-<br>Scenario "L61 + L144 TLK" Author: Benek.
-<tr><td>Manewrowo 3</td><td>Author: pozdze.</td></tr>
-<tr><td>Moczniki</td><td>Author: wasyl.</td></tr>
-<tr><td>Moczniki Cargo</td><td>Scenario for Moczniki scenery. Author: Benek.</td></tr>
-<tr><td>Moczniki Popych</td><td>Scenario for Moczniki scenery. Author: Benek.</td></tr>
-<tr><td>Quarkmce 2007</td><td>Authors: Quark-t (terrain and track layout), McZapkie (considerable expansion), Mati_An (scenarios), Krzysiek626 (electrification, 
-superelevations), Ra (new traffic control, scenario remodelling).</td></tr>
-<tr><td>Tarniowo</td><td>Author: Mati_An.</td></tr>
-<tr><td>Tarniowo 2</td><td>Authors: Mati_An (original), Ra (rebuild).</td></tr>
-<tr><td>TD</td><td>Author: Marcin E2rD.</td></tr>
-<tr><td>Teszt-25kV</td><td>TD scenery modification. Hungarian signs ware added, and the catenary is 25kV AC. Author: Ra.<br>WARNING! Electric locos can not be driven on this scenery since the Polish vehicles are designed for 3kV DC and not 25kV AC power supply.</td></tr>
-<tr><td>Zwierzyniec</td><td>Author: wasyl; Radio for freight and express scenarios: filip2h.</td></tr>
-<tr><td>Zwierzyniec ED72</td><td>Scenario for Zwierzyniec scenery. Author: Woku.</td></tr>
-<tr><td>Zwierzyniec SM42</td><td>Scenario for Zwierzyniec scenery. Author: Woku.</td></tr>
-<tr><td>Zwierzyniec TLK</td><td>Scenario for Zwierzyniec scenery. Author: szogun.</td></tr>
-<tr><td>Zwierzyniec Towos</td><td>Scenario for Zwierzyniec scenery. Author: Benek.</td></tr>
-<tr><td>Zwierzyniec Transport</td><td>Scenario for Zwierzyniec scenery (swapping textures for winter ones - szogun). Author: Woku.</td></tr>
 </table>
 <div class="powrot"> 
 	<span><a href="#0">Contents</a></span>
@@ -421,13 +410,13 @@ superelevations), Ra (new traffic control, scenario remodelling).</td></tr>
 <ul>
 <li>
 <h4><a name="6,2,1">Vehicles with cabs (can be driven)</a></h4>
-<table>
+<table><tbody>
 <tr><th>Name</th><th>Authors, notes</th></tr>
-<tr><td>4e_v1</td><td>Exterior models: modified 303e_v1 models - szogun. Cabs: hunter (3), Profeta (2); Tens of textures - Authors: Sigman, Sakorius, adsim, Patrykos, Mati_An, EU05, szogun, Kacu, EU07-483, hanys. Multiple fixes: adsim.</td></tr>
+<tr><td>4e_v1</td><td>Exterior models: modified 303e_v1 models - szogun. Cabs: hunter (3), Profeta (2); Tens of textures - Authors: Sigman, Sakorius, adsim, Patrykos, Mati_An, EU05, szogun, Kacu, EU07-483, hanys, MR6, kornel4d, ST44-003. Multiple fixes: adsim. Cab visible from the outside: Stele Texture mods:Pitek, Joachimowicz, Lelek, jakol112, Pedrosiasty</td></tr>
 <tr><td>181_v1</td><td>Exterior models (Skoda 181 and 182), Textures and Cab: Patrykos. Characteristics: ET22_RULZ&nbsp;and&nbsp;youBy.</td></tr>
-<tr><td>303e_v1</td><td>Exterior models: Sakorius, FLOYD, adsim. Textures: Sigman, Patrykos, adsim, Mati_An, szogun, sebalorek, Kacu, WSK, Davidsonxx, Bartek46, ST44-003, hanys, maciejgrzywna. Cabs: hunter. Multiple fixes: adsim.</td></tr>
+<tr><td>303e_v1</td><td>Exterior models: Sakorius, FLOYD, adsim. Textures: Sigman, Patrykos, adsim, Mati_An, szogun, sebalorek, Kacu, WSK, Davidsonxx, Bartek46, ST44-003, hanys, maciejgrzywna, MR6, kornel4d, Lelek, joachimowicz. Cabs: hunter. Multiple fixes: adsim. Cab visible from the outside: Stele</td></tr>
 <tr><td>303eb</td><td>Author: szogun (basic model mods). Cab (based on cab by hunter): szogun. Textures: szogun, hanys.</td></tr>
-<tr><td>6dg_v1</td><td>szogun</td></tr>
+<tr><td>6dg_v1</td><td>szogun. Cab visible from outside: jakol112</td></tr>
 <tr><td>br285_v1</td><td>Ádám Nagy, szogun, hanys</td></tr>
 <tr><td>dl2_v1</td><td>Piotrek</td></tr>
 <tr><td>dr2_v1</td><td>Stele</td></tr>
@@ -436,12 +425,12 @@ superelevations), Ra (new traffic control, scenario remodelling).</td></tr>
 <tr><td>en57_v1</td><td>Authors: PEKAP, Kolejarz. Fixes: Sakorius, Oli_EU (CT), szogun. Textures: Patrykos, Kacu, sebalorek, james.szczesny, szogun.</td></tr>
 <tr><td>en57-2000_v1</td><td>Bombardier, szogun</td></tr>
 <tr><td>ep05_v2</td><td>szogun, EP08</td></tr>
-<tr><td>ep07_v1</td><td>Exterior model - 4e_v1. Cab (mod of the cab by hunter): szogun. Textures: adsim, WSK, szogun.</td></tr>
-<tr><td>ep08_v1</td><td>Exterior model - 4e_v1. Cab (mod of the cab by hunter): szogun. Textures: Sigman, szogun, ST44-003.</td></tr>
+<tr><td>ep07_v1</td><td>Exterior model - 4e_v1. Cab (mod of the cab by hunter): szogun. Textures: adsim, WSK, szogun, ST44-003.</td></tr>
+<tr><td>ep08_v1</td><td>Exterior model - 4e_v1. Cab (mod of the cab by hunter): szogun. Textures: Sigman, szogun, ST44-003, MR6.</td></tr>
 <tr><td>ep09_v1</td><td>Exterior model: Profeta. Cabs: Rozi (104e_2, 104e_3); KURS90, MKaczy (104e_1) . Textures: Profeta, adsim, ST44-003, hanys, szogun.</td></tr>
 <tr><td>et21_v2</td><td>Exterior model:  Oli_EU (CT); finishing touches and fixes: Sakorius, adsim. Cabs: PEKAP, Kolejarz. Textures: Sigman, hanys.</td></tr>
 <tr><td>et22-2000_v2</td><td>Exterior model (et22_v1 model modification) MKaczy, adsim. Cab (et22_v1 cab modification) MKaczy. Characteristics youBy.</td></tr>
-<tr><td>et22_v2</td><td>Exterior model: szogun. Cab: szogun. Mapping: Patrykos. Textures: szogun, Patrykos, adsim, hanys, PMT.</td></tr>
+<tr><td>et22_v2</td><td>Exterior model: szogun. Cab: szogun. Mapping: Patrykos. Textures: szogun, Patrykos, adsim, hanys, PMT, fuji8, DieselPower, MR6, kornel4d.</td></tr>
 <tr><td>et40_v1</td><td>Exterior model: ZT-POZNAN (Mega Pack). Finishing touches: EP08_015. Fixes: KURS90. Cab: KURS90. Textures: EP08_015, EU05. Characteristics: EU07-457, ET22_RULZ.</td></tr>
 <tr><td>et41_v1</td><td>Model: Sakorius; Finishing touches and fixes: youBy, Patrykos. Cab (mod of the cab by hunter): Patrykos. Textures: Patrykos. Sounds: 
 <tr><td>et41_v2</td><td>Pictures: Hadomik, jussi19, CTL. Author: Patrykos. Fixes: szogun</td></tr>
@@ -455,15 +444,17 @@ superelevations), Ra (new traffic control, scenario remodelling).</td></tr>
 <tr><td>sm41_v1</td><td>Piotrek</td></tr>
 <tr><td>sm42_v1</td><td>Exterior model and cab: Sakorius. Textures: Sakorius, Sigman. Multiple fixes (models, textures): adsim.</td></tr>
 <tr><td>sn61_v1</td><td>OlO_EU, McZapkie, Kakish, Chester</td></tr>
-<tr><td>sp42_v1</td><td>Exterior model and cab: Sakorius. Textures: Sakorius, Sigman. Fixes: hunter, Rozi, adsim.</td></tr>
+<tr><td>sp42_v1</td><td>Exterior model and cab: Sakorius. Textures: Sakorius, Stele, Cozder, Hanys, Sigman. Fixes: hunter, Rozi, adsim. Cab visible from the outside: Stele</td></tr>
+<!--<tr><td>sp45_v1</td><td>Model: matek123, ST44-003, EP08-015, MR6. Repaint: matfre96. Textures: MR6, Stele. Fixes: EU40. Scripts: Stele</td></tr>-->
+<tr><td>sp45_v1</td><td>External model: Sakorius, multiple fixes: adsim, matek123, MR6. Cab: Bombardier, adamst (modification of a cab for Trainz), szogun (adapting for MaSzyna), MR6 & matek123(modifications of SU45 cab). Textures: MR6, stele.</td></tr>
 <tr><td>st43_v1</td><td>Patrykos, Marcin_ST43</td></tr>
 <tr><td>st44_v1</td><td>Exterior models (DizelPack, CCCP Pack): youBy. Cab: PEKAP, modifications Sigman. Textures: youBy, Sigman, Patrykos, Sakorius.</td></tr>
 <tr><td>st45_v2</td><td>Exterior model (based on model by Sakorius): szogun. Cab (based on SU45 cab by Bombardier: szogun. Texture: Patrykos.</td></tr>
 <tr><td>su45_v2</td><td>Exterior model: Sakorius, multiple fixes: adsim. Cab: Bombardier, adamst (modified cab originally for Trainz), szogun (adapting for MaSzyna). Textures: Sigman, dx286, szogun.</td></tr>
-<tr><td>su46_v2</td><td>Exterior model: Sakorius (DizelPack). Cab (mod of cab by Profeta): szogun. Textures: Sakorius, hummel, SM42drive, jaca83, Rootek.</td></tr>
-<tr><td>tem2_v2</td><td>Exterior model and cab: Sigman, multiple fixes - adsim. Textures: Sigman.</td></tr>
+<tr><td>su46_v2</td><td>Exterior model: Sakorius (DizelPack). Cab (mod of cab by Profeta): szogun. Textures: Sakorius, hummel, SM42drive, jaca83, Rootek, zuger.</td></tr>
+<tr><td>tem2_v2</td><td>Exterior model and cab: Sigman, multiple fixes - adsim. Textures: Sigman, kornel4d</td></tr>
 <tr><td>tem2u_v2</td><td>Exterior model and cab: Sigman, multiple fixes - adsim. Textures: Sigman.</td></tr>
-</table>
+</tbody></table>
 
 <div class="powrot"> 
 	<span><a href="#0">Contents</a></span>
@@ -473,12 +464,16 @@ superelevations), Ra (new traffic control, scenario remodelling).</td></tr>
 
 <li>
 <h4><a name="6,2,2">Others</a></h4>
-<table>
+<tbody><table>
 <tr><th>Name</th><th>Authors, notes</th></tr>
-<tr><td>163_v1</td><td>james.szczesny</td></tr>
+<tr><td>cd/163_v1</td><td>james.szczesny</td></tr>
+<tr><td>cd/810_v1</td><td>Texture: Lelek</td></tr>
+<tr><td>cd/bdmteeo_v1</td><td>Model: Lelek, Fixes: Stele, Physics fixes: youBy. Photos: vh</td></tr>
+<tr><td>cd/bmz_v2</td><td>Model (z1_v2): szogun. Textures: adapted from bmz_v1. </td></tr>
+<tr><td>cd/es_v1</td><td>Tézsé</td></tr>
+<tr><td>11xa_v2</td><td>Exterior: Floyd, Adsim, Ra, Stele, matek123. Interior: Stele, PKP94 (TRS). Sounds: MK1991 FIZ&MMD: youBy, EP08-015, Stele. Photos: Floyd, youBy, lalek, Cesky Kretek, Stele. Textures: Patryk_Farana, MR6, Stele</td></tr>
 <tr><td>16xa_v1</td><td>szogun, hanys, youBy, Patrykos, Sawi, Stele, Floyd, adsim, mk1991, Joachimowicz</td></tr>
 <tr><td>401da_v1</td><td>EP08_015</td></tr>
-<tr><td>810_v1</td><td>Texture: Lelek</td></tr>
 <tr><td>el204_v1</td><td>Exterior model: Oli_EU (CT). Finishing touches: EP08_015. Characteristics: ET22_RULZ.</td></tr>
 <tr><td>em10_v1</td><td>EP08_015</td></tr>
 <tr><td>em120_v1</td><td>KURS90 (Mega Pack)</td></tr>
@@ -499,7 +494,6 @@ superelevations), Ra (new traffic control, scenario remodelling).</td></tr>
 <tr><td>bdhpumn_v2</td><td>Model: szogun. Textures: szogun, hanys.</td></tr>
 <tr><td>bdhpumn-noc_v2</td><td>Modified bdhpumn_v2. Author: janek32.</td></tr>
 <tr><td>bhp_v1</td><td>Exterior model: Sakorius, FLOYD, adsim. Textures: Patrykos, Sakorius. Multiple fixes: adsim.</td></tr>
-<tr><td>bmz_v2</td><td>Model (z1_v2): szogun. Textures: adapted from bmz_v1. </td></tr>
 <tr><td>z1_v2</td><td>Model: szogun. Textures: szogun, maacius, Cesky Kretek.</td></tr>
 <tr><td>408w_v1</td><td>Patrykos, youBy</td></tr>
 <tr><td>412w_v1</td><td>Patrykos, youBy</td></tr>
@@ -508,7 +502,6 @@ superelevations), Ra (new traffic control, scenario remodelling).</td></tr>
 <tr><td>430w_v1</td><td>Patrykos</td></tr>
 <tr><td>eams_v1</td><td>Model: RooteK. Textures: RooteK, Patrykos, Sigman.</td></tr>
 <tr><td>eaos_v1</td><td>Model: Kakish, ZT-POZNAN. Textures: Kakish, ZT-POZNAN, Patrykos, Sigman, dx286.</td></tr>
-<tr><td>cd/es_v1</td><td>Tézsé</td></tr>
 <tr><td>es_v2</td><td>Model: Sigman. Textures: Sigman, RooteK.</td></tr>
 <tr><td>falns_v1</td><td>Model: youBy. Textures: youBy, Sigman, Dozer.</td></tr>
 <tr><td>fas_v2</td><td>Model: Żabek, Rootek. Textures:  Sigman.</td></tr>
@@ -528,7 +521,7 @@ superelevations), Ra (new traffic control, scenario remodelling).</td></tr>
 <tr><td>z1b_v1</td><td>Authors: hanys, Patrykos, matek123</td></tr>
 <tr><td>zaes_v1</td><td>Model: Kakish. Textures: Sigman.</td></tr>
 <tr><td>zaes_v2</td><td>Model: Patrykos. Fixes: szogun. Textures: Patrykos.</td></tr>
-</table>
+</tbody></table>
 </li>
 
 
@@ -540,7 +533,7 @@ superelevations), Ra (new traffic control, scenario remodelling).</td></tr>
 
 <h2><a name="7">Package information</a></h2>
 <p>
-MaSzyna 17.?? is based on previous versions (16,08, 15.04, 08.13, 01.13, PC2011, 2010, 2009). This version has largely focused on... $CONT<br />
+MaSzyna 17.07 is based on previous versions (16,08, 15.04, 08.13, 01.13, PC2011, 2010, 2009). This version has largely focused on fixes and missing files, as well as any addons published since the publication of Patch 16.08<br />
 Teams that have prepared these packs:
 </p>
 
@@ -617,22 +610,29 @@ MaSzyna 16.08
 <li>Ra</li>
 </ul>
 <ul>
-<b>MaSzyna 17.?? - $CONT</b>
-<li>AtapiCl</li>
+<b>MaSzyna 17.07</b>
+<li>Stele - team Co-ordinator</li>
 <li>joey</li>
 <li>Krzysiek626</li>
 <li>Maciej</li>
 <li>matek123</li>
-<li>Stele</li>
-<li>Szczawik</li>
+<li>AtapiCl</li>
+<li>MR6</li>
 <li>Wiggle</li>
+<li>Sawi</li>
+<li>Kolejarz2009</li>
+<li>Mentorius</li>
+<li>szczawik</li>
+<li>tmj</li>
+<li>krzysiuup</li>
+<li>Kermit</li>
 </ul>
 <p>
 Many other users have also contributed, but we have no way of listing every single one ot them. We thank everybody that helped with creating the current version. 
 </p>
 <h3><a name="7,1">Improvements and new EXE functions</a></h3>
 <p>
-The current executable file (called the EXE or EXE file in this document) has been converted into the C++ computer language, which allowed for the following changes and improvements to be made:
+The current executable file has been converted into the C++ computer language, which allowed for the following changes and improvements to be made:
 </p>
 	<ul>
 	-<li>Changed the way of moving through the cabs</li>
@@ -646,6 +646,7 @@ The current executable file (called the EXE or EXE file in this document) has be
 	<li>Gamepad support</li>
 	<li>Custom key layout</li>
 	<li>Mouse operated switches in the cab</li>
+	<li>Introduction of the reflected light shine</li>
 </ul>
 <p>
 The points above represent only a small fraction of changes, since these are the biggest and most visible to the users. Precise Changelog is in the following  <a href="http://eu07.pl/forum/index.php/topic,28920.0.html">forum thread about changes in the EXE <FONT COLOR="FF0000">[POLISH ONLY!]</FONT></a> , the list is still updated as the exe functions are expanded.
@@ -680,39 +681,13 @@ Additionally, the camera position in it's primary position (after clicking <kbd>
 <h2><a name="11">Remarks</a></h2>
 <h3><a name="11,1">Why is ... not included in this pack?</a></h3>
 <p>
-In order to understand why the packs don't contain all the add-ons published from the start of the existance of the Simulator, you need to know that for a couple of years
-
-, when it comes to add-on creation, there was simply only chaos. Add-ons often ware not tested before being published (there ware no standards, norms etc),
-
- which ment that they had errors, ware incomplete and often, ware incompatible with each other (often adding one scenery, broke all the remaining sceneries).
-
- Additionally, addons ware often hosted on external servers, which removed them after some time, which caused the forum to be full of dead links, instead of addons. 
-
-Only at the end of 2008, thanks to Ra, it was possible 
-
-to clean up the mess, through gathering everything in "Katalog dodatków" / Addon Catalogue , on the eu07.pl server. But to simply have all the addons in one place wasn't enough. 
-
-The addon publication process was reorganised (from the end of 2008, every single addon, prior to publication, must be subject to mandatory tests). 
-
-However, the incomplatability problem remained, since there was a lack of official and up-to-date package, 
-
-which could create some sort of an reference point for the testers and creators (last, unofficial package was published half-way through 2006,
-
- however the last official, in 2004). That is why, at the beginning of 2009, a group was created, 
-
-who spend a couple of months choosing, from previously published addons, the addons that ware worthy and didn't have too many mistakes, and then worked on the inter-compatability of these addons,
-
- by removing significant mistakes, filling in the missing files, etc. That is how Paczka Całościowa 2009, 2010, 2011 along with the Service Packs, MaSzyna 01.13, MaSzyna 08.13 and MaSzyna 15.04 ware created.
-
-Newest Package (called MaSzyna 16.08) is a continuation of that work, and just like the previous Packs, does not contain any 
-
-low quality addons, or ones in Beta testing. 
+In order to understand why the packs don't contain all the add-ons published from the start of the existance of the Simulator, you need to know that for a couple of years, when it comes to add-on creation, there was simply only chaos. Add-ons often ware not tested before being published (there ware no standards, norms etc), which ment that they had errors, ware incomplete and often, ware incompatible with each other (often adding one scenery, broke all the remaining sceneries). Additionally, addons ware often hosted on external servers, which removed them after some time, which caused the forum to be full of dead links, instead of addons. Only at the end of 2008, thanks to Ra, it was possible to clean up the mess, through gathering everything in "Katalog dodatków" / Addon Catalogue , on the eu07.pl server. But to simply have all the addons in one place wasn't enough. The addon publication process was reorganised (from the end of 2008, every single addon, prior to publication, must be subject to mandatory tests). However, the incomplatability problem remained, since there was a lack of official and up-to-date package, which could create some sort of an reference point for the testers and creators (last, unofficial package was published half-way through 2006, however the last official, in 2004). That is why, at the beginning of 2009, a group was created, who spend a couple of months choosing, from previously published addons, the addons that ware worthy and didn't have too many mistakes, and then worked on the inter-compatability of these addons, by removing significant mistakes, filling in the missing files, etc. That is how Paczka Całościowa 2009, 2010, 2011 along with the Service Packs, MaSzyna 01.13, MaSzyna 08.13 and MaSzyna 15.04 ware created.Newest Package (called MaSzyna 16.08) is a continuation of that work, and just like the previous Packs, does not contain any low quality addons, or ones in Beta testing. 
 <div class="powrot"> 
 	<span><a href="#0">Contents</a></span>
 </div>
 <h3><a name="11,2">The Simlator's executable file &ndash; EXE</a></h3>
 <p>
-MaSzyna 17.?? contains "EXE ???" $CONT
+MaSzyna 17.07 contains "EXE 17.717" It is converted into C++, which allows for more functionality and greater capability of the Simulator. In order to see the full list of changes in the EXE 17.717, read the following forum thread (Please use Google Translate or similar) <a href="http://eu07.pl/forum/index.php/topic,28920.0.html">Aktualizacja EXE C++</a>
 </p>
 <div class="powrot"> 
 	<span><a href="#0">Contents</a></span>
@@ -788,8 +763,8 @@ In order to get to the answer, please press on the question.
 <li><a href="#14,36">The brake handle, in the EN57 and other EMUs, automatically returns to the Driving position, after releasing the <kbd>Num .</kbd> (or <kbd>Num 9</kbd>) key</a></li>
 <!--<li><a href="#14,37">In the <i>Choose scenery</i> tab, I can't see the <b>Run simulator</b> button. What do I do?</a></li>-->
 <li><a href="#14,38">After entering the cab, I am far from the console / controls. How do I fix it?</a></li>
-<li><a href="#14,39">I press the <kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>m</kbd>, but the Master Circuit Breaker doesn't set/enable.</a></li>
-<li><a href="#14,40">I press the <kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>c</kbd>, but the Compressor doesn't turn on.</a></li>
+<li><a href="#14,39">I press the <kbd>m</kbd>, but the Master Circuit Breaker doesn't set/enable.</a></li>
+<li><a href="#14,40">I press the <kbd>c</kbd>, but the Compressor doesn't turn on.</a></li>
 <li><a href="#14,41">I want to exit the Simulator, but using <kbd>F10</kbd> and then <kbd>y</kbd> doens't work.</a></li>
 <!--<li><a href="#14,42">I placed the EN57 (or any other EMU) into the scenario, but I can't get it to move.</a></li>-->
 <!--<li><a href="#14,43">I have a problem with EN57 (or any other EMUs). I placed it into the scenario, but when it turns on, I am placed in the passenger vestibule, and not the cab.</a></li>-->
@@ -812,15 +787,10 @@ In order to get to the answer, please press on the question.
 
 <h3>Answers:</h3>
 
-
 <ul>
 <li>
-<div class="pytanie"><a name="14,1">After I start a scenario, loading screen turns white, the Titlebar and the Task Manager both say "Application 
-
-Not Responding". What do I do?</a></div>
-<div class="odpowiedz">You must wait patiently, since it doesn't necessarly mean that the Simulator is frozen. It just means that the scenery is being loaded, which may take long time, upto 
-
-few minutes.</div>
+<div class="pytanie"><a name="14,1">After I start a scenario, loading screen turns white, the Titlebar and the Task Manager both say "Application Not Responding". What do I do?</a></div>
+<div class="odpowiedz">You must wait patiently, since it doesn't necessarly mean that the Simulator is frozen. It just means that the scenery is being loaded, which may take long time, upto few minutes.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li> 
 
 <li>
@@ -829,26 +799,13 @@ few minutes.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
-<div class="pytanie"><a name="14,3">When I drive the train, a red flashing light lights up, a buzzer goes off, the train grinds to a halt, and I can't 
-
-release the brakes. How do I fix this? What am I doing wrong?</a></div>
-<div class="odpowiedz">It's either the Czuwak Aktywny (CA) or SHP. The British equivalent of the "CA", is the Deadman's Switch or Driver Safety Device (DSD), and the English AWS would be similar in working to the Polish SHP. The first (CA), tests the driver's vigilance whilst driving every so often. The second (SHP), does the same as CA, however, 
-
-in front of 'dangerous' places (signals etc). If you do not react to the visual and then audioble warnings, the emergency 
-
-brake is activated. Each cab should have CA/SHP indicator lights, which in the required moments light up contionusly and then flash, usually red in color. Right thing to do, is to press the CA/SHP reset button. In MaSzyna, we use <kbd>Spacebar</kbd> for it. If you, however, don't, 
-
-then you need to wait for the train to stop completly, press the CA/SHP reset button (<kbd>Spacebar</kbd>), and then unbrake the train.</div>
+<div class="pytanie"><a name="14,3">When I drive the train, a red flashing light lights up, a buzzer goes off, the train grinds to a halt, and I can't release the brakes. How do I fix this? What am I doing wrong?</a></div>
+<div class="odpowiedz">It's either the Czuwak Aktywny (CA) or SHP. The British equivalent of the "CA", is the Deadman's Switch or Driver Safety Device (DSD), and the English AWS would be similar in working to the Polish SHP. The first (CA), tests the driver's vigilance whilst driving every so often. The second (SHP), does the same as CA, however, in front of 'dangerous' places (signals etc). If you do not react to the visual and then audioble warnings, the emergency brake is activated. Each cab should have CA/SHP indicator lights, which in the required moments light up contionusly and then flash, usually red in color. Right thing to do, is to press the CA/SHP reset button. In MaSzyna, we use <kbd>Spacebar</kbd> for it. If you, however, don't, then you need to wait for the train to stop completly, press the CA/SHP reset button (<kbd>Spacebar</kbd>), and then unbrake the train.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
 <div class="pytanie"><a name="14,4">Are there any other cameras/views available?</a></div> 
-<div class="odpowiedz">You can exit the cab (by pressing <kbd>F4</kbd>) and then you can "walk" over the whole scenery by using the Arrows. If you want to 
-
-move faster, you can hold <kbd>Ctrl</kbd> while operating the arrow, if slower; hold <kbd>Shift</kbd>. You can also combine both the keys (Ctrl + Shift) to move 
-
-really quickly. To move up or down, use the <kbd>Page&nbsp;Up</kbd> (go up) or <kbd>Page&nbsp;Down</kbd> (go down) keys.<br><br>
-In the Free Fly Mode (<kbd>F4</kbd> button), it is possible to define up to 10 custom camera positions and to switch between them. It is done by using the top row number keys (NOT the keypad keys). More Information: <a href="#4">MaSzyna Readme file, "Keyboard Controls" section.</a></div>
+<div class="odpowiedz">You can exit the cab (by pressing <kbd>F4</kbd>) and then you can "walk" over the whole scenery by using the Arrows. If you want to move faster, you can hold <kbd>Ctrl</kbd> while operating the arrow, if slower; hold <kbd>Shift</kbd>. You can also combine both the keys (Ctrl + Shift) to move really quickly. To move up or down, use the <kbd>Page&nbsp;Up</kbd> (go up) or <kbd>Page&nbsp;Down</kbd> (go down) keys.<br><br>In the Free Fly Mode (<kbd>F4</kbd> button), it is possible to define up to 10 custom camera positions and to switch between them. It is done by using the top row number keys (NOT the keypad keys). More Information: <a href="#4">MaSzyna Readme file, "Keyboard Controls" section.</a></div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
@@ -870,15 +827,7 @@ the "Full screen mode".</div>
 
 <li>
 <div class="pytanie"><a name="14,8">How do I switch the points? I heard that <kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>t</kbd>/<kbd>t</kbd> works, but it doesn't!</a></div> 
-<div class="odpowiedz">There is no need for manual point switching, everything is done automatically, with the help of 'events' 
-
-created by the scenario's author. The only scenery where manual points switching is required (and possible), is 
-
-'Manewrowo3'. In order to switch the points, 
-
-we move over the point's lever (similarly like when coupling and uncoupling locos, we literaly have to 'enter' the lever) and press <kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>t</kbd> (for going to the side) or <kbd>t</kbd> (for going straight). We should 
-
-see the handle move, along with the point blades.</div>
+<div class="odpowiedz">There is no need for manual point switching, everything is done automatically, with the help of 'events' created by the scenario's author. The only scenery where manual points switching is required (and possible), is 'Manewrowo3'. In order to switch the points, we move over the point's lever (similarly like when coupling and uncoupling locos, we literaly have to 'enter' the lever) and press <kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>t</kbd> (for going to the side) or <kbd>t</kbd> (for going straight). We should see the handle move, along with the point blades.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
@@ -893,12 +842,12 @@ see the handle move, along with the point blades.</div>
 
 <li>
 <div class="pytanie"><a name="14,11">How do I turn a day into a night?</a></div> 
-<div class="odpowiedz">From the available weather configuration list, choose one of the following: dusk005, dusk013, dusk030, night, night001. How do you do it? See: <a href="#5,5">MaSzyna Readme file, "Control" section, "How to change weather, sky?".</a></div>
+<div class="odpowiedz">Because of introduction of the dynamic lighting system, the night is dependant on the hour in the simulation. Changing the clock is highly not recommended, since there are time dependancies in the scenario scripts. You can change the day of the year, to achieve a different dawn and dusk times, using the <i>movelight</i> entry</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
 <div class="pytanie"><a name="14,12">How do I turn on the light beams, so that they would light the track?</a></div> 
-<div class="odpowiedz">	THe light beams are only visible when the headlamps are turned on and during the night time.</div>
+<div class="odpowiedz">	The light beams are only visible when the headlamps are turned on and during the night time.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
@@ -909,16 +858,12 @@ that have special functions, like gauge lights, or windows that can be opened. <
 
 <li>
 <div class="pytanie"><a name="14,14">How do I turn on the fans in the cab?</a></div> 
-<div class="odpowiedz">Similarly as above - not all vehicles 
-
-have fans. <a href="inne/readme_pliki/en-universal.html">See the list of vehicles with special functions</a>.</div>
+<div class="odpowiedz">Similarly as above - not all vehicles have fans. <a href="inne/readme_pliki/en-universal.html">See the list of vehicles with special functions</a>.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
 <div class="pytanie"><a name="14,15">Opening doors and windows in the cab?</a></div> 
-<div class="odpowiedz">Same as above - not every locomotive in the Simulator has windows and doors that can be opened.<a 
-
-href="inne/readme_pliki/en-universal.html"> See the list of vehicles with special functions</a>.</div>
+<div class="odpowiedz">Same as above - not every locomotive in the Simulator has windows and doors that can be opened.<a href="inne/readme_pliki/en-universal.html"> See the list of vehicles with special functions</a>.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
@@ -927,16 +872,13 @@ href="inne/readme_pliki/en-universal.html"> See the list of vehicles with specia
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
-<div class="pytanie"><a name="14,17">The CA (DSD) isn't working, and not canceling SHP (AWS) doesn't turn on the emergency brake. On top of the screen, I have some weird, red 
-
-letters. What's happening?</a></div> 
+<div class="pytanie"><a name="14,17">The CA (DSD) isn't working, and not canceling SHP (AWS) doesn't turn on the emergency brake. On top of the screen, I have some weird, red letters. What's happening?</a></div> 
 <div class="odpowiedz">In the <i>Rainsted.exe</i> app, in the "Settings" tab, uncheck "Debugmode"</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
 <div class="pytanie"><a name="14,18">Some time after turning on the Sim, the <kbd>y</kbd> and <kbd>/</kbd> keys stop working. Help?</a></div> 
-<div class="odpowiedz">Press <kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>Shift</kbd>.<br>
-In order to prevent such problems in the future, you can disable the keyboard shortcuts that change the keyboard layouts in your Operating System</div>
+<div class="odpowiedz">Press <kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>Shift</kbd>.<br>In order to prevent such problems in the future, you can disable the keyboard shortcuts that change the keyboard layouts in your Operating System</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
@@ -946,24 +888,13 @@ In order to prevent such problems in the future, you can disable the keyboard sh
 <li>zapisywanie przebiegu symulacji w log.txt, [Save the simulation log in log.txt]</li>
 <li>zapisywanie parametrów fizycznych pojazdów, [Save physical parameters of the vehicles]</li>
 <li>poszukiwanie sieci trakcyjnej (włączona opcja może powodować spory spadek FPS na stacjach z rozbudowaną siecią trakcyjną).[Search for overhead catenary (Turned on might cause FPS to drop on stations with extensive catenary network)]</li>
-</ul>
-
-Also, in the graphics driver, turn off the vertical synchronisation, anisotropic filtering and all the AA. You could also set the graphics mode to performance. You might also want to experiment with different grpahics drivers. 
-
-In the case of fairly newer cards, it is recommended to use the newest drivers. However if you have an older card, then older drivers
-
- might be a better option. If you have an old comupter, then try to turn off all the software running in the background, like any IM, 
-
-browsers, anti-virus software, music players, etc), since they will only unnecessarly lower the performance of the PC. Sadly, those changes will not cause a miracle rise in FPS, especially if you have an integrated GPU.</div>
+</ul>Also, in the graphics driver, turn off the vertical synchronisation, anisotropic filtering and all the AA. You could also set the graphics mode to performance. You might also want to experiment with different grpahics drivers. In the case of fairly newer cards, it is recommended to use the newest drivers. However if you have an older card, then older drivers might be a better option. If you have an old comupter, then try to turn off all the software running in the background, like any IM, browsers, anti-virus software, music players, etc), since they will only unnecessarly lower the performance of the PC. Sadly, those changes will not cause a miracle rise in FPS, especially if you have an integrated GPU.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
 <div class="pytanie"><a name="14,20">I followed the above advice, yet my FPS is really low (< 10FPS). How do I fix it?</a></div> 
 <div class="odpowiedz">This situation commonly occurs on the "l053-sluzba-brutto-posp" scenario. It might help, if you use the horn (<kbd>a</kbd> or <kbd>Shift</kbd> + <kbd>a</kbd> keys). However, if you have a slow (or especially integrated) graphics card, don't count on high FPS.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
-
-
-
 
 <li>
 <div class="pytanie"><a name="14,21">How does one read the Hasler (speedometer) tape, from their drive in the MaSzyna?</a></div> 
@@ -972,16 +903,12 @@ browsers, anti-virus software, music players, etc), since they will only unneces
 
 <li>
 <div class="pytanie"><a name="14,22">How to install new addons?</a></div> 
-<div class="odpowiedz">
-	Detailed and up-to-date addon installation method is on the downloads page <a href="http://eu07.pl/pobierz/">www.eu07.pl/pobierz</a>.
-</div>
+<div class="odpowiedz">Detailed and up-to-date addon installation method is on the downloads page <a href="http://eu07.pl/pobierz/">www.eu07.pl/pobierz</a>.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
 <div class="pytanie"><a name="14,23">I added a new vehicle, but I can't see it in the Rainsted, or on any of the routes.</a></div> 
-<div class="odpowiedz">The vehicles won't just show up automatically in the existing scenarios. If you installed a new texture or a new model, you need to place manually 
-
-in the scenario. How to do it? See: <a href="#5,4">MaSzyna Readme file, "Control" section, "How to change the consist in the scenario?".</a></div>
+<div class="odpowiedz">The vehicles won't just show up automatically in the existing scenarios. If you installed a new texture or a new model, you need to place manually in the scenario. How to do it? See: <a href="#5,4">MaSzyna Readme file, "Control" section, "How to change the consist in the scenario?".</a></div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <!--<li>
@@ -1013,54 +940,35 @@ can't be driven. You can change into more advanced work mode (Settings tab). The
 <div class="odpowiedz">No.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
-
 <li>
 <div class="pytanie"><a name="14,30">I turned the autopilot on. but it doesn't work.</a></div> 
 <div class="odpowiedz">Autopilot means the computer takes over the driving of the train. Saddly, not all sceneries are fully compatible with Autopilot driven trains, meaning it won't be able to drive everywhere correctly.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
-
-
 
 <li>
 <div class="pytanie"><a name="14,31">Can you manually change the signal aspects?</a></div>
 <div class="odpowiedz">No, the signals are pre-set for each scenario.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
-
-
 <li>
 <div class="pytanie"><a name="14,32">How do I take a screenshot?</a></div> 
-<div class="odpowiedz">Press <kbd>Print Screen</kbd>, start MS Paint, paste the picture, and save in the desired format (best is PNG or 
-
-JPG/JPEG). You can also use dedicated programs for it.</div>
+<div class="odpowiedz">Press <kbd>Print Screen</kbd>, start MS Paint, paste the picture, and save in the desired format (best is PNG or JPG/JPEG). You can also use dedicated programs for it.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
-<div class="pytanie"><a name="14,33">I saw a film on YouTube with xxx (loco/carriage/route/new exe) in MaSzyna. I can't find it in Downloads or 
-
-Publikacje/Publications sections. Where can I download it from?</a></div> 
+<div class="pytanie"><a name="14,33">I saw a film on YouTube with xxx (loco/carriage/route/new exe) in MaSzyna. I can't find it in Downloads or Publikacje/Publications sections. Where can I download it from?</a></div> 
 <div class="odpowiedz">Current addons are presented on the <a href="http://eu07.pl/pobierz/">www.eu07.pl/pobierz</a> website. Only there are all addons pre-tested and guaranteed to work correctly.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
-
 
 <li>
 <div class="pytanie"><a name="14,34">I noticed the <b>Multiplayer</b> button in Rainsted. How can I turn it on?</a></div>
 <div class="odpowiedz">This option only allows for the interaction between the driver and the instructor/signalman. It's usage requires the sceneries to be reformatted and moddified to work. More info on the forum: <a style="color:red" href="http://eu07.pl/forum/index.php/topic,26661.msg400113.html#msg400113"><b style="color:red">[POLISH ONLY] </b>Click Here</a></div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
-
 <li>
 <div class="pytanie"><a name="14,35">The carriages keep braking!! I keep holding the Brake Release button, but it doesn't work.</a></li> 
-<div class="odpowiedz">If you hold the brake handle for too long in the <i>Quick Release</i> position, it might happen that, the train will not release the brakes when you 
-
-put the handle in the <i>Running</i> position. It is so called 'Brake Overcharge'. You need to apply <i>Full Service</i> braking, pressing <kbd>Num 5</kbd>, exit the cab, fly over the whole train, and press <kbd>Num 6</kbd>
-
-(Brake Release) over every carriage/car. For future reference, do not hold the Brake handle in the <i>Quick Release</i> position for longer than couple of seconds. 
-
-If your train has the following carriage types; Bdhpumn, WLABd & Z1 , then avoid using Quick Release if possible. Passenger trains generally don't need you to use it.<br/>
-In case of long freight trains you can (and sometimes have to) use it "'till it stops" (untill the pressure stabilises itself at 5,4 bar), however the moment that happens you need to put it in the <i>Running</i> position.</div>
+<div class="odpowiedz">If you hold the brake handle for too long in the <i>Quick Release</i> position, it might happen that, the train will not release the brakes when you put the handle in the <i>Running</i> position. It is so called 'Brake Overcharge'. You need to apply <i>Full Service</i> braking, pressing <kbd>Num 5</kbd>, exit the cab, fly over the whole train, and press <kbd>Num 6</kbd>(Brake Release) over every carriage/car. For future reference, do not hold the Brake handle in the <i>Quick Release</i> position for longer than couple of seconds. If your train has the following carriage types; Bdhpumn, WLABd & Z1 , then avoid using Quick Release if possible. Passenger trains generally don't need you to use it.<br/>In case of long freight trains you can (and sometimes have to) use it "'till it stops" (untill the pressure stabilises itself at 5,4 bar), however the moment that happens you need to put it in the <i>Running</i> position.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
-
 
 <li>
 <div class="pytanie"><a name="14,36">The brake handle, in the EN57 and other EMUs, automatically returns to the Driving position, after releasing the <kbd>Num .</kbd> key</a></div>
@@ -1068,10 +976,8 @@ In case of long freight trains you can (and sometimes have to) use it "'till it 
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
-<div class="pytanie"><a name="14,38">
-After entering the cab, I am far from the controls. How do I fix it?</a></div>
-<div class="odpowiedz">The cabs have pre-defined starting positions. After the cab has loaded, we will begin in the standing position, as if we just entered through the cab door. In order to sit down at the controls, press the Right Mouse Button <kbd>RMB</kbd>.
-</div>
+<div class="pytanie"><a name="14,38">After entering the cab, I am far from the controls. How do I fix it?</a></div>
+<div class="odpowiedz">The cabs have pre-defined starting positions. After the cab has loaded, we will begin in the standing position, as if we just entered through the cab door. In order to sit down at the controls, press the Right Mouse Button <kbd>RMB</kbd>.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
@@ -1079,7 +985,6 @@ After entering the cab, I am far from the controls. How do I fix it?</a></div>
 <div class="odpowiedz">According to the reality, the button (<kbd>M</kbd>) needs to be pressed for few seconds, for the MCB to close.
 </div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
-
 
 <li>
 <div class="pytanie"><a name="14,40">I press the <kbd>c</kbd>, but the Compressor doesn't turn on.</a></div>
@@ -1089,7 +994,6 @@ After entering the cab, I am far from the controls. How do I fix it?</a></div>
 <li><a href="#5,1">MaSzyna Readme file, "Control" section, "Controlling".</a></li>
 </div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
-
 
 <li>
 <div class="pytanie"><a name="14,41">I want to exit the Simulator, but using <kbd>F10</kbd> and then <kbd>y</kbd> doens't work.</a></div>
@@ -1117,7 +1021,6 @@ In order to prevent such occurances again, you can disable, in your operating sy
 </div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
-
 <li>
 <div class="pytanie"><a name="14,46">
 How do I stop the Simulation? I pressed <kbd>Esc</kbd>, but it does nothing.</a></div>
@@ -1125,91 +1028,42 @@ How do I stop the Simulation? I pressed <kbd>Esc</kbd>, but it does nothing.</a>
 </div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
-
 <li>
 <div class="pytanie"><a name="14,47">
 When will a new version, new addons come out?</a></div>
 <div class="odpowiedz">
 <p>
-We're just hobbist, who have to share their time between family, work, learning, and in their limited free time create something for the Simulator. That's why we can't give you a 100% correct and/or binding answer to the 
-
-"When will a new loco/route/pack be released" question. We are not a closed group, we will welcome any new people and their ideas. 
-
-We will welcome you if you want to help us in developing MaSzyna :) You can, for example, help the model creators by photographing infrastructure, buildings, etc. 
-
-All to help the routes in MaSzyna to become more realistic. 
-
-More details here (In Polish; use Google's Translate): <ahref="http://eu07.pl/forum/index.php/topic,17369.0.html">http://eu07.pl/forum/index.php/topic,17369.0.html</a>.
-<br>
-Besides that, we're carrying out work in order to improve the physics in the Simulator. If you have any useful information, diagrams, which could help the improvement, you could write it in the forum, in the correct department.
-</p>
-<p>
-If you know how to program, and you know how to use languages like: Python, C++, SCons, OpenAL, OpenSceneGraph then we would 
-
-welcome you to help us with creation of the Symulator Pojazdów Trakcyjnych (SPT)(Railway Vehicle Simulator). It will be a new version of MaSzyna, based on the OSG engine. It offers more capabilities 
-
-(especially when it comes to improving the efficiency of the engine, compared to the current MaSzyna engine).
-</p>
-</div>
+We're just hobbist, who have to share their time between family, work, learning, and in their limited free time create something for the Simulator. That's why we can't give you a 100% correct and/or binding answer to the "When will a new loco/route/pack be released" question. We are not a closed group, we will welcome any new people and their ideas. We will welcome you if you want to help us in developing MaSzyna :) You can, for example, help the model creators by photographing infrastructure, buildings, etc. All to help the routes in MaSzyna to become more realistic. More details here (In Polish; use Google's Translate): <ahref="http://eu07.pl/forum/index.php/topic,17369.0.html">http://eu07.pl/forum/index.php/topic,17369.0.html</a>.<br>Besides that, we're carrying out work in order to improve the physics in the Simulator. If you have any useful information, diagrams, which could help the improvement, you could write it in the forum, in the correct department.</p><p>If you know how to program, and you know how to use languages like: Python, C++, SCons, OpenAL, OpenSceneGraph then we would welcome you to help us with creation of the Symulator Pojazdów Trakcyjnych (SPT)(Railway Vehicle Simulator). It will be a new version of MaSzyna, based on the OSG engine. It offers more capabilities (especially when it comes to improving the efficiency of the engine, compared to the current MaSzyna engine).</p></div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
-<div class="pytanie"><a name="14,48">
-When I turn on the compressor, everything turns off, and nothing happens. How do I fix that?</a></div>
-<div class="odpowiedz">
-<p>
-It means that you turned the compressor on too quickly after turning on the transformer, and the Transformer MCB switched off. To turn it back on ('unlock it'), turn the transformer off, and press <kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>n</kbd>.
-</p>
-</div>
+<div class="pytanie"><a name="14,48">When I turn on the compressor, everything turns off, and nothing happens. How do I fix that?</a></div>
+<div class="odpowiedz"><p>It means that you turned the compressor on too quickly after turning on the transformer, and the Transformer MCB switched off. To turn it back on ('unlock it'), turn the transformer off, and press <kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>n</kbd>.</p></div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
+
 <li>
-<div class="pytanie"><a name="14,49"></a>
-I can't pressurise the Main Pipe after braking / CA/SHP turning on.</a></div>
-<div class="odpowiedz">
-<p>
-In many locos, durning Emergency Brake application, the driver's valve(/handle) becomes cut-off using compressed air. In order to release the brakes, set the driver's valve into the correct position and press and hold the Brake Release Button(<kbd>Num 6</kbd> key) until, the pressure in the Main Pipe rises to 4 bar.
-</p>
-</div>
+<div class="pytanie"><a name="14,49"></a>I can't pressurise the Main Pipe after braking / CA/SHP turning on.</a></div>
+<div class="odpowiedz"><p>In many locos, durning Emergency Brake application, the driver's valve(/handle) becomes cut-off using compressed air. In order to release the brakes, set the driver's valve into the correct position and press and hold the Brake Release Button(<kbd>Num 6</kbd> key) until, the pressure in the Main Pipe rises to 4 bar.</p></div>
 <div class="powrot"><span><a href="#14,0">Return to the question list</a></span></div></li>
+
 <li>
-<div class="pytanie"><a name="14,50">
-A while after releasing the brakes, some pressure goes into the loco brake cylinders.</a></div>
-<div class="odpowiedz">
-<p>
-Because of the way the train brake is build, sometimes after the brake is released, there may be little pressure left. In this case, use the <i>Brake Release</i> (<kbd>Num 6</kbd> key).
-</p>
-</div>
+<div class="pytanie"><a name="14,50">A while after releasing the brakes, some pressure goes into the loco brake cylinders.</a></div>
+<div class="odpowiedz"><p>Because of the way the train brake is build, sometimes after the brake is released, there may be little pressure left. In this case, use the <i>Brake Release</i> (<kbd>Num 6</kbd> key).</p></div>
 <div class="powrot"><span><a href="#14,0">Return to the question list</a></span></div></li>
+
 <li>
-<div class="pytanie"><a name="14,51">
-When in motion, the loco suddenly turned off / "extinguished".</a></div>
-<div class="odpowiedz">
-<p>
-Improved pantograph to catenary simulation algorithm cased, all the faults with the catenary placement, may cause the <i>Fast Switch</i> to disconnect, since the pantograph looses contact with the catenary. In cases of extreme catenary mis-alignment, the pantograph may break. If the <i>WN (High Voltage) Voltmeter</i> show the voltage to be present, you can simply carry out the loco starting procedure again.
-</p>
-</div>
+<div class="pytanie"><a name="14,51">When in motion, the loco suddenly turned off / "extinguished".</a></div>
+<div class="odpowiedz"><p>Improved pantograph to catenary simulation algorithm cased, all the faults with the catenary placement, may cause the <i>Fast Switch</i> to disconnect, since the pantograph looses contact with the catenary. In cases of extreme catenary mis-alignment, the pantograph may break. If the <i>WN (High Voltage) Voltmeter</i> show the voltage to be present, you can simply carry out the loco starting procedure again.</p></div>
 <div class="powrot"><span><a href="#14,0">Return to the question list</a></span></div></li>
+
 <li>
-<div class="pytanie"><a name="14,52">
-When starting off, the voltage suddenly drops to 0V.</a></div>
-<div class="odpowiedz">
-<p>
-On some scenries (example Quark, Krzyżowa) catenary was divided into sections and connected to power. In case of hard start of couple of vehicles at the same time, it is possible to overcharge the section or even the whole substation. Current will be then temporarily disconnected and then subsequently reconnected. After a third (3) overcharge, the current supply will be disconnected for about one (1) minute.
-</p>
-</div>
+<div class="pytanie"><a name="14,52">When starting off, the voltage suddenly drops to 0V.</a></div>
+<div class="odpowiedz"><p>On some scenries (example Quark, Krzyżowa) catenary was divided into sections and connected to power. In case of hard start of couple of vehicles at the same time, it is possible to overcharge the section or even the whole substation. Current will be then temporarily disconnected and then subsequently reconnected. After a third (3) overcharge, the current supply will be disconnected for about one (1) minute.</p></div>
 <div class="powrot"><span><a href="#14,0">Return to the question list</a></span></div></li>
+
 <li>
-<div class="pytanie"><a name="14,53">
-Small mouse movement causes rapid camera motion.</a></div>
-<div class="odpowiedz">
-<p>
-If, after starting the Simulator, you can't look around the cab while using the mouse or the trackpad and the movement is a jerky (large step, rotating by a large amount), then change the text size in Windows. In Windows 10 they can be reached by right clicking on the desktop, and choosing "Display Settings". Look for somthing like "Change the text, application, window size" [UI Scaling] and set it to 100%. On older Windows systems, use "Smallest" instead of 100%
-<br>
-If you have more than one monitor, make sure to change the said setting for the monitor you will use to operate MaSzyna on.
-<br>
-In the case of the movement not being a step movement, but simply too fast or too slow, you can change the mouse sensitivity settings in Windows or the "mousescale" in the eu07.ini file. For example, "mousescale 0.3 0.3", in which the values are horizontal and vertical axis respectively. Negative value causes the axis to invert.
-</p>
-</div>
+<div class="pytanie"><a name="14,53">Small mouse movement causes rapid camera motion.</a></div>
+<div class="odpowiedz"><p>If, after starting the Simulator, you can't look around the cab while using the mouse or the trackpad and the movement is a jerky (large step, rotating by a large amount), then change the text size in Windows. In Windows 10 they can be reached by right clicking on the desktop, and choosing "Display Settings". Look for somthing like "Change the text, application, window size" [UI Scaling] and set it to 100%. On older Windows systems, use "Smallest" instead of 100%<br>If you have more than one monitor, make sure to change the said setting for the monitor you will use to operate MaSzyna on.<br>In the case of the movement not being a step movement, but simply too fast or too slow, you can change the mouse sensitivity settings in Windows or the "mousescale" in the eu07.ini file. For example, "mousescale 0.3 0.3", in which the values are horizontal and vertical axis respectively. Negative value causes the axis to invert.</p></div>
 <div class="powrot"><span><a href="#14,0">Return to the question list</a></span></div></li>
 
 <h2><a name="15">Official addesses and contact</a></h2>
@@ -1231,8 +1085,7 @@ In the case of the movement not being a step movement, but simply too fast or to
 
 <li>
 <div class="pytanie"><a name="TRANS">The Translator's Note</a></div>
-<div class="odpowiedz"><p>While utmost care was take to correctly translate everything, there will always be mistakes. The Railway terminology used in this manual is a British(& Irish) English version. Furthermore, any references to the Windows operating system are translated directly from Polish, so their name in English might be different since I'm using Linux. This was done in a very limited time, so please, take that into account when you run into any mistakes. Having said that, feel free to contact me on GitHub with any mistakes you found, or any tips on how to improve this manual.</br>For any links marked [POLISH ONLY] try using Google Translate, it should work good enough (There will be mistakes there!!)</br>To have the newest versions, check out my GitHub:</br>https://github.com/kolejarz2009/eu07-en-docs/releases<br>Enjoy!<br>Marek "kolejarz2009" Starzec<br>
-<b>Readme version: daily-20170701_1</b></p></div>
+<div class="odpowiedz"><p>While utmost care was take to correctly translate everything, there will always be mistakes. The Railway terminology used in this manual is a British(& Irish) English version. Furthermore, any references to the Windows operating system are translated directly from Polish, so their name in English might be different since I'm using Linux. This was done in a very limited time, so please, take that into account when you run into any mistakes. Having said that, feel free to contact me on GitHub with any mistakes you found, or any tips on how to improve this manual.</br>For any links marked [POLISH ONLY] try using Google Translate, it should work good enough (There will be mistakes there!!)</br>To have the newest versions, check out my GitHub:</br>https://github.com/kolejarz2009/eu07-en-docs/releases<br>Enjoy!<br>Marek "kolejarz2009" Starzec</p></div>
 
 <div class="powrot"><span><a href="#14,0">Return to the question list</a></span></div></li>
 </ul>
