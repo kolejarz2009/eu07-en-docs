@@ -1,4 +1,5 @@
-<li> en-change-trains.html  = <b>100%</b>
+<table>
+<tr><td>en-change-trains.html</td><td>  = <b>100%</b></td></tr>
 <br> PL: zmiana-skladow.html  <b>daily-20170722 r1</b>
 <br>
 <li> en-control.html = 90%</b>
@@ -29,3 +30,4 @@
 <br>
 <li> en-universal.html = <b>100%</b> 
 <br> PL: universale.html        <b>daily-20170722 r1</b>
+</table
