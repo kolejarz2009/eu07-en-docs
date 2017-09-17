@@ -7,7 +7,7 @@
   <title>Debugmode &ndash; Railway Vehicle Simulator &ndash; MaSzyna 17.07</title>
   <link rel="Stylesheet" type="text/css" href="style.css"><style><!--
 </style>
-<!-- VERSION daily-20170722 REVISION 001 -->
+<!-- VERSION daily-20170917 REVISION 0 -->
 </head>
 <body>
 
@@ -16,16 +16,19 @@
 Debugmode &ndash; Test mode, allows for more accurate testing. At the top of the screen (red text) the driven vehicle parameters are shown. In this mode, all failures are disabled (ie. derailing), CA / DSD (Driver Safety Device, not acknowledging "SHP") does not cause emergency braking. In the logfile, extra information about train movements and activated events is saved, this is to help with the debugging of the scenarios. In debugmode, opposite to the normal mode, certain keys have the following functions:
 </p>
 <ul>
-<li>The <kbd>F6</kbd> key &ndash; Speed up the whole simulation (Speed up the simulation's calculations, with Shift - 2x, Ctrl - 5x, Shift+Ctrl - 10x); May cause problems with event activation, especially when the FPS drops below 20FPS.</li>
-<li>The <kbd>Esc</kbd> key &ndash; Speed up the simulation of the physics only (might cause problems with launching certain events);</li>
-<li>The <kbd>F7</kbd> key &ndash; Show the mesh wire-frame / node triangles, does not work correctly;</li>
-<li>The <kbd>[</kbd> and <kbd>]</kbd> keys &ndash; Shift the driven vehicle 100 meters to the front / back;</li>
-<li>The <kbd>q</kbd> key &ndash; Stop the AI  from driving your train further (after enabling it).</li>
+  <li><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F12</kbd> &ndash; Switch between the debugmode and normal modes.</li>
+  <li><kbd>F1</kbd> &ndash; With <kbd>Shift</kbd> Moves the clock by 5min, with <kbd>Ctrl</kbd> by 20min.</li>
+  <li><kbd>F6</kbd> &ndash; Speed up the whole simulation (Speed up the simulation's calculations, with Shift - 2x, Ctrl - 5x, Shift+Ctrl - 10x); May cause problems with event activation, especially when the FPS drops below 20FPS.</li>
+  <li><kbd>Esc</kbd> &ndash; Speed up the simulation of the physics only (might cause problems with launching certain events);</li>
+  <li><kbd>F7</kbd>  &ndash; Show the mesh wire-frame / node triangles, does not work correctly;</li>
+  <li><kbd>Ctrl</kbd> + <kbd>F7</kbd> &ndash; Change between light calculated from current time, and constant day light</li>
+  <li><kbd>[</kbd> and <kbd>]</kbd> keys &ndash; Shift the driven vehicle 100 meters to the front / back;</li>
+  <li><kbd>q</kbd>  &ndash; Deactivate the AI autopilot (after enabling it).</li>
 </ul>
 <p>
 Turning on the AI (<kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>q</kbd>) does not lock the keyboard. Also, the inside cab boundaries are gone.
 <br>
 This mode should normally <b> NOT </b> be used in the simulator.
-</p>Author: youBy.<br>Small changes: libertyn89, Maciej, Stele.<br>Translation: kolejarz2009
+</p>Author: youBy.<br>Small changes: libertyn89, Maciej, Stele, kolejarz2009<br>Translation: kolejarz2009
 </div>
 </body></html>
