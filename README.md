@@ -3,7 +3,7 @@ English translation of the documents for the MaSzyna Simulator ( http://eu07.pl/
 <br>Angielskie tłumaczenie dokumentacji MaSzyny 
 
 English translations is up-to date with the following Polish version: (below) <br>
-<i>Master-branch at </i><b>daily-20170719</b>
+<i>Master-branch at </i><b>20170919</b>
 <table>
 <tr><td>English File</td><td>Polish File</td><td>Status</td></tr>
 <tr><td>en-change-trains.html</td><td>zmiana-skladow.html</td><td>daily-20170722 r1</td></tr>
