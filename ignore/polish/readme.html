@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="Content-Language" content="pl">  
-  <title>Plik informacyjny &ndash; Symulatora Pojazdów Szynowych &ndash; MaSzyna 17.07</title>
+  <title>Plik informacyjny &ndash; Symulatora Pojazdów Szynowych &ndash; MaSzyna 18.01</title>
   <link rel="Stylesheet" type="text/css" href="inne/readme_pliki/style.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
 <center>
 <img src="inne/readme_pliki/img/logo.png" alt="Symulator Pojazdów Szynowych MaSzyna">
 <img src="inne/readme_pliki/img/424.png" alt="EP07-424"></center>
-<h1 style="text-align: right;">MaSzyna 17.07</h1>
+<h1 style="text-align: right;">MaSzyna 18.01</h1>
 <h2 style="text-align: right;"><font size="5">Plik informacyjny</font></h2>
 <div style="text-align: right;"><b>AUTOR:</b> libertyn89<br><br><b>AKTUALIZACJA:</b> Kolejarz2009<br><br><b>KONSULTACJE, POMOC:</b> adsim, Benek, dejotzbych, hunter, matek123, Ra, Sawi, surgeon, szogun, youBy,
 <br>sebastian82, EP08_015, Stele, Maciej i inni</div>
@@ -72,9 +72,11 @@
 	</div>
 
 <h2><a name="2">Wstęp</a></h2>
-<h3>MaSzyna 17.07</h3>
+<h3>MaSzyna 18.01</h3>
 <p>
-Projekt <b>Symulator "MaSzyna"</b> w roku 2017 wchodzi w szesnasty rok swojego istnienia. W tym wydaniu skupiliśmy się nad przepisaniem całego kodu pliku wykonywalnego EXE na język <strong>C++</strong>, zamiast dotychczasowej mieszanki C++ i Pascala. Przepisanie kodu na nowy język oznacza lepszą organizację dla twórców Projektu oraz otwiera nowe możliwości, które jeszcze kilka lat temu wydawały się niemożliwe do zrealizowania. Po szczegóły zapraszamy do zapoznania się z <a href="#11,2">modyfikacjami pliku EXE</a>.
+Projekt <b>Symulator "MaSzyna"</b> w roku 2018 wchodzi w siedemnasty rok swojego istnienia. W drugiej połowie zeszłego roku, skupiliśmy się na dalszym porządkowaniu kodu symulatora, dla zwiększenia stabilności waszych doznań.
+Wyprostowanie kodu pozwoliło na dodanie nowości, jak efekty graficzne cieni i odbić, wyciskające ostatnie poty ze starego OpenGL na którym bazuje nasz silnik graficzny, oraz wprowadzenie biblioteki OpenAL, umożliwiającej trwającą rewolucję dźwiękową i uniezależniającą nas od DirectX, dzięki czemu można skompilować symulator natywnie pod Linuxa i MacOS.
+Po szczegóły zapraszamy do zapoznania się z <a href="#11,2">modyfikacjami pliku EXE</a>.
 <p>Gorąco zachęcamy do zapoznania się z najnowszym wydaniem <b>Symulatora "MaSzyna"</b>.<br><i>Administracja eu07.pl</i>
 <div class="powrot"> 
 	<span><a href="#0">Spis treści</a></span>
@@ -95,8 +97,7 @@ MaSzyny się nie instaluje. W celu poprawnego wypakowania paczki z Symulatorem o
 Wymagania sprzętowe i programowe do uruchomienia symulatora wzrosły względem poprzednich wersji. Ze względu na rozdział pliku exe na wersje x86 i x64 należy zwrócić szczególną uwagę na zgodność poniższych bibliotek ze swoim systemem operacyjnym i używanym plikiem exe.<br>
 <ul>
 <li>Karta graficzna ze sterownikiem obsługującym OpenGL w wersji 1.5 lub nowszej.</li>
-<li>DirectX 8.0 lub nowszy.</li>
-<li>Pakiety Visual C++ Redistributable 2007 i 2015.</li>
+<li>Pakiety Visual C++ Redistributable 2007, 2015 i 2017.</li>
 Niekiedy może być potrzeba instalacji w systemie pakietu podstawowego Python 2.7.14, zwłaszcza przy systemach x64.<br>
 Wskazane jest posiadanie ponad 4 GB pamięci RAM i wielowątkowego procesora. Mała ilość pamięci może nie pozwolić uruchomić większych scenerii bez zmniejszenia rozmiaru tekstur (maxtexturesize w pliku eu07.ini), a brak wolnego wątku procesora, drastycznie zmniejszyć wydajność w lokomotywach z komputerem pokładowym.
 </ul>
@@ -358,7 +359,8 @@ Wpis w scenerii <i>movelight</i> pozwala ustawić dzień w roku, dla którego li
 <br>Scenariusz "Całkowo Towarowy" autorstwa Transkei
 <br>Scenariusz "Całkowo Turkol" autorstwa Transkei
 <br>Scenariusz "Całkowo Turkol 2" autorstwa Transkei</p>
-</td></tr>
+<br>Scenariusz "Całkowo Niebezpieczny Pociąg" autorstwa Transkei, nagrania radiowe: bartiprog i matek123
+<br>Scenariusz "Całkowo Retro" autorstwa Transkei</td></tr>
 <tr><td>Drawinowo</td><td>Autor: Mati_An. Modyfikacje sterowania: Stele, Ra</td></tr>
 <tr><td>Drawinowo (Noc)</td><td>Autor: Mati_An. Modyfikacje sterowania: Stele, Ra</td></tr>
 <tr><td>Elektrociepłownia_dobre</td><td>Autorzy: sm42driver, szogun.</td></tr>
@@ -421,48 +423,202 @@ Scenariusze "Zwierzyniec SM42" oraz "Zwierzyniec ED72" autorstwa Woku
 <h4><a name="6,2,1">Pojazdy z kabinami (z możliwością prowadzenia)</a></h4>
 <table>
 <tbody><tr><th>Nazwa</th><th>Autorzy, uwagi</th></tr>
-<tr><td>4e_v1</td><td>Modele zewnętrzne: przebudowane modele 303e_v1 - szogun. Kabiny: hunter (3), Profeta (2); Kilkadziesiąt tekstur - autorzy: Sigman, Sakorius, adsim, Patrykos, Mati_An, EU05, szogun, Kacu, EU07-483, hanys, MR6, kornel4d, ST44-003. Liczne poprawki: adsim. Kabina widoczna z zewnątz: Stele Modyfikacje tekstur:Pitek, Joachimowicz, Lelek, jakol112, Pedrosiasty</td></tr>
-<tr><td>181_v1</td><td>Modele zewnętrzne (Skoda 181 i 182), tekstury oraz kabina: Patrykos. Charakterystyka: ET22_RULZ&nbsp;i&nbsp;youBy.</td></tr>
-<tr><td>303e_v1</td><td>Modele zewnętrzne: Sakorius, FLOYD, adsim. Tekstury: Sigman, Patrykos, adsim, Mati_An, szogun, sebalorek, Kacu, WSK, Davidsonxx, Bartek46, ST44-003, hanys, maciejgrzywna, MR6, kornel4d, Lelek, joachimowicz. Kabiny: hunter. Liczne poprawki: adsim. Kabina widoczna z zewnątrz: Stele</td></tr>
-<tr><td>303eb</td><td>Autor: szogun (modyfikacja podstawowego modelu). Kabina (na podstawie kabiny huntera): szogun. Tekstury i ich modyfikacje: szogun, hanys, jakol112, Stele. Kabina widoczna z zewnątrz: matek123 i Sawi.</td></tr>
-<tr><td>6dg_v1</td><td>szogun: Kabina widoczna z zewnątrz: jako112</td></tr>
-<tr><td>br285_v1</td><td>Ádám Nagy, szogun, hanys</td></tr>
+<tr><td>4e_v1</td><td>
+	<b>Modele zewnętrzne:</b> przebudowane modele 303e_v1 - szogun 
+	<b>Kabiny:</b> hunter, Profeta  
+	<b>Liczne poprawki:</b> adsim 
+	<b>Kabiny widoczne z zewnątrz:</b> Stele, DieselPower 
+	<b>Modyfikacje tekstur:</b> Pitek, Joachimowicz, Lelek, jakol112, Pedrosiasty, MR6 
+	<b>Zdjęcia m.in:</b> eu40, PX48-28, mechatronik, BR232, EU07-033, Podlesky, Lizawka127, janek32
+	<b>Tekstury:</b> Sigman, Sakorius, adsim, Patrykos, Mati_An, EU05, szogun, Kacu, EU07-483, MR6, kornel4d, ST44-003, DieselPower, RafaPolska424, Patryk Farana, MR6, Joachimowicz, Piotr93 
+	</td></tr>
+<tr><td>181_v1</td><td><b>Modele zewnętrzne:</b> (Skoda 181 i 182), <b>Kabina, Tekstury:</b> Patrykos. <b>Charakterystyka:</b> ET22_RULZ, youBy.</td></tr>
+<tr><td>303e_v1</td><td>
+	<b>Modele zewnętrzne:</b> Sakorius, FLOYD, adsim 
+	<b>Kabiny:</b> hunter 
+	<b>Liczne poprawki:</b> adsim 
+	<b>Kabiny widoczne z zewnątrz:</b> Stele, DieselPower, MR6 
+	<b>Nad kabiną do EU07-409 pracowali:</b> MR6, EP08_015, matek123, DieselPower, Wiggle <i>oraz elementy autorstwa:</i> ST44-003, EU07-001, Kermit, Profeta, krasnowski 	
+	<b>Zdjęcia m.in.:</b> matfre96, krzysiek626, EU07-483, eu40, darek71wrc, m0ke, lizawka127
+	<b>Tekstury:</b> Sigman, Patrykos, adsim, Mati_An, szogun, sebalorek, Kacu, WSK, Davidsonxx, Bartek46, ST44-003, Patryk Farana, maciejgrzywna, MR6, kornel4d, Lelek, joachimowicz, głowawojtas, RafaPolska424, dx286, dozer, stapox, MR6
+	</td></tr>
+<tr><td>303eb</td><td>
+	<b>Autor:</b> szogun (modyfikacja podstawowego modelu) 
+	<b>Kabina:</b> szogun (na podstawie kabiny huntera) 
+	<b>Tekstury i ich modyfikacje:</b> szogun, Patryk Farana, jakol112, Stele 
+	<b>Kabina widoczna z zewnątrz:</b> matek123, Sawi
+	</td></tr>
+<tr><td>6dg_v1</td><td>
+	<b>Autor:</b>szogun 
+	<b>Kabina widoczna z zewnątrz:</b> jako112 
+	<b>Modyfikacja modelu na typ 6Dg/B:</b> DieselPower 
+	<b>Zdjęcia m. in.:</b> podlesky, LHS_ST40S, 	
+	<b>Tekstury:</b>szogun, kornel4d, MR6, dieselpower
+	</td></tr>
+<tr><td>br285_v1</td><td>Ádám Nagy, szogun, Patryk Farana</td></tr>
 <tr><td>dl2_v1</td><td>Piotrek</td></tr>
 <tr><td>dr2_v1</td><td>Stele</td></tr>
-<tr><td>e186_v2</td><td>Adam Nagy, szogun, hanys, Stele, Sawi, youBy, mk1991, byczek, matek123, TGV</td></tr>
-<tr><td>ed72_v1</td><td>Model zewnętrzny: szogun. Tekstury: szogun. Kabina PEKAP, Kolejarz. Poprawki: szogun.</td></tr>
-<tr><td>en57_v1</td><td>Autorzy: PEKAP, Kolejarz. Poprawki: Sakorius, Oli_EU (CT), szogun. Tekstury: Patrykos, Kacu, sebalorek, james.szczesny, szogun.</td></tr>
+<tr><td>e186_v2</td><td>Adam Nagy, szogun, Patryk Farana, Stele, Sawi, youBy, mk1991, byczek, matek123, TGV, kornel4d
+	<b>Zdjęcia m.in.:</b> CTL
+	<b>Tekstury:</b> kornel4d	
+	</td></tr>
+<tr><td>e6act_v1</td>
+	<td><b>Model:</b> Xsoner (Trainz), Mint (Trainz) 
+	<b>Konwersja do MaSzyny i poprawki:</b> Patryk Farana, Sawi, Stele, Wiggle, tmj, EP08_015, Kermit 
+	<b>Fizyka:</b> youBy, Stele 
+	<b>Udźwiękowienie:</b> MK1991, Stele, Kermit 
+	<b>Wsparcie merytoryczne:</b> SQT	
+	<b>Sprzęg:</b> Krasnowski 
+	<b>Tarcze SKP:</b> Rootek 
+	<b>Tekstury:</b> Xsoner (Trainz), Mint (Trainz) 
+	</td></tr>
+<tr><td>ed72_v1</td><td>
+	<b>Model zewnętrzny:</b> szogun
+	<b>Kabina:</b> PEKAP, Kolejarz
+	<b>Poprawki:</b> szogun 
+	<b>Tekstury:</b> szogun 
+	</td></tr>
+<tr><td>en57_v1</td><td>
+	<b>Autorzy:</b> PEKAP, Kolejarz
+	<b>Poprawki:</b> Sakorius, Oli_EU (CT), szogun
+	<b>Tekstury:</b> Patrykos, Kacu, sebalorek, james.szczesny, szogun
+	</td></tr>
 <tr><td>en57-2000_v1</td><td>Bombardier, szogun</td></tr>
 <tr><td>ep05_v2</td><td>szogun, EP08</td></tr>
-<tr><td>ep07_v1</td><td>Model zewnętrzny - 4e_v1. Kabina (modyfikacja kabiny huntera): szogun. Tekstury: adsim, WSK, szogun, ST44-003.</td></tr>
-<tr><td>ep08_v1</td><td>Model zewnętrzny - 4e_v1. Kabina (modyfikacja kabiny huntera): szogun. Tekstury: Sigman, szogun, ST44-003, MR6.</td></tr>
-<tr><td>ep09_v1</td><td>Model zewnętrzny: Profeta. Kabiny: Rozi (104e_2, 104e_3); KURS90, MKaczy (104e_1) . Tekstury: Profeta, adsim, ST44-003, hanys, szogun.</td></tr>
-<tr><td>et21_v2</td><td>Model zewnętrzny:  Oli_EU (CT); wykończenie i poprawki: Sakorius, adsim. Kabiny: PEKAP, Kolejarz, adamst, cichowski34, szogun. Tekstury: Sigman, hanys.</td></tr>
-<tr><td>et22-2000_v2</td><td>Model zewnętrzny (modyfikacja modelu et22_v1) MKaczy, adsim. Kabina (modyfikacja kabiny z et22_v1) MKaczy. Charakterystyka youBy.</td></tr>
-<tr><td>et22_v2</td><td>Model zewnętrzny: szogun. Kabina: szogun. Układ mapowania: Patrykos. Tekstury: szogun, Patrykos, adsim, hanys, PMT, fuji8, DieselPower, MR6, kornel4d.</td></tr>
-<tr><td>et40_v1</td><td>Model zewnętrzny: ZT-POZNAN (Mega Pack). Wykończenie: EP08_015. Poprawki: KURS90. Kabina: KURS90. Tekstury: EP08_015, EU05. Charakterystyka: EU07-457, ET22_RULZ.</td></tr>
-<tr><td>et41_v1</td><td>Model: Sakorius; wykończenie i poprawki: youBy, Patrykos. Kabina (modyfikacja kabiny huntera): Patrykos. Tekstury: Patrykos. Dźwięki: ET21-622.</td></tr>
-<tr><td>et41_v2</td><td>Zdjęcia: Hadomik, jussi19, CTL. Autor: Patrykos. Poprawki: szogun</td></tr>
-<tr><td>et42_v2</td><td>Model zewnętrzny: szogun. Kabina: szogun (odnowiony model autorstwa KURS90). Tekstury: szogun, hanys. Charakterystyka: KURS90, ET22_RULZ.</td></tr>
-<tr><td>eu04_v1</td><td>EP08_015. Charakterystyka: ET22_RULZ.</td></tr>
-<tr><td>eu05_v2</td><td>szogun</td></tr>
-<tr><td>m62_mod_v1</td><td>Kabina (modyfikacja kabiny PEKAPa): Bombardier.</td></tr>
-<tr><td>sm03_v1</td><td>szogun (na bazie 409Da_v2 autorstwa Rootka)</td></tr>
+<tr><td>ep07_v1</td><td>
+	<b>Model zewnętrzny:</b>z 4e_v1
+	<b>Kabina:</b> szogun (modyfikacja kabiny huntera)
+	<b>Zdjęcia m.in.:</b> Krzysiek626	
+	<b>Tekstury:</b> adsim, WSK, szogun, ST44-003
+	</td></tr>
+<tr><td>ep08_v1</td><td>
+	<b>Model zewnętrzny:</b>z 4e_v1
+	<b>Kabina:</b> szogun (modyfikacja kabiny huntera) 
+	<b>Kabina LOWPOLY:</b> DieselPower,MR6,Piotr93 
+	<b>Zdjęcia m. in:</b> Kuba02MK	
+	<b>Tekstury:</b> Sigman, szogun, ST44-003, MR6, RafaPolska424
+	</td></tr>
+<tr><td>ep09_v1</td><td>
+	<b>Model zewnętrzny:</b> Profeta 
+	<b>Kabiny:</b> Rozi (104e_2, 104e_3); KURS90, MKaczy (104e_1) 
+	<b>Tekstury:</b> Profeta, adsim, ST44-003, Patryk Farana, szogun
+	</td></tr>
+<tr><td>et21_v2</td><td>
+	<b>Model zewnętrzny:</b>  Oli_EU (CT) 
+	<b>Wykończenie i poprawki:</b> Sakorius, adsim 
+	<b>Kabiny:</b> PEKAP, Kolejarz, adamst, cichowski34, szogun 
+	<b>Kabina LOWPOLY i modyfikacja na 3E/1</b>: Piotr93
+	<b>Zdjęcia m.in.:</b> Krzysiek626	
+	<b>Tekstury:</b> Sigman, Patryk Farana, szogun, DieselPower 
+	</td></tr>
+<tr><td>et22-2000_v2</td><td>
+	<b>Model zewnętrzny:</b> (modyfikacja modelu et22_v1) MKaczy, adsim  
+	<b>Kabina:</b> MKaczy (modyfikacja kabiny z et22_v1) 
+	<b>Charakterystyka:</b> youBy
+	</td></tr>
+<tr><td>et22_v2</td><td>
+	<b>Model zewnętrzny:</b> szogun 
+	<b>Kabina:</b> szogun 
+	<b>Układ mapowania:</b> Patrykos 
+	<b>Modyfikacja zderzaków</b> kudlacz, Sawi, matek123
+	<b>Zdjęcia m.in.:</b> defiler, Hadomik
+	<b>Tekstury:</b> szogun, Patrykos, adsim, Patryk Farana, PMT, fuji8, DieselPower, MR6, kornel4d, RafaPolska424, defiler 
+	</td></tr>
+<tr><td>et40_v1</td><td>
+	<b>Model zewnętrzny:</b> ZT-POZNAN (Mega Pack) 
+	<b>Wykończenie:</b> EP08_015
+	<b>Poprawki:</b> KURS90.</b> 
+	<b>Kabina:</b> KURS90 
+	<b>Charakterystyka:</b> EU07-457, ET22_RULZ
+	<b>Modyfikacje fiz i dźwięki:</b>: jakubg1
+	<b>Tekstury:</b> EP08_015, EU05
+	</td></tr>
+<tr><td>et41_v1</td><td>
+	<b>Model:</b> Sakorius 
+	<b>Wykończenie i poprawki:</b> youBy, Patrykos 
+	<b>Kabina:</b> Patrykos (modyfikacja kabiny huntera) 
+	<b>Dźwięki:</b> ET21-622 
+	<b>Tekstury:</b> Patrykos
+	</td></tr>
+<tr><td>et41_v2</td><td>
+	<b>Zdjęcia:</b> Hadomik, jussi19, CTL. 
+	<b>Autor:</b> Patrykos. 
+	<b>Poprawki:</b> szogun
+	</td></tr>
+<tr><td>et42_v2</td><td>
+	<b>Model zewnętrzny:</b> szogun. 
+	<b>Kabina:</b> szogun (odnowiony model autorstwa KURS90). 
+	<b>Charakterystyka:</b> KURS90, ET22_RULZ. 
+	<b>Zdjęcia m.in:</b> patrykos, Patryk_Farana 
+	<b>Tekstury:</b> szogun, Patryk Farana, defiler, RafaPolska424
+	</td></tr>
+<tr><td>eu04_v1</td><td>
+	EP08_015. 
+	<b>Charakterystyka:</b> ET22_RULZ.
+	</td></tr>
+<tr><td>eu05_v2</td><td>
+	szogun
+	</td></tr>
+<tr><td>m62_mod_v1</td><td><b>Kabina:</b> Bombardier (modyfikacja kabiny PEKAPa)</td></tr>
+<tr><td>sm03_v1</td><td>szogun <i>(na bazie 409Da_v2 autorstwa Rootka)</i></td></tr>
 <tr><td>sm31_v1</td><td>Kudłacz</td></tr>
-<tr><td>sm40_v1</td><td>Piotrek<br><br>Lokomotywa posiada kabinę, ale bez możliwości prowadzenia. Po prostu nie można ruszyć z miejsca.</td></tr>
+<tr><td>sm40_v1</td><td>Piotrek<br><br><b><u>Lokomotywa posiada kabinę, ale bez możliwości prowadzenia. Po prostu nie można ruszyć z miejsca.</u></b></td></tr>
 <tr><td>sm41_v1</td><td>Piotrek</td></tr>
-<tr><td>sm42_v1</td><td>Model zewnętrzny i kabina: Sakorius. Tekstury: Sakorius, Sigman. Liczne poprawki (modele, tekstury): adsim.</td></tr>
-<tr><td>sn61_v1</td><td>OlO_EU, McZapkie, Kakish, Chester</td></tr>
-<tr><td>sp42_v1</td><td>Model zewnętrzny i kabina: Sakorius. Tekstury: Sakorius, Stele, Cozder, Hanys, Sigman. Poprawki: hunter, Rozi, adsim. Kabina widzoczna z zewnątrz: Stele</td></tr>
-<!--<tr><td>sp45_v1</td><td>Model: matek123, ST44-003, EP08-015, MR6. Repaint: matfre96. Tekstury: MR6, Stele. Poprawki: EU40. Skrypty: Stele</td></tr>-->
-<tr><td>sp45_v1</td><td>Model zewnętrzny: Sakorius, liczne poprawki: adsim, matek123, MR6. Kabina: Bombardier, adamst (modyfikacja kabiny dla Trainz'a), szogun (przystosowanie do MaSzyny), MR6 & matek123(modyfikacja kabiny su45). Tekstury: MR6, stele.</td></tr>
-<tr><td>st43_v1</td><td>Patrykos, Marcin_ST43</td></tr>
-<tr><td>st44_v1</td><td>Modele zewnętrzne (DizelPack, CCCP Pack): youBy. Kabina: PEKAP, modyfikacja Sigman. Nowa kabina: DU_mont, LHS_ST40S, Patrykos, dymus, GOPdriver, Piotr93 Tekstury: youBy, Sigman, Patrykos, Sakorius Dziwięki: Tyrystor.</td></tr>
-<tr><td>st45_v2</td><td>Model zewnętrzny (na podstawie modelu Sakoriusa): szogun. Kabina (na podstawie kabiny SU45 Bombardiera): szogun. Tekstura: Patrykos.</td></tr>
-<tr><td>su45_v2</td><td>Model zewnętrzny: Sakorius, liczne poprawki: adsim. Kabina: Bombardier, adamst (modyfikacja kabiny dla Trainz'a), szogun (przystosowanie do MaSzyny). Tekstury: Sigman, dx286, szogun.</td></tr>
-<tr><td>su46_v2</td><td>Model zewnętrzny: Sakorius (DizelPack). Kabina (modyfikacja kabiny Profety): szogun. Tekstury: Sakorius, hummel, SM42drive, jaca83, Rootek, zuger.</td></tr>
-<tr><td>tem2_v2</td><td>Model zewnętrzny i kabina: Sigman, liczne poprawki - adsim. Tekstury: Sigman, kornel4d.</td></tr>
-<tr><td>tem2u_v2</td><td>Model zewnętrzny i kabina: Sigman, liczne poprawki - adsim. Tekstury: Sigman.</td></tr>
+<tr><td>sm42_v1</td><td>
+	<b>Model zewnętrzny i kabina:</b> Sakorius. 
+	<b>Liczne poprawki:</b> adsim.
+	<b>Tekstury:</b> Sakorius, Sigman.
+	</td></tr>
+<tr><td>sn61_v2</td><td>
+	szogun 
+	<b>Kabina i jej części:</b>adamst, szogun, Krasnowski, TZs 
+	<b>Zdjęcia:</b>Wokulski, up5358, Sakorius, PR ZDW, ST44-003 
+	<b>Dzwięki:</b>pawel1202, mk1991
+	</td></tr>
+<tr><td>sp42_v1</td><td>
+	<b>Model zewnętrzny i kabina:</b> Sakorius.  
+	<b>Poprawki:</b> hunter, Rozi, adsim. 
+	<b>Kabina widoczna z zewnątrz:</b> Stele 
+	<b>Tekstury:</b> Sakorius, Stele, Cozder, Patryk Farana, Sigman.
+	</td></tr>
+<tr><td>sp45_v1</td><td>
+	<b>Model zewnętrzny:</b> Sakorius 
+	<b>Liczne poprawki:</b> adsim, matek123, MR6. 
+	<b>Kabina:</b> Bombardier, adamst (modyfikacja kabiny dla Trainz'a), szogun (przystosowanie do MaSzyny), MR6 & matek123 (modyfikacja kabiny su45). 
+	<b>Tekstury:<B/> MR6, stele.
+	</td></tr>
+<tr><td>st43_v1</td><td>
+	Patrykos, Marcin_ST43, 
+	<b>Zdjęcia m.in:</b> Bumer
+	<b>Tekstury:</b> Patrykos, Marcin_ST43, DieselPower
+	</td></tr>
+<tr><td>st44_v1</td><td>
+	<b>Modele zewnętrzne:</b> youBy 
+	<b>Kabina:</b> PEKAP, modyfikacja Sigman 
+	<b>Nowa kabina:</b> DU_mont, LHS_ST40S, Patrykos, dymus, GOPdriver, Piotr93 
+	<b>Dzwięki:</b> Tyrystor 
+	<b>Tekstury:</b> youBy, Sigman, Patrykos, Sakorius
+	</td></tr>
+<tr><td>st45_v2</td><td>
+	<b>Model zewnętrzny</b> szogun (na podstawie modelu Sakoriusa). 
+	<b>Kabina</b> szogun (na podstawie kabiny SU45 Bombardiera). 
+	<b>Tekstura:</b> Patrykos.
+	</td></tr>
+<tr><td>su45_v2</td><td>
+	<b>Model zewnętrzny:</b> Sakorius, 
+	<b>liczne poprawki:</b> adsim. 
+	<b>Kabina:</b> Bombardier, adamst (modyfikacja kabiny dla Trainz'a), szogun (przystosowanie do MaSzyny). 
+	<b>Zdjęcia m.in.:</b> Janek32	
+	<b>Tekstury:<b> Sigman, dx286, szogun, Zuger, PMT, pierog_su42
+	</td></tr>
+<tr><td>su46_v2</td><td>
+	<b>Model zewnętrzny:</b> Sakorius 
+	<b>Kabina</b>(modyfikacja kabiny Profety) szogun, MR6. 
+	<b>Zdjęcia m. in.:</b> lurr3x, bumer
+	<b>Tekstury:</b> Sakorius, hummel, SM42drive, jaca83, Rootek, MR6, zuger.
+	</td></tr>
+<tr><td>tem2_v2</td><td><b>Model zewnętrzny i kabina:</b> Sigman <b>Liczne poprawki:</b> adsim. <b>Tekstury:</b> Sigman, kornel4d.</td></tr>
+<tr><td>tem2u_v2</td><td><b>Model zewnętrzny i kabina:</b> Sigman <b>Liczne poprawki:</b> adsim. <b>Tekstury:</b> Sigman.</td></tr>
 </tbody></table>
 
 <div class="powrot"> 
@@ -475,61 +631,138 @@ Scenariusze "Zwierzyniec SM42" oraz "Zwierzyniec ED72" autorstwa Woku
 <h4><a name="6,2,2">Pozostałe</a></h4>
 <table>
 <tbody><tr><th>Nazwa</th><th>Autorzy, uwagi</th></tr>
-<tr><td>163_v1</td><td>james.szczesny</td></tr>
-<tr><td>401da_v1</td><td>EP08_015</td></tr>
-<tr><td>810_v1</td><td>Tekstura: Lelek</td></tr>
-<tr><td>el204_v1</td><td>Model zewnętrzny: Oli_EU (CT). Wykończenie: EP08_015. Charakterystyka: ET22_RULZ.</td></tr>
-<tr><td>em10_v1</td><td>EP08_015</td></tr>
-<tr><td>em120_v1</td><td>KURS90 (Mega Pack)</td></tr>
-<tr><td>ep01_v1</td><td>Oli_EU (CT)</td></tr>
-<tr><td>ep03_v1</td><td>EP08_015</td></tr>
-<tr><td>eu20_v1</td><td>EP08_015</td></tr>
-<tr><td>ew58_v1</td><td>EP08_015</td></tr>
-<tr><td>ew60_v1</td><td>EP08_015</td></tr>
-<tr><td>maxima_v1</td><td>Rozi</td></tr>
-<tr><td>sa102_111_v1</td><td>EP08_015</td></tr>
-<tr><td>su42_v1</td><td>Model zewnętrzny: Sakorius, adsim. Tekstury: Sigman.</td></tr>
-<tr><td>t448p_v1</td><td>Model: Bombardier. Tekstury: Sigman.</td></tr>
-<tr><td>wm15_v1</td><td>bohunIC</td></tr>
-<tr><td>wmb10_v1</td><td>Model zewnętrzny: szogun. Tekstury: szogun.</td></tr>
-<tr><td>1xxa_v1</td><td>Modele: Kakish. Tekstury m.in. EP08_015, Jaras, Speed, Mutopompka (Passenger Pack 1), Cesky Kretek (Passenger Pack 2), RooteK, FLOYD, Kacu, libertyn89, sebalorek, hanys, P208. Tekstury wnętrza: Kacu, szogun.</td></tr>
+<tr><td>1xxa_v1</td><td><b>Modele:</b> Kakish. <b>Tekstury:</b> EP08_015, Jaras, Speed, Mutopompka (Passenger Pack 1), Cesky Kretek (Passenger Pack 2), RooteK, FLOYD, Kacu, libertyn89, sebalorek, Patryk Farana, P208</td></tr>
 <tr><td>111a-noc_v1</td><td>Kacu (na podstawie tekstur i modeli 1xxa_v1)</td></tr>
-<tr><td>11xa_v2</td><td>Pudło: Floyd Adsim Ra Stele matek123. Wnętrze: Stele PKP94 (TRS). Dźwięki: MK1991 FIZ&MMD: youBy EP08-015 Stele. Zdjęcia: Floyd youBy lalek Cesky Kretek Stele. Tekstury: Patryk_Farana MR6 Stele</td></tr>
-<tr><td>16xa_v1</td><td>szogun, hanys, youBy, Patrykos, Sawi, Stele, Floyd, adsim, mk1991, Joachimowicz</td></tr>
-<tr><td>bdhinu_v1</td><td>EP08_015</td></tr>
-<tr><td>bdhpumn_v2</td><td>Model: szogun. Tekstury: szogun, hanys.</td></tr>
-<tr><td>bdhpumn-noc_v2</td><td>Zmodyfikowany bdhpumn_v2. Autor: janek32.</td></tr>
-<tr><td>bhp_v1</td><td>Model zewnetrzny: Sakorius, FLOYD, adsim. Tekstury: Patrykos, Sakorius. Liczne poprawki: adsim.</td></tr>
-<tr><td>bdmteeo_v1</td><td>Model: Lelek, Poprawki: Stele, Poprawki fizyki: youBy. Zdjecia: vh</td></tr>
-<tr><td>bmz_v2</td><td>Model (z1_v2): szogun. Tekstury: przystosowane z bmz_v1. </td></tr>
-<tr><td>z1_v2</td><td>Model: szogun. Tekstury: szogun, maacius, Cesky Kretek.</td></tr>
+<tr><td>11xa_v2</td><td>
+	<b>Pudła:</b> Floyd, Adsim, Ra, Stele, matek123
+	<b>Wnętrza:</b> szogun, Kacu, Stele, PKP94 (TRS), MR6, DieselPower 
+	<b>Dźwięki:</b> MK1991 
+	<b>FIZ & MMD</b>: youBy, EP08-015, Stele
+	<b>Zdjęcia:</b> Floyd, youBy, lalek, Cesky Kretek, Stele, D_M/MKFiFi, Dróżnik Wiór, Patryk_Farana
+	<b>Poprawki i zmiany:</b> Piotr93, matek123, DieselPower, MR6
+	<b>Tekstury:</b> Patryk_Farana, MR6, Stele, Dróżnik Wiór, R4TCH3T, Piotr93, DieselPower
+	</td></tr>
+<tr><td>16xa_v1</td><td>
+	szogun, Patryk Farana, youBy, Patrykos, Sawi, Stele, Floyd, adsim, mk1991, Joachimowicz, MR6 
+	<b>Zdjęcia m.in:</b> Stele
+	<b>Tekstury:</b>hanys, Sawi, Stele, Joachimowicz	
+	</td></tr>
+<tr><td>401da_v1</td><td>EP08_015</td></tr>
+<tr><td>401w_v1</td><td>
+	<b>Oryginalny model:</b>Patrykos (408w_v1) 
+	<b>Modyfikacja modelu:</b> DieselPower 
+	<b>Zdjęcia m.in:</b> Robobatman
+	<b>Tekstura:</b> DieselPower
+	</td></tr>
 <tr><td>408w_v1</td><td>Patrykos, youBy</td></tr>
 <tr><td>412w_v1</td><td>Patrykos, youBy</td></tr>
 <tr><td>413s_v1</td><td>CTL</td></tr>
 <tr><td>424z_v1</td><td>Patrykos</td></tr>
 <tr><td>430w_v1</td><td>Patrykos</td></tr>
-<tr><td>eams_v1</td><td>Model: RooteK. Tekstury: RooteK, Patrykos, Sigman.</td></tr>
-<tr><td>eaos_v1</td><td>Model: Kakish, ZT-POZNAN. Tekstury: Kakish, ZT-POZNAN, Patrykos, Sigman, dx286.</td></tr>
-<tr><td>cd/es_v1</td><td>Tézsé</td></tr>
-<tr><td>es_v2</td><td>Model: Sigman. Tekstury: Sigman, RooteK.</td></tr>
-<tr><td>falns_v1</td><td>Model: youBy. Tekstury: youBy, Sigman, Dozer.</td></tr>
-<tr><td>fas_v2</td><td>Model: Żabek, Rootek. Tekstury:  Sigman.</td></tr>
-<tr><td>flls_v1</td><td>Model: PEKAP. Tekstury: PEKAP, firefoxfan.</td></tr>
-<tr><td>gags_v2</td><td>Model: Bombardier. Tekstury: Sigman. Poprawki, wózek: Sakorius.</td></tr>
-<tr><td>gbs_v1</td><td>Model: Sakorius. Tekstury: Sakorius, Sigman.</td></tr>
-<tr><td>lgs_v1</td><td>Patrykos</td></tr>
+<tr><td>bdhinu_v1</td><td>EP08_015</td></tr>
+<tr><td>bdhpumn_v2</td><td>
+	<b>Model:</b> szogun. 
+	<b>Zdjęcia m.in.:</b> erap2, Dróżnik Wiór.
+	<b>Tekstury:</b> szogun, Patryk Farana, Dróżnik Wiór.
+	</td></tr>
+<tr><td>bdhpumn-noc_v2</td><td>Zmodyfikowany bdhpumn_v2 <b>Autor:</b> janek32</td></tr>
+<tr><td>bhp_v1</td><td><b>Model zewnętrzny:</b> Sakorius, FLOYD, adsim <b>Liczne poprawki:</b> adsim <b>Tekstury:</b> Patrykos, Sakorius.</td></tr>
+<tr><td><b>cd/</b>163_v1</td><td>james.szczesny</td></tr>
+<tr><td><b>cd/</b>810_v1</td><td><b>Tekstura:</b> Lelek</td></tr>
+<tr><td><b>cd/</b>bdmteeo_v1</td><td><b>Model:</b> Lelek, <b>Poprawki:</b> Stele, <b>Poprawki fizyki:</b> youBy. <b>Zdjęcia:</b> vh</td></tr>
+<tr><td><b>cd/</b>bmz_v2</td><td><b>Model:</b> szogun (z1_v2). <b>Tekstury:</b> przystosowane z bmz_v1. </td></tr>
+<tr><td><b>cd/</b>es_v1</td><td>Tézsé</td></tr>
+<tr><td><b>db/</b>uaaikks_v1</td><td>Rozi</td></tr>
+<tr><td><b>db/</b>rlmmp_v1</td><td>hunter</td></tr>
+<tr><td>eams_v1</td><td><b>Model:</b> RooteK. <b>Tekstury:</b> RooteK, Patrykos, Sigman.</td></tr>
+<tr><td>eaos_v1</td><td><b>Model:</b> Kakish, ZT-POZNAN. <b>Tekstury:</b> Kakish, ZT-POZNAN, Patrykos, Sigman, dx286.</td></tr>
+<tr><td>el204_v1</td><td><b>Model zewnętrzny:</b> Oli_EU (CT). <b>Wykończenie:</b> EP08_015. <b>Charakterystyka:</b> ET22_RULZ.</td></tr>
+<tr><td>em10_v1</td><td>EP08_015</td></tr>
+<tr><td>em120_v1</td><td>KURS90</td></tr>
+<tr><td>ep01_v1</td><td>Oli_EU (CT)</td></tr>
+<tr><td>ep03_v1</td><td>EP08_015</td></tr>
+<tr><td>es_v2</td><td><b>Model:</b> Sigman <b>Tekstury:</b> Sigman, RooteK.</td></tr>
+<tr><td>eu20_v1</td><td>EP08_015</td></tr>
+<tr><td>ew58_v1</td><td>EP08_015</td></tr>
+<tr><td>ew60_v1</td><td>EP08_015</td></tr>
+<tr><td>falns_v1</td><td><b>Model:</b> youBy <b>Tekstury:</b> youBy, Sigman, Dozer.</td></tr>
+<tr><td>fas_v2</td><td><b>Model:</b> Żabek, Rootek <b>Tekstury:</b>  Sigman.</td></tr>
+<tr><td>flls_v1</td><td><b>Model:</b> PEKAP <b>Tekstury:</b> PEKAP, firefoxfan.</td></tr>
+<tr><td>gags_v2</td><td><b>Model:</b> Bombardier <b>Tekstury:</b> Sigman <b>Poprawki, wózek</b>: Sakorius.</td></tr>
+<tr><td>gbs_v1</td><td><b>Model:</b> Sakorius. <b>Tekstury:</b> Sakorius, Sigman.</td></tr>
+<tr><td>maxima_v1</td><td>Rozi</td></tr>
 <tr><td>mieszkalny_v1</td><td>Pit, McZapkie</td></tr>
-<tr><td>rlmmp_v1</td><td>hunter</td></tr>
-<tr><td>uaaikks_v1</td><td>Rozi</td></tr>
-<tr><td>rs_v1</td><td>Sakorius</td></tr>
-<tr><td>sgs_v1</td><td>Autor: WSK. Poprawki: szogun. Wózki: Patrykos, youBy.</td></tr>
+<!--<tr><td>rs_v1</td><td>Sakorius</td></tr>-->
+<tr><td>rs_v2</td><td>
+	<b>Model:</b> Kilanziom & Samplaire [Trainz] 
+	<b>Konwersja i poprawki:</b> Kermit, 
+	<b>Modele:</b>Wózka- Patrykos, Sprzęgu- Krasnowski, SKP- Rootek, Ładunków- Samplaire, matek123, Kermit, 
+	<b>Zdjęcia:</b> D_M, Qcyk85, RCSCORPION, Ryszard, sna25, Sebastianeq, fuji8 
+	<b>Tekstury:</b> Kilanziom, Samplaire, DieselPower
+	</td></tr>
+<tr><td>sa102_111_v1</td>
+	<td>EP08_015
+	</td></tr>
+<tr><td>sgs_v1</td><td>
+	<b>Autor:</b> WSK. 
+	<b>Poprawki:</b> szogun. 
+	<b>Wózki:</b> Patrykos, youBy.
+	<b>Zdjęcia:</b> D_M, Qcyk85, RCSCORPION, Ryszard, sna25, Sebastianeq, fuji8	
+	</td></tr>
 <tr><td>sieciowiec_v1</td><td>OlO_EU</td></tr>
 <tr><td>sis_v2</td><td>Rozi</td></tr>
-<tr><td>uacs_v3</td><td>Model: Rozi. Tekstury: Rozi, Patrykos.</td></tr>
-<tr><td>wozek_torowy_v1</td><td>Stele, Sawi</td></tr>
-<tr><td>z1b_v1</td><td>Autorzy: hanys, Patrykos, matek123</td></tr>
-<tr><td>zaes_v1</td><td>Model: Kakish. Tekstury: Sigman.</td></tr>
-<tr><td>zaes_v2</td><td>Model: Patrykos. Poprawki: szogun. Tekstury: Patrykos.</td></tr>
+<tr><td>sis_v3</td><td><b>Baza:</b> Rozi <b>Modele: Wózka:</b> Patrykos <b>SKP:</b> Rootek <b>Sprzęg śrubowy:</b> Krasnowski <b>Odświeżenie:</b> Kermit <b>Poprawki mapowania:</b> DieselPower <b>Tekstury:</b>kermit, ?, rafapolska424
+<tr><td>shmmns_v1</td><td><b>Model:</b>Samplaire (Trainz), <b>Modele:</b> Wózków- Patrykos, SKP- Rootek, Sprzęgów- Krasnowski, Ładunków- Kermit, Camry2 <b>Fizyka hamulców</b>youBy, <b>Konwersja, modyfikacja:</b> Kermit</td></tr>
+<tr><td>sgs_v1</td><td>
+	<b>Model:</b> Kilanziom & Samplaire [Trainz] 
+	<b>Konwersja i poprawki:</b> Kermit, 
+	<b>Modele:</b>Wózka- Patrykos, Sprzęgu- Krasnowski, SKP- Rootek, Ładunków- Samplaire 
+	<b>Zdjęcia:</b> D_M, Qcyk85, RCSCORPION, Ryszard, sna25, Sebastianeq
+	</td></tr>
+<tr><td>slmmps_v1</td><td>
+	<b>Model:</b> Samplaire (Trainz), 
+	<b>Konwersja i Poprawki:</b> Kermit, 
+	<b>Modele:</b> Wózka- Patrykos, Sprzęgu- Krasnowski, SKP- Rootek, 
+	<b>Zdjęcia:</b> Kilanziom (Trainz)
+	<!--<b>Tekstury:</b> -->	
+	</td></tr>
+<tr><td>smms_v1</td><td>
+	<b>Model:</b>Samplaire (Trainz), 
+	<b>Modele:</b> Wózków- Patrykos, SKP- Rootek, Sprzęgów- Krasnowski, Ładunków- Kermit, Camry2, Samplaire, Podlesky, matek123, "cadnav.com" 
+	<b>Fizyka hamulców</b>youBy, 
+	<b>Konwersja, modyfikacja:</b> Kermit
+	<b>Zdjęcia m.in:<b> D_M, Podlesky	
+	</td></tr>
+<tr><td>su42_v1</td><td><b>Model zewnętrzny:</b> Sakorius, adsim. <b>Tekstury:</b> Sigman.</td></tr>
+<tr><td>t448p_v1</td><td><b>Model:</b> Bombardier. <b>Tekstury:</b> Sigman.</td></tr>
+<tr><td>z1_v2</td><td><b>Model:</b> szogun. <b>Tekstury:</b> szogun, maacius, Cesky Kretek.</td></tr>
+<tr><td>z1b_v1</td><td><b>Autorzy:</b> Patryk Farana, Patrykos, matek123</td></tr>
+<tr><td>zaes_v1</td><td>
+	<b>Model:</b> Kakish 
+	<b>Tekstury:</b> Sigman
+	</td></tr>
+<tr><td>zaes_v2</td><td>
+	<b>Model:</b> Patrykos 
+	<b>Poprawki:</b> szogun 
+	<b>Tekstury:</b> Patrykos.
+	</td></tr>
+<tr><td><b>zssk/</b>lgs_v1</td><td>
+	Patrykos
+	</td></tr>
+<tr><td>uacs_v3</td><td>
+	<b>Model:</b> Rozi  
+	<b>Tekstury:</b> Rozi, Patrykos.
+	</td></tr>
+<tr><td>wm15_v1</td><td>
+	bohunIC
+	</td></tr>
+<tr><td>wmb10_v1</td><td>
+	<b>Model zewnętrzny:</b> szogun 
+	<b>Tekstury:</b> szogun.
+	</td></tr>
+<tr><td>wozek_torowy_v1</td><td>
+	Stele, Sawi
+	</td></tr>
 </tbody></table>
 </li>
 </ul>
@@ -545,7 +778,7 @@ Scenariusze "Zwierzyniec SM42" oraz "Zwierzyniec ED72" autorstwa Woku
 
 <h2><a name="7">Informacje o wydaniu</a></h2>
 <p>
-MaSzyna 17.07 bazuje na wcześniejszych wydaniach (16.08, 15.04, 08.13, 01.13, PC2011, 2010, 2009). W tym wydaniu pojawiły się usprawnienia oraz brakujące pliki, jak i dodatki wydane od czasu wydania Patcha 16.08<br />
+MaSzyna 18.01 bazuje na wcześniejszych wydaniach (16.08, 15.04, 08.13, 01.13, PC2011, 2010, 2009). W tym wydaniu pojawiły się usprawnienia oraz brakujące pliki, jak i dodatki wydane od czasu wydania Patcha 16.08<br />
 Przygotowaniem zajmował się zespół w składzie:
 </p>
 
@@ -622,7 +855,7 @@ MaSzyna 16.08
 <li>Ra</li>
 </ul>
 <ul>
-<b>MaSzyna 17.07</b>
+MaSzyna 17.07
 <li>Stele - koordynator zespołu</li>
 <li>joey</li>
 <li>Krzysiek626</li>
@@ -638,28 +871,39 @@ MaSzyna 16.08
 <li>tmj</li>
 <li>krzysiuup</li>
 <li>Kermit</li>
-
+</ul>
+<ul>
+<b>MaSzyna 18.01</b>
+<li>Milek7</li>
+<li>joey</li>
+<li>Stele</li>
+<li>Maciej</li>
+<li>matek123</li>
+<li>AtapiCl</li>
+<li>MR6</li>
+<li>Wiggle</li>
+<li>Sawi</li>
+<li>Kolejarz2009</li>
+<li>Kermit</li>
 </ul>
 <p>
 W pracach swój udział mieli również inni użytkownicy, których niestety nie sposób tutaj wymienić. Wszystkim, którzy przyczynili się do powstania obecnego wydania - dziękujemy! 
 </p>
 <h3><a name="7,1">Usprawnienia i nowe funkcje EXE</a></h3>
 <p>
-Plik wykonywalny EXE, który znajduje się w obecnym wydaniu, został poddany zaawansowanej konwersji na język C++, co pozwoliło na wprowadzenie następujących poprawek, nowości i udogodnień:
+Plik wykonywalny EXE, który znajduje się w obecnym wydaniu, został w dużym stopnie uporządkowany, co zapewnia większą stabilność symulacji.
 </p>
 <ul>
-	<li>Zmiana sposobu poruszania się po kabinach pojazdów</li>
-	<li>Dodana funkcja przybliżania widoku kamery (zoom)</li>
-	<li>Dodana funkcja zmiany obszaru obejmowanego przez kamerę</li>
-	<li>Zmienione kalkulowanie cyklu dobowego oświetlenia scenerii</li>
-	<li>Dynamiczne oświetlenie sceny przez reflektory pojazdów</li>
-	<li>Pasek postępu wczytywania symulacji</li>
-	<li>Aureole punktów świetlnych (reflektory, semafory świetlne)</li>
-	<li>Reorganizacja obsługi świateł i obsługi kranów hamulców</li>
-	<li>Wprowadzona obsługa Gamepada</li>
-	<li>Własne definiowanie funkcji klawiszy</li>
-	<li>Możliwość interakcji z przełącznikami w kabinie za pomocą myszy</li>
-	<li>Wprowadzenie odbłysków światła odbitego specular</li>
+	<li>Światło słoneczne rzuca cienie</li>
+	<li>Możliwość tworzenia statycznych odbić otoczenia w obiektach</li>
+	<li>Dźwięk przestrzenny dzięki bibliotece OpenAL</li>
+	<li>Tłumienie dźwięków pojazdu zależnie od położenia kamery</li>
+	<li>Pozycjonowanie dźwięków urządzeń w pojeździe</li>
+	<li>Możliwość podziału dźwięków scenariuszy na kanały radiowe</li>
+	<li>Możliwość używania wielu sampli na różne zakresy dźwięków modulowanych</li>
+	<li>Możliwość definiowania zestawów tekstur zależnie od pory roku</li>
+	<li>Zapis terenu do pliku binarnego, przyspieszający wczytywanie scenerii</li>
+	<li>Mozliwość zmiany sposobu zarządzania pamięcią karty graficznej.</li>
 </ul>
 <p>
 Wyżej wymienione punkty to tylko mały ułamek wprowadzonych zmian, gdyż przedstawiamy zmiany istotne i widoczne dla użytkowników. Dokładny Changelog zmian znajduje się w wątku <a href="http://eu07.pl/forum/index.php/topic,28920.0.html">poświęconym zmianom w EXE</a> na Forum projektu, lista jest stale aktualizowana.
@@ -667,17 +911,12 @@ Wyżej wymienione punkty to tylko mały ułamek wprowadzonych zmian, gdyż przed
 
 <h3><a name="7,2">Nowości w obecnym wydaniu</a></h3>	
 <ul>
-	<li>Nowe modele wskaźników - autor @Kermit</li>
-	<li>Napisy w języku włoskim - autor @IXIAI</li>
-	<li>Całkowo-Odyseja - autor @Transkei</li>
-	<li>Poprawki scenerii Quark - autor @Ra</li>
-	<li>Aktualizacja instrukcji Ie-1</li>
-	<li>Nowe kabiny lokomotywy EP09 - wersja klasyczna i po modernizacji</li>
-	<li>Sceneria "Linia61" - aktualizacja do wersji przygotowanej przez @Ra</li>
-	<li>Nowy model kabiny lokomotywy ST44</li>
-	<li>Kabiny LOWPOLY dla lokomotyw 6Dg, 303E, 303Eb, 4E, ET42</li>
-	<li>Nowa wersja Toru Doświadczalnego (TD) z szosą</li>
-	<li>Nowe nieba w każdej ze scenerii</li>
+	<li>Nowa lokomotywa - Dragon E6ACT-001 produkcji NEWAGu
+	<li>Scenariusz Całkowo - Niebezpieczny Pociąg - autor @Transkei</li>
+	<li>Scenariusz Całkowo - Retro - autor @Transkei</li>
+	<li>Nowy model SN61.</li>
+	<li>Nowe wagony towarowe - Rs, Sgs, Smms, Shmmns, Eas [typ 401W], Sis [typ 424S] oraz Slmmps wraz z ładunkami Wojskowymi</li>
+	<li>Więcej tekstur siódemek!</li>
 </ul>
 <p>Ponadto wydanie to zawiera mnóstwo nowych tekstur pojazdów wagonów i lokomotyw, które powstały od czasu poprzedniego wydania. Zawartych jest również szereg drobnych i większych poprawek w poszczególnych modelach, sceneriach czy scenariuszach, które zostały wykryte od czasu poprzedniego wydania.</p>
 	
@@ -708,7 +947,7 @@ roku, natomiast oficjalna w 2004). Dlatego też na początku 2009 roku zebrała 
 którzy przez kilka miesięcy wybierali z wydanych wcześniej dodatków te wartościowe i niezawierające zbyt dużej ilości błędów dodatki, a następnie pracowali 
 nad ich wzajemną kompatybilnością poprzez usunięcie istotnych błędów, uzupełnienie brakujących plików, itp. Tym sposobem powstała Paczka Całościowa 2009, 2010, 2011 wraz z ulepszeniami Service Pack, MaSzyna 01.13, MaSzyna 08.13 i MaSzyna 15.04.
 
-Najnowsza paczka (o nazwie MaSzyna 17.07) stanowi kontynuację tychże prac i podobnie jak jej poprzedniczka 
+Najnowsza paczka (o nazwie MaSzyna 18.01) stanowi kontynuację tychże prac i podobnie jak jej poprzedniczka 
 
 nie zawiera dodatków niskiej jakości czy też wersji beta. 
 <div class="powrot"> 
@@ -716,7 +955,7 @@ nie zawiera dodatków niskiej jakości czy też wersji beta.
 </div>
 <h3><a name="11,2">Plik wykonywalny symulatora &ndash; EXE</a></h3>
 <p>
-MaSzyna 17.07 zawiera plik "EXE 17.715". Jest ono przepisane na C++, co pozwala na większe rozwinięcie możliwości oraz funkcjonalności symulatora. Aby poznać pełną listę zmian w EXE 17.715, przeczytaj opis na stronie poświęconej <a href="http://eu07.pl/forum/index.php/topic,28920.0.html">Aktualizacji EXE C++</a>
+MaSzyna 18.01 zawiera plik "EXE M7 18.01" oparte na "EXE tmj 180122". Wyciska ono siódme poty z OpenGL 1.3 by zapewnić lepsze doznania wizualne. Aby poznać pełną listę zmian w EXE, przeczytaj opis na stronie poświęconej <a href="http://eu07.pl/forum/index.php/topic,28920.0.html">Aktualizacji EXE C++</a>
 </p>
 <div class="powrot"> 
 	<span><a href="#0">Spis treści</a></span>
@@ -755,18 +994,14 @@ Aby poznać odpowiedź kliknij pytanie.
 <li><a href="#14,11">Jak zrobić noc w symulatorze?</a></li>
 <li><a href="#14,12">Jak włączyć smugi, aby oświetlały tory przed moją lokomotywą?</a></li>
 <li><a href="#14,13">Jak włączyć podświetlenie Haslera, amperomierzy, woltomierzy, manometrów?</a></li>
-<li><a href="#14,14">Jak włączyć wiatraczki w kabinie?</a></li>
 <li><a href="#14,15">Jak otworzyć drzwi i okna lokomotywy?</a></li>
 <li><a href="#14,16">Przy próbie otworzenia okna/drzwi lokomotywa wykonuje dziwne ruchy z bardzo dużą prędkością. Jak temu zaradzić?</a></li>
 <li><a href="#14,17">Nie działa mi czuwak aktywny (CA), a niezbicie SHP nie powoduje wdrożenia hamowania nagłego. U góry ekranu mam jakieś czerwone literki. Jak temu zaradzić?</a></li>
 <li><a href="#14,18">Po pewnym czasie od uruchomienia symulatora nie działa mi klawisz <kbd>y</kbd> oraz <kbd>/</kbd>. Co robić?</a></li>
 <li><a href="#14,19">Symulator przycina i mam niski FPS. Co robić?</a></li>
-<li><a href="#14,20">Zastosowałem się do powyższych rad i mimo to po uruchomieniu scenerii nadal mam bardzo niski FPS, rzędu kilku klatek. Co robić?</a></li>
 <li><a href="#14,21">W jaki sposób mogę odczytać taśmę Haslera ze swojego przejazdu w MaSzynie?</a></li>
 <li><a href="#14,22">Jak zainstalować nowe dodatki?</a></li>
 <li><a href="#14,23">Wgrałem nowy tabor, ale go nie widzę w starterze na żadnej trasie.</a></li>
-<!--<li><a href="#14,24">Nie widzę w starterze lokomotywy Traxx, mimo iż wstawiłem ją do scenerii zgodnie z poradnikiem "Jak zmienić skład w scenerii?" z rozdziału Informacje użytkowe.</a></li>-->
-<!--<li><a href="#14,25">Czy powstanie kabina do Traxxa albo Husarza?</a></li>-->
 <li><a href="#14,26">Posiadam laptopa bez klawiatury numerycznej, jak zatem sterować lokomotywą/EZT?</a></li>
 <li><a href="#14,27">Czy MaSzyna działa na systemach Linux, Mac?</a></li>
 <li><a href="#14,29">Czy są możliwe wypadki, spektakularne wykolejenia?</a></li>
@@ -777,16 +1012,12 @@ Aby poznać odpowiedź kliknij pytanie.
 <li><a href="#14,34">W programie Rainsted zauważyłem przycisk <b>Multiplayer</b>. Jak mogę go uruchomić?</a></li>
 <li><a href="#14,35">Wagony mi hamują! Trzymam luzowanie i nic!!!</a></li>
 <li><a href="#14,36">Kran hamulca w EN57 i innych EZT po puszczeniu klawisza <kbd>Num .</kbd> (lub <kbd>Num 9</kbd>) samoczynnie powraca na pozycję jazdy.</a></li>
-<!--<li><a href="#14,37">W oknie <i>Informacje startowe</i> nie widzę przycisku <b>Uruchom symulator</b>. Co robić?</a></li>-->
 <li><a href="#14,38">Po wejściu do kabiny jestem daleko od nastawnika jazdy. Jak temu zaradzić?</a></li>
 <li><a href="#14,39">Naciskam <kbd>m</kbd>, a mimo to wyłącznik szybki się nie włącza.</a></li>
 <li><a href="#14,40">Naciskam <kbd>c</kbd>, a mimo to sprężarka się nie włącza.</a></li>
 <li><a href="#14,41">Chcę wyłączyć symulator, jednak użycie <kbd>F10</kbd>, a następnie <kbd>y</kbd> nie działa.</a></li>
-<!-- <li><a href="#14,42">Wstawiłem do scenerii EN57 (lub inny EZT), ale nie mogę nim ruszyć z miejsca.</a></li> -->
-<!-- <li><a href="#14,43">Mam problem z EN57 (dotyczy także innych EZT). Wstawiłem go do scenerii, jednak po uruchomieniu symulatora włącza się nie kabina, ale środek składu (przedsionek).</a></li> -->
-<!-- <li><a href="#14,44">Podczas jazdy kabina trzęsie się. Jak temu zaradzić?</a></li> -->
 <li><a href="#14,45">Czy można przed wyłączeniem symulatora zapisać stan symulacji?</a></li>
-<li><a href="#14,46">Jak zatrzymać symulację? Nacisnąłem <kbd>Esc</kbd>, ale to nie działa.</a></li>
+<li><a href="#14,46">Jak zatrzymać symulację? Nacisnąłem <kbd>Pause</kbd>, ale to nie działa.</a></li>
 <li><a href="#14,47">Kiedy pojawi się nowa wersja, nowe dodatki?</a></li>
 <li><a href="#14,48">Po włączeniu sprężarki wszystko w lokomotywie się wyłącza i nic się nie dzieje. Jak temu zaradzić?</a></li>
 <li><a href="#14,49">Nie mogę napełnić przewodu głównego po hamowaniu/zadziałaniu czuwaka/SHP.</a></li>
@@ -845,8 +1076,7 @@ Aby poznać odpowiedź kliknij pytanie.
 
 <li>
 <div class="pytanie"><a name="14,9">Jak włączyć baterie?</a></div> 
-<div class="odpowiedz">Włączanie baterii odbywa się w uproszczonej procedurze w porównaniu do stanu realnego. Aby uruchomić baterie, należy wcisnąć klawisz <kbd>J</kbd>, następnie uruchomi się system CA/SHP, który należy zdezaktywować przyciskiem CA/SHP - <kbd>SPACJA</kbd>. <b>UWAGA!</b> Należy mieć wybrany kierunek jazdy na nastawniku kierunkowym (służą do tego klawisze <kbd>D</kbd> oraz <kbd>R</kbd>).
-</div>
+<div class="odpowiedz">Włączanie baterii odbywa się w uproszczonej procedurze w porównaniu do stanu realnego. Aby uruchomić baterie, należy wcisnąć klawisz <kbd>J</kbd>, następnie uruchomi się system CA/SHP, który należy zdezaktywować przyciskiem CA/SHP - <kbd>SPACJA</kbd>. <b>UWAGA!</b> Należy mieć wybrany kierunek jazdy na nastawniku kierunkowym (służą do tego klawisze <kbd>D</kbd> oraz <kbd>R</kbd>).</div>
 <div class="powrot"><span><a href="#14,0">Powrót do listy pytań</a></span></div></li>
 
 <li>
@@ -867,11 +1097,6 @@ Aby poznać odpowiedź kliknij pytanie.
 <li>
 <div class="pytanie"><a name="14,13">Jak włączyć podświetlenie Haslera, amperomierzy, woltomierzy, manometrów?</a></div> 
 <div class="odpowiedz">Nie wszystkie lokomotywy i EZT w symulatorze mają funkcję podświetlenia. Zapoznaj się z listą taboru, który posiada różne specjalne funkcje jak między innymi podświetlenie, ale także na przykład otwierane okna. <a href="inne/readme_pliki/universale.html">Link</a></div>
-<div class="powrot"><span><a href="#14,0">Powrót do listy pytań</a></span></div></li>
-
-<li>
-<div class="pytanie"><a name="14,14">Jak włączyć wiatraczki w kabinie?</a></div> 
-<div class="odpowiedz">Podobnie jak powyżej - nie wszystkie pojazdy mają wiatraczki. <a href="inne/readme_pliki/universale.html">Zobacz listę pojazdów z funkcjami specjalnymi</a>.</div>
 <div class="powrot"><span><a href="#14,0">Powrót do listy pytań</a></span></div></li>
 
 <li>
@@ -905,12 +1130,7 @@ Aby zapobiec takim sytuacjom w przyszłości, możesz wyłączyć w systemie ope
 <li>zapisywanie parametrów fizycznych pojazdów,</li>
 <li>poszukiwanie sieci trakcyjnej (włączona opcja może powodować spory spadek FPS na stacjach z rozbudowaną siecią trakcyjną).</li>
 </ul>
-Poza tym, w opcjach karty graficznej wyłącz synchronizację pionową, filtrowanie anizotropowe oraz antyaliasing (wygładzanie krawędzi). Możesz także zmienić ustawienia sterownika na wydajność. Spróbuj także poeksperymentować ze sterownikami do karty graficznej. W przypadku stosunkowo nowych kart graficznych najlepiej zainstalować najnowsze sterowniki. Jeśli natomiast posiadasz starszą kartę, to starsze sterowniki mogą być lepszym rozwiązaniem. Jeśli masz stary komputer, przed uruchomieniem MaSzyny wyłącz programy działające w tle (np. Gadu-Gadu, przeglądarka internetowa, program antywirusowy, odtwarzacz muzyki itp.), gdyż będą one niepotrzebnie obniżać wydajność. Nie spodziewaj się jednak zbyt wiele po tych zabiegach, jeśli posiadasz zintegrowaną kartę graficzną.</div>
-<div class="powrot"><span><a href="#14,0">Powrót do listy pytań</a></span></div></li>
-
-<li>
-<div class="pytanie"><a name="14,20">Zastosowałem się do powyższych rad i mimo to po uruchomieniu scenerii nadal mam bardzo niski FPS, rzędu kilku klatek. Co robić?</a></div> 
-<div class="odpowiedz">Taka sytuacja najczęściej występuje na scenerii "l053-sluzba-brutto-posp". Może wówczas pomóc użycie syreny (klawisz <kbd>a</kbd> lub <kbd>s</kbd>). Jeśli jednak posiadasz słabszą kartę graficzną (a zwłaszcza zintegrowaną), nie licz na wysoki FPS.</div>
+Zajrzyj do pliku EU07.ini w folderze głównym symulatora. Znajdziesz tam wiele opcji konfiguracyjnych, nie obsługiwanych przez starter. Poza tym, w opcjach karty graficznej wyłącz synchronizację pionową, filtrowanie anizotropowe oraz antyaliasing (wygładzanie krawędzi). Możesz także zmienić ustawienia sterownika na wydajność. Spróbuj także poeksperymentować ze sterownikami do karty graficznej. W przypadku stosunkowo nowych kart graficznych najlepiej zainstalować najnowsze sterowniki. Jeśli natomiast posiadasz starszą kartę, to starsze sterowniki mogą być lepszym rozwiązaniem. Jeśli masz stary komputer, przed uruchomieniem MaSzyny wyłącz programy działające w tle (np. Gadu-Gadu, przeglądarka internetowa, program antywirusowy, odtwarzacz muzyki itp.), gdyż będą one niepotrzebnie obniżać wydajność. Nie spodziewaj się jednak zbyt wiele po tych zabiegach, jeśli posiadasz zintegrowaną kartę graficzną.</div>
 <div class="powrot"><span><a href="#14,0">Powrót do listy pytań</a></span></div></li>
 
 <li>
@@ -928,17 +1148,6 @@ Poza tym, w opcjach karty graficznej wyłącz synchronizację pionową, filtrowa
 <div class="pytanie"><a name="14,23">Wgrałem nowy tabor, ale go nie widzę w starterze na żadnej trasie.</a></div> 
 <div class="odpowiedz">Pojazdy same z siebie nie pojawiają się w istniejących sceneriach. Jeśli wgrałeś nową teksturę albo model musisz ją umieścić w jakiejś scenerii. Jak to zrobić? Patrz: <a href="#5,4">Plik informacyjny, dział "Informacje użytkowe", "Jak zmienić skład w scenerii".</a></div>
 <div class="powrot"><span><a href="#14,0">Powrót do listy pytań</a></span></div></li>
-
-<!--<li>
-<div class="pytanie"><a name="14,24">Nie widzę w starterze lokomotywy Traxx, mimo iż wstawiłem ją do scenerii zgodnie z poradnikiem "Jak zmienić skład w scenerii?" z rozdziału Informacje użytkowe.</a></div> 
-<div class="odpowiedz">Ta lokomotywa służy tylko i wyłącznie do prowadzenia przez komputer gdyż nie posiada kabiny. W starterze Rainsted składy, na czele których znajduje się lokomotywa, której nie można poprowadzić są celowo niewidoczne, by użytkownicy nie próbowali wybierać lokomotywy którą nie da się pojechać. Możesz przełączyć się w wyższy tryb pracy (zakładka Ustawienia). Wtedy zobaczysz Traxxa w starterze, ale próba załadowania go do prowadzenia skończy się komunikatem Cab not initialised, bowiem po prostu nie można prowadzić lokomotywy, która w symulatorze nie posiada kabiny.</div>
-<div class="powrot"><span><a href="#14,0">Powrót do listy pytań</a></span></div></li>-->
-
-<!--<li>
-<div class="pytanie"><a name="14,25">Czy powstanie kabina do Traxxa albo Husarza?</a></div> 
-<div class="odpowiedz">Pojazdy te są w trakcie tworzenia. </div>
-<div class="powrot"><span><a href="#14,0">Powrót do listy pytań</a></span></div></li>
--->
 
 <li>
 <div class="pytanie"><a name="14,26">Posiadam laptopa bez klawiatury numerycznej, jak zatem sterować lokomotywą/EZT?</a></div> 
@@ -967,7 +1176,7 @@ Poza tym, w opcjach karty graficznej wyłącz synchronizację pionową, filtrowa
 
 <li>
 <div class="pytanie"><a name="14,32">Jak zrobić screena?</a></div> 
-<div class="odpowiedz">Naciśnij klawisz <kbd>Print Screen</kbd>, uruchom program Paint, wklej i zapisz obrazek w pożądanym formacie (najlepiej użyć PNG lub JPG/JPEG). Można również używać specjalnych programów przeznaczonych do przechwytywania zrzutów ekranowych.</div>
+<div class="odpowiedz">Naciśnij klawisz <kbd>Print Screen</kbd>. Zrzut zostanie zapisany w katalogu "screenshots", lub dowolnym innym podanym w .ini.</div>
 <div class="powrot"><span><a href="#14,0">Powrót do listy pytań</a></span></div></li>
 
 <li>
@@ -1021,21 +1230,6 @@ Aby zapobiec takim sytuacjom w przyszłości, możesz wyłączyć w systemie ope
 </div>
 <div class="powrot"><span><a href="#14,0">Powrót do listy pytań</a></span></div></li>
 
-<!-- usunąłem bo Rainsted automatycznie ustawia nastawy sprzęgów i obsady członów. @m5991 05.2017
- <li>
-<div class="pytanie"><a name="14,42">Wstawiłem do scenerii EN57 (lub inny EZT), ale nie mogę nim ruszyć z miejsca.</a></div>
-<div class="odpowiedz">Najprawdopodobniej niezbyt uważnie zapoznałeś się z opisem wstawiania składów za pomocą startera Rainsted. Zajrzyj tutaj: <a href="#5,4">Plik informacyjny MaSzyny 17.07, dział "Informacje użytkowe", "Jak zmienić skład w scenerii?"</a> i zwróć uwagę na konieczność <b>ręcznej</b> zmiany obsady i&nbsp;sprzęgów w członach EZT.
-</div>
-<div class="powrot"><span><a href="#14,0">Powrót do listy pytań</a></span></div></li> -->
-
-<!-- JAK WYŻEJ @m5991
-<li> 
-<div class="pytanie"><a name="14,43">Mam problem z EN57 (dotyczy także innych EZT). Wstawiłem go do scenerii, jednak po uruchomieniu symulatora włącza się nie kabina, ale środek składu (przedsionek).</a></div>
-<div class="odpowiedz">Najprawdopodobniej niezbyt uważnie zapoznałeś się z opisem wstawiania składów za pomocą startera Rainsted. Zajrzyj tutaj: <a href="#5,4">Plik informacyjny MaSzyny 17.07, dział "Informacje użytkowe", "Jak zmienić skład w scenerii?"</a> i zwróć uwagę na konieczność <b>ręcznej</b> zmiany obsady i&nbsp;sprzęgów w członach EZT.
-</div>
-<div class="powrot"><span><a href="#14,0">Powrót do listy pytań</a></span></div></li> -->
-
-<li> <!-- http://eu07.pl/forum/index.php/topic,20459.msg253139.html#msg253139  http://eu07.pl/forum/index.php/topic,20429.0.html --> 
 <div class="pytanie"><a name="14,45">Czy można przed wyłączeniem symulatora zapisać stan symulacji?</a></div>
 <div class="odpowiedz">Nie ma takiej możliwości.
 </div>
@@ -1043,7 +1237,7 @@ Aby zapobiec takim sytuacjom w przyszłości, możesz wyłączyć w systemie ope
 
 <li>
 <div class="pytanie"><a name="14,46">
-Jak zatrzymać symulację? Nacisnąłem <kbd>Esc</kbd>, ale to nie działa.</a></div>
+Jak zatrzymać symulację? Nacisnąłem <kbd>Pause</kbd>, ale to nie działa.</a></div>
 <div class="odpowiedz">Nastąpiły zmiany w klawiszologii. Zapoznaj się z: <a href="#4">Plik informacyjny, dział "Klawiszologia".</a>
 </div>
 <div class="powrot"><span><a href="#14,0">Powrót do listy pytań</a></span></div></li>
