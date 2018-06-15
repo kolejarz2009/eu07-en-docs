@@ -7,9 +7,8 @@
   <link rel="Stylesheet" type="text/css" href="inne/readme_pliki/style.css">
 </head>
 <body>
-<!-- VERSION WIP_r2744 REVISION 4-->
-<!-- Last line L1310-->
-<!-- aż do Eu05_v2 włącznie-->
+<!-- VERSION r2744 REVISION 1-->
+
 <div id="STRONA">
 	
 <center>	
@@ -346,7 +345,7 @@ The following entry in the scenery, <i>movelight</i>, allows to set the day of t
 	<br>Scenario "Całkowo Towarowy" by Transkei
 	<br>Scenario "Całkowo Turkol" by Transkei
 	<br>Scenario "Całkowo Turkol 2" by Transkei
-	<br>Scenario "Całkowo Niebezpieczny Pociąg" by Transkei, radio recordings: bartiprog and matek123
+	<br>Scenario "Całkowo Niebezpieczny PociĄg" by Transkei, radio recordings: bartiprog and matek123
 	<br>Scenario "Całkowo Retro" by Transkei
 </td></tr>
 <tr><td>Drawinowo</td><td>Author: Mati_An. Steering mods: Stele, Ra</td></tr>
@@ -1307,7 +1306,7 @@ the "Full screen mode".</div>
 
 <li>
 <div class="pytanie"><a name="14,11">How do I turn a day into a night?</a></div> 
-<div class="odpowiedz">Because of introduction of the dynamic lighting system, the night is dependant on the hour in the simulation. Changing the clock is highly not recommended, since there are time dependancies in the scenario scripts. You can change the day of the year, to achieve a different dawn and dusk times, using the <i>movelight</i> entry</div>
+<div class="odpowiedz">Changing of weather from the starter doesn't work anymore. You'll need to change the time of the scenery to a night time, using the <i>scenario.time.offset</i> entry, in the config section of the .scn file</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
@@ -1347,7 +1346,7 @@ that have special functions, like gauge lights, or windows that can be opened. <
 <ul>
 <li>zapisywanie przebiegu symulacji w log.txt, [Save the simulation log in log.txt]</li>
 <li>zapisywanie parametrów fizycznych pojazdów, [Save physical parameters of the vehicles]</li>
-<li>poszukiwanie sieci trakcyjnej (włączona opcja może powodować spory spadek FPS na stacjach z rozbudowaną siecią trakcyjną).[Search for overhead catenary (Turned on might cause FPS to drop on stations with extensive catenary network)]</li>
+<li>poszukiwanie sieci trakcyjnej (włĄczona opcja może powodować spory spadek FPS na stacjach z rozbudowanĄ sieciĄ trakcyjnĄ).[Search for overhead catenary (Turned on might cause FPS to drop on stations with extensive catenary network)]</li>
 </ul>
 Have a look in the EU07.ini file, located in the main MaSzyna folder. You will find there many options, not supported by the Rainsted starter.
 Also, in the graphics driver, turn off the vertical synchronisation, anisotropic filtering and all the AA. You could also set the graphics mode to performance. You might also want to experiment with different grpahics drivers. In the case of fairly newer cards, it is recommended to use the newest drivers. However if you have an older card, then older drivers might be a better option. If you have an old comupter, then try to turn off all the software running in the background, like any IM, browsers, anti-virus software, music players, etc), since they will only unnecessarly lower the performance of the PC. Sadly, those changes will not cause a miracle rise in FPS, especially if you have an integrated GPU.</div>
@@ -1370,12 +1369,12 @@ Also, in the graphics driver, turn off the vertical synchronisation, anisotropic
 
 <li>
 <div class="pytanie"><a name="14,26">My laptop doesn't have a numeric keypad, so how do I drive a loco/unit?</a></div> 
-<div class="odpowiedz">Surely you have the <kbd>Fn</kbd> key. Use the <kbd>Fn</kbd>&nbsp;+&nbsp;desired&nbsp;key combo. It is not possible to do custom key mapping that is why - if using <kbd>Fn</kbd> key is too troublesome - you could buy an external USB keyboard with numeric keypad for your laptop.</div>
+<div class="odpowiedz">Surely you have the <kbd>Fn</kbd> key. Use the <kbd>Fn</kbd>&nbsp;+&nbsp;desired&nbsp;key combo. It is possible to remap the keys, by editing the <i>eu07_input-keyboard.ini</i> file - if using <kbd>Fn</kbd> key is too troublesome - you could buy an external USB keyboard with numeric keypad for your laptop.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
 <div class="pytanie"><a name="14,27">Does MaSzyna work on Linux, Mac OS etc?</a></div> 
-<div class="odpowiedz">Yes, by using an Windows emulator (like Wine or similar).</div>
+<div class="odpowiedz">Yes, by using an Windows emulator, like Wine. For a while now, there is also a Linux native binary file. Instructions on the last pages of the following <a href="http://eu07.pl/forum/index.php/topic,3902.120.html">forum thread (Polish)</a>. Future releases will make running and installing MaSzyna easier on non-Windows systems.</div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
@@ -1427,15 +1426,6 @@ Also, in the graphics driver, turn off the vertical synchronisation, anisotropic
 <div class="pytanie"><a name="14,39">I press the <kbd>m</kbd> key, but the Master Circuit Breaker doesn't close.</a></li>
 <div class="odpowiedz">According to the reality, the button (<kbd>M</kbd>) needs to be pressed for few seconds, for the MCB to close.
 </div>
-<div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
-
-<li>
-<div class="pytanie"><a name="14,40">I press the <kbd>c</kbd>, but the Compressor doesn't turn on.</a></div>
-<div class="odpowiedz">Hunter's fixes ware added to the EXE, which are designed to implement more realistic control of electric vehicles. These are considerable changes, and thus require changes to the key control and starting methods (for electric vehicles). Please familiarise yourself with the following:
-<ul>
-<li><a href="#4">MaSzyna Readme file, "Keyboard controls" section.</a></li>
-<li><a href="#5,1">MaSzyna Readme file, "Control" section, "Controlling".</a></li>
-</ul></div>
 <div class="powrot"><span><a href="#14,0">Return to the questions list</a></span></div></li>
 
 <li>
@@ -1510,7 +1500,12 @@ We're just hobbist, who have to share their time between family, work, learning,
 <a href="mailto:promocja@eu07.pl">promocja@eu07.pl</a> - address allowing to contact the presentation and promotion team, however it can also be used for most cases, especially about public presentations and getting information about the SImulator. We E-Mail back well (For Polish language E-Mail).
 <div class="powrot"> 
 	<span><a href="#0">Go to the top of the list</a></span>
-</div>	
+</div>
+	
+<li>
+<div class="pytanie"><a name="14,54">The camera is spinning around it's own axis.</a></div>
+<div class="odpowiedz"><p>The fault lies in the connected game controller; a game pad or a joystick. One of the analogues is responsible for the camera motion. If it's not resting on the centre, it will cause such an effect. If you're not using a gamepad in MaSzyna, you can disconnect it from the computer, or, in the <i>eu07.ini</i> file, beside "input.gamepad", change the value from "<i>yes</i>" to "<i>no</i>".</p></div>
+<div class="powrot"><span><a href="#14,0">Return to the question list</a></span></div></li>
 
 <li>
 <div class="pytanie"><a name="TRANS">The Translator's Note</a></div>
