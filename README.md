@@ -15,6 +15,6 @@ There has been no changes in most of the original Polish versions of files below
 <tr><td>-</td><td>exe-pc2011.html</td><td>N/A</td></tr>
 <tr><td>en-keys.html</td><td>klawiszologia.html</td><td>Patch 18.01 r1</td></tr>
 <tr><td>en-license.html</td><td>licencja.html</td><td>Patch 18.01 r1</td></tr>
-<tr><td>en-readme.html</td><td>readme.html</td><td>Patch 18.01 r3</td></tr>
+<tr><td>en-readme.html</td><td>readme.html</td><td>R2744 r1</td></tr>
 <tr><td>en-universal.html</td><td>universale.html</td><td>Patch 18.01 r1</td></tr>
 </table>
