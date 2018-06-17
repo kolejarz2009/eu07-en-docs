@@ -7,12 +7,10 @@
   <link rel="Stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<!--VERSION: WIP_r2744 REV 2 --> <!--L28 -->
+<!--VERSION: WIP_r2744 REV 3 --> <!--L70 -->
 <div id="STRONA">
 
-
-
-<!-- Witam.<br>Często prosicie o wpisy do wagonów i lokomotyw. Postanowiłem tutaj umieścić krótką lekcję, jak wpis powstaje.<br><br> --> <b>Caution!</b><br>The following manual is an extension to the: <a href="en-change-trains.html">How to change the train set in the scenery</a> manual, with which you should familiarise yourself with first (So that you'd know what to do with the entries, etc).
+<b>Caution!</b><br>The following manual is an extension to the: <a href="en-change-trains.html">How to change the train set in the scenery</a> manual, with which you should familiarise yourself with first (So that you'd know what to do with the entries, etc).
 <b>Read the whole thing and then start!!!</b><br><br>
 <br><b>LOCOMOTIVES:</b><br>node -1 0 <span style="color: orange;">EU07-150</span> dynamic <span style="color: red;">PKP\4E_v1</span> <span style="color: green;">4E-150</span> <span style="color: blue;">4E</span> 0.0 <span style="color: teal;">headdriver</span> <span style="color: navy;">3</span> <span style="color: gold;">0</span> enddynamic<br><br>
 <b>WAGONS, CARRIAGES, EMUs and DMUs:</b>
@@ -25,45 +23,44 @@
 <li><b>dynamic</b> - Object type. Dynamic, simply means any vehicles moving on roads or tracks.</li>
 <li><span style="color: red;">pkp/sn61_v2</span> - File path from inside the <i>Dynamic</i> folder. To change the vehicle, simply replace the "sn61_v2" with another vehicle folder, such as "et22_v2". Another main folder (alternatives for <i>pkp</i>) is for example <i>road</i>, which contains road vehicles, whose entries are analogous to the railway vehicle entries.</li>
 <br><ul><li>The old standard for file paths was to use the Windows backslashes, as well as using small and capital letters. <b>New standard is to use the forward slash and all small letters.</b> So, it used to be; "PKP\SN61_V2", and now it's ment to be "pkp/sn61_v2"</li></ul><br>
-<li><span style="color: green;">SN61-168.dds</span> - Nazwa pliku tekstury wraz z rozszerzeniem. Jeśli model nie posiada tekstur wymiennych wpisujemy <b>none</b>.<br>Informacja dla użytkowników zaawansowanych: Jeśli nie podamy rozszerzenia, to symulator będzie próbował wczytać teksturę o rozszerzeniu domyślnym. Dla exe 735 kB (exe z Dizelpack&#039;a) i starszych jest to rozszerzenie bmp, natomiast dla exe z PC2009 i nowszych możemy zdefiniować domyślne rozszerzenie (ma ono wpływ na cały symulator, nie tylko na wpisy taboru!) w pliku <i>eu07.ini</i>. Odpowiada za to wpis <i>defaultext xxx</i> (na przykład: gdy wpiszemy tga zamiast xxx, domyślnym rozszerzeniem stanie się tga).</li>
-<li><span style="color: blue;">SN61</span> - Wspólna nazwa pliku *.fiz i *.mmd pojazdu, który umieszczamy w scenerii (pliki te znajdują się w katalogu Dynamic/PKP/SN61_v2).</li>
-<li>0.0 - Wpis na razie nie używany</li>
-<li><span style="color: teal;">headdriver</span> - obsada:
-<ul style="margin-top: 0; margin-bottom: 0;"><li>headdriver - prowadzenie z przedniej kabiny</li>
-<li>reardriver - prowadzenie z tylnej kabiny</li>
-<li>nobody - bez obsługi. Stosujemy w członach B lokomotyw dwusekcyjnych (ET40, ET41, ET42), przy ukrotnieniu dwóch lokomotyw (np. 2 x EU07) <b>w drugiej z nich</b> i we wszystkich członach EZT, za wyjątkiem pierwszego (w nim używamy headdriver)</li>
-<li><span style="color: purple;">63</span> - <b>Tak zwany "sprzęg".</b> <u>Suma poniższych cyfr</u>, oznaczająca typ sprzęgów, połączonych z następnym pojazdem. <b>Dodatkowo</b> można dodać różne modyfikatory, dodając kropkę i modyfikatory, na końcu sprzęgu. Tzn.: <b>3.BR</b> 
-<!--liczba definiująca rodzaj połączenia <b>z następnym</b> pojazdem (tzw. <i>sprzęg</i>).<br>Mamy do dyspozycji następujące rodzaje &quot;sprzęgów&quot;:-->
+<li><span style="color: green;">SN61-168.dds</span> - Texture file name, along with it's extension. If the model has nor replaceable textures, we write <b>none</b>.<br>Advenced user information: If we don't type in the extension, the simulator will try to use the default file extension. For 735 kB exe(exe from the Dizelpack) and older, the default is .bmp, however for exe from PC2009 and newer, it's user defined (it has effect on the whole Simulator, not just the vehicle entries!) in the <i>eu07.ini</i> configuration file. The <i>defaultext xxx</i> entry is the one responsible for it (example: if we write tga instead of xxx, the default extension becomes tga).</li>
+<li><span style="color: blue;">SN61</span> - Shared .fiz and .mmd file name of the vehicle, which we're putting on the scenery (these files are in the previously defined "dynamic/pkp/sn61_v2" folder).</li>
+<li>0.0 - Field currently not used</li>
+<li><span style="color: teal;">headdriver</span> - Staffing situation:
+<ul style="margin-top: 0; margin-bottom: 0;"><li>headdriver - driven from the front cab</li>
+<li>reardriver - driven from the rear cab</li>
+<li>nobody - unstaffed. Used in the rear section of dual-sectioned locos (ET40, ET41, ET42), when running two or more locos in multiple (for example 2 x EU07) <b>in the second one</b> and in all MU vehicles, except the very first one (in it we use the "headdriver")</li>
+<li><span style="color: purple;">63</span> - <b>The so called "coupling" number.</b> <u>The sum of the below numbers</u>, defining the type of the coupling used between this and the next vehicle in to the rear. <b>Furthermore</b> we can also add different modificators, by adding a dot, and then the modificators, at the rear of the coupling. For example: <b>3.BR</b> 
 <ul style="margin-top: 0; margin-bottom: 0;">
-	<li>0 - oznacza brak fizycznego połączenia (stosujemy, gdy nasz pojazd jest ostatni w składzie);</li>
-	<li>1 - sprzęg śrubowy;</li>
-	<li>2 - przewód główny (<i>czerwony wężyk</i>);</li>
-	<li>4 - przewody sterowania wielokrotnego;</li>
-	<li>8 - przewód wysokiego napięcia (WN);</li>
-	<li>16 - mostek przejściowy;</li>
-	<li>32 - przewód zasilający (<i>żółty wężyk</i>).</li>
+	<li>0 - None, no physical connection (used when the vehicle is the last in the train set);</li>
+	<li>1 - Mechanical connection (Screw-link);</li>
+	<li>2 - Main Brake pipe (<i>Red hose</i>);</li>
+	<li>4 - Multiple working jumpers;</li>
+	<li>8 - High Voltage jumpers;</li>
+	<li>16 - Gangway;</li>
+	<li>32 - Auxilary air hose (<i>Yellow hose</i>).</li>
 	<br>
-	<li>Modyfikatory: (można dodawać razem, tzn.: 63.BP.WF9P100H99.TA)
+	<li>Moddificators: (Can be used in multiples, for example: 63.BP.WF9P100H99.TA)
 		<ul>
-		<li>W - Wpisy dotyczące kół</li>
+		<li>W - Wheels</li>
 			<ul>
-			<li>FxRyPz - Wielkość podkucia: 
-				<br><b>x</b> to gwarantowane podkucie, w mm
-				<br><b>y</b> to losowe zwiększenie podkucia o zakres 0 - y mm (wpis opcjonalny)
-				<br><b>z</b> - prawdopodobieństwo podkucia, w procentach. (wpis opcjonalny)</li>
-			<li>Hxx - Szansa na wężykowanie tylko danego pojazdu, xx w zakresie od 0 do 100</li>
+			<li>FxRyPz - Size of the flat: 
+				<br><b>x</b> - guaranteed size, in mm
+				<br><b>y</b> - random increase, in the range of 0 - y mm (optional entry)
+				<br><b>z</b> - probability of the flat, in procent. (optional entry)</li>
+			<li>Hxx - Chance of bogie hunting only on this vehicle, xx in range of 0 to 100</li>
 			</ul>
-		<li>B Ustawienia hamulca</li>
+		<li>B - Brake settings</li>
 			<ul>
-			<li>R - Nastawa na pospieszny (Rapid)</li>
-			<li>P - Nastawa na osobowy (Passenger)</li>
-			<li>G - Nastawa na towarowy (Goods)</li>
-			<li>O - Hamulce odłączone</li>
-			<li>Q - Na starcie bez powietrza w Z.G.</li>
+			<li>R - Rapid setting</li>
+			<li>P - Passenger setting</li>
+			<li>G - Goods setting</li>
+			<li>O - Brakes disconnected</li>
+			<li>Q - No air in the Main Reserouir at the start</li>
 			</ul>
-		<li>T Ustawienia Temperatury</li>
+		<li>T - Temperature</li>
 			<ul>
-			<li>A - Wymusza by temperatura elementów lokomotywy była temperaturą otoczenia (~15'C)
+			<li>A - Forces the vehicle elements to have the ambient temperature of the scenery (~15'C)
 			</ul>
 		</ul>
 	</ul>
