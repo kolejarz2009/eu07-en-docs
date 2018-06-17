@@ -7,7 +7,7 @@
   <link rel="Stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<!--VERSION: WIP_r2744 REV 1 --> <!--L25 -->
+<!--VERSION: WIP_r2744 REV 2 --> <!--L28 -->
 <div id="STRONA">
 
 
@@ -22,9 +22,9 @@
 <li><b>-1</b> - Maximal visible distance of the model (meters); -1 is infintie, which in practice is 2km; In order to slightly improver the FPS, decrese this number, to say 800.</li>
 <li><b>0</b> - Minimal visible distance (mteres).</li>
 <li><span style="color: orange;">SN61-168</span> - Vehicle name, displayed in Rainsted.exe; in case of locos or MUs it <b>HAS</b> to be unique (In MUs and multi-section locos, each vehicle has to have a unique ID) on the whole scenario; but freight wagons and passenger carraiges can have repeted names.</li>
-<li><b>dynamic</b> - Object type. Dynamic, simply, means vehicles moving on roads or tracks.</li>
-<li><span style="color: red;">pkp/sn61_v2</span> - Ścieżka dostępu do pojazdu w katalogu <i>Dynamic</i>. By zmienić pojazd, wystarczy zamiast sn61_v2, wpisać nazwę folderu z inną lokomotywą. Np. et22_v2. Innym katalogiem głównym (alternatywą dla <i>pkp</i>) jest np. <i>road</i>, gdzie znajdują się pojazdy drogowe, których wpisy są analogiczne do wpisów pojazdów szynowych</li>
-<br><ul><li>Starymi standardami było podawanie ścieżek, używając Windowsowego ukośnika wstecznego, oraz używanie małych i dużych liter <b>Teraz należy używać zwykłego ukośnika oraz małych liter.</b> Tzn., było PKP\SN61_V2, a teraz ma być pkp/sn61_v2</li></ul><br>
+<li><b>dynamic</b> - Object type. Dynamic, simply means any vehicles moving on roads or tracks.</li>
+<li><span style="color: red;">pkp/sn61_v2</span> - File path from inside the <i>Dynamic</i> folder. To change the vehicle, simply replace the "sn61_v2" with another vehicle folder, such as "et22_v2". Another main folder (alternatives for <i>pkp</i>) is for example <i>road</i>, which contains road vehicles, whose entries are analogous to the railway vehicle entries.</li>
+<br><ul><li>The old standard for file paths was to use the Windows backslashes, as well as using small and capital letters. <b>New standard is to use the forward slash and all small letters.</b> So, it used to be; "PKP\SN61_V2", and now it's ment to be "pkp/sn61_v2"</li></ul><br>
 <li><span style="color: green;">SN61-168.dds</span> - Nazwa pliku tekstury wraz z rozszerzeniem. Jeśli model nie posiada tekstur wymiennych wpisujemy <b>none</b>.<br>Informacja dla użytkowników zaawansowanych: Jeśli nie podamy rozszerzenia, to symulator będzie próbował wczytać teksturę o rozszerzeniu domyślnym. Dla exe 735 kB (exe z Dizelpack&#039;a) i starszych jest to rozszerzenie bmp, natomiast dla exe z PC2009 i nowszych możemy zdefiniować domyślne rozszerzenie (ma ono wpływ na cały symulator, nie tylko na wpisy taboru!) w pliku <i>eu07.ini</i>. Odpowiada za to wpis <i>defaultext xxx</i> (na przykład: gdy wpiszemy tga zamiast xxx, domyślnym rozszerzeniem stanie się tga).</li>
 <li><span style="color: blue;">SN61</span> - Wspólna nazwa pliku *.fiz i *.mmd pojazdu, który umieszczamy w scenerii (pliki te znajdują się w katalogu Dynamic/PKP/SN61_v2).</li>
 <li>0.0 - Wpis na razie nie używany</li>
