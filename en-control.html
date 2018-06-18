@@ -3,11 +3,11 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Language" content="en">  
-  <title>Controlling the train &ndash; Railway Vehicle Simulator &ndash; MaSzyna 18.01</title>
+  <title>Controlling the train &ndash; Railway Vehicle Simulator &ndash; MaSzyna</title>
   <link rel="Stylesheet" type="text/css" href="style.css">
 <!--  <script type="text/javascript" src="target.js"></script> -->
 </head>
-<!-- VERSION Patch18.01 REVISION: 001 -->
+<!-- VERSION r2744 REVISION: 001 -->
 
 <body>
 
@@ -20,13 +20,14 @@ The difference between individual locomotives is generally the brake valve, whic
 <b>STARTING AND DRIVING VEHICLES WITH POWER INVERTERS AND ASYNCHRONOUS MOTORS</b><br>
 <br>This description applies only to all locomotives and EMUs that use a power inverter. Only the differences to vehicles with a resistive start are described.<br>Turning on the baterries usually causes the on-board computer to turn on, which displays the vehicle status and start-up gauges<!-- Wskazówki uruchomieniowe = Start-up tips czy start-up dials ??-->. The compressor is turned on automatically along with the main transformer.<br>Currently only the tractive effort control is implemented. The tractive effort can be changed in steps of 10%, <kbd>Num +</kbd> increses it by 10% and <kbd>Num -</kbd> decreases by 10%. In case of an EMU or a light loco-hauled train, braking is done using a electrodynamic brake <kbd>Num 1</kbd> braking, while <kbd>Num 7</kbd> is brake release. In case of heavier trains braking is done using the pneumatic train brake. The computer automatically keeps the tractive effort constant and eliminates any wheelslips. When standing, the parking brake is automatically applied. It is disengaged when tractive effort set to >20%.<br>In some EMUs it is possible to turn on the cruise control <kbd>Num /</kbd> to the speed at which the cruise control was turned on. Cruise control is turned off by <kbd>Num *</kbd>. Stopping and following start-up do not turn off/ reset the cruise control. It should be engaged when first reaching the line speed and corrected when it changes.<br><br>
 <br><b>STARTING AND DRIVING A DIESEL-ELECTRIC LOCMOTIVE</b><br>
-<br>We control the Diesel-Electrics (SM31, SM41, SM42, SP42, ST44 [także M62_mod_v1], SU45, SU46, TEM2) in a very similar manner as we do with the Electric locos. All (except the SM41, which uses the H14K1 valve, instruction above) use the FV4a valve.<br>The principal difference is that we don't use a pantograph and we don't 'bypass' the motors (SU45 and SU46 do it automatically, and 'bypassing' in the SM42 and SP42 has not been implemented in the Exe).<br>In some of these locos, to move from standstill,<kbd>Num +</kbd> need to be pressed twice, since the first position (1 x <kbd>Num +</kbd>) close the contactors but no current flows through them. Another difference is the function which <kbd>f</kbd> do. It does not increase the current range limit. In SM42 and SP42 it switches the loco into Shunt Mode, whereas in other Diesel-Electrics, it has no function. It's [Shunt Mode] description:<br><br>Power Controller to 0 -&gt; <kbd>f</kbd> -&gt; Set position using the Power Controller -&gt; using <kbd>Num /</kbd> and <kbd>Num *</kbd> we change the field excitation. <br>Upto 4th position of the power controller we need to set some excitation manually, in order to move, from 5th position we can start without excitation, but it will be slow. <br><br>Turn Shunt Mode off:<br>Power controller to 0 -&gt; <kbd>f</kbd> <br><br>
+<br>We control the Diesel-Electrics (SM31, SM41, SM42, SP42, ST44 [as well as M62_mod_v1], SU45, SU46, TEM2) in a very similar manner as we do with the Electric locos. All (except the SM41, which uses the H14K1 valve, instruction above) use the FV4a valve.<br>
+After turning on the battery <kbd>j</kbd>, we turn on the fuel pump <kbd>f</kbd> (Few engines have it intergrated with the ignition), and the oil pump <kbd>Shift</kbd> + <kbd>f</kbd>. <!--In the SU45, SP45 and SU46 we have to turn on the water pump <kbd>w</kbd> and the water heater <kbd>Shift</kbd> + <kbd>w</kbd>, after it reaches 45'C--> We hold the ignition button <kbd>m</kbd> until the engine is finished starting up. The main and auxiallary generator excitation is automatic. The compressor is either powered from the engine crankshaft, and so we should rev the engine to get the air faster, or it's powered electrically, and we use the switch <kbd>c</kbd>. The power controller (wheel), increases the engine revs, and the main generator excitation, increasing the traction motor power.<br>
+In some of these locos, to move from standstill,<kbd>Num +</kbd> need to be pressed twice, since the first position (1 x <kbd>Num +</kbd>) close the contactors but no current flows through them. 
+The field weakening of the traction motors is either automatic, or one-step, turned on with a button (SM42 and SP42).Another difference is the function which <kbd>Shift</kbd> + <kbd>f</kbd> do. It does not increase the current range limit. In SM42 and SP42 it switches the loco into Shunt Mode, whereas in other Diesel-Electrics, it has no function. It's [Shunt Mode] description:<br><br>Power Controller to 0 -&gt; <kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>f</kbd> -&gt; Set position using the Power Controller -&gt; using <kbd>Num /</kbd> and <kbd>Num *</kbd> we change the field excitation. <br>Upto 4th position of the power controller we need to set some excitation manually, in order to move, from 5th position we can start without excitation, but it will be slow. <br><br>Turn Shunt Mode off:<br>Power controller to 0 -&gt; <kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>f</kbd> <br><br>
 <br><b>STARTING AND DRIVING A DIESEL-MECHANICAL LOCOMOTIVE</b><br><!--Description applies to SN61. --> <!-- and SM03/04.-->
 <br><b>SN61</b><br>Brake operation is the same, as in the case of electric locomotives with the FV4a valve. <!--(for SN61) and the H14K1 valve (for SM03/04).--><br>
 <ol>
-<li>First set the direction of travel&nbsp; (<kbd>d</kbd> - forwards, <kbd>r</kbd> - backwards).</li>
-<li>Then set the power controller tot eh first position (<kbd>Num +</kbd>).</li>
-<li>Now the engine starter may be turned on (<kbd>m</kbd>).</li>
+<li>Battery on <kbd>j</kbd>, oil pump <kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>f</kbd> and the engine ignition <kbd>m</kbd>. Increase the idle engine revilutions, to warm it up, and get the required air quicker.</li>
 <li>After a sucessfull start-up you can move the power controller one position up (neutral gear) and wait for the <i>Main Reservoir</i> to charge.</li>
 <li>Release the brakes. To move the power handle needs to be moved one more position up - the locomotive will roll on a half-clutch, after reaching 7-8&nbsp;km/h you can move the handle up, into normal driving positions (there are 5):
 <br>
@@ -42,7 +43,7 @@ The difference between individual locomotives is generally the brake valve, whic
 <li>When the engine reaches maximal revs you can shift into the next gear (in between the gears, are clutches). Repeat the operation until the final, 4th gear is reached.</li>
 <li>To stop, cut the gas (<kbd>Num -</kbd>), go into neutral gear (<kbd>Num *</kbd>) and brake according to the instructions.</li>
 </ol>
-<br>Author of the driving description for SM03/04: szogun<br>
+
 <br><br><br><b>DRIVING THE TROLLEYS</b><br>
 <br><b>'Machajka' (Hand-pumped trolley)</b><br>
 <ol>
@@ -70,6 +71,7 @@ Maybe now you thought to yourself:<br> "Hm. Very well. I know how to control loc
 <br>
 <br>Description author: ET22_RULZ.
 <br>Updates and modifications: libertyn89, adsim, Maciej, macius5991.
+<br>Author of the driving description for SM03/04: szogun<br>
 <br>ET22-2000 control instruction: Maciej &quot;youBy&quot; Cierniak. Fixes: Michał &quot;mKaczy&quot; Massel.
 <br>ET42 control instruction: szogun.
 <br>English Translation: kolejarz2009
