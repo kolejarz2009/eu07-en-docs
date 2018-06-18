@@ -7,7 +7,7 @@
   <link rel="Stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<!--VERSION: WIP_r2744 REV 4 --> <!--L77 -->
+<!--VERSION: r2744 REV 1 -->
 <div id="STRONA">
 
 <b>Caution!</b><br>The following manual is an extension to the: <a href="en-change-trains.html">How to change the train set in the scenery</a> manual, with which you should familiarise yourself with first (So that you'd know what to do with the entries, etc).
@@ -74,16 +74,16 @@ For an empty tank wagon, with a 3mm flat:<br>
 For a full tank wagon, with the Goods setting, and a 100% chance of bogie hunting:<br>
 <div class="codeheader">Code:</div><div class="code">node -1 0 5051-503320-2 dynamic pkp/zaes_v1 406Ra_dec8.tga 406Ra 0.0 nobody 3.BGWH100 49 Fuel enddynamic<br></div>
 
-<br>Dla wagonu klasy drugiej z nastawą pospieszną:<br><div class="codeheader">Kod:</div><div class="code">node -1 0 5051-503320-2 dynamic PKP\1xxa_v1 111A13.tga 1xxa 0 nobody 3.BR 0 enddynamic<br></div>Dla wagonu klasy drugiej z 30 pasażerami:<br><div class="codeheader">Kod:</div><div class="code">node -1 0 5051-503320-2 dynamic PKP\1xxa_v1 111A13.tga 1xxa 0 nobody 3 30 Passengers enddynamic<br></div>
-Dla składu wagonów mieszanych:<br><div class="codeheader">Kod:</div><div class="code">
+<br>For a second class passenger carriage, with a Rapid setting:<br><div class="codeheader">Code:</div><div class="code">node -1 0 5051-503320-2 dynamic PKP\1xxa_v1 111A13.tga 1xxa 0 nobody 3.BR 0 enddynamic<br></div>For a passenger carriage with 30 passengers:<br><div class="codeheader">Code:</div><div class="code">node -1 0 5051-503320-2 dynamic PKP\1xxa_v1 111A13.tga 1xxa 0 nobody 3 30 Passengers enddynamic<br></div>
+For a set of mixes freight wagons:<br><div class="codeheader">Code:</div><div class="code">
 node -1 0 ET42-005-A dynamic pkp/et42_v2 112E-005-A-HIST.DDS 112E-A 0 headdriver 63.BPWF17H100 0 enddynamic<br>
 node -1 0 ET42-005-B dynamic pkp/et42_v2 112E-005-B-HIST.DDS 112E-B 0 connected 35.BPWH100 0 enddymanic<br>
 node -1 0 p1 dynamic pkp/11xa_v2  BDNU-51512071081-6.DDS 111AW-SPOT 0 nobody 35.BP 40 passengers enddynamic<br>
 node -1 0 p2 dynamic pkp/11xa_v2  BDNU-51512071081-6.DDS 111AW-SPOT 0 nobody 3.BP 0 enddynamic<br>
 node -1 0 t1 dynamic pkp/408w_v1 5316830-7.DDS 408W 0 nobody 0.BPWF10R10P15 10 coal enddynamic<br></div>
-<p>Powyższy skład mieszany, ma wszystkie pojazdy ustawione na nastawę osobową, z ukrotnionym czapajewem na przodzie. Pierwszy człon czapajewa ma podkucia na 17mm, a oba człony mają szanse na wężykowanie na 100%. Pierwszy wagon, ma 40 pasażerów, a drugi jest tlenowozem (pusty). Węglarka wiezie 10T węgla, i może mieć podkucie od 10mm do 20mm, z szansą na bycie podkutą na 15%.</p>
-<br>Dla zainteresowanych:<br>Bardziej szczegółowy opis umieszczania składów w scenerii autorstwa Jarasa:<br><a href="http://eu07.pl/forum/index.php/topic,2451.0.html">Scenerie, wpisy, składy, zdarzenia - warto zajrzeć</a> 
-<br><br>Autor: Rootek<br>Aktualizacja i modyfikacja: libertyn89, Maciej, kolejarz2009<br>Poprawki: Quark-t
+<p>The aboce mixed freight train set, has all wagons set to the Passenger setting, with a ET42 unit in multiple. The first ET42 unit has 17mm flats, and both have a 100% bogie hunting chance. First carraige has 40 passengers, the 2nd one is empty. The coal wagon is carrying 10T of coal, and can have a flat of between 10mm and 20mm, with a 15% chance of having a flat.</p>
+<br>For the interested:<br>More detailed entries manual, by Jaras (Polish only):<br><a href="http://eu07.pl/forum/index.php/topic,2451.0.html">Scenerie, wpisy, składy, zdarzenia - warto zajrzeć</a> 
+<br><br>Author: Rootek<br>Updating and modification: libertyn89, Maciej, kolejarz2009<br>Fixes: Quark-t<br> Translation: kolejarz2009
 
 </div>
 </body>
