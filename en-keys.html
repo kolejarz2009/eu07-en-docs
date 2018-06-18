@@ -3,12 +3,12 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="Content-Language" content="en">  
-  <title>Keyboard functionality &ndash; Railway Vehicle Simulator &ndash; MaSzyna 18.01</title>
+  <title>Keyboard functionality &ndash; Railway Vehicle Simulator &ndash; MaSzyna</title>
   <link rel="Stylesheet" type="text/css" href="style.css">
   <!--  <script type="text/javascript" src="target.js"></script> -->
 </head>
 <body>
-<!-- VERSION Patch18.01 ,REVISION: 0 -->
+<!-- VERSION r2744 ,REVISION: 1 -->
 
 <div id="STRONA">
 <p>
@@ -31,13 +31,13 @@ This page lists all the keys and their functions. <b>Keys can be re-assigned by 
 										<td>-</td>
 							</tr>
 							<tr>
-										<td><kbd>o</kbd></td>
-										<td>Toggle switch of the front pantograph</td>
+										<td><kbd>p</kbd></td>
+										<td>Toggle the pantograph A switch</td>
 										<td>Only on electric vehicles</td>
 							</tr>
 							<tr>
-										<td><kbd>p</kbd></td>
-										<td>Toggle switch for the rear Pantograph</td>
+										<td><kbd>o</kbd></td>
+										<td>Toggle the pantograph B switch</td>
 										<td>Only on electric vehicles</td>
 							</tr>
 							<tr>
@@ -242,8 +242,43 @@ This page lists all the keys and their functions. <b>Keys can be re-assigned by 
 							</tr>
 							<tr>
 										<td><kbd>f</kbd></td>
-										<td>Toggle switch for contactor limit to low/high</td>
-										<td>ET42: connecting the units in series or parallel<br>2Ls150 (SM03): toggling between shunting or normal running</td>
+										<td>Turn on the fuel pump</td>
+										<td>Required to turn on the Diesel engine. Some vehicles have automatic fuel pumps.</td>
+							</tr>
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>f</kbd></td>
+										<td>Turn on the oil pump</td>
+										<td>Required to turn on the Diesel engine. Some vehicles have automatic oil pumps.</td>
+							</tr>
+							<tr>
+										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>f</kbd></td>
+										<td>High/Low traction current limiter</td>
+										<td>ET42: Connect the units in series/parallel<br>2Ls150 (SM03) and SM42: Shunting mode/Mainline mode manewrowe/liniowe</td>
+							</tr>
+							<tr>
+										<td><kbd>w</kbd></td>
+										<td>Water pump switch</td>
+										<td>-</td>
+							</tr>
+							<tr>
+										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>w</kbd></td>
+										<td>Automatic water pump shutdown relay</td>
+										<td>In the Low Voltage (LV) cupboard</td>
+							</tr>
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>w</kbd></td>
+										<td>Water heater switch</td>
+										<td>-</td>
+							</tr>
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>w</kbd></td>
+										<td>Automatic water heater shutdown relay</td>
+										<td>In the LV cupboard</td>
+							</tr>
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>h</kbd></td>
+										<td>Valve joining both water circuits</td>
+										<td>-</td>
 							</tr>
 							<tr>
 										<td><kbd>g</kbd></td>
@@ -415,7 +450,7 @@ This page lists all the keys and their functions. <b>Keys can be re-assigned by 
 										<td>Resets the Radiostop (RS). Required to pressurise the Brake Pipe after RS activates.</td>
 							</tr>
 							<tr>
-										<td><kbd>Ctrl</kbd> + <kbd>Pause/Break</kbd></td>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>Pause/Break</kbd></td>
 										<td>Radio-Stop</td>
 										<td>All vehicles within the 2km radius will receive the Emerency_brake command, only if the CHK file has a "RadioStop=Yes" inscription / in it.</td>
 							</tr>
@@ -627,19 +662,19 @@ This page lists all the keys and their functions. <b>Keys can be re-assigned by 
 										<!-- No further than 500 meters from loco standing on the same track --></td>
 							</tr>
 							<tr>
-										<td><kbd>Shift</kbd> + <kbd>t</kbd></td>
+										<td><kbd>Shift</kbd> + <kbd>e</kbd></td>
 										<td>Put on the Tail Lamps</td>
 										<td>When outside (the cab), standing close the the target vehicle. Warning: Not all vehicles have tail lamps</td>
 							</tr>
 							
 							<tr>
-										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>t</kbd></td>
+										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>e</kbd></td>
 										<td>Turn on the red lights (loco)</td>
 										<td>Outside the cab, near the choosen vehicle.<br>
-										Only in vehicles that have tail lamps integrated into their lamps (Locos and Units). Carriages have separate Tail Lamps. Requires battery to be on in the choosen vehicle.</td>
+										Only in vehicles that have tail lamps integrated into their lamps (Locos and MUs). Carriages have separate Tail Lamps. Requires battery to be on in the choosen vehicle.</td>
 	
 							<tr>
-										<td><kbd>t</kbd></td>
+										<td><kbd>e</kbd></td>
 										<td>Take off the Tail Lamps</td>
 										<td>When outside, standing close the the target vehicle. Warning: Not all vehicles have tail lamps</td>
 							</tr>
@@ -659,7 +694,7 @@ This page lists all the keys and their functions. <b>Keys can be re-assigned by 
 										<td><b><span style="color: #0000ff;">Note / Comment</span></b></td>
 							</tr>
 							<tr>
-										<td><kbd>Shift</kbd> + <kbd>e</kbd></td>
+										<td><kbd>Ctrl</kbd> + <kbd>e</kbd></td>
 										<td>Disconnect the damaged motors</td>
 										<td>Works only when in the engine room</td>
 							</tr>
