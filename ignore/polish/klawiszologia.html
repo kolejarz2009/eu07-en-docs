@@ -1,9 +1,9 @@
-﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="Content-Language" content="pl">  
-  <title>Klawiszologia &ndash; MaSzyna 17.07 &ndash; Symulator Pojazdów Szynowych MaSzyna</title>
+  <title>Klawiszologia &ndash; MaSzyna &ndash; Symulator Pojazdów Szynowych MaSzyna</title>
   <link rel="Stylesheet" type="text/css" href="style.css">
 <!--  <script type="text/javascript" src="target.js"></script> -->
 </head>
@@ -30,15 +30,15 @@ Klawisze oznaczone jako <kbd>Num...</kbd> to klawisze na klawiaturze numerycznej
 										<td><kbd>j</kbd></td>
 										<td>Przełączenie stanu akumulatorów</td>
 										<td>-</td>
-							</tr>
+							</tr>							
 							<tr>
-										<td><kbd>o</kbd></td>
-										<td>Przełączenie stanu pantografu przedniego</td>
+										<td><kbd>p</kbd></td>
+										<td>Przełączenie stanu pantografu A</td>
 										<td>Tylko w przypadku pojazdów elektrycznych</td>
 							</tr>
 							<tr>
-										<td><kbd>p</kbd></td>
-										<td>Przełączenie stanu pantografu tylnego</td>
+										<td><kbd>o</kbd></td>
+										<td>Przełączenie stanu pantografu B</td>
 										<td>Tylko w przypadku pojazdów elektrycznych</td>
 							</tr>
 							<tr>
@@ -242,9 +242,46 @@ Klawisze oznaczone jako <kbd>Num...</kbd> to klawisze na klawiaturze numerycznej
 							</tr>
 							<tr>
 										<td><kbd>f</kbd></td>
-										<td>Przełącznik prądu rozruchowego niski/wysoki</td>
-										<td>ET42: połączenie szeregowe/równoległe członów<br>2Ls150 (SM03): przełożenie manewrowe/liniowe</td>
+										<td>Załączenie pompy paliwowej</td>
+										<td>Wymagane do zapłonu silnika spalinowego. W niektórych pojazdach automatycznie z rozrusznikiem.</td>
 							</tr>
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>f</kbd></td>
+										<td>Załączenie pompy olejowej</td>
+										<td>Wymagane do zapłonu silnika spalinowego. W niektórych pojazdach automatycznie z rozrusznikiem.</td>
+							</tr>
+							<tr>
+										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>f</kbd></td>
+										<td>Przełącznik prądu rozruchowego niski/wysoki</td>
+										<td>ET42: połączenie szeregowe/równoległe członów<br>2Ls150 (SM03) i SM42: przełożenie manewrowe/liniowe</td>
+							</tr>
+<!--
+							<tr>
+										<td><kbd>w</kbd></td>
+										<td>Przełącznik pompy obiegu wodnego</td>
+										<td>-</td>
+							</tr>
+							<tr>
+										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>w</kbd></td>
+										<td>Wyłącznik samoczynny pompy</td>
+										<td>W szafie NN</td>
+							</tr>
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>w</kbd></td>
+										<td>Przełącznik podgrzewacza wody</td>
+										<td>-</td>
+							</tr>
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>w</kbd></td>
+										<td>Wyłącznik samoczynny podgrzewacza wody</td>
+										<td>W szafie NN</td>
+							</tr>
+							<tr>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>h</kbd></td>
+										<td>Zawór łączący obiegi wodne</td>
+										<td>-</td>
+							</tr>
+-->
 							<tr>
 										<td><kbd>g</kbd></td>
 										<td>Przełącznik trybu samoczynnego rozruchu</td>
@@ -324,17 +361,17 @@ Klawisze oznaczone jako <kbd>Num...</kbd> to klawisze na klawiaturze numerycznej
 							<tr>
 										<td><kbd>i</kbd></td>
 										<td>Przełączenie stanu prawego reflektora</td>
-										<td>Jeśli używa indywidulnego przełącznika.</td>
+										<td>Jeśli używa indywidualnego przełącznika.</td>
 							</tr>
 							<tr>
 										<td><kbd>u</kbd></td>
 										<td>Przełączenie stanu górnego reflektora.<br></td>
-										<td>Jeśli używa indywidulnego przełącznika.</td>
+										<td>Jeśli używa indywidualnego przełącznika.</td>
 							</tr>
 							<tr>
 										<td><kbd>y</kbd></td>
 										<td>Przełączenie stanu lewego reflektora</td>
-										<td>Jeśli używa indywidulnego przełącznika.</td>
+										<td>Jeśli używa indywidualnego przełącznika.</td>
 							</tr>
 							<tr>
 										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>i</kbd></td>
@@ -420,7 +457,7 @@ Klawisze oznaczone jako <kbd>Num...</kbd> to klawisze na klawiaturze numerycznej
 										<td>Zakres zmian jest od 0 (wyłączony) do 8. Wybrany kanał jest wyświetlany w drugiej linijce po naciśnięciu [F2], po znakach "RT:". </td>
 							</tr>-->
 							<tr>
-										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>Pause/Break</kbd></td>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>Pause/Break</kbd></td>
 										<td>Wyzwolenie radiostopu</td>
 										<td>Użycie tej kombinacji powoduje wysłanie do wszystkich pojazdów w promieniu 2&nbsp;km komendy Emergency_brake. Warunkiem jest jednak umieszczenie w FIZ wpisu RadioStop=Yes.</td>
 							</tr>
@@ -648,19 +685,19 @@ Klawisze oznaczone jako <kbd>Num...</kbd> to klawisze na klawiaturze numerycznej
 										<!-- nie dalej niż 500 metrów od lokomotywy stojącej na tym samym torze --></td>
 							</tr>
                             <tr>
-										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>t</kbd></td>
+										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>e</kbd></td>
 										<td>Zakładanie Sygnałów Końca Pociągu</td>
 										<td>Na zewnątrz kabiny, w pobliżu pojazdu, na który chcemy założyć SKP<br>
 										Uwaga: nie wszystkie pojazdy posiadają SKP.</td>
 							</tr>
 							<tr>
-										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>t</kbd></td>
+										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>e</kbd></td>
 										<td>Zapalanie końcówek w pojazdach</td>
 										<td>Na zewnątrz kabiny, w pobliżu pojazdu, na którym chcemy zapalić końcówki<br>
 										Tylko w pojazdach z końcówkami jako reflektory tylne (lokomotywy). Wagony mają je jako SKP. Wymaga załączonej baterii w pojeździe.</td>
 							</tr>
                             <tr>
-										<td><kbd>t</kbd></td>
+										<td><kbd>e</kbd></td>
 										<td>Ściąganie Sygnałów Końca Pociągu</td>
 										<td>Na zewnątrz kabiny, w pobliżu pojazdu, z którego chcemy zdjąć SKP<br>Uwaga: nie wszystkie pojazdy posiadają SKP.</td>
 							</tr>
@@ -680,7 +717,7 @@ Klawisze oznaczone jako <kbd>Num...</kbd> to klawisze na klawiaturze numerycznej
 										<td><b><span style="color: #0000ff;">Komentarz</span></b></td>
 							</tr>
 							<tr>
-										<td><kbd>Shift</kbd>&nbsp;+&nbsp;<kbd>e</kbd></td>
+										<td><kbd>Ctrl</kbd>&nbsp;+&nbsp;<kbd>e</kbd></td>
 										<td>Odłączenie uszkodzonych silników</td>
 										<td>Działa tylko gdy znajdujemy się w przedziale maszynowym</td>
 							</tr>
