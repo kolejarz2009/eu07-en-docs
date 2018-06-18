@@ -7,7 +7,7 @@
   <link rel="Stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<!--VERSION: WIP_r2744 REV 3 --> <!--L70 -->
+<!--VERSION: WIP_r2744 REV 4 --> <!--L77 -->
 <div id="STRONA">
 
 <b>Caution!</b><br>The following manual is an extension to the: <a href="en-change-trains.html">How to change the train set in the scenery</a> manual, with which you should familiarise yourself with first (So that you'd know what to do with the entries, etc).
@@ -65,14 +65,14 @@
 		</ul>
 	</ul>
 <br>
-<li><span style="color: gold;">40</span> - ilość ładunku. <b>Dla lokomotyw ustawić na 0</b> O sposobie liczenia ładunku (w tonach lub na sztuki [pasażerowie w wagonach pasażerskich]) w tym wagonie informuje plik sn61.fiz. Istotny jest wpis <b>LoadQ</b> - <i>pieces</i> oznacza sztuki, natomiast <i>tonns</i> - tony.</li>
-<li><span style="color: purple;">passengers</span> - rodzaj ładunku. O rodzaju ładunku, który możemy wykorzystać w tym wagonie informuje również sn61.fiz; Istotny jest wpis <b>LoadAccepted</b>. Np dla wagonów na materiały sypkie, typu 401W, możemy wybrać jeden z kilku dostępnych rodzajów (<i>Coal, Stone, Wood, Lumber, Sand, Gravel</i>) lub pozostawić wagon bez ładunku. Wtedy w miejscu ilość ładunku wpisujemy 0 i <b>NIE WPISUJEMY JEGO RODZAJU.</b> W przeciwnym wypadku przy ładowaniu symulatora na pewno wystąpi błąd.</li>
+<li><span style="color: gold;">40</span> - load amount. <b>For locos, set to 0</b> The method of counting the loads (in tonnes, pieces or only in passenger vehicles, passengers), is described in the .fiz file, specified earlier. The <b>LoadQ</b> parameter describes whenever it's <i>tonnes</i> or <i>pieces</i>.</li>
+<li><span style="color: purple;">passengers</span> - Type of the load. Here, the .fiz file again, tells us what kind of loads it can take, by the way of the <b>LoadAccepted</b> entry. For example, freight wagon for bulk cargo, type 401W, we can choose one of few loads;(<i>Coal, Stone, Wood, Lumber, Sand, Gravel</i>) or leave the wagon empty. In that case, we put 0 as the amount and <b>LEAVE THE TYPE BLANK.</b> Otherwise, durining loading of the simulator, it will crash.</li>
 </ul><br>
-<h2>Przykładowe wpisy.</h2>
-Dla pustej cysterny z podkuciem 3mm:<br>
-<div class="codeheader">Kod:</div><div class="code">node -1 0 5051-503320-2 dynamic pkp/zaes_v1 406Ra_dec8.tga 406Ra 0.0 nobody 3.WF3 0 enddynamic<br></div>
-Dla cysterny wypełnionej paliwem, z nastawą towarową, i 100 szansą na wężykowanie:<br>
-<div class="codeheader">Kod:</div><div class="code">node -1 0 5051-503320-2 dynamic pkp/zaes_v1 406Ra_dec8.tga 406Ra 0.0 nobody 3.BGWH100 49 Fuel enddynamic<br></div>
+<h2>Example entries:</h2>
+For an empty tank wagon, with a 3mm flat:<br>
+<div class="codeheader">Code:</div><div class="code">node -1 0 5051-503320-2 dynamic pkp/zaes_v1 406Ra_dec8.tga 406Ra 0.0 nobody 3.WF3 0 enddynamic<br></div>
+For a full tank wagon, with the Goods setting, and a 100% chance of bogie hunting:<br>
+<div class="codeheader">Code:</div><div class="code">node -1 0 5051-503320-2 dynamic pkp/zaes_v1 406Ra_dec8.tga 406Ra 0.0 nobody 3.BGWH100 49 Fuel enddynamic<br></div>
 
 <br>Dla wagonu klasy drugiej z nastawą pospieszną:<br><div class="codeheader">Kod:</div><div class="code">node -1 0 5051-503320-2 dynamic PKP\1xxa_v1 111A13.tga 1xxa 0 nobody 3.BR 0 enddynamic<br></div>Dla wagonu klasy drugiej z 30 pasażerami:<br><div class="codeheader">Kod:</div><div class="code">node -1 0 5051-503320-2 dynamic PKP\1xxa_v1 111A13.tga 1xxa 0 nobody 3 30 Passengers enddynamic<br></div>
 Dla składu wagonów mieszanych:<br><div class="codeheader">Kod:</div><div class="code">
