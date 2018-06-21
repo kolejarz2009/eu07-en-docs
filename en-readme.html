@@ -7,7 +7,8 @@
   <link rel="Stylesheet" type="text/css" href="inne/readme_pliki/style.css">
 </head>
 <body>
-<!-- VERSION r2744 REVISION 1-->
+<!-- VERSION WIP_r2801 REVISION 0-->
+<!-- Last Line 777-->
 
 <div id="STRONA">
 	
@@ -97,12 +98,30 @@ More serious problems that can occur, are: desorientation, loss of balance, head
 <h3><a name="3,3">Hardware requirements</a></h3>
 <p>The software and hardware requirements hare been increased in comparison to the previous versions. Because of the EXE file being supplied in both 32bit (x86) and 64bit (x64), caution should be exercised when picking and running the EXE file and it's dependencies on your computer.<br>
 <ul>
+<font size=4>Minimal hardware requirements:</font>
+<li>Processor: <b>Core 2 Duo E4700 2.6GHz, AMD equivalent - AMD APU A4-6300 Dual-Core</b></li>
+<li>Graphics card: <b>AMD Radeon R7 250 or nVidia - GeForce GT 740 v3 - with minimum of 2 GB VRAM GDDR5 of graphics memory</b></li>
+<li>RAM momory: <b>6 GB</b></li>
+<li><b>13 GB of free disk space</b>, in case of a HDD with 7200rpm</li>
+<li>Sound card compatible with OpenAL, and stereo sound.</li>
+<li>Optionally, COM ports, if making your own cab controls.</li>
+<li>Requirements for 32bit (x86) systems, MIGHT be<b><u>a tiny bit lower.</u></b></li>
+<br/>
+<font size=4>Recommended hardware requirements:</font>
+<li>Processor: <b>Intel Core i3-4130 lub AMD FX 6100</b></li>
+<li>Graphics card: <b>nVidia GeForce GTX 750 or AMD Radeon HD 7850 / Radeon R7 370</b></li>
+<li>RAM memory: <b>8 GB RAM DDR3</b></li>
+<li><b>13 GB of free disk space</b>, in case of a HDD with 7200rpm</li>
+<li>Sound card compatible with OpenAL, and stereo sound.</li>
+<li>Optionally, COM ports, if making your own cab controls.</li>
+<br/>
+Additionally, to the hardware requirements, you need to have the following software:
 	<li>Graphics card and driver supporting OpenGL 1.5 or higher.</li>
 	<li>Visual C++ Redistributable 2008, 2015 and 2017 packages.</li>
 <p>Sometimes. it might be necessary to install the basic Python 2.7.14 package, especailly on 64 bit systems.<br>
 It is recommended to have at least 4GB of RAM and a multithreaded CPU. Low amount of RAM might not support bigger sceneries without decreasing the texture size (maxtexturesize in the eu07.ini file), and no free thread on the CPU might result in drastically decreased performance in the vehicles with an onboard computer.</p>
 </ul>
-<p>The version of MaSzyna that will be published in the second half of 2018 will introduce a new renderer, requiring a graphics card supporting at least OpenGL 3+. The current renderer will be available to users with older hardware, but if you ware thinking of buying a new computer, this would be a good time, to enjoy the full effects of the future graphical effects.</p>
+<p>Future versions of MaSzyna will introduce a new renderer, requiring a graphics card supporting at least OpenGL 3+. The current renderer will be available to users with older hardware, but if you ware thinking of buying a new computer, this would be a good time, to enjoy the full effects of the future graphical effects.</p>
 <div class="powrot"> 
 	<span><a href="#0">Contents</a></span>
 </div>
@@ -355,13 +374,14 @@ The following entry in the scenery, <i>movelight</i>, allows to set the day of t
 <tr><td>Krzyżowa 2</td><td>Author: Mati_An.</td></tr>
 <tr><td>Linia 053 [Railway Line nr 53 - Fictional Route]</td>
 <td>Author of the scenery and scenarios 1-6: Driver24. Decorations: Trus
-<br>Scenario "Linia 053 - misja towarowo-pośpieszna" (l053-sluzba-brutto-posp): Mati_An. 
-<br>Scenario "Linia 053 - służba - nocna - 4_v2" (l053-sluzba-4-night_v2) Author: Benek. 
-<br>Scenario "l053-sluzba-osobowy" Author: Benek. 
-<br>Scenario "l053_cargo" Author: pinokio. 
-<br>Scenario "l053-night-towarowy-et22" Author: Woku. 
-<br>Scenario "l053-night-towarowy-et42" Author: Woku. 
-<br>Scenario "l053-night-towarowy-eu07" Author: Woku.</td></tr>
+<br>Scenario "l053-sluzba-brutto-posp" (Freight and then passenger express) Author: Mati_An. 
+<br>Scenario "l053-sluzba-4-night_v2" (Night mission nr 4) Author: Benek. 
+<br>Scenario "l053-sluzba-osobowy" (Passenger mission) Author: Benek. 
+<br>Scenario "l053_cargo" (Freight mission) Author: pinokio. 
+<br>Scenario "l053-night-towarowy-et22" (Night Freight - ET22) Author: Woku. 
+<br>Scenario "l053-night-towarowy-et42" (Night Freight - ET42) Author: Woku. 
+<br>Scenario "l053-night-towarowy-eu07" (Night Freight - EU07) Author: Woku.
+<br><br>Scenario "Linia053 Poranek" (Morning run) Author: Transkei</p></td></tr>
 <tr><td>Linia 053 + Całkowo</td><td>Authors: Driver24 i Mati_An.
 <br>Scenario "Linia 053 + Całkowo TLK" Author: Mati_An. 
 <br>Scenario "Linia 053 + Całkowo TLK-1" Author: Mati_An.</td></tr>
@@ -408,30 +428,30 @@ Scenarios "Zwierzyniec SM42" and "Zwierzyniec ED72" by Woku
 <tr><td>4e_v1</td><td>
 	<b>External models:</b> moddified 303e_v1 models - szogun 
 	<b>Cabs:</b> hunter, Profeta  
-	<b>Fixes:</b> adsim, Kermit, mareczek, MR6, joachimowicz, Milek7, Maciej, RoboBatman
-	<b>Sounds (amongst others):</b> mk1991 
+	<b>Fixes & modifications:</b> adsim, Kermit, mareczek, MR6, joachimowicz, Milek7, Maciej, RoboBatman, szogun, Stele
+	<b>Sounds:</b> mk1991, mac310, miko22 & others
 	<b>Lowpoly interiors:</b> Stele, DieselPower 
 	<b>Texture modifications:</b> Pitek, Joachimowicz, Lelek, jakol112, Pedrosiasty, MR6 
-	<b>Photos (amongst others):</b> eu40, PX48-28, mechatronik, BR232, EU07-033, Podlesky, Lizawka127, janek32
+	<b>Photos:</b> eu40, PX48-28, mechatronik, BR232, EU07-033, Podlesky, Lizawka127, janek32, marcin_s, Hadomik, macius5991, EU07-033, Radek Ciasnocha, LHS_ST40s, młody
 	<b>Textures:</b> Sigman, Sakorius, adsim, Patrykos, Mati_An, EU05, szogun, Kacu, EU07-483, MR6, kornel4d, ST44-003, DieselPower, RafaPolska424, Patryk Farana, MR6, Joachimowicz, Piotr93 
 	</td></tr>
 <tr><td>181_v1</td><td>
 	<b>External models:</b> (Skoda 181 & 182), 
 	<b>Cab:</b> Patrykos. 
-	<b>Fixes:</b> Stele, mareczek
+	<b>Fixes & modifications:</b> Stele, mareczek, Kermit
 	<b>Photos:</b> m0ke, Patrykos, Dawid_TRS2006_Petelicki, LHS_ST40s, D_M, Hadomik, Hamman, matys73, kilanziom (Trainz), Lizawka127
 	<b>Textures:</b> Patrykos, AK2012
 	<b>Characteristics:</b> ET22_RULZ, youBy.</td></tr>
 <tr><td>303e_v1</td><td>
 	<b>External models:</b> Sakorius, FLOYD, adsim, dymus, EP08-015
 	<b>Cabs:</b> hunter 
-	<b>Fixes and mods:</b> adsim, Kermit, mareczek, Stele, MR6, joachimowicz, Milek7, RoboBatman
+	<b>Fixes & modifications:</b> adsim, Kermit, mareczek, Stele, MR6, joachimowicz, Milek7, RoboBatman, DieselPower, mk1991, Maciej
 	<b>Lowpoly interiors:</b> Stele, DieselPower, MR6 
 	<b>EU07-409 cab:</b> MR6, EP08_015, matek123, DieselPower, Wiggle <i>with elements made by:</i> ST44-003, EU07-001, Kermit, Profeta, krasnowski
 	<b>Cabs for 330 and 338:</b> dymus
 	<b>Sounds:</b> mareczek, MK1991
-	<b>Photos (amongst others):</b> matfre96, krzysiek626, EU07-483, eu40, darek71wrc, m0ke, lizawka127, bumer, kanclerz, Szymon_Mrowiec, ctl, EU07-033
-	<b>Textures:</b> Sigman, Patrykos, adsim, Mati_An, szogun, sebalorek, Kacu, WSK, Davidsonxx, Bartek46, ST44-003, Patryk Farana, maciejgrzywna, MR6, kornel4d, Lelek, joachimowicz, głowawojtas, RafaPolska424, dx286, dozer, stapox, MR6, ST44-003, EP08-015
+	<b>Photos:</b> matfre96, krzysiek626, EU07-483, EU40, darek71wrc, m0ke, lizawka127, bumer, kanclerz, Szymon_Mrowiec, ctl, EU07-033, Hadomik, |andy| & others
+	<b>Textures:</b> Sigman, Patrykos, adsim, Mati_An, szogun, sebalorek, Kacu, WSK, Davidsonxx, Bartek46, ST44-003, Patryk Farana, maciejgrzywna, MR6, kornel4d, Lelek, joachimowicz, głowawojtas, RafaPolska424, dx286, dozer, stapox, MR6, ST44-003, EP08-015, Paweł_Andrzej_Nowinowski, fuji8
 	</td></tr>
 <tr><td>303eb</td><td>
 	<b>Author:</b> szogun (modification of the basic model) 
@@ -443,26 +463,26 @@ Scenarios "Zwierzyniec SM42" and "Zwierzyniec ED72" by Woku
 <tr><td>6dg_v1</td><td>
 	<b>Author:</b>szogun + $KBR
 	<b>Lowpoly interior:</b> jako112 
-	<b>Fixes, Mods:</b> mareczek, Stele
+	<b>Fixes & modifications:</b> mareczek, Stele, Kermit
 	<b>Modification of the model to type 6Dg/B:</b> DieselPower 
 	<b>Photos (amongst others):</b> podlesky, LHS_ST40S, 	
 	<b>Textures:</b>szogun, kornel4d, MR6, dieselpower
 	</td></tr>
 <tr><td>br285_v1</td><td>Ádám Nagy, szogun, Patryk Farana
-	<b>Fixes and mods:</b> Stele
+	<b>Fixes & modifications:</b> Stele
 	</td></tr>
 <tr><td>dl2_v1</td><td>Piotrek
 	<b>Fixes:</b> Stele
 	</td></tr>
 <tr><td>dr2_v1</td><td>Stele</td></tr>
 <tr><td>e186_v2</td><td>Adam Nagy, szogun, Patryk Farana, Stele, Sawi, youBy, mk1991, byczek, matek123, TGV, kornel4d
-	<b>Fixes, mods:</b> kermit, joachimowicz, Stele	
-	<b>Photos (amongst others):</b> CTL, Adam Kupniewski, Broneqq, Witold Prusinkiewicz
+	<b>Fixes & modifications:</b> kermit, joachimowicz, Stele, mareczek	
+	<b>Photos:</b> CTL, Adam Kupniewski, Broneqq, Witold Prusinkiewicz & others
 	<b>Textures:</b> kornel4d, Patryk_Farana, Adam_Nagy	
 	</td></tr>
 <tr><td>e6act_v1</td><td>
 	<b>Model:</b> Xsoner (Trainz), Mint (Trainz) 
-	<b>Conversion to MaSzyna and fixes:</b> Patryk Farana, Sawi, Stele, Wiggle, tmj, EP08_015, Kermit 
+	<b>Conversion to MaSzyna and fixes:</b> Patryk Farana, Sawi, Stele, Wiggle, tmj, EP08_015, Kermit, mareczek
 	<b>Physics:</b> youBy, Stele 
 	<b>Sound:</b> MK1991, Stele, Kermit 
 	<b>Help:</b> SQT	
@@ -471,34 +491,34 @@ Scenarios "Zwierzyniec SM42" and "Zwierzyniec ED72" by Woku
 <tr><td>ed72_v1</td><td>
 	<b>External models:</b> szogun
 	<b>Cab:</b> PEKAP, Kolejarz
-	<b>Fixes:</b> szogun, mareczek, joachimowicz, Kermit
+	<b>Fixes & modifications:</b> szogun, mareczek, joachimowicz, Kermit, Stele, mk1991
 	<b>Textures:</b> szogun 
 	</td></tr>
 <tr><td>en57_v1</td><td>
 	<b>Authors:</b> PEKAP, Kolejarz
-	<b>Fixes:</b> Sakorius, Oli_EU (CT), szogun, mareczek, joachimowicz, Kermit
-	<b>Photos:</b> Szymon_Mrowiec
-	<b>Textures:</b> Patrykos, Kacu, sebalorek, james.szczesny, szogun, DieselPower
+	<b>Fixes & modifications:</b> Sakorius, Oli_EU (CT), szogun, mareczek, joachimowicz, Transkei, Kermit, MR6, Maciej
+	<b>Photos:</b> Szymon_Mrowiec, eu07-001
+	<b>Textures:</b> Patrykos, Kacu, sebalorek, james.szczesny, szogun, DieselPower, RafaPolska424
 	</td></tr>
 <tr><td>en57-2000_v1</td><td>Bombardier, szogun
-	<b>Fixes:</b> mareczek, Kermit
+	<b>Fixes & modifications:</b> mareczek, Kermit, Maciej, mk1991
 	</td></tr>
 <tr><td>ep05_v2</td><td>szogun, EP08
 	<b>Photos:</b> CTL, maacius, miko22
-	<b>Fixes, mods:</b> Maciej, mareczek, Kermit, Stele
+	<b>Fixes & modifications:</b> Maciej, mareczek, Kermit, Stele
 	</td></tr>
 <tr><td>ep07_v1</td><td>
 	<b>External model:</b>from 4e_v1
 	<b>Cab:</b> szogun (modification of Hunter's cab)
-	<b>Fixes and mods:</b> Kermit, mareczek, joachimowicz, Milek7, Stele
-	<b>Photos (amongst others):</b> Krzysiek626	
-	<b>Textures:</b> adsim, WSK, szogun, ST44-003
+	<b>Fixes & modifications:</b> Kermit, mareczek, joachimowicz, Milek7, Stele, MR6, Maciej
+	<b>Photos:</b> Krzysiek626, MR6, siodemkanaoporach, macius5991, Szymon_Mrowiec 	
+	<b>Textures:</b> adsim, WSK, szogun, ST44-003, MR6
 	</td></tr>
 <tr><td>ep08_v1</td><td>
 	<b>External model:</b> from 4e_v1
 	<b>Cab:</b> szogun (modification of Hunter's cab) 
 	<b>Lowpoly interior:</b> DieselPower,MR6,Piotr93 
-	<b>Fixes and mods:</b> Kermit, mareczek, Milek7, Stele
+	<b>Fixes & modifications:</b> Kermit, mareczek, Milek7, Stele, MR6
 	<b>Sounds:</b> mk1991
 	<b>Photos (amongst others):</b> Kuba02MK	
 	<b>Textures:</b> Sigman, szogun, ST44-003, MR6, RafaPolska424
@@ -506,13 +526,13 @@ Scenarios "Zwierzyniec SM42" and "Zwierzyniec ED72" by Woku
 <tr><td>ep09_v1</td><td>
 	<b>External model:</b> Profeta 
 	<b>Cabs:</b> Rozi (104e_2, 104e_3); KURS90, MKaczy (104e_1) 
-	<b>Fixes and mods:</b> mareczek, joachimowicz, Kermit, Stele, gopdriver, Stapox, Maciej
+	<b>Fixes & modifications:</b> mareczek, joachimowicz, Kermit, Stele, gopdriver, Stapox, Maciej
 	<b>Photos:</b> eu40, szymsza1, ctl, mr6, macius5991, hanys, 
 	<b>Textures:</b> Profeta, adsim, ST44-003, Patryk Farana, szogun
 	</td></tr>
 <tr><td>et21_v2</td><td>
 	<b>External model:</b>  Oli_EU (CT) 
-	<b>Finishing, fixes and mods:</b> Sakorius, adsim, Kermit, Stele, Maciej 
+	<b>Finishing, fixes & modifications:</b> Sakorius, adsim, Kermit, Stele, Maciej, mareczek
 	<b>Cabs:</b> PEKAP, Kolejarz, adamst, cichowski34, szogun 
 	<b>Lowpoly interior and modification to type 3E/1</b>: Piotr93
 	<b>Photos (amongst others):</b> Krzysiek626	
@@ -529,19 +549,20 @@ Scenarios "Zwierzyniec SM42" and "Zwierzyniec ED72" by Woku
 	<b>Cab:</b> szogun 
 	<b>UV Mapping system:</b> Patrykos 
 	<b>Buffer modification</b> kudlacz, Sawi, matek123
-	<b>Fixes and mods:</b> mareczek, Stele, Maciej
-	<b>Photos (amongst others):</b> defiler, Hadomik
+	<b>Fixes & modifications:</b> mareczek, Stele, Maciej, joachimowicz, DieselPower
+	<b>Photos:</b> defiler, Hadomik & others
 	<b>Textures:</b> szogun, Patrykos, adsim, Patryk Farana, PMT, fuji8, DieselPower, MR6, kornel4d, RafaPolska424, defiler 
 	</td></tr>
 <tr><td>et40_v1</td><td>
 	<b>External model:</b> ZT-POZNAN (Mega Pack) 
 	<b>Finishing off:</b> EP08_015
-	<b>Fixes and mods:</b> KURS90, mareczek, Stele 
+	<b>Fixes & modifications:</b> KURS90, mareczek, Stele 
 	<b>Cab:</b> KURS90 
 	<b>Characteristics:</b> EU07-457, ET22_RULZ
 	<b>Sounds and .fiz modification:</b> jakubg1
 	<b>Textures:</b> EP08_015, EU05
 	</td></tr>
+<!-- Deleted r2632
 <tr><td>et41_v1</td><td>
 	<b>Model:</b> Sakorius 
 	<b>Finishing off and fixes:</b> youBy, Patrykos, Stele
@@ -550,86 +571,90 @@ Scenarios "Zwierzyniec SM42" and "Zwierzyniec ED72" by Woku
 	<b>Fixes and mods:</b> Kermit, mareczek
 	<b>Textures:</b> Patrykos
 	</td></tr>
+-->
 <tr><td>et41_v2</td><td>
 	<b>Author:</b> Patrykos. 
-	<b>Fixes and mods:</b> szogun, Kermit, Maciej, mareczek, joachimowicz, Milek7, Stele, MR6, RafaPolska424
-	<b>Photos:</b> Hadomik, jussi19, CTL, Stele, sebol82, darek71wrc, Patrykos , Patryk_Farana, LHS_ST40S
-	<b>Textures:</b> MR6, Patrykos, RafaPolska424, DieselPower
+	<b>Fixes & modifications:</b> szogun, Kermit, Maciej, mareczek, joachimowicz, Milek7, Stele, MR6, RafaPolska424
+	<b>Photos:</b> Hadomik, jussi19, CTL, Stele, sebol82, darek71wrc, Patrykos , Patryk_Farana, LHS_ST40S, TRS2006
+	<b>Textures:</b> Szogun, MR6, Patrykos, RafaPolska424, DieselPower
 	</td></tr>
 <tr><td>et42_v2</td><td>
 	<b>External model:</b> szogun. 
 	<b>Cab:</b> szogun (renewed model made by KURS90). 
 	<b>Characteristics:</b> KURS90, ET22_RULZ. 
-	<b>Fixes and mods:</b> joachimowicz, mareczek, Kermit, Stele
-	<b>Photos:</b> patrykos, Patryk_Farana, Krzysiek626, Hadomik, LHS_ST40S, defiler
-	<b>Textures:</b> szogun, Patryk Farana, defiler, RafaPolska424, patrykos
+	<b>Fixes & modifications:</b> joachimowicz, mareczek, Kermit, Stele, Maciej
+	<b>Photos:</b> patrykos, Patryk_Farana, Krzysiek626, Hadomik, LHS_ST40S, defiler, Krzysztof_Turko, Darek71wrc
+	<b>Textures:</b> szogun, Patryk Farana, defiler, RafaPolska424, patrykos, MR6
 	</td></tr>
 <tr><td>eu04_v1</td><td>
 	EP08_015. 
 	<b>Characteristics:</b> ET22_RULZ
-	<b>Fixes and mods:</b> Kermit, Stele
+	<b>Fixes & modifications:</b> Kermit, Stele, mareczek
 	</td></tr>
 <tr><td>eu05_v2</td><td>
 	szogun
-	<b>Fixes:</b> Maciej, Stele
+	<b>Fixes:</b> Maciej, Stele, mareczek, Kermit
 	</td></tr>
 <tr><td>m62_mod_v1</td><td>
 	<b>Cab:</b> Bombardier (modification of PEKAP's cab
 	<b>Fixes, mods:</b> Stele
 	</td></tr>
-<tr><td>sm03_v1</td>
-	<td>szogun <i>(based on 409Da_v2 made by Rootek)</i>
-	<b>Fixes, mods:</b> Stele
-	</td></tr>
 <tr><td>sa134_v1</td><td>
 	<b>External model:</b> Andrzejlandrzej(MSTS)
+	<b>Fixes & modifications:</b> Stele, kolejowyfan, youBy
 	<b>Conversion:</b> Stele
 	<b>Characteristics:</b> youBy
 	<b>Sound:</b> youBy
+<!--	<b>Photos:</b> -->
 	<b>Textures:</b> Andrzejlandrzej, Stapox, Stele
+	</td></tr>
+<tr><td>sm03_v1</td>
+	<td>szogun <i>(based on 409Da_v2 made by Rootek)</i>
+	<b>Fixes & modifications:</b> youBy, Stele
 	</td></tr>
 <tr><td>sm31_v1</td>
 	<td>Kudłacz
-	<b>Fixes, mods:</b> mareczek, Stele, Maciej
+	<b>Fixes & modifications:</b> mareczek, Stele, Maciej
 	</td></tr>
 <tr><td>sm40_v1</td>
 	<td>Piotrek<br><br><b>This loco has a cab, but it simply won't budge.</b>
-	<b>Fixes, mods:</b> Stele
+	<b>Fixes & modifications:</b> Stele
 	</td></tr>
 <tr><td>sm41_v1</td>
 	<td>Piotrek
-	<b>Fixes, mods:</b> Stele
+	<b>Fixes & modifications:</b> Stele
 	</td></tr>
 <tr><td>sm42_v1</td><td>
 	<b>External model and cab:</b> Sakorius. 
-	<b>Fixes, mods:</b> adsim, Stapox, tmj, Stele, mareczek, DieselPower, Rootek, matek123, joachimowicz
+	<b>Fixes & modifications:</b> adsim, Stapox, tmj, Stele, mareczek, DieselPower, Rootek, matek123, joachimowicz, Kermit
 	<b>Lowpoly cab:</b> tmj
 	<b>Photos:</b> podlesky, Sigman, Sakorius, Patryk_Farana, SM42Drive, Mechatronik, Tyrystor, EU07-033, 
 	<b>Textures:</b> Sakorius, Sigman, DieselPower, Pierog_SU42, Stele, kornel4d, EU07-483.
 	</td></tr>
 <tr><td>sn61_v2</td><td>
 	szogun 
+	<b>Modifications to make the first series:</b> Dróżnik Wiór
 	<b>Cab and it's parts:</b> adamst, szogun, Krasnowski, TZs 
-	<b>Fixes, mods:</b> joachimowicz, Stele
-	<b>Sounds:</b> pawel1202, mk1991
-	<b>Photos:</b>Wokulski, up5358, Sakorius, PR ZDW, ST44-003 & others
-	<b>Textures:</b> szogun
+	<b>Fixes & modifications:</b> joachimowicz, Stele, youBy, Kermit, DieselPower
+	<b>Sounds:</b> pawel1202, mk1991, Mechatronik
+	<b>Photos:</b>Wokulski, up5358, Sakorius, PR ZDW, ST44-003, Generał, Georg_Wood, W+H. Brutzer, Grzegorz_Nycz, Dariusz_Walas & others
+	<b>Textures:</b> szogun, Dróżnik Wiór
 	</td></tr>
 <tr><td>sp42_v1</td><td>
 	<b>External model and cab:</b> Sakorius.  
-	<b>Fixes, mods:</b> hunter, Rozi, adsim, mareczek, Rootek, Maciej, Stele, matek123 
+	<b>Fixes & modifications:</b> hunter, Rozi, adsim, mareczek, Rootek, Maciej, Stele, matek123, tmj, Kermit
 	<b>Lowpoly interior:</b> Stele 
 	<b>Textures:</b> Sakorius, Stele, Cozder, Patryk Farana, Sigman.
 	</td></tr>
 <tr><td>sp45_v1</td><td>
 	<b>External model:</b> Sakorius 
-	<b>Fixes, mods:</b> adsim, matek123, MR6, mareczek, Stele, Maciej, tmj
+	<b>Fixes & modifications:</b> adsim, matek123, MR6, mareczek, Stele, Maciej, tmj, Kermit
 	<b>Cab:</b> Bombardier, adamst (modification of the cab for Trainz), szogun (adaptation for MaSzyna), MR6 & matek123 (modification of the cab for SU45). 
 	<b>Textures:</b> MR6, Stele.
 	</td></tr>
 <tr><td>st43_v1</td><td>
 	Patrykos, Marcin_ST43, 
-	<b>Fixes, mods:</b> mareczek, Stele, MR6, Maciej
+	<b>Fixes & modifications:</b> mareczek, Stele, MR6, Maciej, Kermit, DieselPower
 	<b>Photos:</b> Bumer, Ratno, podlesky & others
 	<b>Textures:</b> Patrykos, Marcin_ST43, DieselPower, Zuger, MR6
 	</td></tr>
@@ -637,41 +662,41 @@ Scenarios "Zwierzyniec SM42" and "Zwierzyniec ED72" by Woku
 	<b>External models:</b> youBy 
 <!--	<b>Cab:</b> PEKAP, modified by Sigman --> <!--Old cab -->
 	<b>Cab:</b> DU_mont, LHS_ST40S, Patrykos, dymus, GOPdriver, Piotr93 
-	<b>Fixes, mods:</b> mareczek, Stele
+	<b>Fixes & modifications:</b> mareczek, Stele, Kermit
 	<b>Sounds:</b> Tyrystor 
 	<b>Textures:</b> youBy, Sigman, Patrykos, Sakorius
 	</td></tr>
 <tr><td>st45_v2</td><td>
 	<b>External model</b> szogun (based on Sakorius's model) 
-	<b>Cab:</b> szogun (based on Bombarier's SU45 cab ) + $KBR
-	<b>Fixes, mods:</b> mareczek, Stele
+	<b>Cab:</b> szogun (based on Bombarier's SU45 cab )
+	<b>Fixes & modifications:</b> mareczek, Stele, Kermit
 	<b>Photos:</b> kilanziom, Hadomik
 	<b>Textures:</b> Patrykos, DieselPower
 	</td></tr>
 <tr><td>su45_v2</td><td>
 	<b>External model:</b> Sakorius, 
-	<b>Fixes, mods:</b> adsim, mareczek, Stele, RoboBatman, tmj
+	<b>Fixes & modifications:</b> adsim, mareczek, Stele, RoboBatman, tmj, Kermit
 	<b>Cab:</b> Bombardier, adamst (modification of the cab for Trainz), szogun (adaptation for MaSzyna). 
-	<b>Photos:</b> Janek32	& others
-	<b>Textures:</b> Sigman, dx286, szogun, Zuger, PMT, pierog_su42
+	<b>Photos:</b> Janek32, CTL, Sigman, m0ke, Wokulski, earp2, lizawka127, DamianSzarek
+	<b>Textures:</b> Sigman, dx286, szogun, Zuger, PMT, pierog_su42, RafaPolska424
 	</td></tr>
 <tr><td>su46_v2</td><td>
 	<b>External model:</b> Sakorius 
-	<b>Fixes, mods:</b> mareczek, Stele
+	<b>Fixes & modifications:</b> mareczek, Stele, Kermit
 	<b>Cab:</b> szogun, MR6 (modification of Profeta's cab)
 	<b>Photos (amongst others):</b> lurr3x, bumer
 	<b>Textures:</b> Sakorius, hummel, SM42drive, jaca83, Rootek, MR6, zuger.
 	</td></tr>
 <tr><td>tem2_v2</td><td>
 	<b>External model and cab:</b> Sigman 
-	<b>Fixes, mods:</b> adsim, mareczek, Stele, joachimowicz
+	<b>Fixes & modifications:</b> adsim, mareczek, Stele, joachimowicz, Kermit, Maciej
 	<b>Photos:</b> 
 	<b>Textures:</b> Sigman, kornel4d.
 	</td></tr>
 <tr><td>tem2u_v2</td><td>
 	<b>External model and cab:</b> Sigman 
-	<b>Fixes, mods:</b> adsim, mareczek, Stele
-	<b>Photos:</b> Tyrystor, Sigman
+	<b>Fixes, mods:</b> adsim, mareczek, Stele, Kermit
+	<b>Photos:</b> Tyrystor, Sigman, maciejgrzywna
 	<b>Textures:</b> Sigman, RafaPolska424
 	</td></tr>
 </tbody></table>
@@ -686,16 +711,18 @@ Scenarios "Zwierzyniec SM42" and "Zwierzyniec ED72" by Woku
 <h4><a name="6,2,2">Others</a></h4>
 <table><tbody>
 <tr><th>Name</th><th>Authors, notes</th></tr>
+<!--
 <tr><td>1xxa_v1</td><td>
 	<b>Models:</b> Kakish. 
-	<b>Fixes:</b> joachimowicz, Stele
+	<b>Fixes:</b> joachimowicz, Stele, mk1991
 	<b>Textures:</b> EP08_015, Jaras, Speed, Mutopompka (Passenger Pack 1), Cesky Kretek (Passenger Pack 2), RooteK, FLOYD, Kacu, libertyn89, sebalorek, Patryk Farana, P208
 	</td></tr>
 <tr><td>111a-noc_v1</td><td>Kacu (based on textures and models in 1xxa_v1)</td></tr>
+-->
 <tr><td>110a_v2</td><td>
 	<b>Author:</b> DieselPower (modification of the 11xA_v2 model)
 	<b>Help:</b> pinio_2002, MR6, Stele
-	<b>Fixes, mods:</b> DieselPower, Stele
+	<b>Fixes & modifications:</b> DieselPower, Stele, joachimowicz
 	<b>Photos:</b> Cesky Kretek
 	<b>Textures:</b> DieselPower
 	</td></tr>
@@ -704,46 +731,51 @@ Scenarios "Zwierzyniec SM42" and "Zwierzyniec ED72" by Woku
 	<b>Interiors:</b> szogun, Kacu, Stele, PKP94 (TRS), MR6, DieselPower 
 	<b>Sounds:</b> MK1991 
 	<b>FIZ & MMD</b>: youBy, EP08-015, Stele
-	<b>Fixes and changes:</b> Piotr93, matek123, DieselPower, MR6, Maciej, matek123, Stele, joachimowicz, Milek7
+	<b>Fixes & modifications:</b> Piotr93, matek123, DieselPower, MR6, Maciej, matek123, Stele, joachimowicz, Milek7, Transkei, mk1991
 	<b>Destination boards:</b> Transkei
-	<b>Photos:</b> Floyd, youBy, lalek, Cesky Kretek, Stele, D_M/MKFiFi, Dróżnik Wiór, Patryk_Farana & others
-	<b>Textures:</b> Patryk_Farana, MR6, Stele, Dróżnik Wiór, R4TCH3T, Piotr93, DieselPower
+	<b>Photos:</b> Floyd, youBy, lalek, Cesky Kretek, Stele, D_M/MKFiFi, Dróżnik Wiór, Patryk_Farana, eu07-001, matek123, wojtekilawa, EU40 & others
+	<b>Textures:</b> Patryk_Farana, MR6, Stele, Dróżnik Wiór, R4TCH3T, Piotr93, DieselPower, Cesky Kretek
 	</td></tr>
 <tr><td>11xa-techniczne_v2</td><td>
 	<b>Modification:</b> DieselPower
-	<b>Fixes, mods:</b> DieselPower, joachimowicz
+	<b>Fixes & modifications:</b> DieselPower, joachimowicz
 	<b>Photos:</b> bartiprog
 	<b>Textures:</b> DieselPower
 	</td></tr>
 <tr><td>16xa_v1</td><td>
 	szogun, Patryk Farana, youBy, Patrykos, Sawi, Stele, Floyd, adsim, mk1991, Joachimowicz, MR6 
-	<b>Fixes, mods:</b> joachimowicz, Stele	
+	<b>Fixes & modifications:</b> joachimowicz, Stele, Transkei	
 	<b>Photos:</b> Stele & others
 	<b>Textures:</b> hanys, Sawi, Stele, Joachimowicz	
 	</td></tr>
 <tr><td>401da_v1</td>
 	<td>EP08_015
-	<b>Fixes, mods:</b> Stele
+	<b>Fixes & modifications:</b> Stele
 	</td></tr>
 <tr><td>401w_v1</td><td>
 	<b>Original model:</b> Patrykos (408w_v1) 
 	<b>Model modification:</b> DieselPower 
-	<b>Fixes, mods:</b> Stele	
+	<b>Fixes & modifications:</b> Stele, Kermit	
 	<b>Photos:</b> Robobatman & others
 	<b>Textures:</b> DieselPower
 	</td></tr>
 <tr><td>408w_v1</td><td>Patrykos, youBy
-	<b>Fixes, mods:</b> mareczek, joachimowicz, Maciej, Stele
+	<b>Fixes & modifications:</b> mareczek, joachimowicz, Maciej, Stele, Kermit
 	<b>Photos:</b> jussi19, mechatronik, Patrykos, youBy, Gorzowiak
 	<b>Textures:</b> dieselpower, Patrykos, kornel4d
 	</td></tr>
+<tr><td>409va_v1</td><td>CTL
+<!--	<b>Fixes & modifications:</b> -->
+<!--	<b>Photos:</b> -->
+	<b>Textures:</b> CTL
+	</td></tr>
 <tr><td>412w_v1</td>
 	<td>Patrykos, youBy
-	<b>Fixes, mods:</b> mareczek, Stele
+	<b>Fixes & modifications:</b> mareczek, Stele, Kermit
 	</td></tr>
 <tr><td>413s_v1</td>
 	<td>CTL
-	<b>Fixes, mods:</b> mareczek, Stele
+	<b>Fixes & modifications:</b> mareczek, Stele, Kermit
 	</td></tr>
 <tr><td>424z_v1</td>
 	<td>Patrykos
