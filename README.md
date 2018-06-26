@@ -3,7 +3,7 @@ English translation of the documents for the MaSzyna Simulator ( https://wiki.eu
 <br>Angielskie tłumaczenie dokumentacji MaSzyny 
 
 English translations are up-to date with the following Polish equivalent versions: (below) <br>
-<i>Master-branch at </i><b>r2744</b>.<br>
+<i>Master-branch at </i><b>r2808</b>.<br>
 There has been no changes in most of the original Polish versions of files below.
 <table>
 <tr><td>English File</td><td>Polish File</td><td>Status</td></tr>
@@ -16,6 +16,6 @@ There has been no changes in most of the original Polish versions of files below
 <tr><td>en-keys.html</td><td>klawiszologia.html</td><td>r2744 r1</td></tr>
 <tr><td>en-license.html</td><td>licencja.html</td><td>r2744 r1</td></tr>
 <tr><td>en-readme.html</td><td>readme.html</td><td>r2808 r1</td></tr>
-<tr><td>en-vehicles.html</td><tdpojazdy.html</td><td>WIP</td></tr>
+<tr><td>en-vehicles.html</td><tdpojazdy.html</td><td>r2804 r1</td></tr>
 <tr><td>en-universal.html</td><td>universale.html</td><td>r2744 r1</td></tr>
 </table>
