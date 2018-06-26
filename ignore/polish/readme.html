@@ -7,7 +7,7 @@
   <link rel="Stylesheet" type="text/css" href="inne/readme_pliki/style.css">
 </head>
 <body>
-<!--Dane do =R2587 -->
+
 <div id="STRONA">
 
 <center>
@@ -46,15 +46,8 @@
 		</li>	
 		<li><a href="#6">Zawartość paczki</a>
 			<ol>
-				<li><a href="#6,1">Scenerie (trasy)</a></li>
-				<li><a href="#6,2">Tabor</a>
-					<ol>
-						<li><a href="#6,2,1">Pojazdy z kabinami (z możliwością prowadzenia)</a></li>
-						<li><a href="#6,2,2">Pozostałe</a></li>
-						<li><a href="#6,2,3">Wspólne części używane przez znaczną część dodatków</a></li>
-						<li><a href="#6,2,4">Tekstury</a></li>
-					</ol>				
-				</li>
+				<li><a href="#6,1">Scenerie i pojazdy</a></li>
+				<li><a href="#6,2">Tekstury</a></li>
 			</ol>
 		</li>
 		<li><a href="#7">Informacje o wydaniu</a></li>
@@ -99,6 +92,24 @@ Po szczegóły zapraszamy do zapoznania się z <a href="#11,2">modyfikacjami pli
 <p>
 Wymagania sprzętowe i programowe do uruchomienia symulatora wzrosły względem poprzednich wersji. Ze względu na rozdział pliku exe na wersje x86 i x64 należy zwrócić szczególną uwagę na zgodność poniższych bibliotek ze swoim systemem operacyjnym i używanym plikiem exe.<br>
 <ul>
+<font size=4>Wymagania minimalne:</font>
+<li>Procesor: <b>Core 2 Duo E4700 2.6GHz, odpowiednik AMD - AMD APU A4-6300 Dual-Core</b></li>
+<li>Karta graficzna: <b>AMD Radeon R7 250 lub nVidia - GeForce GT 740 v3 = KONIECZNIE minimum 2 GB VRAM GDDR5</b></li>
+<li>Pamięć RAM: <b>6 GB</b></li>
+<li><b>13 GB wolnego na dysku</b>, w przypadku HDD dysk o szybkości 7200 rpm  </li>
+<li>Karta dźwiękowa obsługująca OpenAL wraz ze stereo</li>
+<li>Opcjonalnie porty COM przy składaniu własnego pulpitu.</li>
+<li>Wymagania pod x86 MOGĄ być <b><u>ciut niższe.</u></b></li>
+<br/>
+<font size=4>Wymagania zalecane:</font>
+<li>Procesor: <b>Intel Core i3-4130 lub AMD FX 6100</b></li>
+<li>Pamięć RAM: <b>8 GB RAM DDR3</b></li>
+<li>Karta graficzna: <b>nVidia GeForce GTX 750 lub AMD Radeon HD 7850 / Radeon R7 370</b></li>
+<li><b>13 GB wolnego na dysku</b>, w przypadku HDD dysk o szybkości 7200 rpm</li>
+<li>Karta dźwiękowa obsługująca OpenAL wraz ze stereo</li>
+<li>Opcjonalnie porty COM przy składaniu własnego pulpitu.</li>
+<br/>
+Dodatkowo do minimalnych wymagań sprzętowych porzeba:
 <li>Karta graficzna ze sterownikiem obsługującym OpenGL w wersji 1.5 lub nowszej.</li>
 <li>Pakiety Visual C++ Redistributable 2008, 2015 i 2017.</li>
 Niekiedy może być potrzeba instalacji w systemie pakietu podstawowego Python 2.7.14, zwłaszcza przy systemach x64.<br>
@@ -106,7 +117,7 @@ Wskazane jest posiadanie ponad 4 GB pamięci RAM i wielowątkowego procesora. Ma
 </ul>
 <br>
 <br>
-Wydanie symulatora planowane na połowę roku 2018 wprowadzi nowy renderer, wymagający karty graficznej obsługującej OpenGL 3+ i Obecny renderer będzie 
+Planowane jest wprowadzenie nowego renderera, wymagającego karty graficznej obsługującej OpenGL 3+. Obecny renderer będzie 
 dostępny dla użytkowników ze starszym sprzętem, ale jeśli rozważaliście zakup nowego komputera, to teraz jest dobry moment, by móc cieszyć się pełnią nowych efektów graficznych w przyszłości.
 </p>
 <div class="powrot"> 
@@ -354,664 +365,25 @@ Wpis w scenerii <i>movelight</i> pozwala ustawić dzień w roku, dla którego li
 </div>
 <h2><a name="6">Zawartość paczki</a></h2>
 
-<h3><a name="6,1">Scenerie (trasy) i scenariusze</a></h3>
-<table>
-<tbody><tr><th>Nazwa</th><th>Autorzy, uwagi</th></tr>
-<tr><td>Bałtyk</td>
-<td>Autorzy: adampkp, Slimson, Mateu. Dokończenie trasy (scenariusze, poprawki): Krzysiek626, Mati_An.
-<p>Scenariusz "Bałtyk Cargo" autorstwa kamil1306
-<br>Scenariusz "Bałtyk CTL" wraz z wersją zimową autorstwa kamil1306
-<br>Scenariusz "Bałtyk Interregio" wraz z wersją zimową autorstwa szogun
-<br>Modyfikacja scenerii "Bałtyk Zima" autorstwa Sigman</p>
-</td></tr>
-<tr><td>Całkowo</td>
-<td>Autorzy: adampkp, Slimson. Dekoracje: Stele, Transkei, Trus. Podświetlenie semaforów kształtowych: Benek.
-<p>Scenariusz "Całkowo Lotos" autorstwa Transkei
-<br>Scenariusz "Całkowo Noc" wraz z wersją zimową autorstwa Transkei
-<br>Scenariusz "Całkowo Osobowy" wraz z wersją zimową autorstwa Transkei
-<br>Scenariusz "Całkowo Misja pasażersko-manewrowo-towarowa" wraz z wersją z zimową autorstwa Transkei
-<br>Scenariusz "Całkowo Tartak" autorstwa Transkei
-<br>Scenariusz "Całkowo Tartak 2" autorstwa Transkei
-<br>Scenariusz "Całkowo Towarowy" autorstwa Transkei
-<br>Scenariusz "Całkowo Turkol" autorstwa Transkei
-<br>Scenariusz "Całkowo Turkol 2" autorstwa Transkei</p>
-<br>Scenariusz "Całkowo Niebezpieczny Pociąg" autorstwa Transkei, nagrania radiowe: bartiprog i matek123
-<br>Scenariusz "Całkowo Retro" autorstwa Transkei</td></tr>
-<tr><td>Drawinowo</td><td>Autor: Mati_An. Modyfikacje sterowania: Stele, Ra</td></tr>
-<tr><td>Drawinowo (Noc)</td><td>Autor: Mati_An. Modyfikacje sterowania: Stele, Ra</td></tr>
-<tr><td>Elektrociepłownia_dobre</td><td>Autorzy: sm42driver, szogun.</td></tr>
-<tr><td>Elektrociepłownia_dobre-zima</td><td>Autorzy: sm42driver, szogun, macius5991.</td></tr>
-<tr><td>Krzyżowa 2</td><td>Autor: Mati_An.</td></tr>
-<tr><td>Linia 053</td>
-<td>Autor scenerii oraz scenariuszy 1-6: Driver24. Dekoracje: Trus
-<p>
-<br>Scenariusz "Linia 053 - misja towarowo-pośpieszna" (l053-sluzba-brutto-posp): Mati_An. 
-<br>Scenariusz "Linia 053 - służba - nocna - 4_v2" (l053-sluzba-4-night_v2) Autor: Benek. 
-<br>Scenariusz "l053-sluzba-osobowy" Autor: Benek. 
-<br>Scenariusz "l053_cargo" Autor: pinokio. 
-<br>Scenariusz "l053-night-towarowy-et22" Autor: Woku. 
-<br>Scenariusz "l053-night-towarowy-et42" Autor: Woku. 
-<br>Scenariusz "l053-night-towarowy-eu07" Autor: Woku.</p></td></tr>
-<tr><td>Linia 053 + Całkowo</td><td>Autorzy: Driver24 i Mati_An.
+<ul><li>
+<h4><a name="6,1">Scenerie i pojazdy</a></h4>
+<p>W związku z wielką ilością osób które pracują nad MaSzyną, ta informacja została przeniesiona do osobnej podstrony, żeby ułatwić edycje i aktualizacje.</p>
 
-<p>Scenariusz "Linia 053 + Całkowo TLK" Autor: Mati_An. 
-<br>Scenariusz "Linia 053 + Całkowo TLK-1" Autor: Mati_An.</p></td></tr>
+<a href="inne/readme_pliki/pojazdy.html">Przejdź do podstrony zawierającej autorów pojazdów oraz sceneri.</a>
 
-<tr><td>Linia 61</td><td>
-<p>Autorzy: BohunIC, ISDR. Poprawki: adsim. Przebudowa: Ra</p>
-Autor scenariusza "linia61_osobowy3": dymus. 
-<br>Radiotelefon do scenariusza "towarowy1": pinokio. 
-<br>Autor scenariusza "linia61_tlk-1": Benek.</td></tr>
-<tr><td>Linia61&nbsp;+&nbsp;Linia144</td><td>Autor scenerii: ISDR. Odcinek Ozimek - Fosowskie: BohunIC. Dekoracje: Trus
-<p>Scenariusz "L61 + L144_towarowy" Autor: ISDR.
-<br>Scenariusze "L61 + L144_osobowy" oraz "L61 + L144_pospieszny" Autor: Benek.
-<br>Scenariusze "L61 + L144 Lotos" oraz "L61 + L144_spalinowy" Autor: Woku.
-<br>Scenariusz "L61 + L144 TLK" Autor: Benek.
-</td></tr><tr><td>Manewrowo 3</td><td>Autor: pozdze.</p></td></tr>
-<tr><td>Moczniki</td>
-<td>Autor scenerii: wasyl.
-<p>
-<br>Scenariusze "Moczniki Cargo" oraz "Moczniki Popych" autorstwa Benek
-</p>
 
-</td></tr>
-<tr><td>Quarkmce 2007</td><td>Autorzy: Quark-t (teren i układ torów), McZapkie (znaczna rozbudowa), Mati_An (scenariusze), Krzysiek626 (elektryfikacja, 
-przechyłki), Ra (nowe sterowanie ruchem, przebudowa scenerii).</td></tr>
-<tr><td>Tarniowo</td><td>Autor: Mati_An.</td></tr>
-<tr><td>Tarniowo 2</td><td>Autorzy: Mati_An (oryginał), Ra (przebudowa).</td></tr>
-<tr><td>TD</td><td>Autor: Marcin E2rD, Danniel.</td></tr>
-<tr><td>Teszt-25kV</td><td>Modyfikacja scenerii TD. Dodane węgierskie wskaźniki, a w sieci trakcyjnej jest napięcie 25kV. Autor: Ra.<br>UWAGA! Na scenerii nie da się jeździć lokomotywą elektryczną, gdyż polski tabor jest przystosowany na napięcie 3kV, a nie 25kV.</td></tr>
-<tr><td>Zwierzyniec</td>
-<td>Autor: wasyl; Radiotelefon do scenariuszy pospieszny i towarowy: filip2h.
-<p>
-Scenariusze "Zwierzyniec SM42" oraz "Zwierzyniec ED72" autorstwa Woku
-<br>Scenariusz "Zwierzyniec Towos" autorstwa  Benek
-<br>Scenariusz "Zwierzyniec Transport" autorstwa Woku. Przygotowanie wersji zimowej: szogun.
-</p>
-</td></tr>
-</tbody></table>
-<div class="powrot"> 
-	<span><a href="http://eu07.pl/theme/Maszyna/dokumentacja/readme.html#0">Spis treści</a></span>
-</div>
-<h3><a name="6,2">Tabor</a></h3>
-<ul>
-<li>
-<h4><a name="6,2,1">Pojazdy z kabinami (z możliwością prowadzenia)</a></h4>
-<table>
-<tbody><tr><th>Nazwa</th><th>Autorzy, uwagi <br> Oznaczenia z przedrostkiem $, to skróty elementów w tabelce elementów, <a href="http://eu07.pl/theme/Maszyna/dokumentacja/readme.html#6,2,3">Tu</a></th></tr>
-<tr><td>4e_v1</td><td>
-	<b>Modele zewnętrzne:</b> przebudowane modele 303e_v1 - szogun 
-	<b>Kabiny:</b> hunter, Profeta  
-	<b>Poprawki:</b> adsim, Kermit, mareczek, MR6, joachimowicz, Milek7, Maciej, RoboBatman
-	<b>Dźwięki m. in.:</b> mk1991
-	<b>Kabiny widoczne z zewnątrz:</b> Stele, DieselPower 
-	<b>Modyfikacje tekstur:</b> Pitek, Joachimowicz, Lelek, jakol112, Pedrosiasty, MR6 
-	<b>Zdjęcia m.in.:</b> eu40, PX48-28, mechatronik, BR232, EU07-033, Podlesky, Lizawka127, janek32, marcin_s, Hadomik, macius5991, EU07-033, Radek Ciasnocha, LHS_ST40s
-	<b>Tekstury:</b> Sigman, Sakorius, adsim, Patrykos, Mati_An, EU05, szogun, Kacu, EU07-483, MR6, kornel4d, ST44-003, DieselPower, RafaPolska424, Patryk Farana, MR6, Joachimowicz, Piotr93 
-	</td></tr>
-<tr><td>181_v1</td><td>
-	<b>Modele zewnętrzne:</b> (Skoda 181 i 182), 
-	<b>Kabina:</b> Patrykos. 
-	<b>Charakterystyka:</b> ET22_RULZ, youBy.
-	<b>Poprawki:</b> Stele, mareczek
-	<b>Zdjęcia:</b> m0ke, Patrykos, Dawid_TRS2006_Petelicki, LHS_ST40s, D_M, Hadomik, Hamman, matys73, kilanziom (Trainz), Lizawka127
-	<b>Tekstury:</b> Patrykos, AK2012
-	</td></tr>
-<tr><td>303e_v1</td><td>
-	<b>Modele zewnętrzne:</b> Sakorius, FLOYD, adsim, dymus, EP08-015
-	<b>Kabiny:</b> hunter
-	<b>Poprawki i modyfikacje:</b> adsim, Kermit, mareczek, Stele, MR6, joachimowicz, Milek7, RoboBatman
-	<b>Kabiny widoczne z zewnątrz:</b> Stele, DieselPower, MR6 
-	<b>Kabina do 409:</b> MR6, EP08_015, matek123, DieselPower, Wiggle <i>oraz elementy autorstwa:</i> ST44-003, EU07-001, Kermit, Profeta, krasnowski 	
-	<b>Kabiny do 330 i 338:</b> dymus	
-	<b>Dźwięki:</b> mareczek, MK1991
-	<b>Zdjęcia m.in.:</b> matfre96, krzysiek626, EU07-483, eu40, darek71wrc, m0ke, lizawka127, bumer, kanclerz, Szymon_Mrowiec, ctl, EU07-033
-	<b>Tekstury:</b> Sigman, Patrykos, adsim, Mati_An, szogun, sebalorek, Kacu, WSK, Davidsonxx, Bartek46, ST44-003, Patryk Farana, maciejgrzywna, MR6, kornel4d, Lelek, joachimowicz, głowawojtas, RafaPolska424, dx286, dozer, stapox, MR6, ST44-003, EP08-015, 
-	</td></tr>
-<tr><td>303eb</td><td>
-	<b>Autor:</b> szogun (modyfikacja podstawowego modelu) 
-	<b>Kabina:</b> szogun (na podstawie kabiny huntera) + $FAS + $KBR 
-	<b>Poprawki i modyfikacje:</b> Kermit
-	<b>Kabina widoczna z zewnątrz:</b> matek123, Sawi
-	<b>Tekstury i ich modyfikacje:</b> szogun, Patryk Farana, jakol112, Stele 
-	</td></tr>
-<tr><td>6dg_v1</td><td>
-	<b>Autor:</b> szogun + $KBR
-	<b>Kabina widoczna z zewnątrz:</b> jako112 
-	<b>Modyfikacja modelu na typ 6Dg/B:</b> DieselPower 
-	<b>Poprawki, zmiany:</b> mareczek, Stele
-	<b>Zdjęcia m. in.:</b> podlesky, LHS_ST40S, 	
-	<b>Tekstury:</b> szogun, kornel4d, MR6, dieselpower
-	</td></tr>
-<tr><td>br285_v1</td><td>Ádám Nagy, szogun, Patryk Farana
-	<b>Poprawki, zmiany:</b> Stele
-	</td></tr>
-<tr><td>dl2_v1</td><td>Piotrek
-	<b>Poprawki:</b> Stele
-	</td></tr>
-<tr><td>dr2_v1</td><td>Stele</td></tr>
-<tr><td>e186_v2</td><td>Adam Nagy, szogun, Patryk Farana, Stele, Sawi, youBy, mk1991, byczek, matek123, TGV, kornel4d
-	<b>Poprawki:</b> kermit, joachimowicz, Stele
-	<b>Zdjęcia m.in.:</b> CTL, Adam Kupniewski, Broneqq, Witold Prusinkiewicz
-	<b>Tekstury:</b> kornel4d, Patryk_Farana, Adam_Nagy	
-	</td></tr>
-<tr><td>e6act_v1</td>
-	<td><b>Model:</b> Xsoner (Trainz), Mint (Trainz)
-	<b>Konwersja do MaSzyny i poprawki:</b> Patryk Farana, Sawi, Stele, Wiggle, tmj, EP08_015, Kermit 
-	<b>Fizyka:</b> youBy, Stele 
-	<b>Udźwiękowienie:</b> MK1991, Stele, Kermit 
-	<b>Wsparcie merytoryczne:</b> SQT	
-	<b>Tekstury:</b> Xsoner (Trainz), Mint (Trainz) 
-	</td></tr>
-<tr><td>ed72_v1</td><td>
-	<b>Model zewnętrzny:</b> szogun
-	<b>Kabina:</b> PEKAP, Kolejarz
-	<b>Poprawki:</b> szogun, mareczek, joachimowicz, Kermit
-	<b>Tekstury:</b> szogun 
-	</td></tr>
-<tr><td>en57_v1</td><td>
-	<b>Autorzy:</b> PEKAP, Kolejarz
-	<b>Poprawki:</b> Sakorius, Oli_EU (CT), szogun, mareczek, joachimowicz, Kermit
-	<b>Zdjęcia m. in:</b> Szymon_Mrowiec
-	<b>Tekstury:</b> Patrykos, Kacu, sebalorek, james.szczesny, szogun, DieselPower
-	</td></tr>
-<tr><td>en57-2000_v1</td><td>Bombardier, szogun
-	<b>Poprawki:</b> mareczek, Kermit	
-	</td></tr>
-<tr><td>ep05_v2</td><td>szogun, EP08 
-	<b>Poprawki, zmiany:</b> Maciej, mareczek, Kermit, Stele
-	<b>Zdjęcia:</b> CTL, maacius, miko22
-	</td></tr>
-<tr><td>ep07_v1</td><td>
-	<b>Model zewnętrzny:</b> z 4e_v1
-	<b>Kabina:</b> szogun (modyfikacja kabiny huntera)
-	<b>Poprawki i modyfikacje:</b> Kermit, mareczek, joachimowicz, Milek7, Stele
-	<b>Zdjęcia m.in.:</b> Krzysiek626	
-	<b>Tekstury:</b> adsim, WSK, szogun, ST44-003
-	</td></tr>
-<tr><td>ep08_v1</td><td>
-	<b>Model zewnętrzny:</b> z 4e_v1
-	<b>Kabina:</b> szogun (modyfikacja kabiny huntera) 
-	<b>Kabina LOWPOLY:</b> DieselPower,MR6,Piotr93 
-	<b>Poprawki i modyfikacje:</b> Kermit, mareczek, Milek7, Stele
-	<b>Dźwięki m. in.:</b> mk1991
-	<b>Zdjęcia m. in:</b> Kuba02MK	
-	<b>Tekstury:</b> Sigman, szogun, ST44-003, MR6, RafaPolska424
-	</td></tr>
-<tr><td>ep09_v1</td><td>
-	<b>Model zewnętrzny:</b> Profeta 
-	<b>Kabiny:</b> Rozi (104e_2, 104e_3); KURS90, MKaczy (104e_1) 
-	<b>Poprawki, zmiany i modyfikacje:</b> mareczek, joachimowicz, Kermit, Stele, gopdriver, Stapox, Maciej
-	<b>Zdjęcia:</b> eu40, szymsza1, ctl, mr6, macius5991, hanys, 
-	<b>Tekstury:</b> Profeta, adsim, ST44-003, Patryk Farana, szogun, stapox, MR6 
-	</td></tr>
-<tr><td>et21_v2</td><td>
-	<b>Model zewnętrzny:</b>  Oli_EU (CT) 
-	<b>Wykończenie, poprawki i zmiany:</b> Sakorius, adsim, Kermit, Stele, Maciej
-	<b>Kabiny:</b> PEKAP, Kolejarz, adamst, cichowski34, szogun 
-	<b>Kabina LOWPOLY i modyfikacja na 3E/1</b>: Piotr93
-	<b>Zdjęcia m.in.:</b> Krzysiek626	
-	<b>Tekstury:</b> Sigman, Patryk Farana, szogun, DieselPower 
-	</td></tr>
-<tr><td>et22-2000_v2</td><td>
-	<b>Model zewnętrzny:</b> (modyfikacja modelu et22_v1) MKaczy, adsim  
-	<b>Poprawki:</b> mareczek, Stele
-	<b>Kabina:</b> MKaczy (modyfikacja kabiny z et22_v1) 
-	<b>Charakterystyka:</b> youBy
-	</td></tr>
-<tr><td>et22_v2</td><td>
-	<b>Model zewnętrzny:</b> szogun 
-	<b>Kabina:</b> szogun 
-	<b>Układ mapowania:</b> Patrykos 
-	<b>Modyfikacja zderzaków:</b> kudlacz, Sawi, matek123
-	<b>Poprawki:</b> mareczek, Stele, Maciej
-	<b>Zdjęcia m.in.:</b> defiler, Hadomik
-	<b>Tekstury:</b> szogun, Patrykos, adsim, Patryk Farana, PMT, fuji8, DieselPower, MR6, kornel4d, RafaPolska424, defiler 
-	</td></tr>
-<tr><td>et40_v1</td><td>
-	<b>Model zewnętrzny:</b> ZT-POZNAN (Mega Pack) 
-	<b>Wykończenie:</b> EP08_015
-	<b>Poprawki, zmiany:</b> KURS90, mareczek, Stele 
-	<b>Kabina:</b> KURS90 
-	<b>Charakterystyka:</b> EU07-457, ET22_RULZ
-	<b>Modyfikacje fiz i dźwięki:</b>: jakubg1
-	<b>Tekstury:</b> EP08_015, EU05
-	</td></tr>
-<tr><td>et41_v1</td><td>
-	<b>Model:</b> Sakorius 
-	<b>Wykończenie i poprawki:</b> youBy, Patrykos, Stele
-	<b>Kabina:</b> Patrykos (modyfikacja kabiny huntera) 
-	<b>Dźwięki:</b> ET21-622 
-	<b>Poprawki i modyfikacje:</b> Kermit, mareczek		
-	<b>Tekstury:</b> Patrykos
-	</td></tr>
-<tr><td>et41_v2</td><td>
-	<b>Autor:</b> Patrykos. 
-	<b>Poprawki, Modyfikacje:</b> szogun, Kermit, Maciej, mareczek, joachimowicz, Milek7, Stele, MR6, RafaPolska424
-	<b>Zdjęcia:</b> Hadomik, jussi19, CTL, Stele, sebol82, darek71wrc, Patrykos , Patryk_Farana, LHS_ST40S 
-	<b>Tekstury:</b> MR6, Patrykos, RafaPolska424, DieselPower
-	</td></tr>
-<tr><td>et42_v2</td><td>
-	<b>Model zewnętrzny:</b> szogun. 
-	<b>Kabina:</b> szogun (odnowiony model autorstwa KURS90)
-	<b>Charakterystyka:</b> KURS90, ET22_RULZ.
-	<b>Poprawki, zmiany:</b> joachimowicz, mareczek, Kermit, Stele
-	<b>Zdjęcia m.in.:</b> patrykos, Patryk_Farana, Krzysiek626, Hadomik, LHS_ST40S, defiler
-	<b>Tekstury:</b> szogun, Patryk Farana, defiler, RafaPolska424, patrykos
-	</td></tr>
-<tr><td>eu04_v1</td><td>
-	EP08_015. 
-	<b>Charakterystyka:</b> ET22_RULZ.
-	<b>Poprawki i modyfikacje:</b> Kermit, Stele
-	</td></tr>
-<tr><td>eu05_v2</td><td>
-	<b>Poprawki:</b> Maciej, Stele
-	szogun
-	</td></tr>
-<tr><td>m62_mod_v1</td><td>
-	<b>Kabina:</b> Bombardier (modyfikacja kabiny PEKAPa)
-	<b>Poprawki, zmiany:</b> Stele
-	</td></tr>
-<tr><td>sm03_v1</td><td>szogun <i>(na bazie 409Da_v2 autorstwa Rootka)</i>
-	<b>Poprawki, zmiany:</b> Stele
-	</td></tr>
-<tr><td>sa134_v1</td><td>
-	<b>Model zewnętrzny:</b> Andrzejlandrzej(MSTS)
-	<b>Konwersja:</b> Stele
-	<b>Charakterystyka:</b> youBy
-	<b>Udźwiękowienie:</b> youBy
-	<b>Tekstura:</b> Andrzejlandrzej, Stapox, Stele
-	</td></tr>
-<tr><td>sm31_v1</td><td>Kudłacz 
-	<b>Poprawki, zmiany:</b> mareczek, Stele, Maciej
-	</td></tr>
-<tr><td>sm40_v1</td><td>Piotrek<br>
-	<b>Poprawki, zmiany:</b> Stele
-	<br><b><u>Lokomotywa posiada kabinę, ale bez możliwości prowadzenia. Po prostu nie można ruszyć z miejsca.</u></b>
-	</td></tr>
-<tr><td>sm41_v1</td><td>Piotrek
-	<b>Poprawki, zmiany:</b> Stele
-	</td></tr>
-<tr><td>sm42_v1</td><td>
-	<b>Model zewnętrzny i kabina:</b> Sakorius. 
-	<b>Poprawki:</b> adsim, Stapox, tmj, Stele, mareczek, DieselPower, Rootek, matek123, joachimowicz
-	<b>Kabina Lowpoly:</b> tmj
-	<b>Zdjęcia:</b> podlesky, Sigman, Sakorius, Patryk_Farana, SM42Drive, Mechatronik, Tyrystor, EU07-033, 
-	<b>Tekstury:</b> Sakorius, Sigman, DieselPower, Pierog_SU42, Stele, kornel4d, EU07-483, 
-	</td></tr>
-<tr><td>sn61_v2</td><td>
-	szogun 
-	<b>Kabina i jej części:</b> adamst, szogun, Krasnowski, TZs 
-	<b>Poprawki, zmiany:</b> joachimowicz, Stele
-	<b>Dźwięki:</b> pawel1202, mk1991
-	<b>Zdjęcia:</b> Wokulski, up5358, Sakorius, PR ZDW, ST44-003 
-	<b>Tekstury:</b> szogun
-	</td></tr>
-<tr><td>sp42_v1</td><td>
-	<b>Model zewnętrzny i kabina:</b> Sakorius.  
-	<b>Poprawki, zmiany:</b> hunter, Rozi, adsim, mareczek, Rootek, Maciej, Stele, matek123
-	<b>Kabina widoczna z zewnątrz:</b> Stele 
-	<b>Tekstury:</b> Sakorius, Stele, Cozder, Patryk Farana, Sigman.
-	</td></tr>
-<tr><td>sp45_v1</td><td>
-	<b>Model zewnętrzny:</b> Sakorius 
-	<b>Poprawki, zmiany:</b> adsim, matek123, MR6, mareczek, Stele, Maciej, tmj
-	<b>Kabina:</b> Bombardier, adamst (modyfikacja kabiny dla Trainz'a), szogun (przystosowanie do MaSzyny), MR6 & matek123 (modyfikacja kabiny su45). 
-	<b>Tekstury:</b> MR6, Stele.
-	</td></tr>
-<tr><td>st43_v1</td><td>
-	Patrykos, Marcin_ST43, 
-	<b>Poprawki, zmiany:</b> mareczek, Stele, MR6, Maciej
-	<b>Zdjęcia m.in.:</b> Bumer, Ratno, podlesky
-	<b>Tekstury:</b> Patrykos, Marcin_ST43, DieselPower, Zuger, MR6
-	</td></tr>
-<tr><td>st44_v1</td><td>
-	<b>Modele zewnętrzne:</b> youBy 
-	<b>Kabina:</b> PEKAP, modyfikacja Sigman 
-	<b>Poprawki, zmiany:</b> mareczek, Stele
-	<b>Nowa kabina:</b> DU_mont, LHS_ST40S, Patrykos, dymus, GOPdriver, Piotr93 
-	<b>Dźwięki:</b> Tyrystor 
-	<b>Tekstury:</b> youBy, Sigman, Patrykos, Sakorius
-	</td></tr>
-<tr><td>st45_v2</td><td>
-	<b>Model zewnętrzny:</b> szogun (na podstawie modelu Sakoriusa). 
-	<b>Kabina:</b> szogun (na podstawie kabiny SU45 Bombardiera) + $KBR 
-	<b>Poprawki, zmiany:</b> mareczek, Stele
-	<b>Zdjęcia:</b> kilanziom, Hadomik
-	<b>Tekstura:</b> Patrykos, DieselPower
-	</td></tr>
-<tr><td>su45_v2</td><td>
-	<b>Model zewnętrzny:</b> Sakorius, 
-	<b>Poprawki, zmiany:</b> adsim, mareczek, Stele, RoboBatman, tmj
-	<b>Kabina:</b> Bombardier, adamst (modyfikacja kabiny dla Trainz'a), szogun (przystosowanie do MaSzyny). 
-	<b>Zdjęcia m.in.:</b> Janek32	
-	<b>Tekstury:</b> Sigman, dx286, szogun, Zuger, PMT, pierog_su42
-	</td></tr>
-<tr><td>su46_v2</td><td>
-	<b>Model zewnętrzny:</b> Sakorius 
-	<b>Poprawki, zmiany:</b> mareczek, Stele
-	<b>Kabina:</b> (modyfikacja kabiny Profety) szogun, MR6. 
-	<b>Zdjęcia m. in.:</b> lurr3x, bumer
-	<b>Tekstury:</b> Sakorius, hummel, SM42drive, jaca83, Rootek, MR6, zuger.
-	</td></tr>
-<tr><td>tem2_v2</td><td>
-	<b>Model zewnętrzny i kabina:</b> Sigman 
-	<b>Poprawki, zmiany:</b> adsim, mareczek, Stele, joachimowicz
-	<b>Zdjęcia m. in.:</b> 
-	<b>Tekstury:</b> Sigman, kornel4d.
-	</td></tr>
-<tr><td>tem2u_v2</td><td>
-	<b>Model zewnętrzny i kabina:</b> Sigman 
-	<b>Poprawki, zmiany:</b> adsim, mareczek, Stele
-	<b>Zdjęcia m. in.:</b> Tyrystor, Sigman
-	<b>Tekstury:</b> Sigman, RafaPolska424
-	</td></tr>
-</tbody></table>
-<div class="powrot"> 
-	<span><a href="http://eu07.pl/theme/Maszyna/dokumentacja/readme.html#0">Spis treści</a></span>
-</div>
-
-</li>
-
-<li>
-<h4><a name="6,2,2">Pozostałe</a></h4>
-<table>
-<tbody><tr><th>Nazwa</th><th>Autorzy, uwagi</th></tr>
-<tr><td>1xxa_v1</td><td>
-	<b>Modele:</b> Kakish. 
-	<b>Poprawki:</b> joachimowicz, Stele
-	<b>Tekstury:</b> EP08_015, Jaras, Speed, Mutopompka (Passenger Pack 1), Cesky Kretek (Passenger Pack 2), RooteK, FLOYD, Kacu, libertyn89, sebalorek, Patryk Farana, P208
-	</td></tr>
-<tr><td>111a-noc_v1</td><td>Kacu (na podstawie tekstur i modeli 1xxa_v1)</td></tr>
-<tr><td>110a_v2</td><td>
-	<b>Autor:</b> DieselPower (modyfikacja modelu 11xA_v2)
-	<b>Pomoc:</b> pinio_2002, MR6, Stele
-	<b>Poprawki i zmiany:</b> DieselPower, Stele
-	<b>Zdjęcia:</b> Cesky Kretek
-	<b>Tekstura:</b> DieselPower
-	</td></tr>
-<tr><td>11xa_v2</td><td>
-	<b>Pudła:</b> Floyd, Adsim, Ra, Stele, matek123
-	<b>Wnętrza:</b> szogun, Kacu, Stele, PKP94 (TRS), MR6, DieselPower 
-	<b>Dźwięki:</b> MK1991 
-	<b>FIZ & MMD</b>: youBy, EP08-015, Stele
-	<b>Poprawki i zmiany:</b> Piotr93, matek123, DieselPower, MR6, Maciej, matek123, Stele, joachimowicz, Milek7
-	<b>Tablice relacyjne:</b> Transkei
-	<b>Zdjęcia:</b> Floyd, youBy, lalek, Cesky Kretek, Stele, D_M/MKFiFi, Dróżnik Wiór, Patryk_Farana, Piotr93, macius5991
-	<b>Tekstury:</b> Patryk_Farana, MR6, Stele, Dróżnik Wiór, R4TCH3T, Piotr93, DieselPower
-	</td></tr>
-<tr><td>11xa-techniczne_v2</td><td>
-	<b>Modyfikacja:</b> DieselPower
-	<b>Poprawki i zmiany:</b> DieselPower, joachimowicz
-	<b>Zdjęcia:</b> bartiprog
-	<b>Tekstury:</b> DieselPower
-	</td></tr>
-<tr><td>16xa_v1</td><td>
-	szogun, Patryk Farana, youBy, Patrykos, Sawi, Stele, Floyd, adsim, mk1991, Joachimowicz, MR6 
-	<b>Poprawki i zmiany:</b> joachimowicz, Stele	
-	<b>Zdjęcia m.in.:</b> Stele
-	<b>Tekstury:</b> hanys, Sawi, Stele, Joachimowicz	
-	</td></tr>
-<tr><td>401da_v1</td><td>EP08_015
-	<b>Poprawki i zmiany:</b> Stele
-	</td></tr>
-<tr><td>401w_v1</td><td>
-	<b>Oryginalny model:</b> Patrykos (408w_v1) 
-	<b>Modyfikacja modelu:</b> DieselPower 
-	<b>Poprawki i zmiany:</b> Stele	
-	<b>Zdjęcia m.in.:</b> RoboBatman
-	<b>Tekstura:</b> DieselPower
-	</td></tr>
-<tr><td>408w_v1</td><td>Patrykos, youBy
-	<b>Poprawki:</b> mareczek, joachimowicz, Maciej, Stele
-	<b>Zdjęcia:</b> jussi19, mechatronik, Patrykos, youBy, Gorzowiak
-	<b>Tekstury:</b> dieselpower, Patrykos, kornel4d
-</td></tr>
-<tr><td>412w_v1</td><td>Patrykos, youBy
-	<b>Poprawki:</b> mareczek, Stele
-	</td></tr>
-<tr><td>413s_v1</td><td>CTL
-	<b>Poprawki:</b> mareczek, Stele
-	</td></tr>
-<tr><td>424z_v1</td><td>Patrykos
-	<b>Poprawki:</b> mareczek, Stele
-	</td></tr>
-<tr><td>430w_v1</td><td>Patrykos
-	<b>Poprawki:</b> mareczek, Stele
-	</td></tr>
-<tr><td>430w_v2</td><td>
-	<b>Model:</b> Rootek
-	<b>Charakterystyka:</b> youBy
-	<b>Poprawki, zmiany i przystosowanie:</b> Kermit, piotr93, Stele, joachimowicz
-	<b>Zdjęcia:</b>
-	<b>Tekstury:</b> Sigman	
-	</tr></tr>
-<tr><td>445w_v1</td><td>DieselPower 
-	<b>Poprawki:</b> Stele, DieselPower, mareczek
-	<b>Zdjęcia:</b> Kudłaty 
-	<b>Tekstury:</b> DieselPower
-	</td></tr>
-<tr><td>bdhinu_v1</td><td>EP08_015
-	<b>Poprawki i zmiany:</b> Stele
-	</td></tr>
-<tr><td>bdhpumn_v2</td><td>
-	<b>Model:</b> szogun. 
-	<b>Poprawki:</b> joachimowicz, Stele	
-	<b>Zdjęcia m.in.:</b> erap2, Dróżnik Wiór, kilanziom (Trainz), Szopa, m0ke, Thalys (Trainz)
-	<b>Tekstury:</b> szogun, Patryk Farana, Dróżnik Wiór, stapox, szogun, DieselPower
-	</td></tr>
-<tr><td>bdhpumn-noc_v2</td><td>Zmodyfikowany bdhpumn_v2 <b>Autor:</b> janek32</td></tr>
-<tr><td>bhp_v1</td><td>
-	<b>Model zewnętrzny:</b> Sakorius, FLOYD, adsim 
-	<b>Poprawki:</b> adsim, Stele, joachimowicz
-	<b>Zdjęcia m. in.:</b> 	
-	<b>Tekstury:</b> Patrykos, Sakorius.
-	</td></tr>
-<tr><td><b>cd/</b>163_v1</td><td>james.szczesny</td></tr>
-<tr><td><b>cd/</b>810_v1</td><td>
-	<b>Poprawki:</b> Stapox, Stele
-	<b>Zdjęcia:</b> Smok_E_ustachy
-	<b>Tekstura:</b> Lelek, kolejowyfan
-	</td></tr>
-<tr><td><b>cd/</b>bdmteeo_v1</td><td><b>Model:</b> Lelek <b>Poprawki:</b> Stele <b>Poprawki fizyki:</b> youBy <b>Zdjęcia:</b> vh</td></tr>
-<tr><td><b>cd/</b>bmz_v2</td><td><b>Model:</b> szogun (z1_v2). <b>Tekstury:</b> przystosowane z bmz_v1. </td></tr>
-<tr><td><b>cd/</b>es_v1</td><td>Tézsé
-	<b>Poprawki:</b> mareczek	
-	</td></tr>
-<tr><td><b>db/</b>uaaikks_v1</td><td>Rozi
-	<b>Poprawki:</b> joachimowicz, Stele
-	</td></tr>
-<tr><td><b>db/</b>rlmmp_v1</td><td>hunter</td></tr>
-<tr><td>eams_v1</td><td>
-	<b>Model:</b> RooteK. 
-	<b>Poprawki:</b> mareczek, Stele
-	<b>Tekstury:</b> RooteK, Patrykos, Sigman.
-	</td></tr>
-<tr><td>eaos_v1</td><td>
-	<b>Model:</b> Kakish, ZT-POZNAN. 
-	<b>Poprawki:</b> mareczek, Stele
-	<b>Tekstury:</b> Kakish, ZT-POZNAN, Patrykos, Sigman, dx286.
-	</td></tr>
-<tr><td>el204_v1</td><td><b>Model zewnętrzny:</b> Oli_EU (CT). <b>Wykończenie:</b> EP08_015. <b>Charakterystyka:</b> ET22_RULZ.</td></tr>
-<tr><td>em10_v1</td><td>EP08_015</td></tr>
-<tr><td>em120_v1</td><td>KURS90
-	<b>Poprawki:</b> Stele
-	</td></tr>
-<tr><td>ep01_v1</td><td>Oli_EU (CT)
-	<b>Poprawki:</b> Stele
-	</td></tr>
-<tr><td>ep03_v1</td><td>EP08_015
-	<b>Poprawki:</b> Stele	
-	</td></tr>
-<tr><td>es_v2</td><td>
-	<b>Model:</b> Sigman 
-	<b>Poprawki:</b> mareczek
-	<b>Tekstury:</b> Sigman, RooteK.
-	</td></tr>
-<tr><td>eu20_v1</td><td>EP08_015</td></tr>
-<tr><td>ew58_v1</td><td>EP08_015
-	<b>Poprawki:</b> Stele
-	</td></tr>
-<tr><td>ew60_v1</td><td>EP08_015</td></tr>
-<tr><td>falns_v1</td><td>
-	<b>Model:</b> youBy 
-	<b>Poprawki:</b> mareczek
-	<b>Tekstury:</b> youBy, Sigman, Dozer.
-	</td></tr>
-<tr><td>fas_v2</td><td>
-	<b>Model:</b> Żabek, Rootek 
-	<b>Poprawki:</b> mareczek	
-	<b>Tekstury:</b>  Sigman.
-	</td></tr>
-<tr><td>flls_v1</td><td>
-	<b>Model:</b> PEKAP 
-	<b>Poprawki:</b> mareczek
-	<b>Tekstury:</b> PEKAP, firefoxfan.
-	</td></tr>
-<tr><td>gags_v2</td><td>
-	<b>Model:</b> Bombardier 
-	<b>Wózek:</b> Sakorius
-	<b>Poprawki:</b> mareczek, Sakorius
-	<b>Tekstury:</b> Sigman 
-	</td></tr>
-<tr><td>gbs_v1</td><td>
-	<b>Model:</b> Sakorius. 
-	<b>Poprawki:</b> mareczek, Stele
-	<b>Tekstury:</b> Sakorius, Sigman, fuji8
-	</td></tr>
-<tr><td>maxima_v1</td><td>Rozi</td></tr>
-<tr><td>mieszkalny_v1</td><td>Pit, McZapkie</td></tr>
-<!--<tr><td>rs_v1</td><td>Sakorius
-	<b>Poprawki:</b> mareczek
-	</td></tr>-->
-<tr><td>rs_v2</td><td>
-	<b>Model:</b> Kilanziom & Samplaire [Trainz] 
-	<b>Konwersja i poprawki:</b> Kermit, mareczek, joachimowicz, Stele
-	<b>Modele:</b> Wózka- Patrykos, Sprzęgu- Krasnowski, SKP- Rootek, Ładunków- Samplaire, matek123, Kermit, 
-	<b>Zdjęcia:</b> D_M, Qcyk85, RCSCORPION, Ryszard, sna25, Sebastianeq, fuji8 
-	<b>Tekstury:</b> Kilanziom, Samplaire, DieselPower
-	</td></tr>
-<tr><td>sa102_111_v1</td><td>EP08_015</td></tr>
-<tr><td>sgs_v1</td><td>
-	<b>Autor:</b> WSK. 
-	<b>Poprawki:</b> szogun, mareczek, Stele 
-	<b>Wózki:</b> Patrykos, youBy.
-	<b>Zdjęcia:</b> D_M, Qcyk85, RCSCORPION, Ryszard, sna25, Sebastianeq, fuji8	
-	</td></tr>
-<tr><td>shmmns_v1</td><td>
-	<b>Model:</b> Samplaire (Trainz), Ładunki - Kermit & Camry2 
-	<b>Fizyka hamulców:</b> youBy 
-	<b>Konwersja, modyfikacja, poprawki:</b> Kermit, mareczek, Stele
-	<b>Zdjęcia:</b> Podlesky
-	<b>Tekstury:</b> Samplaire (Trainz), DieselPower
-	</td></tr>
-<tr><td>sieciowiec_v1</td><td>OlO_EU</td></tr>
-<tr><td>sis_v2</td><td>Rozi
-	<b>Poprawki:</b> mareczek, Stele
-	</td></tr>
-<tr><td>sis_v3</td><td>
-	<b>Baza:</b> Rozi 
-	<b>Modele:</b> Wózka- Patrykos, SKP- Rootek, Sprzęgu śrubowego- Krasnowski 
-	<b>Odświeżenie:</b> Kermit 
-	<b>Poprawki:</b> DieselPower, mareczek
-	<b>Tekstury:</b> kermit, ?, rafapolska424
-	</td></tr>
-<tr><td>sgs_v2</td><td>
-	<b>Model:</b> Kilanziom & Samplaire [Trainz] 
-	<b>Konwersja i poprawki:</b> Kermit, 
-	<b>Modele:</b> Wózka- Patrykos, Sprzęgu- Krasnowski, SKP- Rootek, Ładunków- Samplaire 
-	<b>Zdjęcia:</b> D_M, Qcyk85, RCSCORPION, Ryszard, sna25, Sebastianeq
-	</td></tr>
-<tr><td>slmmps_v1</td><td>
-	<b>Model:</b> Samplaire (Trainz), 
-	<b>Konwersja, poprawki i zmiany:</b> Kermit, mareczek, Stele 
-	<b>Modele:</b> Wózka- Patrykos, Sprzęgu- Krasnowski, SKP- Rootek, 
-	<b>Zdjęcia:</b> Kilanziom (Trainz)
-	<!--<b>Tekstury:</b> -->	
-	</td></tr>
-<tr><td>smms_v1</td><td>
-	<b>Model:</b> Samplaire (Trainz), 
-	<b>Modele:</b> Wózków- Patrykos, SKP- Rootek, Sprzęgów- Krasnowski, Ładunków- Kermit, Camry2, Samplaire, Podlesky, matek123, "cadnav.com" 
-	<b>Fizyka hamulców:</b> youBy 
-	<b>Konwersja, modyfikacja, poprawki:</b> Kermit, mareczek, Stele
-	<b>Zdjęcia m.in.:</b> D_M, Podlesky	
-	</td></tr>
-<tr><td>su42_v1</td><td>
-	<b>Model zewnętrzny:</b> Sakorius, adsim. 
-	<b>Poprawki:</b> Stele, Maciej
-	<b>Tekstury:</b> Sigman.
-	</td></tr>
-<tr><td>t448p_v1</td><td><b>Model:</b> Bombardier. <b>Tekstury:</b> Sigman.</td></tr>
-<tr><td>z1_v2</td><td>
-	<b>Model:</b> szogun. 
-	<b>Poprawki i zmiany:</b> Stele
-	<b>Tekstury:</b> szogun, maacius, Cesky Kretek.
-	</td></tr>
-<tr><td>z1b_v1</td><td><b>Autorzy:</b> Patryk Farana, Patrykos, matek123</td></tr>
-<tr><td>zaes_v1</td><td>
-	<b>Model:</b> Kakish 
-	<b>Poprawki:</b> mareczek
-	<b>Tekstury:</b> Sigman
-	</td></tr>
-<tr><td>zaes_v2</td><td>
-	<b>Model:</b> Patrykos 
-	<b>Poprawki:</b> szogun , mareczek, joachimowicz, Stele
-	<b>Tekstury:</b> Patrykos.
-	</td></tr>
-<tr><td><b>zssk/</b>lgs_v1</td><td>
-	Patrykos
-	<b>Poprawki:</b> mareczek, Stele
-	</td></tr>
-<tr><td>uacs_v3</td><td>
-	<b>Model:</b> Rozi  
-	<b>Tekstury:</b> Rozi, Patrykos.
-	</td></tr>
-<tr><td>wm15_v1</td><td>
-	bohunIC
-	</td></tr>
-<tr><td>wmb10_v1</td><td>
-	<b>Model zewnętrzny:</b> szogun 
-	<b>Tekstury:</b> szogun.
-	</td></tr>
-<tr><td>wozek_torowy_v1</td><td>
-	Stele, Sawi
-	</td></tr>
-</tbody></table>
-</li>
-</ul>
-</table>
-</li>
-</ul>
 <div class="powrot"> 
 	<span><a href="#0">Spis treści</a></span>
 </div>
-<ul>
-<li>
-<h4><a name="6,2,3">Różne wspólne części, używane w różnych pojazdach</a></h4>
-<table><tbody>
-<tr><td>Skrót</td><td>Nazwa, opis</td><td>Autorzy</td></tr>
-<tr><td>FAS</td><td><b>Fotel "Astromal"</b></td><td><b>3D:</b> Stele <b>Tekstura:</b> MR6</td></tr>
-<tr><td>SKP</td><td><b>Tarcze SKP</b></td><td>rootek</td></tr>
-<tr><td>SŚR</td><td><b>Sprzęg śrubowy</b></td><td>krasnowski</td></tr>
-<tr><td>KBR</td><td><b>Radiotelefon Koliber</b></td><td>kermit</td></tr>
-<tr><td>RAD</td><td><b>Radiotelefon Radmor</b></td><td>krasnowski</td></tr>
-<tr><td>W1X</td><td><b>Wózek 1XTa</b></td><td>patrykos</td></tr>
-<tr><td>WY2</td><td><b>Wózek Y25</b></td><td>patrykos</td></tr>
-</tbody></table>
-
-<div class="powrot"> 
-	<span><a href="http://eu07.pl/theme/Maszyna/dokumentacja/readme.html#0">Spis treści</a></span>
-</div>
 </li></ul>
 
-<ul>
-<li>
-<h4><a name="6,2,4">Tekstury</a></h4>
+<ul><li>
+<h4><a name="6,2">Tekstury</a></h4>
 
 <a href="https://stuff.eu07.pl/stocktexturedb/db/index.php">Internetowy katalog tekstur taboru.</a>
 
 <div class="powrot"> 
-	<span><a href="http://eu07.pl/theme/Maszyna/dokumentacja/readme.html#0">Spis treści</a></span>
+	<span><a href="#0">Spis treści</a></span>
 </div>
 </li></ul>
 
