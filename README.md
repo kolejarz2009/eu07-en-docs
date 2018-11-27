@@ -2,6 +2,10 @@
 English translation of the documents for the MaSzyna Simulator ( https://wiki.eu07.pl/websvn/listing.php?repname=pctga ) 
 <br>Angielskie tłumaczenie dokumentacji MaSzyny 
 
+<b><h1>Work is now done on live MaSzyna Repo - This repo is discontinued</h1></b>
+
+
+
 English translations are up-to date with the following Polish equivalent versions: (below) <br>
 <i>Master-branch at </i><b>r2808</b>.<br>
 There has been no changes in most of the original Polish versions of files below.
